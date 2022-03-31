@@ -1,0 +1,57 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Australia",
+                "China",
+                "Fiji",
+                "France",
+                "Hong Kong",
+                "India",
+                "Indonesia",
+                "Japan",
+                "Republic of Korea",
+                "Malaysia",
+                "Netherlands",
+                "New Caledonia",
+                "New Zealand",
+                "Papua New Guinea",
+                "Philippines",
+                "Singapore",
+                "Solomon Islands",
+                "Thailand",
+                "United Kingdom",
+                "USA",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "ECO1-5-3",
+  "title": "indicators.ECO1-5-3-title"
+}

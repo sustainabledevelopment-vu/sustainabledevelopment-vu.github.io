@@ -1,0 +1,133 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Area council",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "torres",
+                "ureparapara",
+                "motalava",
+                "vanua lava",
+                "mota",
+                "gaua",
+                "merelava",
+                "north west santo",
+                "north santo",
+                "west santo",
+                "south santo",
+                "east santo",
+                "south east santo",
+                "canal - fanafo",
+                "luganville",
+                "west malo",
+                "east malo",
+                "west ambae",
+                "north ambae",
+                "east ambae",
+                "south ambae",
+                "north maewo",
+                "south maewo",
+                "north pentecost",
+                "central pentecost 1",
+                "central pentecost 2",
+                "south pentecost",
+                "north west malekula",
+                "north east malekula",
+                "central malekula",
+                "south west malekula",
+                "south east malekula",
+                "south malekula",
+                "north ambrym",
+                "west ambrym",
+                "south east ambrym",
+                "paama",
+                "vermali",
+                "vermaul",
+                "varisu",
+                "south epi",
+                "north tongoa",
+                "tongariki",
+                "makimae",
+                "nguna",
+                "emau",
+                "malorua",
+                "north efate",
+                "mele",
+                "port vila",
+                "ifira",
+                "pango",
+                "erakor",
+                "eratap",
+                "eton",
+                "north erromango",
+                "south erromango",
+                "aniwa",
+                "north tanna",
+                "west tanna",
+                "middle bush tanna",
+                "south west tanna",
+                "whitesands",
+                "south tanna",
+                "futuna",
+                "aneityum",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "census",
+  "title": "Population from census"
+}

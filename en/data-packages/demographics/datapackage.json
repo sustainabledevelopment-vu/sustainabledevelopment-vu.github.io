@@ -1,0 +1,191 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Malampa",
+                "Penama",
+                "Sanma",
+                "Shefa",
+                "Tafea",
+                "Torba",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Constituency",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Ambae",
+                "Ambrym",
+                "Banks",
+                "Efate",
+                "Epi",
+                "Luganville",
+                "Maewo",
+                "Malekula",
+                "Malo",
+                "Paama",
+                "Pentecost",
+                "Port Vila",
+                "Santo Rural",
+                "Shepherds",
+                "Tafea Outer Islands",
+                "Tanna",
+                "Tongoa",
+                "Torres",
+                ""
+              ]
+            },
+            "title": "Constituency"
+          },
+          {
+            "name": "Area Council",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "aneityum",
+                "aniwa",
+                "canal - fanafo",
+                "central malekula",
+                "central pentecost 1",
+                "central pentecost 2",
+                "east ambae",
+                "east malo",
+                "east santo",
+                "emau",
+                "erakor",
+                "eratap",
+                "eton",
+                "futuna",
+                "gaua",
+                "ifira",
+                "luganville",
+                "makimae",
+                "malorua",
+                "mele",
+                "merelava",
+                "middle bush tanna",
+                "mota",
+                "motalava",
+                "nguna",
+                "north ambae",
+                "north ambrym",
+                "north east malekula",
+                "north efate",
+                "north erromango",
+                "north maewo",
+                "north pentecost",
+                "north santo",
+                "north tanna",
+                "north tongoa",
+                "north west malekula",
+                "north west santo",
+                "paama",
+                "pango",
+                "port vila",
+                "south ambae",
+                "south east ambrym",
+                "south east malekula",
+                "south east santo",
+                "south epi",
+                "south erromango",
+                "south maewo",
+                "south malekula",
+                "south pentecost",
+                "south santo",
+                "south tanna",
+                "south west malekula",
+                "south west tanna",
+                "tongariki",
+                "torres",
+                "ureparapara",
+                "vanua lava",
+                "varisu",
+                "vermali",
+                "vermaul",
+                "west ambae",
+                "west ambrym",
+                "west malo",
+                "west santo",
+                "west tanna",
+                "whitesands",
+                ""
+              ]
+            },
+            "title": "Area Council"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0-4",
+                "5-9",
+                "10-14",
+                "15-19",
+                "20-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60-64",
+                "65+",
+                ""
+              ]
+            },
+            "title": "Age"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "demographics",
+  "title": ""
+}

@@ -1,0 +1,190 @@
+Year,Country,Value
+2012,,-27845.0
+2013,,-30435.0
+2014,,-29128.0
+2015,,-39513.0
+2016,,-44383.0
+2017,,-34265.0
+2018,,-36136.0
+2019,,-34440.0
+2020,,-28396.0
+2012,Australia,-7838.0
+2013,Australia,-7482.0
+2014,Australia,-7874.0
+2015,Australia,-8361.0
+2016,Australia,-8904.0
+2017,Australia,-8105.0
+2018,Australia,-8443.0
+2019,Australia,-7186.0
+2020,Australia,-6449.0
+2012,China,-2163.0
+2013,China,-2326.0
+2014,China,-2539.0
+2015,China,-4813.0
+2016,China,-5656.0
+2017,China,-5267.0
+2018,China,-4012.0
+2019,China,-4079.0
+2020,China,-3261.0
+2012,Fiji,-1856.0
+2013,Fiji,-2375.0
+2014,Fiji,-2609.0
+2015,Fiji,-3511.0
+2016,Fiji,-4520.0
+2017,Fiji,-3751.0
+2018,Fiji,-2713.0
+2019,Fiji,-2541.0
+2020,Fiji,-2784.0
+2012,France,-773.0
+2013,France,-1235.0
+2014,France,-1172.0
+2015,France,-978.0
+2016,France,-2128.0
+2017,France,-1025.0
+2018,France,-920.0
+2019,France,-709.0
+2020,France,-763.0
+2012,Hong Kong,-269.0
+2013,Hong Kong,-230.0
+2014,Hong Kong,-75.0
+2015,Hong Kong,-762.0
+2016,Hong Kong,-914.0
+2017,Hong Kong,-1229.0
+2018,Hong Kong,-1054.0
+2019,Hong Kong,-974.0
+2020,Hong Kong,-914.0
+2012,India,-329.0
+2013,India,-256.0
+2014,India,-216.0
+2015,India,-323.0
+2016,India,-249.0
+2017,India,-302.0
+2018,India,-315.0
+2019,India,-299.0
+2020,India,-264.0
+2012,Indonesia,-322.0
+2013,Indonesia,-366.0
+2014,Indonesia,-405.0
+2015,Indonesia,-382.0
+2016,Indonesia,-427.0
+2017,Indonesia,-497.0
+2018,Indonesia,-452.0
+2019,Indonesia,-609.0
+2020,Indonesia,-492.0
+2012,Japan,-685.0
+2013,Japan,-1122.0
+2014,Japan,-807.0
+2015,Japan,-1932.0
+2016,Japan,-2815.0
+2017,Japan,-1911.0
+2018,Japan,-2722.0
+2019,Japan,-2344.0
+2020,Japan,-1457.0
+2012,Republic of Korea,-467.0
+2013,Republic of Korea,-712.0
+2014,Republic of Korea,-588.0
+2015,Republic of Korea,-707.0
+2016,Republic of Korea,-931.0
+2017,Republic of Korea,-776.0
+2018,Republic of Korea,-638.0
+2019,Republic of Korea,-598.0
+2020,Republic of Korea,-555.0
+2012,Malaysia,225.0
+2013,Malaysia,12.0
+2014,Malaysia,129.0
+2015,Malaysia,-42.0
+2016,Malaysia,370.0
+2017,Malaysia,534.0
+2018,Malaysia,254.0
+2019,Malaysia,80.0
+2020,Malaysia,-137.0
+2012,Netherlands,-129.0
+2013,Netherlands,-129.0
+2014,Netherlands,-63.0
+2015,Netherlands,-44.0
+2016,Netherlands,-4649.0
+2017,Netherlands,-86.0
+2018,Netherlands,-59.0
+2019,Netherlands,-64.0
+2020,Netherlands,-52.0
+2012,New Caledonia,-329.0
+2013,New Caledonia,7.0
+2014,New Caledonia,-130.0
+2015,New Caledonia,-635.0
+2016,New Caledonia,-244.0
+2017,New Caledonia,-198.0
+2018,New Caledonia,-278.0
+2019,New Caledonia,80.0
+2020,New Caledonia,202.0
+2012,New Zealand,-3646.0
+2013,New Zealand,-3652.0
+2014,New Zealand,-3475.0
+2015,New Zealand,-4685.0
+2016,New Zealand,-4937.0
+2017,New Zealand,-3913.0
+2018,New Zealand,-3814.0
+2019,New Zealand,-3638.0
+2020,New Zealand,-3790.0
+2012,Papua New Guinea,47.0
+2013,Papua New Guinea,5.0
+2014,Papua New Guinea,-55.0
+2015,Papua New Guinea,-25.0
+2016,Papua New Guinea,13.0
+2017,Papua New Guinea,131.0
+2018,Papua New Guinea,-92.0
+2019,Papua New Guinea,-168.0
+2020,Papua New Guinea,-250.0
+2012,Philippines,457.0
+2013,Philippines,-76.0
+2014,Philippines,1138.0
+2015,Philippines,584.0
+2016,Philippines,
+2017,Philippines,1637.0
+2018,Philippines,104.0
+2019,Philippines,154.0
+2020,Philippines,202.0
+2012,Singapore,-8110.0
+2013,Singapore,-8356.0
+2014,Singapore,-8995.0
+2015,Singapore,-7190.0
+2016,Singapore,-5349.0
+2017,Singapore,-7277.0
+2018,Singapore,-9185.0
+2019,Singapore,-9781.0
+2020,Singapore,-6279.0
+2012,Solomon Islands,-9.0
+2013,Solomon Islands,-119.0
+2014,Solomon Islands,48.0
+2015,Solomon Islands,-55.0
+2016,Solomon Islands,-12.0
+2017,Solomon Islands,-147.0
+2018,Solomon Islands,-210.0
+2019,Solomon Islands,-178.0
+2020,Solomon Islands,-192.0
+2012,Thailand,-961.0
+2013,Thailand,-1181.0
+2014,Thailand,-994.0
+2015,Thailand,-4898.0
+2016,Thailand,-1380.0
+2017,Thailand,-1657.0
+2018,Thailand,-1563.0
+2019,Thailand,-1353.0
+2020,Thailand,-1183.0
+2012,United Kingdom,-89.0
+2013,United Kingdom,-71.0
+2014,United Kingdom,-77.0
+2015,United Kingdom,-120.0
+2016,United Kingdom,-90.0
+2017,United Kingdom,-131.0
+2018,United Kingdom,-23.0
+2019,United Kingdom,-35.0
+2020,United Kingdom,-29.0
+2012,USA,-599.0
+2013,USA,-771.0
+2014,USA,-369.0
+2015,USA,-634.0
+2016,USA,-1562.0
+2017,USA,-295.0
+2018,USA,-1.0
+2019,USA,-197.0
+2020,USA,50.0

@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Promise%2CArray.prototype.forEach%2CString.prototype.includes%2CURLSearchParams%2CCustomEvent%2CArray.prototype.includes%2CArray.prototype.filter%2CArray.prototype.some%2CArray.prototype.find%2CArray.prototype.reduce%2CObject.assign%2CArray.isArray%2CObject.values%2CArray.from%2CSet%2CArray.prototype.findIndex"></script>
+<script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/javascript-canvas-to-blob/3.15.0/js/canvas-to-blob.min.js"></script>
+
+        <script>
+// This is where we initialise any global variables, namespaced in "opensdg".
+var opensdg = {
+
+  // A base URL for asynchronous calls to SDG data.
+  remoteDataBaseUrl: '/en',
+
+  chartConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Chart.js.
+  chartConfigAlter: function(callback) {
+    this.chartConfigAlterations.push(callback);
+  },
+
+  tableConfigAlterations: [],
+  // A hook which can be used to modify the configuration for Datatables.
+  tableConfigAlter: function(callback) {
+    this.tableConfigAlterations.push(callback);
+  },
+
+  // A hook which can be replaced to alter whether/how the values that are
+  // displayed on indicator tables/graphs get rounded.
+  dataRounding: function(value) {
+    // Alterations go here.
+    return value;
+  },
+
+  // A hook which can be used to alter the data before it is displayed on charts/tables.
+  dataDisplayAlterations: [],
+  dataDisplayAlter: function(callback) {
+    this.dataDisplayAlterations.push(callback);
+  },
+
+  language: 'en',
+};
+
+// For backwards compatibility, some of these might need to be global.
+// @TODO: Remove these eventually.
+var remoteDataBaseUrl = opensdg.remoteDataBaseUrl;
+
+</script>
+
+        <script>
+// JavaScript container for translation data.
+var translations = {
+  //Javascript version of the "t" filter from jekyll-open-sdg-plugins.
+  t: function(key) {
+
+    if (!key || typeof key !== 'string') {
+      return '';
+    }
+
+    // The majority of uses of this function are to translate disaggregation
+    // data. To spare data providers of needing to enter "data." in front of
+    // their disaggregation data, we specifically look for that here.
+    if (typeof this.data === 'object' && this.data !== null && this.data[key]) {
+      return this.data[key];
+    }
+
+    var originalKey = key;
+    var drilled = this;
+    var levelsDrilled = 0;
+    var levels = key.split('.');
+
+    for (var level in levels) {
+      // If we have drilled down to soon, abort.
+      if (typeof drilled !== 'object') {
+        break;
+      }
+
+      if (levels[level] in drilled) {
+        drilled = drilled[levels[level]];
+        levelsDrilled += 1;
+      }
+    }
+
+    // If we didn't drill the right number of levels, return the original string.
+    if (levels.length != levelsDrilled) {
+      return originalKey;
+    }
+
+    // Otherwise we must have drilled all the way.
+    return drilled;
+  },
+};
+</script>
+
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title and meta description
+        ================================================== -->
+
+        
+    <title>Indicators of The National Sustainable Development Plan</title>
+
+
+
+        <meta name="description" content="">
+        <meta property="og:description" content="">
+        
+        <meta name="robots" content="noindex, nofollow">
+        
+        <link rel="canonical" href="/">
+
+        <!--[if IE 9]>
+        <script src="/assets/js/lib/classList.js"></script>
+        <![endif]-->
+
+        
+
+
+
+
+<link rel="shortcut icon" type="image/ico" href="/assets/img/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="/assets/img/favicons/favicon.png">
+
+
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220331022657">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"  crossorigin=""/>
+        <link rel="stylesheet" href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'  crossorigin=""/>
+        <link rel="stylesheet" href="https://bowercdn.net/c/leaflet.zoomhome-latest/dist/leaflet.zoomhome.css"  crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin="">
+        <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7/klaro.min.css" crossorigin=""/>
+        
+
+        
+
+    </head>
+<body class="language-en
+layout-reportingstatus
+">
+<!-- <div class="container"> -->
+
+
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<div id="disclaimer">
+  <div class="container">
+  <div class="disclaimer-alert">
+    <strong class="phase-tag">Beta</strong>
+    
+    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+  </div>
+</div>
+
+</div>
+
+<header role="banner" class="header-menu-left-aligned">
+  <div class="container">
+
+    <div class="logo-and-mobile-widgets">
+      <a class="navbar-brand" href="/" id="home">
+    <img src="/assets/img/logo title.png" alt="National Development Goals 2030" />
+</a>
+      <div class="mobile-widgets">
+    <ul id='accessibility-nav' class='contrast-switcher'>
+        
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+    </ul></div>
+    </div>
+
+    <div class="search-and-desktop-widgets">
+      <div id="search" class="menu-target">
+  <form action="/search/">
+    <label class="sr-only" for="indicator_search">Search</label>
+    <input type="text" name="q" id="indicator_search" title="Search" /><!--
+    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+      <div class="navbar navbar-default widgets-without-menu">
+        <ul class="nav navbar-nav contrast-switcher">
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar navbar-default menu-without-widgets" id="main-nav">
+      <ul class="top-level">
+    <li id="menuToggle"
+        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-haspopup="true">
+        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link active">
+    <a href="/reporting-status/">DATA AVAILABILITY</a>
+</li><li class="nav-link ">
+    <a href="/indicator-overview/">INDICATOR OVERVIEW</a>
+</li><li class="nav-link ">
+    <a href="/methodology/">METHODOLOGY</a>
+</li><li class="nav-link ">
+    <a href="/about/">NSPD ONLINE PLATFORM</a>
+</li><li class="nav-link ">
+    <a href="/technical-advice/">TECHNICAL ADVICE</a>
+</li><li class="nav-link ">
+    <a href="/publications/">PUBLICATIONS</a>
+</li><li class="nav-link ">
+    <a href="/government-financial-statistics/">GOVERNMENT FINANCE</a>
+</li><li class="nav-link ">
+    <a href="/demographics/">POPULATION PROFILES</a>
+</li><li class="nav-link ">
+    <a href="/wellbeing/">WELLBEING</a>
+</li><li class="nav-link ">
+    <a href="/education/">EDUCATION</a>
+</li><li class="nav-link ">
+    <a href="/scolarship/">SCHOLARSHIPS</a>
+</li><li class="nav-link ">
+    <a href="/labour/">LABOUR</a>
+</li>
+
+
+
+    <li class="nav-link contrast contrast-default contrast-type-default">
+        <a title="Disable high contrast"
+           aria-label="Disable high contrast"
+           data-contrast-switch-to="default"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="default"
+
+        >A</a>
+    </li>
+    <li class="nav-link contrast contrast-high contrast-type-default">
+        <a title="Enable high contrast"
+           aria-label="Enable high contrast"
+           data-contrast-switch-to="high"
+           href="javascript:void(0)"
+           data-on="click"
+data-event-category="Accessibility"
+data-event-action="Change contrast setting"
+data-event-label="high"
+
+        >A</a>
+    </li>
+
+
+
+</ul>
+
+    </li>
+    <li id="searchToggle"
+        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-haspopup="true">
+        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <div id="search-mobile" class="menu-target">
+  <form action="/search/">
+    <label class="sr-only" for="indicator_search-mobile">Search</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
+    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+  </form>
+</div>
+
+    </li>
+</ul>
+      <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link">
+            <div class="btn-group menu-dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EVALUATION
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu"><li class="nav-link active">
+    <a href="/reporting-status/">DATA AVAILABILITY</a>
+</li><li class="nav-link ">
+    <a href="/indicator-overview/">INDICATOR OVERVIEW</a>
+</li><li class="nav-link ">
+    <a href="/methodology/">METHODOLOGY</a>
+</li></ul>
+            </div>
+        </li><li class="nav-link">
+            <div class="btn-group menu-dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    USEFUL INFORMATION
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu"><li class="nav-link ">
+    <a href="/about/">NSPD ONLINE PLATFORM</a>
+</li><li class="nav-link ">
+    <a href="/technical-advice/">TECHNICAL ADVICE</a>
+</li><li class="nav-link ">
+    <a href="/publications/">PUBLICATIONS</a>
+</li></ul>
+            </div>
+        </li><li class="nav-link ">
+    <a href="/government-financial-statistics/">GOVERNMENT FINANCE</a>
+</li><li class="nav-link">
+            <div class="btn-group menu-dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    DISASTER STATISTICS
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu"><li class="nav-link ">
+    <a href="/demographics/">POPULATION PROFILES</a>
+</li><li class="nav-link ">
+    <a href="/wellbeing/">WELLBEING</a>
+</li></ul>
+            </div>
+        </li><li class="nav-link">
+            <div class="btn-group menu-dropdown">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    HUMAN RESOURCE DEVELOPMENT
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu"><li class="nav-link ">
+    <a href="/education/">EDUCATION</a>
+</li><li class="nav-link ">
+    <a href="/scolarship/">SCHOLARSHIPS</a>
+</li><li class="nav-link ">
+    <a href="/labour/">LABOUR</a>
+</li></ul>
+            </div>
+        </li>
+
+</ul>
+
+    </div>
+
+  </div>
+
+</header>
+<div id="top" tabindex=-1></div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="main-content" class="container reportingstatus" role="main">
+
+  <h1>
+  
+    Reporting Status
+  
+</h1>
+
+
+<div class="reporting-status-description">
+  <p>The reporting status gives you an overview of how many <a href="https://www.gov.vu/index.php/resources/vanuatu-2030">National Sustainable Development Plan Indicators</a> of Vanuatu’s 2030 People’s Plan can currently be calculated. The time series for the calculation of the indicators are mainly based on data from official statistics, but also use data collected by many other institutions. Where data are available, the indicator is marked as <strong>Reported online</strong>. When a suitable data source is still being sought for other indicators, these are marked as <strong>Exploring data sources</strong>.</p>
+
+</div>
+
+
+
+  
+
+  
+  <div class="goal goal-overall">
+    <div class="details">
+        <h2 class="status-goal">
+            Overall reporting status
+        </h2>
+        <span class="total"><span>195</span> indicators</span>
+        <div class="summary">
+            <div class="statuses">
+            
+            <div>
+                <span class="status complete"><span class="status-inner">6</span></span><strong>Reported online</strong><span class="value">3%</span>
+            </div>
+            
+            
+            <div>
+                <span class="status notstarted"><span class="status-inner">189</span></span><strong>Exploring data sources</strong><span class="value">97%</span>
+            </div>
+            <br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+            
+            
+            
+            
+            <span class="complete" style="width:3.0769230769230766%" title="Reported online: 3%"></span>
+            
+            
+            
+            
+            
+            <span class="notstarted" style="width:96.92307692307692%" title="Exploring data sources: 97%"></span>
+            </div>
+    </div>
+    <br style="clear:both;">
+</div>
+  
+
+
+
+
+<h2>Status by goal</h2><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC1">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC1.jpg" alt="Society 1 - Goal SOC1" width="100" height="100" class="goal-icon-SOC1 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC1">Society 1</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC2">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC2.jpg" alt="Society 2 - Goal SOC2" width="100" height="100" class="goal-icon-SOC2 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC2">Society 2</a>
+        </h3>
+        <span class="total">4 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">4</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC3">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC3.jpg" alt="Society 3 - Goal SOC3" width="100" height="100" class="goal-icon-SOC3 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC3">Society 3</a>
+        </h3>
+        <span class="total">12 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC4">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC4.jpg" alt="Society 4 - Goal SOC4" width="100" height="100" class="goal-icon-SOC4 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC4">Society 4</a>
+        </h3>
+        <span class="total">17 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">16</span></span><strong>Exploring data sources</strong><span class="value">94%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">6%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:94.11764705882354%" title="Exploring data sources: 94%"></span>
+                
+                
+                <span class="complete" style="width:5.88235294117647%" title="Reported online: 6%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC5">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC5.jpg" alt="Society 5 - Goal SOC5" width="100" height="100" class="goal-icon-SOC5 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC5">Society 5</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/SOC6">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/SOC6.jpg" alt="Society 6 - Goal SOC6" width="100" height="100" class="goal-icon-SOC6 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/SOC6">Society 6</a>
+        </h3>
+        <span class="total">18 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">18</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ENV1">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ENV1.jpg" alt="Environment 1 - Goal ENV1" width="100" height="100" class="goal-icon-ENV1 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ENV1">Environment 1</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">92%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">1</span></span><strong>Reported online</strong><span class="value">8%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:92.3076923076923%" title="Exploring data sources: 92%"></span>
+                
+                
+                <span class="complete" style="width:7.692307692307693%" title="Reported online: 8%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ENV2">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ENV2.jpg" alt="Enviornment 2 - Goal ENV2" width="100" height="100" class="goal-icon-ENV2 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ENV2">Enviornment 2</a>
+        </h3>
+        <span class="total">12 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">12</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ENV3">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ENV3.jpg" alt="Environment 3 - Goal ENV3" width="100" height="100" class="goal-icon-ENV3 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ENV3">Environment 3</a>
+        </h3>
+        <span class="total">14 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ENV4">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ENV4.jpg" alt="Environment 4 - Goal ENV4" width="100" height="100" class="goal-icon-ENV4 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ENV4">Environment 4</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ENV5">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ENV5.jpg" alt="Environment 5 - Goal ENV5" width="100" height="100" class="goal-icon-ENV5 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ENV5">Environment 5</a>
+        </h3>
+        <span class="total">9 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">9</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ECO1">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ECO1.jpg" alt="Economy 1 - Goal ECO1" width="100" height="100" class="goal-icon-ECO1 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ECO1">Economy 1</a>
+        </h3>
+        <span class="total">18 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">14</span></span><strong>Exploring data sources</strong><span class="value">78%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">4</span></span><strong>Reported online</strong><span class="value">22%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:77.77777777777779%" title="Exploring data sources: 78%"></span>
+                
+                
+                <span class="complete" style="width:22.22222222222222%" title="Reported online: 22%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ECO2">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ECO2.jpg" alt="Economy 2 - Goal ECO2" width="100" height="100" class="goal-icon-ECO2 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ECO2">Economy 2</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ECO3">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ECO3.jpg" alt="Economy 3 - Goal ECO3" width="100" height="100" class="goal-icon-ECO3 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ECO3">Economy 3</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div><div class="goal reporting-status-item">
+    <div class="frame goal-tiles">
+        <a href="/ECO4">
+        <img src="/vnso-nsdp-platform/assets/img/goals/en/ECO4.jpg" alt="Economy 4 - Goal ECO4" width="100" height="100" class="goal-icon-ECO4 goal-icon-image goal-icon-image-jpg"/>
+        </a>
+    </div>
+    <div class="details">
+        <h3 class="status-goal">
+            <a href="/ECO4">Economy 4</a>
+        </h3>
+        <span class="total">13 indicators</span>
+        <div class="summary">
+            <div class="statuses"><div>
+                    <span class="status notstarted"><span class="status-inner">13</span></span><strong>Exploring data sources</strong><span class="value">100%</span>
+                </div><div>
+                    <span class="status complete"><span class="status-inner">0</span></span><strong>Reported online</strong><span class="value">0%</span>
+                </div><br style="clear:both;">
+            </div>
+        </div>
+        <div class="goal-stats">
+                
+                
+                <span class="notstarted" style="width:100.0%" title="Exploring data sources: 100%"></span>
+                
+                
+                <span class="complete" style="width:0.0%" title="Reported online: 0%"></span></div>
+        <div class="divider"></div>
+    </div>
+    <br style="clear:both;">
+</div>
+  
+
+  
+
+  
+
+  
+
+  <!---->
+
+</div>
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="footerLinks">
+          <ul>
+            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            
+              <li>
+                <a href="/contact/">Contact us</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://twitter.com/vnso_stats" target="_blank">Twitter</a>
+                
+                </li>
+              <li>
+                
+                  <a href="https://www.facebook.com/vanuatunationalstatisticsoffice" target="_blank">Facebook</a>
+                
+                </li>
+              <li>
+                <a href="/about/cookies-and-privacy/">Cookies</a>
+                
+                </li>
+              
+            
+            
+            <li><a href="/config">Configuration</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
+
+
+
+
+
+
+<script>translations['general'] = translations['general'] || {};
+    translations['general']['hide'] = 'hide';</script>
+
+<script>translations['search'] = translations['search'] || {};
+    translations['search']['search'] = 'Search';</script>
+
+<script src='/assets/js/sdg.js?v=20220331022657'></script>
+
+
+    
+    
+    <script src="/assets/js/custom.js?v=20220331022657"></script><script>
+$(function() {
+    if($('#indicatorData').length) {
+      var domData = $('#indicatorData').data();
+
+      if (domData.showdata) {
+
+        $('.async-loading').each(function(i, obj) {
+            $(obj).append($('<img />').attr('src', $(obj).data('img')).attr('alt', translations.indicator.loading));
+        });
+
+        var remoteUrl = '/comb/' + domData.id + '.json';
+        if (opensdg.remoteDataBaseUrl !== '/') {
+          remoteUrl = opensdg.remoteDataBaseUrl + remoteUrl;
+        }
+
+        $.ajax({
+          url: remoteUrl,
+          success: function(res) {
+
+            $('.async-loading').remove();
+            $('.async-loaded').show();
+
+            var model = new indicatorModel({
+              data: res.data,
+              edgesData: res.edges,
+              showMap: domData.showmap,
+              country: domData.country,
+              indicatorId: domData.indicatorid,
+              shortIndicatorId: domData.id,
+              chartTitle: domData.charttitle,
+              chartTitles: domData.charttitles,
+              measurementUnit: domData.measurementunit,
+              xAxisLabel: domData.xaxislabel,
+              showData: domData.showdata,
+              graphType: domData.graphtype,
+              startValues: domData.startvalues,
+              graphLimits: domData.graphlimits,
+              stackedDisaggregation: domData.stackeddisaggregation,
+              graphAnnotations: domData.graphannotations,
+              graphTargetLines: domData.graphtargetlines,
+              graphSeriesBreaks: domData.graphseriesbreaks,
+              indicatorDownloads: domData.indicatordownloads,
+              dataSchema: domData.dataschema,
+              compositeBreakdownLabel: domData.compositebreakdownlabel,
+              precision: domData.precision,
+            }),
+            view  = new indicatorView(model, {
+              rootElement: '#indicatorData',
+              legendElement: '#plotLegend',
+              decimalSeparator: '',
+              maxChartHeight: 420,
+              tableColumnDefs: [
+                { maxCharCount: 25 }, // nowrap
+                { maxCharCount: 35, width: 200 },
+                { maxCharCount: Infinity, width: 250 }
+              ]
+            }),
+            controller = new indicatorController(model, view);
+            controller.initialise();
+          }
+        });
+      }
+    }
+
+    var switcher = new accessibilitySwitcher();
+
+
+});
+</script>
+
+
+</body>
+</html>
+
