@@ -10,7 +10,7 @@
           "title": "Change in underlying inflation rate (CPI analysis)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-1-1",
+          "href": "/ECO1-1-1/",
           "status": "complete"
         },
         {
@@ -18,7 +18,7 @@
           "title": "GDP Growth Rate (annual/trends)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-1-2",
+          "href": "/ECO1-1-2/",
           "status": "complete"
         },
         {
@@ -26,7 +26,7 @@
           "title": "Change in government revenue (GFS Tables)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-2-1",
+          "href": "/ECO1-2-1/",
           "status": "complete"
         },
         {
@@ -34,7 +34,7 @@
           "title": "Change in national budget position (deficit/surplus) (GFS Tables)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-3-1",
+          "href": "/ECO1-3-1/",
           "status": "notstarted"
         },
         {
@@ -42,7 +42,7 @@
           "title": "Debt ratio to GDP (inclusive of SOE generated debt)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-3-2",
+          "href": "/ECO1-3-2/",
           "status": "notstarted"
         },
         {
@@ -50,7 +50,7 @@
           "title": "Value and volume of national trade/merchandise trade",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-4-1",
+          "href": "/ECO1-4-1/",
           "status": "notstarted"
         },
         {
@@ -58,7 +58,7 @@
           "title": "Current Accounts balance change",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-4-2",
+          "href": "/ECO1-4-2/",
           "status": "notstarted"
         },
         {
@@ -66,7 +66,7 @@
           "title": "Benefits/value accrued through various trade agreements",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-5-1",
+          "href": "/ECO1-5-1/",
           "status": "notstarted"
         },
         {
@@ -74,7 +74,7 @@
           "title": "Trade by trade agreement (value)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-5-2",
+          "href": "/ECO1-5-2/",
           "status": "notstarted"
         },
         {
@@ -82,7 +82,7 @@
           "title": "Balance of trade by major partner countries",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-5-3",
+          "href": "/ECO1-5-3/",
           "status": "complete"
         },
         {
@@ -90,7 +90,7 @@
           "title": "Trade agreement analysis reports",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-6-1",
+          "href": "/ECO1-6-1/",
           "status": "notstarted"
         },
         {
@@ -98,7 +98,7 @@
           "title": "Total estimated value of trade agreement as proportion of GDP",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-6-2",
+          "href": "/ECO1-6-2/",
           "status": "notstarted"
         },
         {
@@ -106,7 +106,7 @@
           "title": "Level of production of major commodities to include cocoa and copra",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-7-1",
+          "href": "/ECO1-7-1/",
           "status": "notstarted"
         },
         {
@@ -114,7 +114,7 @@
           "title": "Change in volume of business licenses issued to Ni-Vanuatu",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-7-2",
+          "href": "/ECO1-7-2/",
           "status": "notstarted"
         },
         {
@@ -122,7 +122,7 @@
           "title": "Total number of new users of financial services annual, acknowledging pop growth (number accounts opening/year)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-8-1",
+          "href": "/ECO1-8-1/",
           "status": "notstarted"
         },
         {
@@ -130,7 +130,7 @@
           "title": "Interest Rate level (average bank rate)",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-8-2",
+          "href": "/ECO1-8-2/",
           "status": "notstarted"
         },
         {
@@ -138,7 +138,7 @@
           "title": "Deposit ratios",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-8-3",
+          "href": "/ECO1-8-3/",
           "status": "notstarted"
         },
         {
@@ -146,7 +146,7 @@
           "title": "Proportion of population with an understanding of very basic principles of personal financial accounting",
           "description": "",
           "keywords": "",
-          "href": "/ECO1-9-1",
+          "href": "/ECO1-9-1/",
           "status": "notstarted"
         }]
     }
@@ -162,7 +162,7 @@
           "title": "Proportion of households sourcing energy for lighting from renewable sources",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-1-1",
+          "href": "/ECO2-1-1/",
           "status": "notstarted"
         },
         {
@@ -170,7 +170,7 @@
           "title": "Total number of mini-grid renewable energy systems in rural communities by province",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-1-2",
+          "href": "/ECO2-1-2/",
           "status": "notstarted"
         },
         {
@@ -178,7 +178,7 @@
           "title": "Proportion of population with reliable access to safe drinking water",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-2-1",
+          "href": "/ECO2-2-1/",
           "status": "notstarted"
         },
         {
@@ -186,7 +186,7 @@
           "title": "Proportion of population with reliable access to improved sanitation facilities",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-2-2",
+          "href": "/ECO2-2-2/",
           "status": "notstarted"
         },
         {
@@ -194,7 +194,7 @@
           "title": "Proportion of new buildings in compliance with the building code",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-3-1",
+          "href": "/ECO2-3-1/",
           "status": "notstarted"
         },
         {
@@ -202,7 +202,7 @@
           "title": "Proportion of existing buildings repaired in compliance with the building code",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-3-2",
+          "href": "/ECO2-3-2/",
           "status": "notstarted"
         },
         {
@@ -210,7 +210,7 @@
           "title": "Proportion of established road and building standards implemented",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-4-1",
+          "href": "/ECO2-4-1/",
           "status": "notstarted"
         },
         {
@@ -218,7 +218,7 @@
           "title": "Variance from approved asset management budget",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-5-1",
+          "href": "/ECO2-5-1/",
           "status": "notstarted"
         },
         {
@@ -226,7 +226,7 @@
           "title": "Proportion of population with access to transport by road, sea and air",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-6-1",
+          "href": "/ECO2-6-1/",
           "status": "notstarted"
         },
         {
@@ -234,7 +234,7 @@
           "title": "ECO 2.7.1 Total number of external audits undertaken to establish compliance with conventions and standards and expose non-conformity",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-7-0",
+          "href": "/ECO2-7-0/",
           "status": "notstarted"
         },
         {
@@ -242,7 +242,7 @@
           "title": "Proportion of procurement contracts issued for Island Based Contractors, Community Based Contractors",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-8-1",
+          "href": "/ECO2-8-1/",
           "status": "notstarted"
         },
         {
@@ -250,7 +250,7 @@
           "title": "% of population having access to broadband connection",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-9-1",
+          "href": "/ECO2-9-1/",
           "status": "notstarted"
         },
         {
@@ -258,7 +258,7 @@
           "title": "Annual change in total number of users of on-line government services",
           "description": "",
           "keywords": "",
-          "href": "/ECO2-9-2",
+          "href": "/ECO2-9-2/",
           "status": "notstarted"
         }]
     }
@@ -274,7 +274,7 @@
           "title": "Total annual value of tourism industry, infrastructure, agricultural production and industry as a proportion of GDP",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-1-1",
+          "href": "/ECO3-1-1/",
           "status": "notstarted"
         },
         {
@@ -282,7 +282,7 @@
           "title": "Number of businesses participating in the annual agri-tourism festival by sector",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-1-2",
+          "href": "/ECO3-1-2/",
           "status": "notstarted"
         },
         {
@@ -290,7 +290,7 @@
           "title": "Average annual household income from tourism",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-2-1",
+          "href": "/ECO3-2-1/",
           "status": "notstarted"
         },
         {
@@ -298,7 +298,7 @@
           "title": "Annual change in tourism by air and sea arrivals",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-2-2",
+          "href": "/ECO3-2-2/",
           "status": "notstarted"
         },
         {
@@ -306,7 +306,7 @@
           "title": "Proportion of visitors traveling to outer islands",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-2-3",
+          "href": "/ECO3-2-3/",
           "status": "notstarted"
         },
         {
@@ -314,7 +314,7 @@
           "title": "Rate of Return to investments in rural infrastructure",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-3-1",
+          "href": "/ECO3-3-1/",
           "status": "notstarted"
         },
         {
@@ -322,7 +322,7 @@
           "title": "Capacity utilisation rate: Manufacturing",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-3-2",
+          "href": "/ECO3-3-2/",
           "status": "notstarted"
         },
         {
@@ -330,7 +330,7 @@
           "title": "Total number of standard operational storage and processing facilities located in rural areas by province",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-3-3",
+          "href": "/ECO3-3-3/",
           "status": "notstarted"
         },
         {
@@ -338,7 +338,7 @@
           "title": "Total annual number of agricultural extension services per capita by province",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-4-1",
+          "href": "/ECO3-4-1/",
           "status": "notstarted"
         },
         {
@@ -346,7 +346,7 @@
           "title": "Total number of rural producer cooperatives registered by province",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-4-2",
+          "href": "/ECO3-4-2/",
           "status": "notstarted"
         },
         {
@@ -354,7 +354,7 @@
           "title": "Total annual number of rural economic analysis reports published",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-5-1",
+          "href": "/ECO3-5-1/",
           "status": "notstarted"
         },
         {
@@ -362,7 +362,7 @@
           "title": "Average traveling distance to nearest school, health facility, police post by province",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-6-1",
+          "href": "/ECO3-6-1/",
           "status": "notstarted"
         },
         {
@@ -370,7 +370,7 @@
           "title": "Number of controlled waste disposal facilities",
           "description": "",
           "keywords": "",
-          "href": "/ECO3-6-2",
+          "href": "/ECO3-6-2/",
           "status": "notstarted"
         }]
     }
@@ -386,7 +386,7 @@
           "title": "Growth in Gross Fixed Capital Formation",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-1-1",
+          "href": "/ECO4-1-1/",
           "status": "notstarted"
         },
         {
@@ -394,7 +394,7 @@
           "title": "Proportion of rural households engaged in trade with family in urban centres",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-2-1",
+          "href": "/ECO4-2-1/",
           "status": "notstarted"
         },
         {
@@ -402,7 +402,7 @@
           "title": "Total number of processed local products produced per annum for domestic consumption and export",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-3-1",
+          "href": "/ECO4-3-1/",
           "status": "notstarted"
         },
         {
@@ -410,7 +410,7 @@
           "title": "ECO4.3.2 Ratio of processed export commodities (including coconut, kava, cocoa, coffee) to raw exports",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-3-2",
+          "href": "/ECO4-3-2/",
           "status": "notstarted"
         },
         {
@@ -418,7 +418,7 @@
           "title": "Proportion of registered hospitality institutions with rooms and services equipped with energy efficient lighting and appliances",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-4-1",
+          "href": "/ECO4-4-1/",
           "status": "notstarted"
         },
         {
@@ -426,7 +426,7 @@
           "title": "Employment cost index (ECI)",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-5-1",
+          "href": "/ECO4-5-1/",
           "status": "notstarted"
         },
         {
@@ -434,7 +434,7 @@
           "title": "Labour force participation by sector",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-6-1",
+          "href": "/ECO4-6-1/",
           "status": "notstarted"
         },
         {
@@ -442,7 +442,7 @@
           "title": "Total annual number of validated complaints registered with Labour Union",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-6-2",
+          "href": "/ECO4-6-2/",
           "status": "notstarted"
         },
         {
@@ -450,7 +450,7 @@
           "title": "Change in total number of individuals participating in seasonal work programmes",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-7-1",
+          "href": "/ECO4-7-1/",
           "status": "notstarted"
         },
         {
@@ -458,7 +458,7 @@
           "title": "Labour market flows",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-7-2",
+          "href": "/ECO4-7-2/",
           "status": "notstarted"
         },
         {
@@ -466,7 +466,7 @@
           "title": "Total annual remittances as a proportion of GDP",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-7-3",
+          "href": "/ECO4-7-3/",
           "status": "notstarted"
         },
         {
@@ -474,7 +474,7 @@
           "title": "Total annual number of new businesses registered by type",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-8-1",
+          "href": "/ECO4-8-1/",
           "status": "notstarted"
         },
         {
@@ -482,7 +482,7 @@
           "title": "Total number of public/private joint ventures in operation",
           "description": "",
           "keywords": "",
-          "href": "/ECO4-9-1",
+          "href": "/ECO4-9-1/",
           "status": "notstarted"
         }]
     }
@@ -498,7 +498,7 @@
           "title": "Proportion of households engaged in production of food for own consumption",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-1-1",
+          "href": "/ENV1-1-1/",
           "status": "notstarted"
         },
         {
@@ -506,7 +506,7 @@
           "title": "Up to date data on primary production (agriculture, livestock, forestry, fisheries, biosecurity) available for analysis and informed decision-making and reporting",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-1-2",
+          "href": "/ENV1-1-2/",
           "status": "notstarted"
         },
         {
@@ -514,7 +514,7 @@
           "title": "Average incidence of food poverty at the household level (Food Poverty Line)",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-1-3",
+          "href": "/ENV1-1-3/",
           "status": "notstarted"
         },
         {
@@ -522,7 +522,7 @@
           "title": "National food guidelines directing food security and nutrition promotional activities (including aelan kaikai) completed and operational",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-2-1",
+          "href": "/ENV1-2-1/",
           "status": "notstarted"
         },
         {
@@ -530,7 +530,7 @@
           "title": "Total annual volume of imports of food and products targeted by DARD as those that can be produced domestically (including ‘value-added products)",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-3-1",
+          "href": "/ENV1-3-1/",
           "status": "notstarted"
         },
         {
@@ -538,7 +538,7 @@
           "title": "Domestic food price level",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-3-2",
+          "href": "/ENV1-3-2/",
           "status": "notstarted"
         },
         {
@@ -546,7 +546,7 @@
           "title": "Food Price Inflation Rate or Food Price Index compared to the national consumer price index (how much are prices for food going up or down, relative to all prices in the country-based on VNSO data)",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-3-3",
+          "href": "/ENV1-3-3/",
           "status": "complete"
         },
         {
@@ -554,7 +554,7 @@
           "title": "Total FADs per 1,000 population by province",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-4-1",
+          "href": "/ENV1-4-1/",
           "status": "notstarted"
         },
         {
@@ -562,7 +562,7 @@
           "title": "Total number of people receiving training in food storage and preservation per year in MALFFB led, NGO or partnered initiatives",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-4-2",
+          "href": "/ENV1-4-2/",
           "status": "notstarted"
         },
         {
@@ -570,7 +570,7 @@
           "title": "Establishment of land use capability mapping systems to determine which crops and farming systems are best suited to different areas",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-4-3",
+          "href": "/ENV1-4-3/",
           "status": "notstarted"
         },
         {
@@ -578,7 +578,7 @@
           "title": "Proportion of producers across the productive sector that have undergone Agro-Met training",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-5-1",
+          "href": "/ENV1-5-1/",
           "status": "notstarted"
         },
         {
@@ -586,7 +586,7 @@
           "title": "Crop diversity index with a focus on fruit and vegetables (average number of varieties planted of crops by province)",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-5-2",
+          "href": "/ENV1-5-2/",
           "status": "notstarted"
         },
         {
@@ -594,7 +594,7 @@
           "title": "Proportion of farmers involved in integrated farming practices",
           "description": "",
           "keywords": "",
-          "href": "/ENV1-5-3",
+          "href": "/ENV1-5-3/",
           "status": "notstarted"
         }]
     }
@@ -610,7 +610,7 @@
           "title": "Proportion of 'blue-green growth friendly' national policies fully implemented",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-1-1",
+          "href": "/ENV2-1-1/",
           "status": "notstarted"
         },
         {
@@ -618,7 +618,7 @@
           "title": "Number of development projects complying with EIA requirements",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-2-1",
+          "href": "/ENV2-2-1/",
           "status": "notstarted"
         },
         {
@@ -626,7 +626,7 @@
           "title": "No. of environmental guidelines developed",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-2-2",
+          "href": "/ENV2-2-2/",
           "status": "notstarted"
         },
         {
@@ -634,7 +634,7 @@
           "title": "Proportion of all imported lighting and refrigeration appliances that meet high energy efficiency standards",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-3-1",
+          "href": "/ENV2-3-1/",
           "status": "notstarted"
         },
         {
@@ -642,7 +642,7 @@
           "title": "Proportion of households using renewable energy technology as main source of lighting",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-3-2",
+          "href": "/ENV2-3-2/",
           "status": "notstarted"
         },
         {
@@ -650,7 +650,7 @@
           "title": "Percentage of grid-based electricity generated from renewable energy sources",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-3-3",
+          "href": "/ENV2-3-3/",
           "status": "notstarted"
         },
         {
@@ -658,7 +658,7 @@
           "title": "Number of controlled wasted disposal facilities",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-4-1",
+          "href": "/ENV2-4-1/",
           "status": "notstarted"
         },
         {
@@ -666,7 +666,7 @@
           "title": "Proportion of vehicles that comply with emission standards",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-4-2",
+          "href": "/ENV2-4-2/",
           "status": "notstarted"
         },
         {
@@ -674,7 +674,7 @@
           "title": "Proportion of targets met in National Environment Policy and Implementation Plan 2016-2030",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-5-1",
+          "href": "/ENV2-5-1/",
           "status": "notstarted"
         },
         {
@@ -682,7 +682,7 @@
           "title": "Proportion of environmental obligations within international conventions and treaties met",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-5-2",
+          "href": "/ENV2-5-2/",
           "status": "notstarted"
         },
         {
@@ -690,7 +690,7 @@
           "title": "Proportion of funding requested by DEPC in support of sustainable development approved through NPP/percentage of government expenditure for environmental activities",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-6-1",
+          "href": "/ENV2-6-1/",
           "status": "notstarted"
         },
         {
@@ -698,7 +698,7 @@
           "title": "Amount deposited in the Environmental Trust Fund",
           "description": "",
           "keywords": "",
-          "href": "/ENV2-6-2",
+          "href": "/ENV2-6-2/",
           "status": "notstarted"
         }]
     }
@@ -714,7 +714,7 @@
           "title": "Proportion of government ministries with policies, budgets, and legislation for CC & DRM",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-1-1",
+          "href": "/ENV3-1-1/",
           "status": "notstarted"
         },
         {
@@ -722,7 +722,7 @@
           "title": "Institutional strengthening of NAB, Department of Climate Change and other MoCC departments",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-1-2",
+          "href": "/ENV3-1-2/",
           "status": "notstarted"
         },
         {
@@ -730,7 +730,7 @@
           "title": "Alignment of sector stakeholders’ programs and CC & DRM policies and legislation",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-1-3",
+          "href": "/ENV3-1-3/",
           "status": "notstarted"
         },
         {
@@ -738,7 +738,7 @@
           "title": "Establishment of multi-hazard warning systems with maintenance plans in place",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-2-1",
+          "href": "/ENV3-2-1/",
           "status": "notstarted"
         },
         {
@@ -746,7 +746,7 @@
           "title": "Proportion of population with access to technologies that convey early warnings",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-2-2",
+          "href": "/ENV3-2-2/",
           "status": "notstarted"
         },
         {
@@ -754,7 +754,7 @@
           "title": "Increased knowledge and scientific research in atmospheric and earth sciences",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-2-3",
+          "href": "/ENV3-2-3/",
           "status": "notstarted"
         },
         {
@@ -762,7 +762,7 @@
           "title": "Number of support plans available to communities for coordination, planning, preparedness, response and recovery",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-3-1",
+          "href": "/ENV3-3-1/",
           "status": "notstarted"
         },
         {
@@ -770,7 +770,7 @@
           "title": "Percentage of climate change and disaster affected communities with durable solutions",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-3-2",
+          "href": "/ENV3-3-2/",
           "status": "notstarted"
         },
         {
@@ -778,7 +778,7 @@
           "title": "Number of multi-hazard and risk maps to improve Post-Disaster Needs Assessment",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-3-3",
+          "href": "/ENV3-3-3/",
           "status": "notstarted"
         },
         {
@@ -786,7 +786,7 @@
           "title": "Percentage of public schools using the climate change and disaster risk reduction modules in national curriculum at all levels",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-4-1",
+          "href": "/ENV3-4-1/",
           "status": "notstarted"
         },
         {
@@ -794,7 +794,7 @@
           "title": "Number of communication and partnership activities and awareness programs established targeting issues such as climate change adaptation and resilience",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-4-2",
+          "href": "/ENV3-4-2/",
           "status": "notstarted"
         },
         {
@@ -802,7 +802,7 @@
           "title": "Proportion of annual spending on climate change adaptation and disaster risk management funded with budget support from donor partners to the government",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-5-1",
+          "href": "/ENV3-5-1/",
           "status": "notstarted"
         },
         {
@@ -810,7 +810,7 @@
           "title": "Number of climate and disaster finance funds to which Vanuatu is formally accredited",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-5-2",
+          "href": "/ENV3-5-2/",
           "status": "notstarted"
         },
         {
@@ -818,7 +818,7 @@
           "title": "Amount of climate and disaster finance used for community programs and activities through external support",
           "description": "",
           "keywords": "",
-          "href": "/ENV3-5-3",
+          "href": "/ENV3-5-3/",
           "status": "notstarted"
         }]
     }
@@ -834,7 +834,7 @@
           "title": "Proportion of declared physical planning areas that have a physical plan",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-1-1",
+          "href": "/ENV4-1-1/",
           "status": "notstarted"
         },
         {
@@ -842,7 +842,7 @@
           "title": "Proportion of directives of the national land use planning policy implemented",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-1-2",
+          "href": "/ENV4-1-2/",
           "status": "notstarted"
         },
         {
@@ -850,7 +850,7 @@
           "title": "Number of declared Water Protection Zones",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-2-1",
+          "href": "/ENV4-2-1/",
           "status": "notstarted"
         },
         {
@@ -858,7 +858,7 @@
           "title": "Establishment of GIS mapping relevant to the management of forest activities",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-2-2",
+          "href": "/ENV4-2-2/",
           "status": "notstarted"
         },
         {
@@ -866,7 +866,7 @@
           "title": "Proportion of extraction activities complying with EIA requirements",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-3-1",
+          "href": "/ENV4-3-1/",
           "status": "notstarted"
         },
         {
@@ -874,7 +874,7 @@
           "title": "Level of compliance by Vanuatu with respect to its national fishing fleet within the Regional Fisheries Management Organisations",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-4-1",
+          "href": "/ENV4-4-1/",
           "status": "notstarted"
         },
         {
@@ -882,7 +882,7 @@
           "title": "Number of integrated coastal management plans developed and implemented",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-4-2",
+          "href": "/ENV4-4-2/",
           "status": "notstarted"
         },
         {
@@ -890,7 +890,7 @@
           "title": "Total number of approved Fisheries Management Plans for designated fisheries",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-5-1",
+          "href": "/ENV4-5-1/",
           "status": "notstarted"
         },
         {
@@ -898,7 +898,7 @@
           "title": "Number of commercial sand mines",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-5-2",
+          "href": "/ENV4-5-2/",
           "status": "notstarted"
         },
         {
@@ -906,7 +906,7 @@
           "title": "Number of places where detailed geo-scientific information has been collected",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-5-3",
+          "href": "/ENV4-5-3/",
           "status": "notstarted"
         },
         {
@@ -914,7 +914,7 @@
           "title": "Annual estimated area (square km) of reforestation and rehabilitation",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-6-1",
+          "href": "/ENV4-6-1/",
           "status": "notstarted"
         },
         {
@@ -922,7 +922,7 @@
           "title": "Proportion of licensees harvesting within their allocated quota or Proportion of licensee operations being monitored",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-6-2",
+          "href": "/ENV4-6-2/",
           "status": "notstarted"
         },
         {
@@ -930,7 +930,7 @@
           "title": "Total annual outreach and awareness activities undertaken by or in partnership with the DEPC",
           "description": "",
           "keywords": "",
-          "href": "/ENV4-7-1",
+          "href": "/ENV4-7-1/",
           "status": "notstarted"
         }]
     }
@@ -946,7 +946,7 @@
           "title": "Proportion of NBSAP and NISSAP targets met",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-1-1",
+          "href": "/ENV5-1-1/",
           "status": "notstarted"
         },
         {
@@ -954,7 +954,7 @@
           "title": "Total number of environmental guidelines in place",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-1-2",
+          "href": "/ENV5-1-2/",
           "status": "notstarted"
         },
         {
@@ -962,7 +962,7 @@
           "title": "Total number of registered CCAs",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-2-1",
+          "href": "/ENV5-2-1/",
           "status": "notstarted"
         },
         {
@@ -970,7 +970,7 @@
           "title": "Proportion of community management committees implementing their CCA management plan",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-2-2",
+          "href": "/ENV5-2-2/",
           "status": "notstarted"
         },
         {
@@ -978,7 +978,7 @@
           "title": "Proportion of population with knowledge of the names of local flora and fauna",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-3-1",
+          "href": "/ENV5-3-1/",
           "status": "notstarted"
         },
         {
@@ -986,7 +986,7 @@
           "title": "Number of threatened species legally protected",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-3-2",
+          "href": "/ENV5-3-2/",
           "status": "notstarted"
         },
         {
@@ -994,7 +994,7 @@
           "title": "Proportion of incoming planes and sea vessels cleared through Biosecurity annually",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-4-1",
+          "href": "/ENV5-4-1/",
           "status": "notstarted"
         },
         {
@@ -1002,7 +1002,7 @@
           "title": "Number of model schools implementing environmental programmes",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-5-1",
+          "href": "/ENV5-5-1/",
           "status": "notstarted"
         },
         {
@@ -1010,7 +1010,7 @@
           "title": "Proportion of government agencies using a central information sharing system for environment data",
           "description": "",
           "keywords": "",
-          "href": "/ENV5-6-1",
+          "href": "/ENV5-6-1/",
           "status": "notstarted"
         }]
     }
@@ -1026,7 +1026,7 @@
           "title": "Proportion of population speaking indigenous language daily",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-1-1",
+          "href": "/SOC1-1-1/",
           "status": "notstarted"
         },
         {
@@ -1034,7 +1034,7 @@
           "title": "Proportion of population first language learned indigenous",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-1-2",
+          "href": "/SOC1-1-2/",
           "status": "notstarted"
         },
         {
@@ -1042,7 +1042,7 @@
           "title": "Proportion of endangered languages documented",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-1-3",
+          "href": "/SOC1-1-3/",
           "status": "notstarted"
         },
         {
@@ -1050,7 +1050,7 @@
           "title": "Proportion of population with knowledge of traditional stories, dances, songs, and games",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-2-1",
+          "href": "/SOC1-2-1/",
           "status": "notstarted"
         },
         {
@@ -1058,7 +1058,7 @@
           "title": "Proportion of population possessing common and basic traditional production skills related to weaving, transport, housing, farming, food preparation",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-2-2",
+          "href": "/SOC1-2-2/",
           "status": "notstarted"
         },
         {
@@ -1066,7 +1066,7 @@
           "title": "Proportion of population with ability to 1: produce herbal medicines, and 2: massage",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-2-3",
+          "href": "/SOC1-2-3/",
           "status": "notstarted"
         },
         {
@@ -1074,7 +1074,7 @@
           "title": "Total number of sites with cultural and/or historical significance newly identified, registered and preserved",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-3-1",
+          "href": "/SOC1-3-1/",
           "status": "notstarted"
         },
         {
@@ -1082,7 +1082,7 @@
           "title": "Proportion of bills that are reviewed by MCC prior to parliamentary debate",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-4-1",
+          "href": "/SOC1-4-1/",
           "status": "notstarted"
         },
         {
@@ -1090,7 +1090,7 @@
           "title": "Proportion of national formal and informal educational institutions and health facilities with religious affiliation and support",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-5-1",
+          "href": "/SOC1-5-1/",
           "status": "notstarted"
         },
         {
@@ -1098,7 +1098,7 @@
           "title": "Proportion of public schools using the culture and heritage modules in national curriculum at all levels",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-6-1",
+          "href": "/SOC1-6-1/",
           "status": "notstarted"
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "Proportion of cultural heritage materials in the national curriculum at all levels",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-6-2",
+          "href": "/SOC1-6-2/",
           "status": "notstarted"
         },
         {
@@ -1114,7 +1114,7 @@
           "title": "Proportion of population with free access to traditional lands, forest and marine resources",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-7-1",
+          "href": "/SOC1-7-1/",
           "status": "notstarted"
         },
         {
@@ -1122,7 +1122,7 @@
           "title": "Proportion of population that use traditional lands for agriculture, marine, forestry and livestock for consumption or customary purposes",
           "description": "",
           "keywords": "",
-          "href": "/SOC1-7-2",
+          "href": "/SOC1-7-2/",
           "status": "notstarted"
         }]
     }
@@ -1138,7 +1138,7 @@
           "title": "Percentage of age 6 in Yr. 1 who attended kindergarten",
           "description": "",
           "keywords": "",
-          "href": "/SOC2-1-1",
+          "href": "/SOC2-1-1/",
           "status": "notstarted"
         },
         {
@@ -1146,7 +1146,7 @@
           "title": "Percentage of schools demonstrating effective implementation and management of school grants",
           "description": "",
           "keywords": "",
-          "href": "/SOC2-2-1",
+          "href": "/SOC2-2-1/",
           "status": "notstarted"
         },
         {
@@ -1154,7 +1154,7 @@
           "title": "Percentage of students meeting literacy and numeracy standards",
           "description": "",
           "keywords": "",
-          "href": "/SOC2-3-1",
+          "href": "/SOC2-3-1/",
           "status": "notstarted"
         },
         {
@@ -1162,7 +1162,7 @@
           "title": "No. of technical and vocational schools that are certified and registered under the Vanuatu Qualifications Authority to operate",
           "description": "",
           "keywords": "",
-          "href": "/SOC2-4-1",
+          "href": "/SOC2-4-1/",
           "status": "notstarted"
         }]
     }
@@ -1178,7 +1178,7 @@
           "title": "Number of skilled health professionals to 10,000 population",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-1-1",
+          "href": "/SOC3-1-1/",
           "status": "notstarted"
         },
         {
@@ -1186,7 +1186,7 @@
           "title": "Maternal mortality ratio/Number of maternal deaths",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-1-2",
+          "href": "/SOC3-1-2/",
           "status": "notstarted"
         },
         {
@@ -1194,7 +1194,7 @@
           "title": "Percentage of fully functional HFs according to Role Delineation Policy",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-1-3",
+          "href": "/SOC3-1-3/",
           "status": "notstarted"
         },
         {
@@ -1202,7 +1202,7 @@
           "title": "No. of Diabetic (NCD) related amputations",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-2-1",
+          "href": "/SOC3-2-1/",
           "status": "notstarted"
         },
         {
@@ -1210,7 +1210,7 @@
           "title": "Incidence of TB (per 100,000 population)",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-2-2",
+          "href": "/SOC3-2-2/",
           "status": "notstarted"
         },
         {
@@ -1218,7 +1218,7 @@
           "title": "Malaria annual parasite incidence rate",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-2-3",
+          "href": "/SOC3-2-3/",
           "status": "notstarted"
         },
         {
@@ -1226,7 +1226,7 @@
           "title": "Diphtheria tetanus toxoid and pertussis (DTP3) immunisation coverage among 1 year olds (%)",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-3-1",
+          "href": "/SOC3-3-1/",
           "status": "notstarted"
         },
         {
@@ -1234,7 +1234,7 @@
           "title": "Prevalence of obesity in adult population",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-3-2",
+          "href": "/SOC3-3-2/",
           "status": "notstarted"
         },
         {
@@ -1242,7 +1242,7 @@
           "title": "Under 5 mortality rate",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-3-3",
+          "href": "/SOC3-3-3/",
           "status": "notstarted"
         },
         {
@@ -1250,7 +1250,7 @@
           "title": "Percentage of units with current strategic plans in place that link with Health Sector Strategy",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-4-1",
+          "href": "/SOC3-4-1/",
           "status": "notstarted"
         },
         {
@@ -1258,7 +1258,7 @@
           "title": "Percentage of Corporate positions within MoH filled on permanent basis",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-4-2",
+          "href": "/SOC3-4-2/",
           "status": "notstarted"
         },
         {
@@ -1266,7 +1266,7 @@
           "title": "Percentage of attributes attained based on International Health Regulation Index (IHR) Component 2",
           "description": "",
           "keywords": "",
-          "href": "/SOC3-4-3",
+          "href": "/SOC3-4-3/",
           "status": "notstarted"
         }]
     }
@@ -1282,7 +1282,7 @@
           "title": "Proportion of  government departments with gender responsive policies, legislation and programs",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-1-1",
+          "href": "/SOC4-1-1/",
           "status": "notstarted"
         },
         {
@@ -1290,7 +1290,7 @@
           "title": "Number of decisions in which women participate",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-1-2",
+          "href": "/SOC4-1-2/",
           "status": "notstarted"
         },
         {
@@ -1298,7 +1298,7 @@
           "title": "Indicators of women’s empowerment",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-1-3",
+          "href": "/SOC4-1-3/",
           "status": "notstarted"
         },
         {
@@ -1306,7 +1306,7 @@
           "title": "Subjective Well-being indicator",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-2-1",
+          "href": "/SOC4-2-1/",
           "status": "complete"
         },
         {
@@ -1314,7 +1314,7 @@
           "title": "Number of reported cases of violence against women, children, and vulnerable people",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-2-2",
+          "href": "/SOC4-2-2/",
           "status": "notstarted"
         },
         {
@@ -1322,7 +1322,7 @@
           "title": "Percentage of reported cases of violence against women, children, and vulnerable people addressed",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-2-3",
+          "href": "/SOC4-2-3/",
           "status": "notstarted"
         },
         {
@@ -1330,7 +1330,7 @@
           "title": "Proportion of population reporting some degree of disability",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-3-1",
+          "href": "/SOC4-3-1/",
           "status": "notstarted"
         },
         {
@@ -1338,7 +1338,7 @@
           "title": "Percentage of public buildings and banking, employment and recreational facilities allowing access for people with disabilities",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-3-2",
+          "href": "/SOC4-3-2/",
           "status": "notstarted"
         },
         {
@@ -1346,7 +1346,7 @@
           "title": "Percentage of all political, community and government leadership positions have people with disability represented",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-3-3",
+          "href": "/SOC4-3-3/",
           "status": "notstarted"
         },
         {
@@ -1354,7 +1354,7 @@
           "title": "Proportion of the activities of the  National Human Rights Commission (NHRC) implemented",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-4-1",
+          "href": "/SOC4-4-1/",
           "status": "notstarted"
         },
         {
@@ -1362,7 +1362,7 @@
           "title": "Proportion of human rights related conventions ratified",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-4-2",
+          "href": "/SOC4-4-2/",
           "status": "notstarted"
         },
         {
@@ -1370,7 +1370,7 @@
           "title": "Proportion of laws reviewed on basis of discriminatory and gender biased principles",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-4-3",
+          "href": "/SOC4-4-3/",
           "status": "notstarted"
         },
         {
@@ -1378,7 +1378,7 @@
           "title": "Proportion of Government Offices and public facilities with ramp access or some disability friendly rating",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-5-1",
+          "href": "/SOC4-5-1/",
           "status": "notstarted"
         },
         {
@@ -1386,7 +1386,7 @@
           "title": "Total number of cases with children experiencing human rights violations in the following areas sexual abuse, neglect, physical abuse, exploitation, emotional abuse (disseminate by these areas) accessing support services",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-6-1",
+          "href": "/SOC4-6-1/",
           "status": "notstarted"
         },
         {
@@ -1394,7 +1394,7 @@
           "title": "Proportion of youth age 14 -30 that feel valued in society",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-6-2",
+          "href": "/SOC4-6-2/",
           "status": "notstarted"
         },
         {
@@ -1402,7 +1402,7 @@
           "title": "Proportion of youth actively participating in at least one organised sport in the last 12 months by gender",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-7-1",
+          "href": "/SOC4-7-1/",
           "status": "notstarted"
         },
         {
@@ -1410,7 +1410,7 @@
           "title": "Number of government sponsored or partnered sporting events in the last 12 months",
           "description": "",
           "keywords": "",
-          "href": "/SOC4-7-2",
+          "href": "/SOC4-7-2/",
           "status": "notstarted"
         }]
     }
@@ -1426,7 +1426,7 @@
           "title": "Proportion of Justice and Community Services Sector Capacity Development Strategy 2017-2020 implemented",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-1-1",
+          "href": "/SOC5-1-1/",
           "status": "notstarted"
         },
         {
@@ -1434,7 +1434,7 @@
           "title": "Annual change in number of Magistrate and Supreme Court pending cases",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-1-2",
+          "href": "/SOC5-1-2/",
           "status": "notstarted"
         },
         {
@@ -1442,7 +1442,7 @@
           "title": "Average cost of legal fees/services for a court case",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-1-3",
+          "href": "/SOC5-1-3/",
           "status": "notstarted"
         },
         {
@@ -1450,7 +1450,7 @@
           "title": "Number of Anti-Corruption committee submissions acted upon",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-2-1",
+          "href": "/SOC5-2-1/",
           "status": "notstarted"
         },
         {
@@ -1458,7 +1458,7 @@
           "title": "Annual number of community safety assessments carried out by VPF",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-3-1",
+          "href": "/SOC5-3-1/",
           "status": "notstarted"
         },
         {
@@ -1466,7 +1466,7 @@
           "title": "Total number of national security forces per 1,000 population",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-3-2",
+          "href": "/SOC5-3-2/",
           "status": "notstarted"
         },
         {
@@ -1474,7 +1474,7 @@
           "title": "Total number of correctional officers per 100 detainees",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-3-3",
+          "href": "/SOC5-3-3/",
           "status": "notstarted"
         },
         {
@@ -1482,7 +1482,7 @@
           "title": "Annual number of patrol missions within EEZ",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-4-1",
+          "href": "/SOC5-4-1/",
           "status": "notstarted"
         },
         {
@@ -1490,7 +1490,7 @@
           "title": "Percentage of licensed vessels which have trained observers on board",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-4-2",
+          "href": "/SOC5-4-2/",
           "status": "notstarted"
         },
         {
@@ -1498,7 +1498,7 @@
           "title": "Level of reporting to the Vessel Monitoring System (VMS)",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-4-3",
+          "href": "/SOC5-4-3/",
           "status": "notstarted"
         },
         {
@@ -1506,7 +1506,7 @@
           "title": "Total number of annual community engagement activities undertaken by national law enforcement officers",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-5-1",
+          "href": "/SOC5-5-1/",
           "status": "notstarted"
         },
         {
@@ -1514,7 +1514,7 @@
           "title": "Incidents of theft and vandalism reported annually to the police (and the proportion of reported incidents to unreported)",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-5-2",
+          "href": "/SOC5-5-2/",
           "status": "notstarted"
         },
         {
@@ -1522,7 +1522,7 @@
           "title": "Proportion of population with positive assessment of their chief's ability to resolve disputes peacefully",
           "description": "",
           "keywords": "",
-          "href": "/SOC5-5-3",
+          "href": "/SOC5-5-3/",
           "status": "notstarted"
         }]
     }
@@ -1538,7 +1538,7 @@
           "title": "Reduction in annual Employment Disciplinary Board decisions",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-1-1",
+          "href": "/SOC6-1-1/",
           "status": "notstarted"
         },
         {
@@ -1546,7 +1546,7 @@
           "title": "Annual number of public officials receiving relevant qualifications through VIPAM and other government programs",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-1-2",
+          "href": "/SOC6-1-2/",
           "status": "notstarted"
         },
         {
@@ -1554,7 +1554,7 @@
           "title": "Reduction in level of subsidies/grants to SOEs",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-1-3",
+          "href": "/SOC6-1-3/",
           "status": "notstarted"
         },
         {
@@ -1562,7 +1562,7 @@
           "title": "Proportion of SOEs and Statutory bodies submitting annual reports to their boards of directors",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-2-1",
+          "href": "/SOC6-2-1/",
           "status": "notstarted"
         },
         {
@@ -1570,7 +1570,7 @@
           "title": "Proportion of eligible population reporting to have voted in last election",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-3-1",
+          "href": "/SOC6-3-1/",
           "status": "notstarted"
         },
         {
@@ -1578,7 +1578,7 @@
           "title": "Proportion of population with an overall positive assessment of their local elected officials",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-3-2",
+          "href": "/SOC6-3-2/",
           "status": "notstarted"
         },
         {
@@ -1586,7 +1586,7 @@
           "title": "Number of MPs submitting annual financial accountability report",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-3-3",
+          "href": "/SOC6-3-3/",
           "status": "notstarted"
         },
         {
@@ -1594,7 +1594,7 @@
           "title": "Proportion of BP objectives met as reported in department ARs",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-4-1",
+          "href": "/SOC6-4-1/",
           "status": "notstarted"
         },
         {
@@ -1602,7 +1602,7 @@
           "title": "Change in annual budget going to Provinces, Municipalities towards operations/programs (Devolution of funding authority)",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-5-1",
+          "href": "/SOC6-5-1/",
           "status": "notstarted"
         },
         {
@@ -1610,7 +1610,7 @@
           "title": "SOD 6.5.2 Proportion of provinces with up-to-date three year “rolling” plans submitted to DLA",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-5-2",
+          "href": "/SOC6-5-2/",
           "status": "notstarted"
         },
         {
@@ -1618,7 +1618,7 @@
           "title": "SOD 6.6.1 Proportion of declared physical planning areas that have a physical plan",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-6-1",
+          "href": "/SOC6-6-1/",
           "status": "notstarted"
         },
         {
@@ -1626,7 +1626,7 @@
           "title": "Proportion of population utilising media outlets for news including: newspapers, mobile phones, radio, television, and internet",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-7-1",
+          "href": "/SOC6-7-1/",
           "status": "notstarted"
         },
         {
@@ -1634,7 +1634,7 @@
           "title": "Proportion of data collected from requests acted upon by RTI officers in each government agency",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-7-2",
+          "href": "/SOC6-7-2/",
           "status": "notstarted"
         },
         {
@@ -1642,7 +1642,7 @@
           "title": "Percentage of aid the government sector reported on the government’s budget",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-8-1",
+          "href": "/SOC6-8-1/",
           "status": "notstarted"
         },
         {
@@ -1650,7 +1650,7 @@
           "title": "Percentage of aid for the government sector using Vanuatu government PFM systems",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-8-2",
+          "href": "/SOC6-8-2/",
           "status": "notstarted"
         },
         {
@@ -1658,7 +1658,7 @@
           "title": "Percentage of aid for the government sector using Vanuatu government procurement systems",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-8-3",
+          "href": "/SOC6-8-3/",
           "status": "notstarted"
         },
         {
@@ -1666,7 +1666,7 @@
           "title": "NSDP data reviewed annually",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-9-1",
+          "href": "/SOC6-9-1/",
           "status": "notstarted"
         },
         {
@@ -1674,7 +1674,7 @@
           "title": "Percentage of NSDS strategic objectives achieved",
           "description": "",
           "keywords": "",
-          "href": "/SOC6-9-2",
+          "href": "/SOC6-9-2/",
           "status": "notstarted"
         }]
     }
@@ -1690,7 +1690,7 @@
           "title": "Population from census",
           "description": "",
           "keywords": "",
-          "href": "/census",
+          "href": "/census/",
           "status": "complete"
         }]
     }
@@ -1706,7 +1706,7 @@
           "title": "",
           "description": "",
           "keywords": "",
-          "href": "/demographics",
+          "href": "/demographics/",
           "status": "complete"
         }]
     }
@@ -1722,7 +1722,7 @@
           "title": "",
           "description": "",
           "keywords": "",
-          "href": "/disaster-statistics",
+          "href": "/disaster-statistics/",
           "status": "complete"
         }]
     }
@@ -1738,7 +1738,7 @@
           "title": "",
           "description": "",
           "keywords": "",
-          "href": "/gdp-constant-price",
+          "href": "/gdp-constant-price/",
           "status": "complete"
         },
         {
@@ -1746,7 +1746,7 @@
           "title": "",
           "description": "",
           "keywords": "",
-          "href": "/gdp-growth-rate",
+          "href": "/gdp-growth-rate/",
           "status": "complete"
         }]
     }
@@ -1762,7 +1762,7 @@
           "title": "",
           "description": "",
           "keywords": "",
-          "href": "/government-financial-statistics",
+          "href": "/government-financial-statistics/",
           "status": "complete"
         }]
     }
