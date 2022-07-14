@@ -131,7 +131,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220708131856">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20220714001925">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -179,7 +179,7 @@ goal-number-ENV2
 <header role="banner" class="">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="//" id="home">
+            <a class="navbar-brand" href="/" id="home">
     <img src="/assets/img/logo title.png" alt="National Development Goals 2030" />
 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -191,47 +191,51 @@ goal-number-ENV2
                     EVALUATION
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown-evaluation"><li class=" ">
-    <a class="dropdown-item" href="//reporting-status/">DATA AVAILABILITY</a>
+    <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//indicator-overview/">INDICATOR OVERVIEW</a>
+    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//methodology/">METHODOLOGY</a>
+    <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-useful-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    USEFUL INFORMATION
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    INFORMATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-useful-information"><li class=" ">
-    <a class="dropdown-item" href="//about/">NSPD ONLINE PLATFORM</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-information"><li class=" ">
+    <a class="dropdown-item" href="/about/">NSPD ONLINE PLATFORM</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//technical-advice/">TECHNICAL ADVICE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="//publications/">PUBLICATIONS</a>
+    <a class="dropdown-item" href="/technical-advice/">TECHNICAL ADVICE</a>
 </li></ul>
             </li><li class="nav-item ">
-    <a class="nav-link" href="//government-financial-statistics/">GOVERNMENT FINANCE</a>
-</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster-statistics" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER STATISTICS
+    <a class="nav-link" href="/government-financial-statistics/">FINANCE</a>
+</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-profiles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROFILES
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster-statistics"><li class=" ">
-    <a class="dropdown-item" href="//demographics/">POPULATION PROFILES</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-profiles"><li class=" ">
+    <a class="dropdown-item" href="/demographics/">DEMOGRAPHICS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//wellbeing/">WELLBEING</a>
+    <a class="dropdown-item" href="/education/">EDUCATION</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/labour/">LABOUR</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/primary-production">PRIMARY PRODUCTION</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/household-facilities/">HOUSEHOLD FACILITIES</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-human-resource-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    HUMAN RESOURCE DEVELOPMENT
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-human-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HUMAN DEVELOPMENT
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-human-resource-development"><li class=" ">
-    <a class="dropdown-item" href="//education/">EDUCATION</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-human-development"><li class=" ">
+    <a class="dropdown-item" href="/enrolment/">ENROLMENT</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//scolarship/">SCHOLARSHIPS</a>
+    <a class="dropdown-item" href="/grades/">GRADES</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="//labour/">LABOUR</a>
+    <a class="dropdown-item" href="/scolarship/">SCHOLARSHIP</a>
 </li></ul>
             </li></ul>
     
                 </div>
                 <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="//search/">
+                    <form class="align-self-lg-end" id="search" action="/search/">
     <div class="input-group">
         <label class="visually-hidden" for="indicator_search">Search</label>
         <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
@@ -367,7 +371,7 @@ data-event-label="high"
     <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
         
         <li class="breadcrumb-item">
-            <a href="//">Home</a>
+            <a href="/">Home</a>
         </li>
         
         <li class="breadcrumb-item">
@@ -805,7 +809,7 @@ data-event-label="Change to indicator.sources tab"
                         </li>
                         
                         <li>
-                            <a href="//contact/">Contact us</a>
+                            <a href="/contact/">Contact us</a>
                             
                         </li>
                         <li>
@@ -819,7 +823,7 @@ data-event-label="Change to indicator.sources tab"
                             
                         </li>
                         <li>
-                            <a href="//about/cookies-and-privacy/">Cookies</a>
+                            <a href="/about/cookies-and-privacy/">Cookies</a>
                             
                         </li>
                         
@@ -858,12 +862,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20220708131856'></script>
+<script src='/assets/js/sdg.js?v=20220714001925'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220708131856"></script><script>
+    <script src="/assets/js/custom.js?v=20220714001925"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
