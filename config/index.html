@@ -38,6 +38,9 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
+  // Disaggregations which should be ignored on indicator pages.
+  ignoredDisaggregations: null,
+
   language: 'en',
 };
 
@@ -128,7 +131,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20220714001925">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20221116234030">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -160,15 +163,6 @@ layout-config-builder
 </div>
 <div id="disclaimer">
     
-<div class="container">
-  <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
-    
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
-    
-  </div>
-</div>
-
 </div>
 
 <header role="banner" class="">
@@ -201,7 +195,7 @@ layout-config-builder
     <a class="dropdown-item" href="/technical-advice/">TECHNICAL ADVICE</a>
 </li></ul>
             </li><li class="nav-item ">
-    <a class="nav-link" href="/government-financial-statistics/">FINANCE</a>
+    <a class="nav-link" href="/financial-statistics/">FINANCIAL STATISTICS</a>
 </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-profiles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PROFILES
                 </a>
@@ -511,6 +505,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.breadcrumbs'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('cookie_consent_form', {"enabled":false});
+        var propertyEditor = editor.getEditor('root.cookie_consent_form');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: cookie_consent_form');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.cookie_consent_form'));
 
     
@@ -641,7 +647,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('disclaimer', {"phase":"","message":""});
+        var currentValue = normalizeCurrentValue('disclaimer', {"hidden":true});
         var propertyEditor = editor.getEditor('root.disclaimer');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -655,7 +661,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('email_contacts', {"questions":"test@example.com","suggestions":"test@example.com","functional":"test@example.com"});
+        var currentValue = normalizeCurrentValue('email_contacts', {"questions":"jnandrew@vanuatu.gov.vu","suggestions":"jnandrew@vanuatu.gov.vu","functional":"jnandrew@vanuatu.gov.vu"});
         var propertyEditor = editor.getEditor('root.email_contacts');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -723,7 +729,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('frontpage_cards', [{"title":"frontpage.download_all","content":"","include":"components/download-all-data.html","button_label":"","button_link":"","rule_color":""},{"title":"Vanuatu National Statistics Office","content":"","include":"vnso-card.html","button_label":"VNSO Website","button_link":"https://vnso.gov.vu","rule_color":""},{"title":"Department of Strategic Policy, Planning & Aid Coordination","content":"","include":"dsppac-card.html","button_label":"DSPPAC Website","button_link":"https://dsppac.gov.vu/","rule_color":""}]);
+        var currentValue = normalizeCurrentValue('frontpage_cards', [{"title":"frontpage.download_all","content":"","include":"components/download-all-data.html","button_label":"","button_link":"","rule_color":""},{"title":"Vanuatu National Statistics Office","content":"","include":"vnso-card.html","button_label":"VNSO Website","button_link":"https://vnso.gov.vu","rule_color":""},{"title":"Department of Strategic Policy, Planning & Aid Coordination","content":"","include":"dsppac-card.html","button_label":"DSPPAC Website","button_link":"https://dsppac.gov.vu/","rule_color":""},{"title":"Install the app","content":"","include":"app-install-card.html","button_label":"","button_link":"","rule_color":""}]);
         var propertyEditor = editor.getEditor('root.frontpage_cards');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -963,6 +969,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_metadata_form'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('indicator_tabs', {"tab_1":"","tab_2":"","tab_3":"","tab_4":""});
+        var propertyEditor = editor.getEditor('root.indicator_tabs');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: indicator_tabs');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.indicator_tabs'));
 
     
@@ -1021,7 +1039,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('map_layers', [{"subfolder":"provinces","label":"Provinces","min_zoom":6,"max_zoom":7,"staticBorders":false},{"subfolder":"area-councils","label":"Area councils","min_zoom":8,"max_zoom":15}]);
+        var currentValue = normalizeCurrentValue('map_layers', [{"subfolder":"provinces","label":"Provinces","min_zoom":6,"max_zoom":7,"staticBorders":false},{"subfolder":"area-councils","label":"Area councils","min_zoom":8,"max_zoom":15,"staticBorders":false}]);
         var propertyEditor = editor.getEditor('root.map_layers');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1035,7 +1053,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('map_options', {"minZoom":6,"maxZoom":15,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://openstreetmap.org/copyright\">OpenStreetMap contributors</a>"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}});
+        var currentValue = normalizeCurrentValue('map_options', {"disaggregation_controls":false,"minZoom":6,"maxZoom":15,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://openstreetmap.org/copyright\">OpenStreetMap contributors</a>"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}});
         var propertyEditor = editor.getEditor('root.map_options');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1049,7 +1067,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('menu', [{"path":"/reporting-status/","translation_key":"EVALUATION","dropdown":[{"path":"/reporting-status/","translation_key":"DATA AVAILABILITY"},{"path":"/indicator-overview/","translation_key":"INDICATOR OVERVIEW"},{"path":"/methodology/","translation_key":"METHODOLOGY"}]},{"path":"/2030-agenda/","translation_key":"INFORMATION","dropdown":[{"path":"/about/","translation_key":"NSPD ONLINE PLATFORM"},{"path":"/technical-advice/","translation_key":"TECHNICAL ADVICE"}]},{"path":"/government-financial-statistics/","translation_key":"FINANCE","dropdown":[]},{"path":"/population-profiles/","translation_key":"PROFILES","dropdown":[{"path":"/demographics/","translation_key":"DEMOGRAPHICS"},{"path":"/education/","translation_key":"EDUCATION"},{"path":"/labour/","translation_key":"LABOUR"},{"path":"/primary-production","translation_key":"PRIMARY PRODUCTION"},{"path":"/household-facilities/","translation_key":"HOUSEHOLD FACILITIES"}]},{"path":"/human-development/","translation_key":"HUMAN DEVELOPMENT","dropdown":[{"path":"/enrolment/","translation_key":"ENROLMENT"},{"path":"/grades/","translation_key":"GRADES"},{"path":"/scolarship/","translation_key":"SCHOLARSHIP"}]}]);
+        var currentValue = normalizeCurrentValue('menu', [{"path":"/reporting-status/","translation_key":"EVALUATION","dropdown":[{"path":"/reporting-status/","translation_key":"DATA AVAILABILITY"},{"path":"/indicator-overview/","translation_key":"INDICATOR OVERVIEW"},{"path":"/methodology/","translation_key":"METHODOLOGY"}]},{"path":"/2030-agenda/","translation_key":"INFORMATION","dropdown":[{"path":"/about/","translation_key":"NSPD ONLINE PLATFORM"},{"path":"/technical-advice/","translation_key":"TECHNICAL ADVICE"}]},{"path":"/financial-statistics/","translation_key":"FINANCIAL STATISTICS","dropdown":[]},{"path":"/population-profiles/","translation_key":"PROFILES","dropdown":[{"path":"/demographics/","translation_key":"DEMOGRAPHICS"},{"path":"/education/","translation_key":"EDUCATION"},{"path":"/labour/","translation_key":"LABOUR"},{"path":"/primary-production","translation_key":"PRIMARY PRODUCTION"},{"path":"/household-facilities/","translation_key":"HOUSEHOLD FACILITIES"}]},{"path":"/human-development/","translation_key":"HUMAN DEVELOPMENT","dropdown":[{"path":"/enrolment/","translation_key":"ENROLMENT"},{"path":"/grades/","translation_key":"GRADES"},{"path":"/scolarship/","translation_key":"SCHOLARSHIP"}]}]);
         var propertyEditor = editor.getEditor('root.menu');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1115,6 +1133,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.news'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"","status_types":[]});
+        var propertyEditor = editor.getEditor('root.progress_status');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: progress_status');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
 
     
@@ -1159,7 +1189,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('reporting_status', {"title":"Reporting Status","description":"The reporting status gives you an overview of how many [National Sustainable Development Plan Indicators](https://www.gov.vu/index.php/resources/vanuatu-2030) of Vanuatu’s 2030 People’s Plan can currently be calculated. The time series for the calculation of the indicators are mainly based on data from official statistics, but also use data collected by many other institutions. Where data are available, the indicator is marked as **Reported online**. When a suitable data source is still being sought for other indicators, these are marked as **Exploring data sources**.","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"status.reported_online"},{"value":"notstarted","label":"status.exploring_data_sources"}]});
+        var currentValue = normalizeCurrentValue('reporting_status', {"title":"Reporting Status","description":"The reporting status gives you an overview of how many [National Sustainable Development Plan Indicators](https://www.gov.vu/index.php/resources/vanuatu-2030) of Vanuatu’s 2030 People’s Plan can currently be calculated. The time series for the calculation of the indicators are mainly based on data from official statistics, but also use data collected by many other institutions. Where data are available, the indicator is marked as **Reported online**. When a suitable data source is still being sought for other indicators, these are marked as **Exploring data sources**.","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"status.reported_online","hide_on_goal_pages":false},{"value":"notstarted","label":"status.exploring_data_sources","hide_on_goal_pages":false}]});
         var propertyEditor = editor.getEditor('root.reporting_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1259,6 +1289,18 @@ data-event-label="high"
 
     propertyEditorAccessibilityFixes(editor.getEditor('root.validate_site_config'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var propertyEditor = editor.getEditor('root.x_axis_label');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: x_axis_label');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.x_axis_label'));
 
     
@@ -1368,12 +1410,12 @@ data-event-label="high"
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="//cdn.datatables.net/fixedcolumns/3.2.3/js/dataTables.fixedColumns.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
@@ -1394,12 +1436,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20220714001925'></script>
+<script src='/assets/js/sdg.js?v=20221116234030'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20220714001925"></script><script>
+    <script src="/assets/js/custom.js?v=20221116234030"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

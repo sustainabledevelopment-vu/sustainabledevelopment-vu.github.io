@@ -51,7 +51,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO1-4-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO1-4-2",
@@ -1763,6 +1763,46 @@
           "description": "",
           "keywords": "",
           "href": "/government-financial-statistics/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "operations",
+      "title": "",
+      "indicators": [
+        
+        {
+          "id": "operations",
+          "title": "",
+          "description": "",
+          "keywords": "",
+          "href": "/operations/",
+          "status": "complete"
+        },
+        {
+          "id": "operations-budget",
+          "title": "Ministry of Finance Operations Budget",
+          "description": "",
+          "keywords": "",
+          "href": "/operations-budget/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "",
+      "title": "",
+      "indicators": [
+        
+        {
+          "id": "school-attendance",
+          "title": "School Attendance",
+          "description": "",
+          "keywords": "",
+          "href": "/school-attendance/",
           "status": "complete"
         }]
     }

@@ -863,6 +863,9 @@ Chart.register({
             });
         }
     },
+    afterUpdate: function(chart) {
+        this.setMeta();
+    },
     setMeta: function() {
         this.meta = this.chart.getDatasetMeta(this.currentDataset);
     },
@@ -2607,7 +2610,9 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
  */
 function inputData(data) {
   var dropKeys = [];
-  
+  if (opensdg.ignoredDisaggregations && opensdg.ignoredDisaggregations.length > 0) {
+    dropKeys = opensdg.ignoredDisaggregations;
+  }
   return convertJsonFormatToRows(data, dropKeys);
 }
 
@@ -2617,7 +2622,15 @@ function inputData(data) {
  */
 function inputEdges(edges) {
   var edgesData = convertJsonFormatToRows(edges);
-  
+  if (opensdg.ignoredDisaggregations && opensdg.ignoredDisaggregations.length > 0) {
+    var ignoredDisaggregations = opensdg.ignoredDisaggregations;
+    edgesData = edgesData.filter(function(edge) {
+      if (ignoredDisaggregations.includes(edge.To) || ignoredDisaggregations.includes(edge.From)) {
+        return false;
+      }
+      return true;
+    });
+  }
   return edgesData;
 }
 
@@ -2706,6 +2719,7 @@ function getTimeSeriesAttributes(rows) {
   }
 })();
 
+  this.helpers = helpers;
 
   // events:
   this.onDataComplete = new event(this);
@@ -2980,7 +2994,9 @@ function getTimeSeriesAttributes(rows) {
         indicatorId: this.indicatorId,
         showMap: this.showMap,
         precision: helpers.getPrecision(this.precision, this.selectedUnit, this.selectedSeries),
+        precisionItems: this.precision,
         dataSchema: this.dataSchema,
+        chartTitles: this.chartTitles,
       });
     }
 
@@ -3061,15 +3077,19 @@ var mapView = function () {
 
   "use strict";
 
-  this.initialise = function(indicatorId, precision, decimalSeparator, dataSchema) {
+  this.initialise = function(indicatorId, precision, precisionItems, decimalSeparator, dataSchema, viewHelpers, modelHelpers, chartTitles) {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"minZoom":6,"maxZoom":15,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://openstreetmap.org/copyright\">OpenStreetMap contributors</a>"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
-      mapLayers: [{"subfolder":"provinces","label":"Provinces","min_zoom":6,"max_zoom":7,"staticBorders":false},{"subfolder":"area-councils","label":"Area councils","min_zoom":8,"max_zoom":15}],
+      mapOptions: {"disaggregation_controls":false,"minZoom":6,"maxZoom":15,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://openstreetmap.org/copyright\">OpenStreetMap contributors</a>"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapLayers: [{"subfolder":"provinces","label":"Provinces","min_zoom":6,"max_zoom":7,"staticBorders":false},{"subfolder":"area-councils","label":"Area councils","min_zoom":8,"max_zoom":15,"staticBorders":false}],
       precision: precision,
+      precisionItems: precisionItems,
       decimalSeparator: decimalSeparator,
       dataSchema: dataSchema,
+      viewHelpers: viewHelpers,
+      modelHelpers: modelHelpers,
+      chartTitles: chartTitles,
     });
   };
 };
@@ -3227,7 +3247,10 @@ function initialiseUnits(args) {
  * @return null
  */
 function initialiseSerieses(args) {
-    var templateElement = $('#series_template');
+    var activeSeriesInput = $('#serieses').find(document.activeElement),
+        seriesWasFocused = (activeSeriesInput.length > 0) ? true : false,
+        focusedValue = (seriesWasFocused) ? $(activeSeriesInput).val() : null,
+        templateElement = $('#series_template');
     if (templateElement.length > 0) {
         var template = _.template(templateElement.html()),
             serieses = args.serieses || [],
@@ -3249,6 +3272,10 @@ function initialiseSerieses(args) {
         else {
             $(OPTIONS.rootElement).removeClass('no-serieses');
         }
+    }
+    // Return focus if necessary.
+    if (seriesWasFocused) {
+        $('#serieses :input[value="' + focusedValue + '"]').focus();
     }
 }
 
@@ -3456,6 +3483,7 @@ function createPlot(chartInfo) {
     else {
         updateHeadlineColor('default', chartConfig);
     }
+    refreshChartLineWrapping(chartConfig);
 
     VIEW._chartInstance = new Chart($(OPTIONS.rootElement).find('canvas'), chartConfig);
     $(VIEW._legendElement).html(generateChartLegend(VIEW._chartInstance));
@@ -3483,6 +3511,7 @@ function createPlot(chartInfo) {
     }
 
     alterChartConfig(updatedConfig, chartInfo);
+    refreshChartLineWrapping(updatedConfig);
     VIEW._chartInstance.config.type = updatedConfig.type;
     VIEW._chartInstance.data.datasets = updatedConfig.data.datasets;
     VIEW._chartInstance.data.labels = updatedConfig.data.labels;
@@ -3533,6 +3562,41 @@ function generateChartLegend(chart) {
     });
     text.push('</ul>');
     return text.join('');
+}
+
+/**
+ * @param {Object} chartConfig
+ */
+function refreshChartLineWrapping(chartConfig) {
+    var yAxisLimit = 40,
+        wrappedYAxis = strToArray(chartConfig.options.scales.y.title.text, yAxisLimit);
+    chartConfig.options.scales.y.title.text = wrappedYAxis;
+}
+
+/**
+ * @param {String} str
+ * @param {Number} limit
+ * @returns {Array} The string divided into an array for line wrapping.
+ */
+function strToArray (str, limit) {
+    var words = str.split(' '),
+        aux = [],
+        concat = [];
+
+    for (var i = 0; i < words.length; i++) {
+        concat.push(words[i]);
+        var join = concat.join(' ');
+        if (join.length > limit) {
+            aux.push(join);
+            concat = [];
+        }
+    }
+
+    if (concat.length) {
+        aux.push(concat.join(' ').trim());
+    }
+
+    return aux;
 }
 
   opensdg.annotationPresets = {
@@ -4436,6 +4500,7 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
   }
 })();
 
+    VIEW.helpers = helpers;
 
     VIEW._chartInstance = undefined;
     VIEW._tableColumnDefs = OPTIONS.tableColumnDefs;
@@ -4480,6 +4545,12 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
             else {
                 $sidebar.removeClass('indicator-sidebar-hidden');
                 $main.removeClass('indicator-main-full');
+                // Make sure the unit/series items are updated, in case
+                // they were changed while on the map.
+                helpers.updateChartTitle(VIEW._dataCompleteArgs.chartTitle);
+                helpers.updateSeriesAndUnitElements(VIEW._dataCompleteArgs.selectedSeries, VIEW._dataCompleteArgs.selectedUnit);
+                helpers.updateUnitElements(VIEW._dataCompleteArgs.selectedUnit);
+                helpers.updateTimeSeriesAttributes(VIEW._dataCompleteArgs.timeSeriesAttributes);
             }
         };
     });
@@ -4503,6 +4574,8 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
         helpers.updateSeriesAndUnitElements(args.selectedSeries, args.selectedUnit);
         helpers.updateUnitElements(args.selectedUnit);
         helpers.updateTimeSeriesAttributes(args.timeSeriesAttributes);
+
+        VIEW._dataCompleteArgs = args;
     });
 
     MODEL.onFieldsComplete.attach(function (sender, args) {
@@ -4511,7 +4584,16 @@ function createIndicatorDownloadButtons(indicatorDownloads, indicatorId, el) {
 
         if (args.hasGeoData && args.showMap) {
             VIEW._mapView = new mapView();
-            VIEW._mapView.initialise(args.indicatorId, args.precision, OPTIONS.decimalSeparator, args.dataSchema);
+            VIEW._mapView.initialise(
+                args.indicatorId,
+                args.precision,
+                args.precisionItems,
+                OPTIONS.decimalSeparator,
+                args.dataSchema,
+                VIEW.helpers,
+                MODEL.helpers,
+                args.chartTitles,
+            );
         }
     });
 
@@ -5331,6 +5413,12 @@ $(function() {
     });
     // Create the player.
     options.player = new L.TimeDimension.Player(options.playerOptions, options.timeDimension);
+    options.player.on('play', function() {
+      $('.timecontrol-play').attr('title', 'Pause');
+    });
+    options.player.on('stop', function() {
+      $('.timecontrol-play').attr('title', 'Play');
+    });
     // Listen for time changes.
     if (typeof options.yearChangeCallback === 'function') {
       options.timeDimension.on('timeload', options.yearChangeCallback);
@@ -5559,7 +5647,7 @@ $(function() {
             this.displayedDisaggregation = 0;
             this.seriesColumn = 'Series';
             this.unitsColumn = 'Units';
-            this.displayForm = null;
+            this.displayForm = false;
             this.updateDisaggregations();
         },
 
@@ -5575,14 +5663,17 @@ $(function() {
             this.hasSeries = (this.allSeries.length > 0);
             this.hasUnits = (this.allUnits.length > 0);
             this.hasDisaggregations = this.hasDissagregationsWithValues();
+            this.hasDisaggregationsWithMultipleValues = this.hasDisaggregationsWithMultipleValues();
         },
 
         getVisibleDisaggregations: function() {
             var features = this.plugin.getVisibleLayers().toGeoJSON().features;
             var disaggregations = features[0].properties.disaggregations;
-            // The purpose of the rest of this function is to
-            // "prune" the disaggregations by removing any keys
-            // that are identical across all disaggregations.
+            // The purpose of the rest of this function is to identiy
+            // and remove any "region columns" - ie, any columns that
+            // correspond exactly to names of map regions. These columns
+            // are useful on charts and tables but should not display
+            // on maps.
             var allKeys = Object.keys(disaggregations[0]);
             var relevantKeys = {};
             var rememberedValues = {};
@@ -5598,6 +5689,27 @@ $(function() {
                 }
             });
             relevantKeys = Object.keys(relevantKeys);
+            if (features.length > 1) {
+                // Any columns not already identified as "relevant" might
+                // be region columns.
+                var regionColumnCandidates = allKeys.filter(function(item) {
+                    return relevantKeys.includes(item) ? false : true;
+                });
+                // Compare the column value across map regions - if it is
+                // different then we assume the column is a "region column".
+                // For efficiency we only check the first and second region.
+                var regionColumns = regionColumnCandidates.filter(function(candidate) {
+                    var region1 = features[0].properties.disaggregations[0][candidate];
+                    var region2 = features[1].properties.disaggregations[0][candidate];
+                    return region1 === region2 ? false : true;
+                });
+                // Now we can treat any non-region columns as relevant.
+                regionColumnCandidates.forEach(function(item) {
+                    if (!regionColumns.includes(item)) {
+                        relevantKeys.push(item);
+                    }
+                });
+            }
             relevantKeys.push(this.seriesColumn);
             relevantKeys.push(this.unitsColumn);
             var pruned = [];
@@ -5647,6 +5759,16 @@ $(function() {
             return hasDisaggregations;
         },
 
+        hasDisaggregationsWithMultipleValues: function () {
+            var hasDisaggregations = false;
+            this.allDisaggregations.forEach(function(disaggregation) {
+                if (disaggregation.values.length > 1 && disaggregation.values[1] !== '') {
+                    hasDisaggregations = true;
+                }
+            });
+            return hasDisaggregations;
+        },
+
         updateList: function () {
             var list = this.list;
             list.innerHTML = '';
@@ -5677,7 +5799,7 @@ $(function() {
                         definition = L.DomUtil.create('dd', 'disaggregation-definition'),
                         container = L.DomUtil.create('div', 'disaggregation-container'),
                         field = disaggregation.field;
-                    title.innerHTML = field;
+                    title.innerHTML = translations.t(field);
                     var disaggregationValue = currentDisaggregation[field];
                     if (disaggregationValue !== '') {
                         definition.innerHTML = disaggregationValue;
@@ -5718,7 +5840,7 @@ $(function() {
                     label.prepend(input);
                     fieldset.append(label);
                     input.addEventListener('change', function(e) {
-                        that.currentDisaggregation = that.getSelectedDisaggregationIndex();
+                        that.currentDisaggregation = that.getSelectedDisaggregationIndex(seriesColumn, series);
                         that.updateForm();
                     });
                 });
@@ -5744,7 +5866,7 @@ $(function() {
                         label.prepend(input);
                         fieldset.append(label);
                         input.addEventListener('change', function(e) {
-                            that.currentDisaggregation = that.getSelectedDisaggregationIndex();
+                            that.currentDisaggregation = that.getSelectedDisaggregationIndex(unitsColumn, unit);
                             that.updateForm();
                         });
                     }
@@ -5757,7 +5879,7 @@ $(function() {
                         legend = L.DomUtil.create('legend', 'disaggregation-fieldset-legend'),
                         fieldset = L.DomUtil.create('fieldset', 'disaggregation-fieldset'),
                         field = disaggregation.field;
-                    legend.innerHTML = field;
+                    legend.innerHTML = translations.t(field);
                     fieldset.append(legend);
                     form.append(fieldset);
                     formInputs.append(form);
@@ -5770,11 +5892,11 @@ $(function() {
                             input.tabindex = 0;
                             input.checked = (value === currentDisaggregation[field]) ? 'checked' : '';
                             var label = L.DomUtil.create('label', 'disaggregation-label');
-                            label.innerHTML = (value === '') ? 'All' : value;
+                            label.innerHTML = (value === '') ? translations.indicator.total : value;
                             label.prepend(input);
                             fieldset.append(label);
                             input.addEventListener('change', function(e) {
-                                that.currentDisaggregation = that.getSelectedDisaggregationIndex();
+                                that.currentDisaggregation = that.getSelectedDisaggregationIndex(field, value);
                                 that.updateForm();
                             });
                         }
@@ -5798,11 +5920,14 @@ $(function() {
             });
             applyButton.addEventListener('click', function(e) {
                 that.plugin.currentDisaggregation = that.currentDisaggregation;
+                that.plugin.updatePrecision();
                 that.plugin.setColorScale();
                 that.plugin.updateColors();
                 that.plugin.updateTooltips();
                 that.plugin.selectionLegend.resetSwatches();
                 that.plugin.selectionLegend.update();
+                that.plugin.updateTitle();
+                that.plugin.updateFooterFields();
                 that.updateList();
                 $('.disaggregation-form-outer').toggle();
             });
@@ -5822,7 +5947,7 @@ $(function() {
                     numUnits = this.allUnits.length,
                     displayForm = this.displayForm;
 
-                if (displayForm && (this.hasDisaggregations || (numSeries > 1 || numUnits > 1))) {
+                if (displayForm && (this.hasDisaggregationsWithMultipleValues || (numSeries > 1 || numUnits > 1))) {
 
                     var button = L.DomUtil.create('button', 'disaggregation-button');
                     button.innerHTML = translations.indicator.change_breakdowns;
@@ -5910,7 +6035,7 @@ $(function() {
             return allDisaggregations;
         },
 
-        getSelectedDisaggregationIndex: function() {
+        getSelectedDisaggregationIndex: function(changedKey, newValue) {
             for (var i = 0; i < this.disaggregations.length; i++) {
                 var disaggregation = this.disaggregations[i],
                     keys = Object.keys(disaggregation),
@@ -5918,8 +6043,9 @@ $(function() {
                 for (var j = 0; j < keys.length; j++) {
                     var key = keys[j],
                         inputName = 'map-' + key,
-                        selection = $('input[name="' + inputName + '"]:checked').val();
-                    if (selection !== disaggregation[key]) {
+                        $inputElement = $('input[name="' + inputName + '"]:checked'),
+                        selection = $inputElement.val();
+                    if ($inputElement.length > 0 && selection !== disaggregation[key]) {
                         matchesSelections = false;
                         break;
                     }
@@ -5928,6 +6054,18 @@ $(function() {
                     return i;
                 }
             }
+            // If we are still here, it means that a recent change
+            // has resulted in an illegal combination. In this case
+            // we look at the recently-changed key and its value,
+            // and we pick the first disaggregation that matches.
+            for (var i = 0; i < this.disaggregations.length; i++) {
+                var disaggregation = this.disaggregations[i],
+                    keys = Object.keys(disaggregation);
+                if (keys.includes(changedKey) && disaggregation[changedKey] === newValue) {
+                    return i;
+                }
+            }
+            // If we are still here, something went wrong.
             throw('Could not find match');
         },
 

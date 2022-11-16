@@ -51,15 +51,41 @@
                 .table-striped tbody tr:nth-of-type(2n+1) {
                     background-color: #f3f2f1;
                 }
+                #skiplink {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    z-index: 10000;
+                    width: 250px;
+                    margin-left: -125px;
+                    padding: 10px;
+                    background: white;
+                    text-align: center;
+                    border: 1px solid #0b0c0c;
+                    color: #0b0c0c;
+                    display: block;
+                }
+                .sr-only-focusable:not(:focus):not(:focus-within) {
+                    position: absolute !important;
+                    width: 1px !important;
+                    height: 1px !important;
+                    padding: 0 !important;
+                    margin: -1px !important;
+                    overflow: hidden !important;
+                    clip: rect(0, 0, 0, 0) !important;
+                    white-space: nowrap !important;
+                    border: 0 !important;
+                }
             </style>
         </head>
         <body>
+            <a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="/vnso-nsdp-platform/data-docs/index.html">SDG data build documentation</a>
                 </div>
             </nav>
-            <main role="main">
+            <main id="main-content" role="main">
                 <div class="container">
                     <h1 style="margin:20px 0">Disaggregation report</h1>
                     <div>
@@ -76,12 +102,12 @@
             
         <div class="my-3">
             <a href="disaggregation-report.csv" role="button" class="btn btn-primary" aria-describedby="disaggregation-report">Download CSV of disaggregations</a>
-            <div id="disaggregation-report" class="download-info">Size: 163 Bytes</div>
+            <div id="disaggregation-report" class="download-info">Size: 173 Bytes</div>
         </div>
         
             
                 <div class="total-rows">
-                    Total rows: <span class="total">8</span>
+                    Total rows: <span class="total">9</span>
                 </div>
                 <table border="1" class="dataframe table table-striped table-bordered" id="disaggregation-table">
   <thead>
@@ -132,12 +158,17 @@
       <td>1</td>
       <td>2</td>
     </tr>
+    <tr>
+      <td><a href="disaggregation--trade.html">Trade</a></td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
   </tbody>
 </table>
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['disaggregation-table'] = [{"Disaggregation":"<a href=\"disaggregation--age.html\">Age<\/a>","Number of indicators":1,"Number of values":3},{"Disaggregation":"<a href=\"disaggregation--country.html\">Country<\/a>","Number of indicators":1,"Number of values":20},{"Disaggregation":"<a href=\"disaggregation--geographic-location.html\">Geographic Location<\/a>","Number of indicators":1,"Number of values":2},{"Disaggregation":"<a href=\"disaggregation--industry.html\">Industry<\/a>","Number of indicators":1,"Number of values":19},{"Disaggregation":"<a href=\"disaggregation--province.html\">Province<\/a>","Number of indicators":1,"Number of values":6},{"Disaggregation":"<a href=\"disaggregation--revenue-source.html\">Revenue Source<\/a>","Number of indicators":1,"Number of values":5},{"Disaggregation":"<a href=\"disaggregation--sector.html\">Sector<\/a>","Number of indicators":1,"Number of values":5},{"Disaggregation":"<a href=\"disaggregation--sex.html\">Sex<\/a>","Number of indicators":1,"Number of values":2}];
+            sdgBuild.tables['disaggregation-table'] = [{"Disaggregation":"<a href=\"disaggregation--age.html\">Age<\/a>","Number of indicators":1,"Number of values":3},{"Disaggregation":"<a href=\"disaggregation--country.html\">Country<\/a>","Number of indicators":1,"Number of values":20},{"Disaggregation":"<a href=\"disaggregation--geographic-location.html\">Geographic Location<\/a>","Number of indicators":1,"Number of values":2},{"Disaggregation":"<a href=\"disaggregation--industry.html\">Industry<\/a>","Number of indicators":1,"Number of values":19},{"Disaggregation":"<a href=\"disaggregation--province.html\">Province<\/a>","Number of indicators":1,"Number of values":6},{"Disaggregation":"<a href=\"disaggregation--revenue-source.html\">Revenue Source<\/a>","Number of indicators":1,"Number of values":5},{"Disaggregation":"<a href=\"disaggregation--sector.html\">Sector<\/a>","Number of indicators":1,"Number of values":5},{"Disaggregation":"<a href=\"disaggregation--sex.html\">Sex<\/a>","Number of indicators":1,"Number of values":2},{"Disaggregation":"<a href=\"disaggregation--trade.html\">Trade<\/a>","Number of indicators":1,"Number of values":2}];
             </script>
             
         </div>
@@ -146,12 +177,12 @@
             
         <div class="my-3">
             <a href="disaggregation-by-indicator-report.csv" role="button" class="btn btn-primary" aria-describedby="disaggregation-by-indicator-report">Download CSV of indicators</a>
-            <div id="disaggregation-by-indicator-report" class="download-info">Size: 195 Bytes</div>
+            <div id="disaggregation-by-indicator-report" class="download-info">Size: 213 Bytes</div>
         </div>
         
             
                 <div class="total-rows">
-                    Total rows: <span class="total">5</span>
+                    Total rows: <span class="total">6</span>
                 </div>
                 <table border="1" class="dataframe table table-striped table-bordered" id="indicator-table">
   <thead>
@@ -170,6 +201,11 @@
     <tr>
       <td>#ECO1-2-1</td>
       <td><a href="disaggregation--revenue-source.html">Revenue Source</a></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>#ECO1-4-1</td>
+      <td><a href="disaggregation--trade.html">Trade</a></td>
       <td>1</td>
     </tr>
     <tr>
@@ -192,7 +228,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['indicator-table'] = [{"Indicator":"#ECO1-1-2","Disaggregations":"<a href=\"disaggregation--sector.html\">Sector<\/a>, <a href=\"disaggregation--industry.html\">Industry<\/a>","Number of disaggregations":2},{"Indicator":"#ECO1-2-1","Disaggregations":"<a href=\"disaggregation--revenue-source.html\">Revenue Source<\/a>","Number of disaggregations":1},{"Indicator":"#ECO1-5-3","Disaggregations":"<a href=\"disaggregation--country.html\">Country<\/a>","Number of disaggregations":1},{"Indicator":"#ENV1-3-3","Disaggregations":"<a href=\"disaggregation--geographic-location.html\">Geographic Location<\/a>","Number of disaggregations":1},{"Indicator":"#SOC4-2-1","Disaggregations":"<a href=\"disaggregation--province.html\">Province<\/a>, <a href=\"disaggregation--sex.html\">Sex<\/a>, <a href=\"disaggregation--age.html\">Age<\/a>","Number of disaggregations":3}];
+            sdgBuild.tables['indicator-table'] = [{"Indicator":"#ECO1-1-2","Disaggregations":"<a href=\"disaggregation--sector.html\">Sector<\/a>, <a href=\"disaggregation--industry.html\">Industry<\/a>","Number of disaggregations":2},{"Indicator":"#ECO1-2-1","Disaggregations":"<a href=\"disaggregation--revenue-source.html\">Revenue Source<\/a>","Number of disaggregations":1},{"Indicator":"#ECO1-4-1","Disaggregations":"<a href=\"disaggregation--trade.html\">Trade<\/a>","Number of disaggregations":1},{"Indicator":"#ECO1-5-3","Disaggregations":"<a href=\"disaggregation--country.html\">Country<\/a>","Number of disaggregations":1},{"Indicator":"#ENV1-3-3","Disaggregations":"<a href=\"disaggregation--geographic-location.html\">Geographic Location<\/a>","Number of disaggregations":1},{"Indicator":"#SOC4-2-1","Disaggregations":"<a href=\"disaggregation--province.html\">Province<\/a>, <a href=\"disaggregation--sex.html\">Sex<\/a>, <a href=\"disaggregation--age.html\">Age<\/a>","Number of disaggregations":3}];
             </script>
             
         </div>

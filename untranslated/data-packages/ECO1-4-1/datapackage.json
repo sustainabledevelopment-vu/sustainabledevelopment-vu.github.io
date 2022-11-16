@@ -12,11 +12,22 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Trade",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Exports",
+                "Re-exports",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }

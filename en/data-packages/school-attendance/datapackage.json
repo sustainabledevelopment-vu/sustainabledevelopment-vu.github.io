@@ -1,0 +1,114 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
+            "name": "Area Council",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torres",
+                "Ureparapara",
+                "Motalava",
+                "Vanua Lava",
+                "Mota",
+                "Gaua",
+                "Merelava",
+                "North West Santo",
+                "North Santo",
+                "West Santo",
+                "South Santo",
+                "East Santo",
+                "South East Santo",
+                "Canal - Fanafo",
+                "West Malo",
+                "East Malo",
+                "West Ambae",
+                "North Ambae",
+                "East Ambae",
+                "South Ambae",
+                "North Maewo",
+                "South Maewo",
+                "North Pentecost",
+                "Central Pentecost 1874",
+                "Central Pentecost 21193",
+                "South Pentecost",
+                "North West Malekula",
+                "North East Malekula",
+                "Central Malekula",
+                "South West Malekula",
+                "South East Malekula",
+                "South Malekula",
+                "North Ambrym",
+                "West Ambrym",
+                "South East Ambrym",
+                "Paama",
+                "Vermali",
+                "Vermaul",
+                "Varisu",
+                "South Epi",
+                "North Tongoa",
+                "Tongariki",
+                "Makimae",
+                "Nguna",
+                "Emau",
+                "Malorua",
+                "North Efate",
+                "Mele",
+                "Ifira",
+                "Pango",
+                "Erakor",
+                "Eratap",
+                "Eton",
+                "North Erromango",
+                "South Erromango",
+                "Aniwa",
+                "North Tanna",
+                "West Tanna",
+                "Middle Bush Tanna",
+                "South West Tanna",
+                "Whitesands",
+                "South Tanna",
+                "Futuna",
+                "Aneityum",
+                "Central Pentecost 1718",
+                "Central Pentecost 2875",
+                "409",
+                ""
+              ]
+            },
+            "title": "Area Council"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "school-attendance",
+  "title": "School Attendance"
+}
