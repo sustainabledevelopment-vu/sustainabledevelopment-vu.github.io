@@ -16,29 +16,23 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Sub-Industry",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Crop Production",
+                "Animal Production",
+                "Forestry",
+                "Fishing",
+                "Mining and Quarrying",
+                "Manufacturing",
+                "Electricity and Water Supply",
+                "Construction",
+                "Accomodation and Food Services",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Value of Accommodation and Food Services as Proportion GDP (PROXY)",
-                "Value of Transport as Proportion GDP (PROXY)",
-                "Value of Industry as Proportion GDP",
-                "Value of Agriculture as Proportion GDP",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Sub-Industry"
           },
           {
             "name": "Value",

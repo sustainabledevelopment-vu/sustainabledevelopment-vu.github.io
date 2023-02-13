@@ -1,1 +1,1 @@
-{"Year":[2012],"Units":["Percent"],"Series":["11120"],"Value":[92]}
+{"Year":[2020,2020,2020,2020,2020,2020,2020,2020,2020,2020,2020,2010,2010,2010],"Province":[null,null,null,null,null,"TORBA","SANMA","PENAMA","MALAMPA","SHEFA","TAFEA",null,null,null],"Region":[null,null,null,"Urban","Rural",null,null,null,null,null,null,null,"Urban","Rural"],"Sex":[null,"Male","Female",null,null,null,null,null,null,null,null,null,null,null],"GeoCode":[null,null,null,null,null,"VU01","VU02","VU03","VU04","VU05","VU06",null,null,null],"Value":[80,80,79,56,88,91,71,98,86,69,98,92,86,94]}

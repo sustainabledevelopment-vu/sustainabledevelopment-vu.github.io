@@ -1,7 +1,17 @@
 Value,Disaggregation combinations using this value,Number of indicators
-MALAMPA,9,1
-PENAMA,9,1
-SANMA,9,1
-SHEFA,9,1
-TAFEA,9,1
-TORBA,9,1
+MALAMPA,21,8
+Malampa,1,1
+PENAMA,21,8
+Penama,1,1
+Rural,1,1
+SANMA Rural,2,1
+SANMA,21,8
+Sanma,1,1
+SHEFA Rural,2,1
+SHEFA,21,8
+Shefa,1,1
+TAFEA,21,8
+Tafea,1,1
+TORBA,21,8
+Torba,1,1
+Urban,1,1

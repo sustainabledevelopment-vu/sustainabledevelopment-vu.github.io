@@ -1,5 +1,8 @@
-Year,Value,Units,Series
-2012,98,Percent,11720
-2013,96,Percent,11720
-2012,86,Percent,11723
-2013,81,Percent,11723
+Year,Value,Series,GeoCode
+2020,94,Agriculture,
+2010,98,Agriculture,
+2012,96,Agriculture,
+2020,41,Forestry,
+2020,82,Livestock,
+2010,86,Livestock,
+2012,81,Livestock,

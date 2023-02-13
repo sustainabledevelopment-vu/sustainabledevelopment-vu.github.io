@@ -15,24 +15,45 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "TORBA",
+                "SANMA",
+                "PENAMA",
+                "MALAMPA",
+                "SHEFA",
+                "TAFEA",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "11120",
+                "Urban",
+                "Rural",
                 ""
               ]
             }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
@@ -44,5 +65,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-1-2",
-  "title": "SOC1-1-2"
+  "title": "indicators.SOC1-1-2-title"
 }

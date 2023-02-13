@@ -16,26 +16,22 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Urban",
+                "Rural",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Access to Safe Drinking Water",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Region"
           },
           {
             "name": "Value",

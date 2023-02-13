@@ -16,26 +16,22 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Urban",
+                "Rural",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Households Using Renewable Energy as Main Source of Lighting",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Province"
           },
           {
             "name": "Value",

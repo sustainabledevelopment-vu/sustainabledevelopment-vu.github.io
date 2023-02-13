@@ -16,26 +16,49 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "TORBA",
+                "SANMA",
+                "PENAMA",
+                "MALAMPA",
+                "SHEFA",
+                "TAFEA",
                 ""
               ]
             },
-            "title": "Units"
+            "title": "Province"
           },
           {
-            "name": "Series",
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "First Language Used Indigenous",
+                "Urban",
+                "Rural",
                 ""
               ]
             },
-            "title": "Series"
+            "title": "Region"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
           },
           {
             "name": "Value",
@@ -48,5 +71,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-1-2",
-  "title": "SOC1-1-2"
+  "title": "Proportion of population first language learned indigenous"
 }

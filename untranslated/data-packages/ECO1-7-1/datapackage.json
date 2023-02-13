@@ -12,11 +12,27 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Major Commodity",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Beef",
+                "Cocoa",
+                "Coconut Oil",
+                "Coffee",
+                "Copra",
+                "Kava",
+                "Wood",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }

@@ -15,24 +15,19 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Sub-Industry",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "33111",
-                "33113",
-                "33114",
-                "33115",
+                "Crop Production",
+                "Animal Production",
+                "Forestry",
+                "Fishing",
+                "Mining and Quarrying",
+                "Manufacturing",
+                "Electricity and Water Supply",
+                "Construction",
+                "Accomodation and Food Services",
                 ""
               ]
             }

@@ -1,49 +1,12 @@
-Year,Value,Units,Series
-2006,4,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2007,4,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2008,4,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2009,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2010,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2011,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2012,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2013,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2014,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2015,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2016,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2017,5,Percent,Value of Accommodation and Food Services as Proportion GDP (PROXY)
-2006,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2007,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2008,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2009,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2010,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2011,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2012,8,Percent,Value of Transport as Proportion GDP (PROXY)
-2013,6,Percent,Value of Transport as Proportion GDP (PROXY)
-2014,5,Percent,Value of Transport as Proportion GDP (PROXY)
-2015,5,Percent,Value of Transport as Proportion GDP (PROXY)
-2016,5,Percent,Value of Transport as Proportion GDP (PROXY)
-2017,5,Percent,Value of Transport as Proportion GDP (PROXY)
-2006,8,Percent,Value of Industry as Proportion GDP
-2007,7,Percent,Value of Industry as Proportion GDP
-2008,8,Percent,Value of Industry as Proportion GDP
-2009,10,Percent,Value of Industry as Proportion GDP
-2010,11,Percent,Value of Industry as Proportion GDP
-2011,9,Percent,Value of Industry as Proportion GDP
-2012,7,Percent,Value of Industry as Proportion GDP
-2013,7,Percent,Value of Industry as Proportion GDP
-2014,7,Percent,Value of Industry as Proportion GDP
-2015,10,Percent,Value of Industry as Proportion GDP
-2016,10,Percent,Value of Industry as Proportion GDP
-2017,10,Percent,Value of Industry as Proportion GDP
-2006,21,Percent,Value of Agriculture as Proportion GDP
-2007,21,Percent,Value of Agriculture as Proportion GDP
-2008,20,Percent,Value of Agriculture as Proportion GDP
-2009,19,Percent,Value of Agriculture as Proportion GDP
-2010,20,Percent,Value of Agriculture as Proportion GDP
-2011,21,Percent,Value of Agriculture as Proportion GDP
-2012,21,Percent,Value of Agriculture as Proportion GDP
-2013,22,Percent,Value of Agriculture as Proportion GDP
-2014,22,Percent,Value of Agriculture as Proportion GDP
-2015,19,Percent,Value of Agriculture as Proportion GDP
-2016,19,Percent,Value of Agriculture as Proportion GDP
-2017,18,Percent,Value of Agriculture as Proportion GDP
+Year,Value
+2010,35
+2011,33
+2012,31
+2013,32
+2014,32
+2015,33
+2016,34
+2017,33
+2018,33
+2019,32
+2020,31

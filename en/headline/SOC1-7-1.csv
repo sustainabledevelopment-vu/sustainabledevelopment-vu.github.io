@@ -1,7 +1,10 @@
-Year,Value,Units,Series
-2012,79,Percent,Access to Traditional Lands
-2013,87,Percent,Access to Traditional Lands
-2012,64,Percent,Access to Common Forest Resources
-2013,86,Percent,Access to Common Forest Resources
-2012,59,Percent,Access to Common Marine Resources
-2013,77,Percent,Access to Common Marine Resources
+Year,Value,Series,GeoCode
+2020,85,Indigenous land access,
+2010,79,Indigenous land access,
+2012,87,Indigenous land access,
+2020,85,Marine resources,
+2010,79,Marine resources,
+2012,87,Marine resources,
+2020,93,Forest resources,
+2010,93,Forest resources,
+2012,86,Forest resources,

@@ -15,21 +15,18 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "22320",
+                "Urban",
+                "Rural",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
                 ""
               ]
             }

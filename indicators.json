@@ -75,7 +75,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO1-5-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO1-5-3",
@@ -99,7 +99,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO1-6-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO1-7-1",
@@ -107,7 +107,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO1-7-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO1-7-2",
@@ -163,7 +163,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO2-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO2-1-2",
@@ -179,7 +179,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO2-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO2-2-2",
@@ -275,7 +275,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO3-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO3-1-2",
@@ -1027,7 +1027,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-1-2",
@@ -1035,7 +1035,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-1-3",
@@ -1051,7 +1051,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-2-2",
@@ -1059,7 +1059,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-2-3",
@@ -1067,7 +1067,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-2-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-3-1",
@@ -1115,7 +1115,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-7-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC1-7-2",
@@ -1123,7 +1123,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC1-7-2/",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },

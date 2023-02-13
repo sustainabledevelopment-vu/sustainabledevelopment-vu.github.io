@@ -16,26 +16,30 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
+                "Fiji",
+                "Papua New Guinea",
+                "Solomon Islands",
                 ""
               ]
             },
-            "title": "Units"
+            "title": "Country"
           },
           {
-            "name": "Series",
+            "name": "TradeType",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total Value Export to MSG Countries (PROXY)",
+                "Exports",
+                "Imports",
+                "Balance",
                 ""
               ]
             },
-            "title": "Series"
+            "title": "TradeType"
           },
           {
             "name": "Value",

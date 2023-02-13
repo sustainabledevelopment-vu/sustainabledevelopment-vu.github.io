@@ -15,26 +15,57 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Indigenous land access",
+                "Marine resources",
+                "Forest resources",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "11710",
-                "11711",
-                "11712",
+                "TORBA",
+                "SANMA",
+                "PENAMA",
+                "MALAMPA",
+                "SHEFA",
+                "TAFEA",
                 ""
               ]
             }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Urban",
+                "Rural",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
@@ -46,5 +77,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-7-1",
-  "title": "SOC1-7-1"
+  "title": "indicators.SOC1-7-1-title"
 }

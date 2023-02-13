@@ -16,26 +16,61 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Unit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Percentage households with 5 basic skills",
+                "Percentage individuals that live in households with all 5 basic production skills",
                 ""
               ]
             },
-            "title": "Units"
+            "title": "Unit"
           },
           {
-            "name": "Series",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Basic Traditional Production Skills",
+                "TORBA",
+                "SANMA",
+                "PENAMA",
+                "MALAMPA",
+                "SHEFA",
+                "TAFEA",
                 ""
               ]
             },
-            "title": "Series"
+            "title": "Province"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Urban",
+                "Rural",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
           },
           {
             "name": "Value",
@@ -48,5 +83,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-2-2",
-  "title": "SOC1-2-2"
+  "title": "Proportion of population possessing common and basic traditional production skills related to weaving, transport, housing, farming, food preparation"
 }
