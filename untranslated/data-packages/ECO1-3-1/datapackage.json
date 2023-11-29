@@ -12,11 +12,32 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Net Operating Balance (surplus)",
+                "Net Operating Balance Excluding Donors (deficit)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "VT (millions of vatu)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "number"
           }
         ]
       }
@@ -24,5 +45,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-3-1",
-  "title": "ECO1-3-1"
+  "title": "indicators.ECO1-3-1-title"
 }

@@ -16,33 +16,50 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
-                "Total",
+                "Urban",
+                "Rural",
                 ""
               ]
             },
-            "title": "Units"
+            "title": "Urban/Rural"
           },
           {
-            "name": "Series",
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "Annual Growth Rate of Subsistence/Custom/Traditional Agriculture Constant Price (PROXY)",
-                "Proportion of Population age 15+ Engaged in Household Production for Own Consumption (PROXY)",
-                "Total Households Engaged in Agricultural Activities (PROXY)",
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
                 ""
               ]
             },
-            "title": "Series"
+            "title": "Region"
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of households (%)",
+                "Total number of households",
+                ""
+              ]
+            },
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -51,5 +68,5 @@
   ],
   "profile": "data-package",
   "name": "ENV1-1-1",
-  "title": "ENV1-1-1"
+  "title": "Proportion of households engaged in production of food for own consumption"
 }

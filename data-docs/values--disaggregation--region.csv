@@ -1,9 +1,21 @@
 Value,Disaggregation combinations using this value,Number of indicators
-Malampa,1,1
-Penama,1,1
+Luganville,33,5
+Malampa,34,6
+malampa,12,1
+Penama,34,6
+penama,12,1
+Port Vila,31,4
+PortVila,2,1
 Rural,13,8
-Sanma,1,1
-Shefa,1,1
-Tafea,1,1
-Torba,1,1
+rural,12,1
+Sanma,34,6
+sanma,12,1
+Shefa,34,6
+shefa,12,1
+Tafea,34,6
+tafea,12,1
+Torba,34,6
+torba,12,1
 Urban,13,8
+urban,12,1
+vanuatu,11,1

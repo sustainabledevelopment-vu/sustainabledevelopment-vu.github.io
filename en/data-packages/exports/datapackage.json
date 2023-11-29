@@ -1,0 +1,107 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total Value",
+                "Export by Country",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Principal Export",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Beef",
+                "Cocoa",
+                "Coconut oil",
+                "Copra",
+                "Kava",
+                "Wood",
+                ""
+              ]
+            },
+            "title": "Principal Export"
+          },
+          {
+            "name": "Main Country of Destination",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Japan",
+                "Papua New Guinea",
+                "Sri Lanka",
+                "Netherlands",
+                "Australia",
+                "Belgium",
+                "United Kingdom",
+                "New Zealand",
+                "Malaysia",
+                "Taiwan",
+                "New Caledonia",
+                "Philippines",
+                "Bangladesh",
+                "Kiribati",
+                "France",
+                "United States of America",
+                "China",
+                "Hong Kong",
+                "Fiji",
+                "Solomon Islands",
+                "Indonesia",
+                "Italy",
+                "French Polynesia",
+                "Vietnam",
+                "India",
+                "Singapore",
+                "Czech Republic",
+                "United Arab Emirates",
+                ""
+              ]
+            },
+            "title": "Main Country of Destination"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Millions in Vatu (VUV)",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "exports",
+  "title": "exports"
+}

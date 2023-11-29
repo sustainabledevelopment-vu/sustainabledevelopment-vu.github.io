@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'en',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -127,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230213234336">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20231129223631">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -175,49 +189,69 @@ layout-page
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-evaluation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    EVALUATION
+                    <ul class="navbar-nav" id="menu"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    INFORMATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-evaluation"><li class=" ">
+                <ul class="dropdown-menu" aria-labelledby="dropdown-information"><li class=" ">
+    <a class="dropdown-item" href="/about/">NSPD ONLINE PLATFORM</a>
+</li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    INFORMATION
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    FINANCE
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-information"><li class=" ">
-    <a class="dropdown-item" href="/about/">NSPD ONLINE PLATFORM</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-finance"><li class=" ">
+    <a class="dropdown-item" href="/government-financial-statistics/">GOVERNMENT</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/technical-advice/">TECHNICAL ADVICE</a>
+    <a class="dropdown-item" href="/donor/">DONOR</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/vat/">VAT</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/business">BUSINESSES</a>
 </li></ul>
-            </li><li class="nav-item ">
-    <a class="nav-link" href="/financial-statistics/">FINANCIAL STATISTICS</a>
-</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-profiles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PROFILES
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-trades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TRADES
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-profiles"><li class=" ">
-    <a class="dropdown-item" href="/demographics/">DEMOGRAPHICS</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-trades"><li class=" ">
+    <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/education/">EDUCATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labour/">LABOUR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/primary-production">PRIMARY PRODUCTION</a>
-</li><li class=" active">
-    <a class="dropdown-item" href="/household-facilities/">HOUSEHOLD FACILITIES</a>
+    <a class="dropdown-item" href="/imports/">IMPORTS</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-human-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    HUMAN DEVELOPMENT
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EDUCATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-human-development"><li class=" ">
-    <a class="dropdown-item" href="/enrolment/">ENROLMENT</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
+    <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/grades/">GRADES</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/scolarship/">SCHOLARSHIP</a>
+    <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/usp/">USP</a>
+</li></ul>
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DISASTER
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
+    <a class="dropdown-item" href="/population/">POPULATION</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/health/">HEALTH</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/labor/">LABOR</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/shelter/">SHELTER</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/income/">INCOME</a>
 </li></ul>
             </li></ul>
     
@@ -337,12 +371,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20230213234336'></script>
+<script src='/assets/js/sdg.js?v=20231129223631'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230213234336"></script><script>
+    <script src="/assets/js/custom.js?v=20231129223631"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

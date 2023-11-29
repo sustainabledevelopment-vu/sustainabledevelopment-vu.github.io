@@ -12,11 +12,45 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Exports",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Alcohol drinks",
+                "Beef",
+                "Cocoa",
+                "Coconut Meal",
+                "Coconut Oil",
+                "Coffee",
+                "Copra",
+                "Cowhides",
+                "Fish tuna",
+                "Kava",
+                "Ornamental Fish",
+                "Wood",
+                "Shell Buttons",
+                "Vanilla",
+                "Other Products",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total value in millions of vatu",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +58,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-3-1",
-  "title": "ECO4-3-1"
+  "title": "indicators.ECO4-3-1-title"
 }

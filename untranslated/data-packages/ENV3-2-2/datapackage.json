@@ -15,28 +15,63 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Technology",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Cell Phone",
+                "Laptpop",
+                "Tablet",
+                "Internet",
+                "Desktop",
+                "Landline",
+                "Satelite Phone",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "23221",
+                "Urban",
+                "Rural",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of private households (%)",
+                "Total number technologies convey early warnings",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
@@ -44,5 +79,5 @@
   ],
   "profile": "data-package",
   "name": "ENV3-2-2",
-  "title": "ENV3-2-2"
+  "title": "indicators.ENV3-2-2-title"
 }

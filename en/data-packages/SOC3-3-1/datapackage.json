@@ -16,30 +16,8 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "DTP3 Immunisation Coverage for 1 Year Olds",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -48,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-3-1",
-  "title": "SOC3-3-1"
+  "title": "Diphtheria tetanus toxoid and pertussis (DTP3) immunisation coverage among 1 year olds (%)"
 }

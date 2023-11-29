@@ -15,21 +15,12 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "21131",
+                "Urban",
+                "Rural",
                 ""
               ]
             }
@@ -44,5 +35,5 @@
   ],
   "profile": "data-package",
   "name": "ENV1-1-3",
-  "title": "ENV1-1-3"
+  "title": "indicators.ENV1-1-3-title"
 }

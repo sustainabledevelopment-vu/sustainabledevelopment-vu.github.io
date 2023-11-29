@@ -16,34 +16,66 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Population Use of Radio",
-                "Population Use of Newspapers",
-                "Population Use of Television",
-                "Population Use of Internet",
-                "Population Ownership of Mobile Phones (15 yr +)",
+                "houses",
+                "proportion",
                 ""
               ]
             },
             "title": "Series"
           },
           {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "vanuatu",
+                "urban",
+                "rural",
+                "torba",
+                "sanma",
+                "penama",
+                "malampa",
+                "shefa",
+                "tafea",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Media Outlets",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "internet",
+                "mobile phone",
+                "tv",
+                "radio",
+                "newspaper",
+                ""
+              ]
+            },
+            "title": "Media Outlets"
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "total count",
+                "percentage",
+                ""
+              ]
+            },
+            "title": "Unit of measurement"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -52,5 +84,5 @@
   ],
   "profile": "data-package",
   "name": "SOC6-7-1",
-  "title": "SOC6-7-1"
+  "title": "Proportion of population utilising media outlets for news including: newspapers, mobile phones, radio, television, and internet"
 }

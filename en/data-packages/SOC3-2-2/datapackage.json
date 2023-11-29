@@ -16,30 +16,19 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
+                "Incidence of TB per 100,000 population",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Incidence of Tuberculosis",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -48,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-2-2",
-  "title": "SOC3-2-2"
+  "title": "Incidence of TB (per 100,000 population)"
 }

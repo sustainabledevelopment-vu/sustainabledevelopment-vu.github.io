@@ -1,0 +1,115 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Population15+labourforceparticipationrate(%)",
+                "Workingpopulation15+employmentstatus",
+                "Workingpopulation15+industryofemployment",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PortVila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Employment Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Employee-government",
+                "Employee-private",
+                "Employer",
+                "Selfemployed",
+                "Voluntarywork",
+                "Unpaidfamilywork",
+                "Producinggoodsforownconsumption",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Industry",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Accomodationandfoodservices",
+                "Activitiesofextraterritorialorganizationsandbodies",
+                "Administrativeandsupportservices",
+                "Agricultureforestryandfishing",
+                "Artsentertainmentandrecreation",
+                "Construction",
+                "Education",
+                "Electricity,gas,steamandairconditioningsupply",
+                "Financialandinsurance",
+                "Householdactivities",
+                "Humanhealthandsocialwork",
+                "Informationandcommunication",
+                "Manufacturing",
+                "Miningandquarrying",
+                "NotStated",
+                "Otherservices",
+                "Professional,scientific,andtechnicalactivities",
+                "Publicadministrationanddefence,compulsorysocialsecurity",
+                "Realestate",
+                "Transportandstorage",
+                "Watersupply,sewage,wastemanagement,andremediation",
+                "Wholesaleandretailtrade,repairofmotorvehicles",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "labor",
+  "title": "Vanuatu Labour Statistics"
+}

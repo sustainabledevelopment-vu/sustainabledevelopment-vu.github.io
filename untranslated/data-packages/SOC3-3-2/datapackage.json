@@ -15,28 +15,8 @@
             "type": "integer"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "13320",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
@@ -44,5 +24,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-3-2",
-  "title": "SOC3-3-2"
+  "title": "indicators.SOC3-3-2-title"
 }

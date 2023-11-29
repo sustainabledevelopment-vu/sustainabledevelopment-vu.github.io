@@ -16,33 +16,86 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Literacy Standards Yr 4 Anglo",
-                "Literacy Standards Yr 6 Anglo",
-                "Numeracy Standards Yr 4 Anglo",
-                "Numeracy Standards Yr 6 Anglo",
-                "Literacy Standards Yr 4 Franco",
-                "Literacy Standards Yr 6 Franco",
-                "Numeracy Standards Yr 4 Franco",
-                "Numeracy Standards Yr 6 Franco",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 6",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 8",
+                "English Literacy - Year 4",
+                "English Literacy - Year 6",
+                "English Literacy - Year 8",
+                "Numeracy - Year 4",
+                "Numeracy - Year 6",
+                "Numeracy - Year 8",
+                "critically below minimum standard",
+                "approaching minimum standard",
+                "meeting minimum standard",
+                "exceeding minimum standard",
                 ""
               ]
             },
             "title": "Series"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "torba",
+                "sanma",
+                "penama",
+                "malampa",
+                "shefa",
+                "tafea",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "male",
+                "female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Language",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "eng",
+                "fre",
+                ""
+              ]
+            },
+            "title": "Language"
+          },
+          {
+            "name": "Year level",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 6",
+                "English Literacy - Year 4",
+                "English Literacy - Year 6",
+                "Numeracy - Year 4",
+                "Numeracy - Year 6",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 8",
+                "English Literacy - Year 8",
+                "Numeracy - Year 8",
+                ""
+              ]
+            },
+            "title": "Year level"
           },
           {
             "name": "Value",
@@ -55,5 +108,5 @@
   ],
   "profile": "data-package",
   "name": "SOC2-3-1",
-  "title": "SOC2-3-1"
+  "title": "Percentage of students meeting literacy and numeracy standards"
 }

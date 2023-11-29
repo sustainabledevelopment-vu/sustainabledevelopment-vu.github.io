@@ -15,21 +15,11 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "13230",
+                "Malria incidence per 1000 population",
                 ""
               ]
             }
@@ -44,5 +34,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-2-3",
-  "title": "SOC3-2-3"
+  "title": "indicators.SOC3-2-3-title"
 }

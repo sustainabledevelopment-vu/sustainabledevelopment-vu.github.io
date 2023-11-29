@@ -12,11 +12,32 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Fruit or Vegetable",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Cabbage Lettuce",
+                "Capsicum",
+                "Carrots and Turnips",
+                "Cauliflowers and Broccoli",
+                "Corn",
+                "Cucumber and Gherkins",
+                "Onions and Shallots",
+                "Oranges",
+                "Potatoes",
+                "Pumpkins, Squash, and Gourds",
+                "Tomatoes",
+                "Watermelons",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +45,5 @@
   ],
   "profile": "data-package",
   "name": "ENV1-3-1",
-  "title": "ENV1-3-1"
+  "title": "indicators.ENV1-3-1-title"
 }

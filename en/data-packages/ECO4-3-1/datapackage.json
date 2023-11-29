@@ -12,12 +12,48 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Exports",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Alcohol drinks",
+                "Beef",
+                "Cocoa",
+                "Coconut Meal",
+                "Coconut Oil",
+                "Coffee",
+                "Copra",
+                "Cowhides",
+                "Fish tuna",
+                "Kava",
+                "Ornamental Fish",
+                "Wood",
+                "Shell Buttons",
+                "Vanilla",
+                "Other Products",
+                ""
+              ]
+            },
+            "title": "Exports"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total value in millions of vatu",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +62,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-3-1",
-  "title": "ECO4-3-1"
+  "title": "Total number of processed local products produced per annum for domestic consumption and export"
 }

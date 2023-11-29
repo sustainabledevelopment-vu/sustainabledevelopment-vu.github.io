@@ -15,28 +15,78 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 6",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 8",
+                "English Literacy - Year 4",
+                "English Literacy - Year 6",
+                "English Literacy - Year 8",
+                "Numeracy - Year 4",
+                "Numeracy - Year 6",
+                "Numeracy - Year 8",
+                "critically below minimum standard",
+                "approaching minimum standard",
+                "meeting minimum standard",
+                "exceeding minimum standard",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "12310",
-                "12311",
-                "12312",
-                "12313",
-                "12314",
-                "12315",
-                "12316",
-                "12317",
+                "torba",
+                "sanma",
+                "penama",
+                "malampa",
+                "shefa",
+                "tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "male",
+                "female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Language",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "eng",
+                "fre",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Year level",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 6",
+                "English Literacy - Year 4",
+                "English Literacy - Year 6",
+                "Numeracy - Year 4",
+                "Numeracy - Year 6",
+                "AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 8",
+                "English Literacy - Year 8",
+                "Numeracy - Year 8",
                 ""
               ]
             }
@@ -51,5 +101,5 @@
   ],
   "profile": "data-package",
   "name": "SOC2-3-1",
-  "title": "SOC2-3-1"
+  "title": "indicators.SOC2-3-1-title"
 }

@@ -43,6 +43,20 @@ var opensdg = {
   ignoredDisaggregations: null,
 
   language: 'en',
+
+  mapColors: {
+    "default": [
+        "#c4e1c6",
+        "#b0d1b3",
+        "#9bc2a1",
+        "#87b28f",
+        "#74a37c",
+        "#60946b",
+        "#4d8559",
+        "#3a7747",
+        "#276836"
+    ]
+},
 };
 
 </script>
@@ -132,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230213234336">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20231129223631">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -182,49 +196,69 @@ goal-number-ENV3
             </button>
             <div class="d-flex flex-wrap w-100 justify-content-between">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-evaluation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    EVALUATION
+                    <ul class="navbar-nav" id="menu"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    INFORMATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-evaluation"><li class=" ">
+                <ul class="dropdown-menu" aria-labelledby="dropdown-information"><li class=" ">
+    <a class="dropdown-item" href="/about/">NSPD ONLINE PLATFORM</a>
+</li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    INFORMATION
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    FINANCE
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-information"><li class=" ">
-    <a class="dropdown-item" href="/about/">NSPD ONLINE PLATFORM</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-finance"><li class=" ">
+    <a class="dropdown-item" href="/government-financial-statistics/">GOVERNMENT</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/technical-advice/">TECHNICAL ADVICE</a>
+    <a class="dropdown-item" href="/donor/">DONOR</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/vat/">VAT</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/business">BUSINESSES</a>
 </li></ul>
-            </li><li class="nav-item ">
-    <a class="nav-link" href="/financial-statistics/">FINANCIAL STATISTICS</a>
-</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-profiles" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PROFILES
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-trades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TRADES
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-profiles"><li class=" ">
-    <a class="dropdown-item" href="/demographics/">DEMOGRAPHICS</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-trades"><li class=" ">
+    <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/education/">EDUCATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labour/">LABOUR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/primary-production">PRIMARY PRODUCTION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/household-facilities/">HOUSEHOLD FACILITIES</a>
+    <a class="dropdown-item" href="/imports/">IMPORTS</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-human-development" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    HUMAN DEVELOPMENT
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EDUCATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-human-development"><li class=" ">
-    <a class="dropdown-item" href="/enrolment/">ENROLMENT</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
+    <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/grades/">GRADES</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/scolarship/">SCHOLARSHIP</a>
+    <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/usp/">USP</a>
+</li></ul>
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DISASTER
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
+    <a class="dropdown-item" href="/population/">POPULATION</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/health/">HEALTH</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/labor/">LABOR</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/shelter/">SHELTER</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/income/">INCOME</a>
 </li></ul>
             </li></ul>
     
@@ -322,14 +356,15 @@ data-event-label="high"
     <fieldset>
       <legend class="sr-only">Series</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
+        <% var isProxy = (proxySerieses.includes(seriesItem)) %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
-        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
+        <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%> <%=isProxy ? proxyPill : ''%></label>
       <% }); %>
     </fieldset>
   
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from Vanuatu statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Vanuatuan statistics, this table should be consulted for information on national methodology and other Vanuatu-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"2030 indicator target","annotation_series_break":"Series break","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","apply":"Apply","cancel":"Cancel","change_breakdowns":"Change breakdowns","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download chart data (.csv)","download_chart_image":"Download chart image (.png)","download_chart_image_title":"Download chart image as PNG","download_csv":"Download data (.csv)","download_csv_title":"Download data as CSV","download_geojson":"Download map data (.geojson)","download_geojson_title":"Download map data as GeoJSON","download_headline":"Download headline data (.csv)","download_headline_title":"Download headline data as CSV","download_source":"Download source data (.csv)","download_source_for_disaggregations":"Download source data for disaggregations (.csv)","download_source_sdmx":"Download source SDMX (.xml)","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download table data (.csv)","edit":"Edit Indicator","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","empty_metadata_placeholder":"Not available for this indicator","empty_metadata_placeholder_sources":"Not available for this source","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","headline_data":"Headline data","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_fullscreen":"View map fullscreen","map_fullscreen_exit":"Exit fullscreen map","map_search":"Map search","map_search_cancel":"Clear map search","map_search_hide":"Hide map search","map_search_show":"Show map search","map_slider_back":"View map data for previous time period","map_slider_forward":"View map data for next time period","map_slider_keyboard":"View map data throughout time period by using left and right arrow keys","map_slider_mouse":"Navigate map data by time period","map_year_slider":"Year slider","map_zoom_home":"Reset to default map zoom","map_zoom_in":"Zoom in on map","map_zoom_out":"Zoom out on map","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from Vanuatu statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Vanuatuan statistics, this table should be consulted for information on national methodology and other Vanuatu-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","no_headline_data":"No headline data available","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","proxy":"Proxy","proxy_description":"This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","total":"Total","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
 
 <script>translations['data'] = {"Year":"Year"};</script>
 
@@ -401,8 +436,29 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2></h2>
+  </div>
+</div>
+
 
   
+
+  
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
 
@@ -423,31 +479,293 @@ data-event-label="high"
   data-indicatorid='indicator_ENV3-2-2'
   data-id="ENV3-2-2"
   data-country="Vanuatu"
-  data-charttitle="Proportion of population with access to technologies that convey early warnings"
-  data-charttitles="null"
+  data-charttitle="Proportion of population with access to technologies that conveys early warnings"
+  data-charttitles="[]"
   data-measurementunit=""
-  data-xaxislabel=""
-  data-showdata="false"
+  data-xaxislabel="Year"
+  data-showdata="true"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percent&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Proportion of Households with Ability to Use Phone for Calls Inside Home (PROXY)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Technology&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Cell Phone&quot;,&quot;Laptpop&quot;,&quot;Tablet&quot;,&quot;Internet&quot;,&quot;Desktop&quot;,&quot;Landline&quot;,&quot;Satelite Phone&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Technology&quot;},{&quot;name&quot;:&quot;Urban/Rural&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Urban&quot;,&quot;Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Urban/Rural&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Port Vila&quot;,&quot;Luganville&quot;,&quot;Torba&quot;,&quot;Sanma&quot;,&quot;Penama&quot;,&quot;Malampa&quot;,&quot;Shefa&quot;,&quot;Tafea&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Unit of measurement&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percentage of private households (%)&quot;,&quot;Total number technologies convey early warnings&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unit of measurement&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="null"
+  data-precision="[]"
+  data-proxy=""
+  data-proxyseries="[]"
   
   data-mappoints="null"
   
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="/en/data/ENV3-2-2.csv" class="btn btn-primary btn-download" download='indicator_ENV3-2-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>No headline data available</h3>
+    
+  </div>
+
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            Proportion of population with access to technologies that conveys early warnings
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Vanuatu</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+        <dt>Geographical Area:</dt>
+        <dd>Vanuatu</dd>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -520,8 +838,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>NO</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -530,7 +859,29 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>The methods for gaining access to a computer system or network such as dial-up modem, cable modem, DSL, satellite and wireless.</p>
+            <p>The “proportion of population with access to technologies that conveys early warnings” refers to the percentage or fraction of a given population that has the means to receive timely and relevant information or alerts about potential hazards, risks, or emergencies through technological channels. These technologies are designed to provide early warnings, enabling individuals to take appropriate actions to mitigate or respond to the situation effectively.</p>
+
+<p>The term “technologies that conveys early warnings” encompasses various communication tools and systems that deliver critical information promptly. Examples include:</p>
+
+<ol>
+  <li>
+    <p>Mobile phones: Utilizing text messages (SMS), mobile applications, or push notifications to deliver alerts and warnings directly to individuals’ devices.</p>
+  </li>
+  <li>
+    <p>Radio and television: Broadcasting emergency messages via radio or television networks to reach a wide audience, particularly in areas with limited internet connectivity.</p>
+  </li>
+  <li>
+    <p>Internet and websites: Making use of websites, online platforms, and social media channels to disseminate early warnings and updates.</p>
+  </li>
+  <li>
+    <p>Warning sirens and public address systems: Deploying sound-based systems, such as sirens or loudspeakers, in public spaces to alert people about imminent dangers.</p>
+  </li>
+  <li>
+    <p>Weather monitoring systems: Leveraging meteorological instruments, such as weather stations, satellites, and radars, to detect and predict severe weather conditions and communicate warnings to the population.</p>
+  </li>
+</ol>
+
+<p>The proportion of the population with access to such technologies indicates the extent to which individuals can receive critical information swiftly, helping them make informed decisions and take appropriate actions during emergencies or hazardous situations.</p>
 
           
         </td>
@@ -546,7 +897,29 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The growth in technology and use of social media offers an opportunity for supplementary and complementary information alongside existing sources. Social media data can collect additional information to monitor hazards, assess exposure and vulnerability, guide disaster response, assess the resilience of natural systems, and engage with communities.</p>
+            <p>The concept behind using the indicator “Proportion of population with access to technologies that conveys early warnings” is to assess the level of preparedness and resilience of a population in the face of potential hazards or emergencies. It provides insight into the extent to which individuals can receive timely information and warnings, enabling them to take appropriate actions to protect themselves and their communities.</p>
+
+<p>Here are some key points related to this concept:</p>
+
+<ol>
+  <li>
+    <p>Disaster risk reduction: By measuring the proportion of the population with access to early warning technologies, policymakers and organizations can gauge the effectiveness of their efforts in reducing disaster risks. It helps identify gaps in communication systems and infrastructure that need improvement to enhance preparedness.</p>
+  </li>
+  <li>
+    <p>Vulnerability reduction: Early warnings are particularly crucial for vulnerable populations who may have limited access to resources or face greater challenges during emergencies. Monitoring the proportion of these populations with access to early warning technologies helps ensure their needs are addressed and vulnerabilities are reduced.</p>
+  </li>
+  <li>
+    <p>Timely response and preparedness: Early warnings play a vital role in enabling individuals and communities to respond promptly and effectively to emergencies. The indicator helps evaluate the readiness of a population to receive and respond to warnings, which can save lives, minimize damage, and enhance overall resilience.</p>
+  </li>
+  <li>
+    <p>Communication infrastructure development: Assessing the proportion of the population with access to early warning technologies helps identify areas where communication infrastructure needs to be strengthened or expanded. It supports the development and investment in technologies that can disseminate warnings efficiently and reach a larger number of people.</p>
+  </li>
+  <li>
+    <p>Monitoring progress and impact: Over time, tracking changes in the proportion of the population with access to early warning technologies allows for monitoring progress in disaster risk reduction efforts. It helps measure the impact of interventions, policies, and investments aimed at improving the dissemination of early warnings.</p>
+  </li>
+</ol>
+
+<p>By focusing on this indicator, policymakers and organizations can work towards bridging the digital divide, improving information dissemination mechanisms, and ensuring that all segments of the population have equal access to technologies that convey early warnings, thereby enhancing overall preparedness and resilience in the face of disasters and emergencies.</p>
 
           
         </td>
@@ -557,8 +930,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>technology devices, urban, rural,</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -567,7 +951,30 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Information and knowledge about a natural hazard event as it unfolds are vital to ensure effective preparedness and response to disasters. Those responsible for making decisions in advance of and in response to disasters need to know as much as they can about what the situation is and how it is unfolding. Citizens affected on the ground need to know how to stay safe or where they can obtain supplies.</p>
+            <p>The rationale for monitoring the “Proportion of population with access to technologies that conveys early warnings” is rooted in the importance of timely information dissemination during emergencies or potential hazards. Here are some key rationales for monitoring this indicator:</p>
+
+<ol>
+  <li>
+    <p>Enhancing disaster preparedness: Access to early warning technologies is crucial for individuals and communities to be prepared for and respond effectively to emergencies. Monitoring the proportion of the population with access to these technologies helps identify gaps in preparedness and prioritize efforts to improve communication infrastructure and systems.</p>
+  </li>
+  <li>
+    <p>Ensuring inclusivity and equity: Monitoring access to early warning technologies helps ensure that all segments of the population, including vulnerable groups, have equal opportunities to receive timely information. It helps identify disparities and address issues of inclusivity and equity, ensuring that no one is left behind in disaster risk reduction efforts.</p>
+  </li>
+  <li>
+    <p>Saving lives and reducing damage: Timely access to early warnings can save lives, reduce injuries, and minimize damage during emergencies. By monitoring the proportion of the population with access to these technologies, policymakers and organizations can assess the effectiveness of their efforts in providing critical information and enhancing the chances of a timely response.</p>
+  </li>
+  <li>
+    <p>Supporting informed decision-making: Early warnings enable individuals to make informed decisions regarding evacuation, sheltering, or other necessary actions. Monitoring access to early warning technologies ensures that people have the necessary information to make these decisions promptly and effectively, thereby reducing the impact of disasters.</p>
+  </li>
+  <li>
+    <p>Improving response and recovery: Access to early warning technologies not only helps in early preparedness but also facilitates a more coordinated response and efficient recovery after an event. Monitoring the proportion of the population with access to these technologies allows for the evaluation of response systems and the identification of areas where improvements can be made.</p>
+  </li>
+  <li>
+    <p>Strengthening resilience: By monitoring this indicator, policymakers and organizations can track progress in increasing access to early warning technologies over time. It helps identify success stories, challenges, and opportunities for further strengthening resilience and disaster risk reduction efforts.</p>
+  </li>
+</ol>
+
+<p>Overall, monitoring the proportion of the population with access to technologies that convey early warnings provides valuable insights into the effectiveness of communication systems, identifies areas for improvement, and ensures that individuals and communities are better prepared to face emergencies and potential hazards.</p>
 
           
         </td>
@@ -578,23 +985,95 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
-      
-      
-      
-        
+            <p>The computation method for measuring the “Proportion of population with access to technologies that conveys early warnings” can vary depending on the specific context and available data. Here’s a general approach to calculating this indicator:</p>
+
+<ol>
+  <li>
+    <p>Define the target population: Determine the specific population or geographic area for which you want to measure access to early warning technologies. It could be a national population, a specific region, or a community.</p>
+  </li>
+  <li>
+    <p>Identify relevant technologies: Determine the technologies that are considered early warning systems in the context you are assessing. This may include mobile phones, internet access, radio and television networks, weather monitoring systems, etc.</p>
+  </li>
+  <li>
+    <p>Collect data on technology access: Gather data on the availability and usage of the identified technologies within the target population. This can be obtained through surveys, census data, or existing reports from relevant agencies or organizations.</p>
+  </li>
+  <li>
+    <p>Determine access criteria: Define the criteria for considering someone to have access to early warning technologies. For example, it could be based on ownership or regular usage of mobile phones, internet access at home or public facilities, access to radio or television broadcasts, etc.</p>
+  </li>
+  <li>
+    <p>Calculate the proportion: Calculate the proportion of the target population that meets the access criteria for each technology. Divide the number of individuals with access by the total population and multiply by 100 to obtain the percentage.</p>
+
+    <p>Proportion = (Number of individuals with access / Total population) x 100</p>
+  </li>
+  <li>
+    <p>Aggregate the proportions: If you are assessing multiple technologies, calculate the proportion for each technology separately, and then aggregate them to obtain an overall measure. This could be done by averaging the proportions or assigning different weights based on the significance of each technology.</p>
+  </li>
+  <li>
+    <p>Interpretation and analysis: Analyze the calculated proportion to understand the level of access to early warning technologies within the population. Compare the results over time or across different regions or demographic groups to identify disparities, trends, or improvements in access.</p>
+  </li>
+</ol>
+
+<p>It’s important to note that the accuracy and reliability of the measurement depend on the quality and representativeness of the data collected. Additionally, the specific context and objectives may require customization of the computation method.</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sustainable Development Goal Indicator Alignment </th>
+        <td>
           
-      
-      
-      
+            <p>13.1, 13.1.1, 13.2.1 (R), (Tier 3)</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
+          
+            <p>10 years</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -623,53 +1102,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>2016 Mini Census (p207), VNSO</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
 
 
             </article>
@@ -733,6 +1165,8 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -750,12 +1184,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20230213234336'></script>
+<script src='/assets/js/sdg.js?v=20231129223631'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230213234336"></script><script>
+    <script src="/assets/js/custom.js?v=20231129223631"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

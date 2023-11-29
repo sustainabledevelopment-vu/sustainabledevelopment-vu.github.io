@@ -12,12 +12,34 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Fruit or Vegetable",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Cabbage Lettuce",
+                "Capsicum",
+                "Carrots and Turnips",
+                "Cauliflowers and Broccoli",
+                "Corn",
+                "Cucumber and Gherkins",
+                "Onions and Shallots",
+                "Oranges",
+                "Potatoes",
+                "Pumpkins, Squash, and Gourds",
+                "Tomatoes",
+                "Watermelons",
+                ""
+              ]
+            },
+            "title": "Fruit or Vegetable"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +48,5 @@
   ],
   "profile": "data-package",
   "name": "ENV1-3-1",
-  "title": "ENV1-3-1"
+  "title": "Total annual volume of imports of food and products targeted by DARD as those that can be produced domestically (including ‘value-added products)"
 }

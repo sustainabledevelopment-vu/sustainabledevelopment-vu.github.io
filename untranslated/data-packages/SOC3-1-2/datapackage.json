@@ -15,28 +15,18 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "13120",
+                "Number deaths per 100,000 live births",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "number"
+            "type": "integer"
           }
         ]
       }
@@ -44,5 +34,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-1-2",
-  "title": "SOC3-1-2"
+  "title": "indicators.SOC3-1-2-title"
 }

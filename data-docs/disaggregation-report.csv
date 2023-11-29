@@ -1,15 +1,38 @@
 Disaggregation,Number of indicators,Number of values
+Age group,1,7
 Age,1,3
+Area,1,10
 Country,2,20
+Education,1,4
+Employment status,1,2
+Exports,1,15
+Fruit or Vegetable,1,12
 Geographic Location,1,2
+Indicator,1,7
 Industry,1,19
+Island,1,7
+Language,1,2
 Major Commodity,1,7
-Province,9,16
-Region,8,8
+Media Outlets,1,5
+Number of children,1,4
+Number of decisions,1,3
+Number of reasons,1,4
+Number of reasons.1,1,3
+Province,10,22
+Region,14,20
+Residence,1,2
+Response coverage,1,4
 Revenue Source,1,5
 Sector,1,5
-Sex,7,2
+Sectors,1,4
+Sex,9,4
 Sub-Industry,1,9
+Sub-Sectors,1,9
+Technology,1,7
 Trade,2,4
 TradeType,1,3
-Unit,1,2
+Transport Type,1,2
+Unit of measurement,12,14
+Unit,6,9
+Urban/Rural,6,2
+Year level,1,9

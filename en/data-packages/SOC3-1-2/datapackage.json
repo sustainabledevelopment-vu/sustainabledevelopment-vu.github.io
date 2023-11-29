@@ -16,30 +16,19 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
+                "Number deaths per 100,000 live births",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Maternal Mortality Rate",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -48,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-1-2",
-  "title": "SOC3-1-2"
+  "title": "Maternal mortality ratio/Number of maternal deaths"
 }

@@ -1,1 +1,51 @@
-Year,Value
+Year,Series,Number of decisions,Number of reasons,Number of reasons.1,Response coverage,Unit of measurement,Value
+2013,Number of decisions women participate,0,,,participate in all decision makng,%,0.0
+2013,Number of decisions women participate,0,,,number of women,total count,310.0
+2013,Number of decisions women participate,0,,,disagree with all the reasons justifying wife beating,%,38.9
+2013,Number of decisions women participate,0,,,agree with all the the reasons for refusing sexual intercourse with husband,%,50.9
+2013,Number of decisions women participate,0,,,number of women,total count,310.0
+2013,Number of decisions women participate,1 to 2,,,participate in all decision makng,%,0.0
+2013,Number of decisions women participate,1 to 2,,,number of women,total count,138.0
+2013,Number of decisions women participate,1 to 2,,,disagree with all the reasons justifying wife beating,%,20.1
+2013,Number of decisions women participate,1 to 2,,,agree with all the the reasons for refusing sexual intercourse with husband,%,49.9
+2013,Number of decisions women participate,1 to 2,,,number of women,total count,138.0
+2013,Number of decisions women participate,3 to 4,,,participate in all decision makng,%,89.9
+2013,Number of decisions women participate,3 to 4,,,number of women,total count,1266.0
+2013,Number of decisions women participate,3 to 4,,,disagree with all the reasons justifying wife beating,%,39.3
+2013,Number of decisions women participate,3 to 4,,,agree with all the the reasons for refusing sexual intercourse with husband,%,70.8
+2013,Number of decisions women participate,3 to 4,,,number of women,total count,1266.0
+2013,Number of  reasons for which wife beating is justified,,0,,participate in all decision makng,%,72.2
+2013,Number of  reasons for which wife beating is justified,,0,,number of women,total count,646.0
+2013,Number of  reasons for which wife beating is justified,,0,,disagree with all the reasons justifying wife beating,%,100.0
+2013,Number of  reasons for which wife beating is justified,,0,,agree with all the the reasons for refusing sexual intercourse with husband,%,69.0
+2013,Number of  reasons for which wife beating is justified,,0,,number of women,total count,1014.0
+2013,Number of  reasons for which wife beating is justified,,1 to 2,,participate in all decision makng,%,64.9
+2013,Number of  reasons for which wife beating is justified,,1 to 2,,number of women,total count,564.0
+2013,Number of  reasons for which wife beating is justified,,1 to 2,,disagree with all the reasons justifying wife beating,%,0.0
+2013,Number of  reasons for which wife beating is justified,,1 to 2,,agree with all the the reasons for refusing sexual intercourse with husband,%,66.9
+2013,Number of  reasons for which wife beating is justified,,1 to 2,,number of women,total count,802.0
+2013,Number of  reasons for which wife beating is justified,,3 to 4,,participate in all decision makng,%,63.1
+2013,Number of  reasons for which wife beating is justified,,3 to 4,,number of women,total count,315.0
+2013,Number of  reasons for which wife beating is justified,,3 to 4,,disagree with all the reasons justifying wife beating,%,0.0
+2013,Number of  reasons for which wife beating is justified,,3 to 4,,agree with all the the reasons for refusing sexual intercourse with husband,%,54.9
+2013,Number of  reasons for which wife beating is justified,,3 to 4,,number of women,total count,446.0
+2013,Number of  reasons for which wife beating is justified,,5,,participate in all decision makng,%,56.7
+2013,Number of  reasons for which wife beating is justified,,5,,number of women,total count,189.0
+2013,Number of  reasons for which wife beating is justified,,5,,disagree with all the reasons justifying wife beating,%,0.0
+2013,Number of  reasons for which wife beating is justified,,5,,agree with all the the reasons for refusing sexual intercourse with husband,%,41.7
+2013,Number of  reasons for which wife beating is justified,,5,,number of women,total count,246.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,0,participate in all decision makng,%,57.5
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,0,number of women,total count,204.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,0,disagree with all the reasons justifying wife beating,%,47.2
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,0,agree with all the the reasons for refusing sexual intercourse with husband,%,0.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,0,number of women,total count,400.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,1 to 2,participate in all decision makng,%,55.4
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,1 to 2,number of women,total count,387.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,1 to 2,disagree with all the reasons justifying wife beating,%,24.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,1 to 2,agree with all the the reasons for refusing sexual intercourse with husband,%,0.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,1 to 2,number of women,total count,525.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,3,participate in all decision makng,%,71.8
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,3,number of women,total count,1123.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,3,disagree with all the reasons justifying wife beating,%,44.2
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,3,agree with all the the reasons for refusing sexual intercourse with husband,%,100.0
+2013,Number of reasonsgiven for refusing to have sexual intercourse with husband,,,3,number of women,total count,1583.0

@@ -15,28 +15,63 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "blindness",
+                "deafness",
+                "lameness",
+                "senile and/or amnesic",
+                "self-care",
+                "communicating",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Area",
             "type": "string",
             "constraints": {
               "enum": [
-                "14310",
+                "urban",
+                "rural",
+                "torba",
+                "sanma rural",
+                "penama",
+                "malampa",
+                "shefa rural",
+                "tafea",
+                "sanma",
+                "shefa",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "male",
+                "female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
@@ -44,5 +79,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-3-1",
-  "title": "SOC4-3-1"
+  "title": "indicators.SOC4-3-1-title"
 }

@@ -16,26 +16,69 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Labour Force Participation Rate",
+                "Agriculture, Forestry and Fishery",
+                "Industry",
+                "Service",
+                "Economic Activity not Classified",
                 ""
               ]
             },
             "title": "Series"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Sectors",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Agriculture, Forestry and Fishery",
+                "Industry",
+                "Service",
+                "Economic Activity not Classified",
+                ""
+              ]
+            },
+            "title": "Sectors"
+          },
+          {
+            "name": "Sub-Sectors",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Manufacturing",
+                "Construction",
+                "MiningandQuarrying;Electricity,GasandWaterSupply",
+                "WholesaleandRetailTrade",
+                "HotelsandAccomodations",
+                "Restaurants,FoodandBeverageServices",
+                "AdministrativeandSupportServices",
+                "Education",
+                "OtherServices",
+                ""
+              ]
+            },
+            "title": "Sub-Sectors"
           },
           {
             "name": "Value",
@@ -48,5 +91,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-6-1",
-  "title": "ECO4-6-1"
+  "title": "Labour force participation by sector"
 }

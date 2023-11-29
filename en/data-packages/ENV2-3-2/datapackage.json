@@ -16,26 +16,58 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Households Using Renewable Energy as Main Source of Lighting",
+                "Proportion using renewable energy for lighting",
+                "Total number using renewable energy for lighting",
                 ""
               ]
             },
             "title": "Series"
+          },
+          {
+            "name": "Urban/Rural",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Urban",
+                "Rural",
+                ""
+              ]
+            },
+            "title": "Urban/Rural"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PortVila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of private households (%)",
+                "Total number of private households",
+                ""
+              ]
+            },
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
@@ -48,5 +80,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-3-2",
-  "title": "ENV2-3-2"
+  "title": "Proportion of households using renewable energy technology as main source of lighting"
 }

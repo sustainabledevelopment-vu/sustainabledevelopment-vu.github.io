@@ -1,6 +1,7 @@
 Indicator,Disaggregations,Number of disaggregations
 #ECO1-1-2,"Sector, Industry",2
 #ECO1-2-1,Revenue Source,1
+#ECO1-3-1,Unit,1
 #ECO1-4-1,Trade,1
 #ECO1-5-2,"Country, TradeType",2
 #ECO1-5-3,Country,1
@@ -8,13 +9,33 @@ Indicator,Disaggregations,Number of disaggregations
 #ECO1-7-1,Major Commodity,1
 #ECO2-1-1,Province,1
 #ECO2-2-1,Region,1
+#ECO2-2-2,"Urban/Rural, Region, Unit",3
 #ECO3-1-1,Sub-Industry,1
+#ECO3-2-1,"Urban/Rural, Unit",2
+#ECO3-2-2,"Unit, Transport Type",2
+#ECO3-2-3,"Unit of measurement, Island",2
+#ECO4-3-1,"Unit, Exports",2
+#ECO4-6-1,"Region, Sectors, Sub-Sectors",3
+#ENV1-1-1,"Urban/Rural, Region, Unit of measurement",3
+#ENV1-1-3,Urban/Rural,1
+#ENV1-3-1,Fruit or Vegetable,1
 #ENV1-3-3,Geographic Location,1
-#SOC1-1-1,"Province, Region, Sex",3
-#SOC1-1-2,"Province, Region, Sex",3
-#SOC1-2-1,"Province, Region, Sex",3
-#SOC1-2-2,"Province, Region, Sex, Unit",4
-#SOC1-2-3,"Province, Region, Sex",3
-#SOC1-7-1,"Province, Region, Sex",3
-#SOC1-7-2,"Province, Region",2
+#ENV2-3-2,"Urban/Rural, Region, Unit of measurement",3
+#ENV3-2-2,"Urban/Rural, Region, Unit of measurement, Technology",4
+#SOC1-1-1,"Region, Province, Sex",3
+#SOC1-1-2,"Region, Province, Sex",3
+#SOC1-2-1,"Region, Province, Sex",3
+#SOC1-2-2,"Region, Unit, Province, Sex",4
+#SOC1-2-3,"Region, Province, Sex",3
+#SOC1-7-1,"Region, Province, Sex",3
+#SOC1-7-2,"Region, Province",2
+#SOC2-3-1,"Province, Sex, Language, Year level",4
+#SOC3-1-2,Unit of measurement,1
+#SOC3-2-1,Unit of measurement,1
+#SOC3-2-2,Unit of measurement,1
+#SOC3-2-3,Unit of measurement,1
+#SOC4-1-2,"Unit of measurement, Age group, Employment status, Number of children, Residence, Education, Indicator",7
+#SOC4-1-3,"Unit of measurement, Number of decisions, Number of reasons, Number of reasons.1, Response coverage",5
 #SOC4-2-1,"Province, Sex, Age",3
+#SOC4-3-1,"Unit of measurement, Sex, Area",3
+#SOC6-7-1,"Region, Unit of measurement, Media Outlets",3

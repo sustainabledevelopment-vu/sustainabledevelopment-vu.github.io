@@ -15,28 +15,113 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Age",
+                "Employment (preceding 12 months)",
+                "Number of living children",
+                "Residence",
+                "Education",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Age group",
             "type": "string",
             "constraints": {
               "enum": [
-                "14120",
+                "15-19",
+                "20-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Employment status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "not employed",
+                "employed for cash",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Number of children",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0",
+                "1 to 2",
+                "3 to 4",
+                "5+",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Residence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "urban",
+                "rural",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Education",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "no education",
+                "primary",
+                "secondary",
+                "more than secondary",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Indicator",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Own health care",
+                "Making major household purchases",
+                "Making purchases for daily household needs",
+                "Visits to her family or relatives",
+                "Participate in all four decisions",
+                "participate in none of the four decisions",
+                "number of women",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
+                "total count",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }
@@ -44,5 +129,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-1-2",
-  "title": "SOC4-1-2"
+  "title": "indicators.SOC4-1-2-title"
 }

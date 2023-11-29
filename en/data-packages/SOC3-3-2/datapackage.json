@@ -16,30 +16,8 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Adult Obesity Prevalence",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -48,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-3-2",
-  "title": "SOC3-3-2"
+  "title": "Prevalence of obesity in adult population"
 }

@@ -16,26 +16,27 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "VUV",
+                "Rural",
+                "Urban",
                 ""
               ]
             },
-            "title": "Units"
+            "title": "Urban/Rural"
           },
           {
-            "name": "Series",
+            "name": "Unit",
             "type": "string",
             "constraints": {
               "enum": [
-                "Average Annual Household Income from Handicrafts (PROXY)",
+                "Average annual household income tourism (vatu)",
                 ""
               ]
             },
-            "title": "Series"
+            "title": "Unit"
           },
           {
             "name": "Value",
@@ -48,5 +49,5 @@
   ],
   "profile": "data-package",
   "name": "ECO3-2-1",
-  "title": "ECO3-2-1"
+  "title": "indicators.ECO3-2-1-Average annual household income tourism"
 }

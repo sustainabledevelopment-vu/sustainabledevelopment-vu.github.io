@@ -12,12 +12,35 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Net Operating Balance (surplus)",
+                "Net Operating Balance Excluding Donors (deficit)",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "VT (millions of vatu)",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
+            "name": "Value",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -26,5 +49,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-3-1",
-  "title": "ECO1-3-1"
+  "title": "Change in national budget position (deficit/surplus) (GFS Tables)"
 }

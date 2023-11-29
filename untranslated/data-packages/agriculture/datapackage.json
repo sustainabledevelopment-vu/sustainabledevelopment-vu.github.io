@@ -1,0 +1,86 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total number of livestock owned",
+                "Number of private households growing cash crops",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Type of Livestock",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Cattle",
+                "Pigs",
+                "Goats",
+                "Horses",
+                "Chickens",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Type of Crop",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Kava",
+                "Coconut",
+                "Cocoa",
+                "Coffee",
+                "Sandalwood",
+                "Pepper",
+                "Vanilla",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "agriculture",
+  "title": "Vanuatu Labour Statistics"
+}

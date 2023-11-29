@@ -15,21 +15,51 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Proportion using renewable energy for lighting",
+                "Total number using renewable energy for lighting",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "22320",
+                "Urban",
+                "Rural",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PortVila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of private households (%)",
+                "Total number of private households",
                 ""
               ]
             }
@@ -44,5 +74,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-3-2",
-  "title": "ENV2-3-2"
+  "title": "indicators.ENV2-3-2-title"
 }

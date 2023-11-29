@@ -1,0 +1,126 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Number of private households main wall material",
+                "Number of private households main roof material",
+                "Number of private households main source lighting",
+                "Number of private households main source cooking fuel",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Wall Material",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Concrete",
+                "Makeshift or improvised materials",
+                "Metal",
+                "Others",
+                "Traditional materials",
+                "Wood",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Roof Material",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Concrete",
+                "Makeshift or improvised materials",
+                "Metal",
+                "Others",
+                "Traditional materials",
+                "Wood",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Type of Lighting",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Candles",
+                "Lamp (non-renewable)",
+                "Elecricity- main grid",
+                "Electricty- own generator",
+                "Others",
+                "Solar",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Type of Cooking Fuel",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Charcoal",
+                "Electricity",
+                "Gas",
+                "Open fire (wood , coconut shells)",
+                "Others",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unnamed: 8",
+            "type": "number",
+            "constraints": {
+              "enum": [
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "shelter",
+  "title": "Vanuatu Shelter characteristics"
+}

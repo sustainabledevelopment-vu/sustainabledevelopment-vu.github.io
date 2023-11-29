@@ -16,30 +16,67 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "People Living with Disability",
+                "blindness",
+                "deafness",
+                "lameness",
+                "senile and/or amnesic",
+                "self-care",
+                "communicating",
                 ""
               ]
             },
             "title": "Series"
           },
           {
+            "name": "Area",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "urban",
+                "rural",
+                "torba",
+                "sanma rural",
+                "penama",
+                "malampa",
+                "shefa rural",
+                "tafea",
+                "sanma",
+                "shefa",
+                ""
+              ]
+            },
+            "title": "Area"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "male",
+                "female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
+                ""
+              ]
+            },
+            "title": "Unit of measurement"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -48,5 +85,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-3-1",
-  "title": "SOC4-3-1"
+  "title": "Proportion of population reporting some degree of disability"
 }

@@ -16,28 +16,6 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Under 5 Mortality Rate",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
             "type": "number",
             "title": "Value"
@@ -48,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-3-3",
-  "title": "SOC3-3-3"
+  "title": "Under 5 mortality rate"
 }

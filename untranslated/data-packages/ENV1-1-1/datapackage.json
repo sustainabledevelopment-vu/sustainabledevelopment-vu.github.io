@@ -15,31 +15,47 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
-                "Total",
+                "Urban",
+                "Rural",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "21111",
-                "21112",
-                "21113",
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of households (%)",
+                "Total number of households",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "number"
+            "type": "integer"
           }
         ]
       }
@@ -47,5 +63,5 @@
   ],
   "profile": "data-package",
   "name": "ENV1-1-1",
-  "title": "ENV1-1-1"
+  "title": "indicators.ENV1-1-1-title"
 }

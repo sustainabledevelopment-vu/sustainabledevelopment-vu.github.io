@@ -16,30 +16,62 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Access to Improved Sanitation Facilities",
+                "Proportion of population access to improved sanitation facilities",
+                "Population access to improved sanitation facilities",
                 ""
               ]
             },
             "title": "Series"
           },
           {
+            "name": "Urban/Rural",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Urban",
+                "Rural",
+                ""
+              ]
+            },
+            "title": "Urban/Rural"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage of private households (%)",
+                "Total number of private households",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -48,5 +80,5 @@
   ],
   "profile": "data-package",
   "name": "ECO2-2-2",
-  "title": "ECO2-2-2"
+  "title": "Proportion of population with reliable access to improved sanitation facilities"
 }

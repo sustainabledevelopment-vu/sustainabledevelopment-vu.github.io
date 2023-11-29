@@ -1,0 +1,104 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total Value",
+                "Import by Country",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Principal Import",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Alcoholic Drinks",
+                "Cigarettes and Tobacco",
+                "Medicaments",
+                "Petroleum Oils and Gasesous",
+                "Fish",
+                "Rice",
+                "Alcholic drinks",
+                "Alcoholic drinks",
+                ""
+              ]
+            },
+            "title": "Principal Import"
+          },
+          {
+            "name": "Main Country of Origin",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Australia",
+                "France",
+                "New Zealand",
+                "New Caledonia",
+                "United Kingdom",
+                "Indonesia",
+                "Singapore",
+                "Hong Kong",
+                "Fiji",
+                "India",
+                "United States of America",
+                "Netherlands",
+                "United Arab Emirates",
+                "Malaysia",
+                "Solomon Islands",
+                "Thailand",
+                "China",
+                "Papua New Guinea",
+                "Viet nam",
+                "French Polynesia",
+                "Switzerland",
+                "Taiwan",
+                "Turkey",
+                ""
+              ]
+            },
+            "title": "Main Country of Origin"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Millions of Vatu (VUV)",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "imports",
+  "title": "Imports Trades in Vanuatu"
+}

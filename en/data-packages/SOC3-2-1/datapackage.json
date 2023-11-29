@@ -16,26 +16,15 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Total number diabetic lower limb amputations",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Prevalence of Diabetes",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
@@ -48,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-2-1",
-  "title": "SOC3-2-1"
+  "title": "No. of Diabetic (NCD) related amputations"
 }

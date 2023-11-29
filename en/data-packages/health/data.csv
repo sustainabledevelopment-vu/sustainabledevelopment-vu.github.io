@@ -1,0 +1,619 @@
+Year,Series,Region,Age,Sex,Value
+2009,Female population ever given birth,,,,49834
+2009,Female population ever given birth,,15 - 19,,944
+2009,Female population ever given birth,,20 - 24,,5861
+2009,Female population ever given birth,,25 - 29,,7378
+2009,Female population ever given birth,,30 - 34,,7092
+2009,Female population ever given birth,,35 - 39,,6545
+2009,Female population ever given birth,,40 - 44,,5314
+2009,Female population ever given birth,,45 - 49,,4808
+2009,Female population ever given birth,,50 - 54,,3330
+2009,Female population ever given birth,,55 - 59,,2860
+2009,Female population ever given birth,,60 - 64,,1903
+2009,Female population ever given birth,,65 - 69,,1576
+2009,Female population ever given birth,,70+,,2223
+2009,Female population ever given birth,Port Vila,,,9034
+2009,Female population ever given birth,Port Vila,15 - 19,,155
+2009,Female population ever given birth,Port Vila,20 - 24,,1167
+2009,Female population ever given birth,Port Vila,25 - 29,,1405
+2009,Female population ever given birth,Port Vila,30 - 34,,1503
+2009,Female population ever given birth,Port Vila,35 - 39,,1257
+2009,Female population ever given birth,Port Vila,40 - 44,,1055
+2009,Female population ever given birth,Port Vila,45 - 49,,942
+2009,Female population ever given birth,Port Vila,50 - 54,,590
+2009,Female population ever given birth,Port Vila,55 - 59,,439
+2009,Female population ever given birth,Port Vila,60 - 64,,213
+2009,Female population ever given birth,Port Vila,65 - 69,,158
+2009,Female population ever given birth,Port Vila,70+,,150
+2009,Female population ever given birth,Luganville,,,2703
+2009,Female population ever given birth,Luganville,15 - 19,,39
+2009,Female population ever given birth,Luganville,20 - 24,,301
+2009,Female population ever given birth,Luganville,25 - 29,,430
+2009,Female population ever given birth,Luganville,30 - 34,,404
+2009,Female population ever given birth,Luganville,35 - 39,,409
+2009,Female population ever given birth,Luganville,40 - 44,,330
+2009,Female population ever given birth,Luganville,45 - 49,,271
+2009,Female population ever given birth,Luganville,50 - 54,,183
+2009,Female population ever given birth,Luganville,55 - 59,,138
+2009,Female population ever given birth,Luganville,60 - 64,,86
+2009,Female population ever given birth,Luganville,65 - 69,,44
+2009,Female population ever given birth,Luganville,70+,,68
+2009,Female population ever given birth,Torba,,,2075
+2009,Female population ever given birth,Torba,15 - 19,,62
+2009,Female population ever given birth,Torba,20 - 24,,300
+2009,Female population ever given birth,Torba,25 - 29,,309
+2009,Female population ever given birth,Torba,30 - 34,,261
+2009,Female population ever given birth,Torba,35 - 39,,276
+2009,Female population ever given birth,Torba,40 - 44,,204
+2009,Female population ever given birth,Torba,45 - 49,,184
+2009,Female population ever given birth,Torba,50 - 54,,117
+2009,Female population ever given birth,Torba,55 - 59,,109
+2009,Female population ever given birth,Torba,60 - 64,,82
+2009,Female population ever given birth,Torba,65 - 69,,63
+2009,Female population ever given birth,Torba,70+,,108
+2009,Female population ever given birth,Sanma,,,6685
+2009,Female population ever given birth,Sanma,15 - 19,,210
+2009,Female population ever given birth,Sanma,20 - 24,,912
+2009,Female population ever given birth,Sanma,25 - 29,,1095
+2009,Female population ever given birth,Sanma,30 - 34,,1014
+2009,Female population ever given birth,Sanma,35 - 39,,818
+2009,Female population ever given birth,Sanma,40 - 44,,643
+2009,Female population ever given birth,Sanma,45 - 49,,604
+2009,Female population ever given birth,Sanma,50 - 54,,385
+2009,Female population ever given birth,Sanma,55 - 59,,332
+2009,Female population ever given birth,Sanma,60 - 64,,254
+2009,Female population ever given birth,Sanma,65 - 69,,213
+2009,Female population ever given birth,Sanma,70+,,205
+2009,Female population ever given birth,Penama,,,6640
+2009,Female population ever given birth,Penama,15 - 19,,108
+2009,Female population ever given birth,Penama,20 - 24,,651
+2009,Female population ever given birth,Penama,25 - 29,,927
+2009,Female population ever given birth,Penama,30 - 34,,840
+2009,Female population ever given birth,Penama,35 - 39,,841
+2009,Female population ever given birth,Penama,40 - 44,,671
+2009,Female population ever given birth,Penama,45 - 49,,620
+2009,Female population ever given birth,Penama,50 - 54,,490
+2009,Female population ever given birth,Penama,55 - 59,,456
+2009,Female population ever given birth,Penama,60 - 64,,284
+2009,Female population ever given birth,Penama,65 - 69,,273
+2009,Female population ever given birth,Penama,70+,,479
+2009,Female population ever given birth,Malampa,,,8431
+2009,Female population ever given birth,Malampa,15 - 19,,153
+2009,Female population ever given birth,Malampa,20 - 24,,851
+2009,Female population ever given birth,Malampa,25 - 29,,1156
+2009,Female population ever given birth,Malampa,30 - 34,,1060
+2009,Female population ever given birth,Malampa,35 - 39,,1060
+2009,Female population ever given birth,Malampa,40 - 44,,893
+2009,Female population ever given birth,Malampa,45 - 49,,855
+2009,Female population ever given birth,Malampa,50 - 54,,605
+2009,Female population ever given birth,Malampa,55 - 59,,568
+2009,Female population ever given birth,Malampa,60 - 64,,388
+2009,Female population ever given birth,Malampa,65 - 69,,308
+2009,Female population ever given birth,Malampa,70+,,534
+2009,Female population ever given birth,Shefa,,,7624
+2009,Female population ever given birth,Shefa,15 - 19,,115
+2009,Female population ever given birth,Shefa,20 - 24,,883
+2009,Female population ever given birth,Shefa,25 - 29,,1017
+2009,Female population ever given birth,Shefa,30 - 34,,1052
+2009,Female population ever given birth,Shefa,35 - 39,,1040
+2009,Female population ever given birth,Shefa,40 - 44,,847
+2009,Female population ever given birth,Shefa,45 - 49,,702
+2009,Female population ever given birth,Shefa,50 - 54,,537
+2009,Female population ever given birth,Shefa,55 - 59,,445
+2009,Female population ever given birth,Shefa,60 - 64,,329
+2009,Female population ever given birth,Shefa,65 - 69,,283
+2009,Female population ever given birth,Shefa,70+,,374
+2009,Female population ever given birth,Tafea,,,6642
+2009,Female population ever given birth,Tafea,15 - 19,,102
+2009,Female population ever given birth,Tafea,20 - 24,,796
+2009,Female population ever given birth,Tafea,25 - 29,,1039
+2009,Female population ever given birth,Tafea,30 - 34,,958
+2009,Female population ever given birth,Tafea,35 - 39,,844
+2009,Female population ever given birth,Tafea,40 - 44,,671
+2009,Female population ever given birth,Tafea,45 - 49,,630
+2009,Female population ever given birth,Tafea,50 - 54,,423
+2009,Female population ever given birth,Tafea,55 - 59,,373
+2009,Female population ever given birth,Tafea,60 - 64,,267
+2009,Female population ever given birth,Tafea,65 - 69,,234
+2009,Female population ever given birth,Tafea,70+,,305
+2020,Female population ever given birth,,,,64301
+2020,Female population ever given birth,,15 - 19,,979
+2020,Female population ever given birth,,20 - 24,,6976
+2020,Female population ever given birth,,25 - 29,,9714
+2020,Female population ever given birth,,30 - 34,,9425
+2020,Female population ever given birth,,35 - 39,,7560
+2020,Female population ever given birth,,40 - 44,,6819
+2020,Female population ever given birth,,45 - 49,,5767
+2020,Female population ever given birth,,50 - 54,,4901
+2020,Female population ever given birth,,55 - 59,,3862
+2020,Female population ever given birth,,60 - 64,,2981
+2020,Female population ever given birth,,65 - 69,,2128
+2020,Female population ever given birth,,70+,,3186
+2020,Female population ever given birth,Port Vila,,,11053
+2020,Female population ever given birth,Port Vila,15 - 19,,106
+2020,Female population ever given birth,Port Vila,20 - 24,,989
+2020,Female population ever given birth,Port Vila,25 - 29,,1659
+2020,Female population ever given birth,Port Vila,30 - 34,,1781
+2020,Female population ever given birth,Port Vila,35 - 39,,1415
+2020,Female population ever given birth,Port Vila,40 - 44,,1281
+2020,Female population ever given birth,Port Vila,45 - 49,,1124
+2020,Female population ever given birth,Port Vila,50 - 54,,967
+2020,Female population ever given birth,Port Vila,55 - 59,,656
+2020,Female population ever given birth,Port Vila,60 - 64,,493
+2020,Female population ever given birth,Port Vila,65 - 69,,275
+2020,Female population ever given birth,Port Vila,70+,,306
+2020,Female population ever given birth,Luganville,,,3961
+2020,Female population ever given birth,Luganville,15 - 19,,54
+2020,Female population ever given birth,Luganville,20 - 24,,452
+2020,Female population ever given birth,Luganville,25 - 29,,667
+2020,Female population ever given birth,Luganville,30 - 34,,591
+2020,Female population ever given birth,Luganville,35 - 39,,443
+2020,Female population ever given birth,Luganville,40 - 44,,423
+2020,Female population ever given birth,Luganville,45 - 49,,340
+2020,Female population ever given birth,Luganville,50 - 54,,321
+2020,Female population ever given birth,Luganville,55 - 59,,244
+2020,Female population ever given birth,Luganville,60 - 64,,174
+2020,Female population ever given birth,Luganville,65 - 69,,104
+2020,Female population ever given birth,Luganville,70+,,148
+2020,Female population ever given birth,Torba,,,2537
+2020,Female population ever given birth,Torba,15 - 19,,56
+2020,Female population ever given birth,Torba,20 - 24,,274
+2020,Female population ever given birth,Torba,25 - 29,,400
+2020,Female population ever given birth,Torba,30 - 34,,374
+2020,Female population ever given birth,Torba,35 - 39,,290
+2020,Female population ever given birth,Torba,40 - 44,,253
+2020,Female population ever given birth,Torba,45 - 49,,226
+2020,Female population ever given birth,Torba,50 - 54,,183
+2020,Female population ever given birth,Torba,55 - 59,,153
+2020,Female population ever given birth,Torba,60 - 64,,97
+2020,Female population ever given birth,Torba,65 - 69,,92
+2020,Female population ever given birth,Torba,70+,,139
+2020,Female population ever given birth,Sanma,,,8982
+2020,Female population ever given birth,Sanma,15 - 19,,188
+2020,Female population ever given birth,Sanma,20 - 24,,1174
+2020,Female population ever given birth,Sanma,25 - 29,,1509
+2020,Female population ever given birth,Sanma,30 - 34,,1335
+2020,Female population ever given birth,Sanma,35 - 39,,1050
+2020,Female population ever given birth,Sanma,40 - 44,,932
+2020,Female population ever given birth,Sanma,45 - 49,,709
+2020,Female population ever given birth,Sanma,50 - 54,,600
+2020,Female population ever given birth,Sanma,55 - 59,,424
+2020,Female population ever given birth,Sanma,60 - 64,,381
+2020,Female population ever given birth,Sanma,65 - 69,,286
+2020,Female population ever given birth,Sanma,70+,,394
+2020,Female population ever given birth,Penama,,,7328
+2020,Female population ever given birth,Penama,15 - 19,,128
+2020,Female population ever given birth,Penama,20 - 24,,808
+2020,Female population ever given birth,Penama,25 - 29,,1046
+2020,Female population ever given birth,Penama,30 - 34,,947
+2020,Female population ever given birth,Penama,35 - 39,,847
+2020,Female population ever given birth,Penama,40 - 44,,746
+2020,Female population ever given birth,Penama,45 - 49,,626
+2020,Female population ever given birth,Penama,50 - 54,,581
+2020,Female population ever given birth,Penama,55 - 59,,458
+2020,Female population ever given birth,Penama,60 - 64,,365
+2020,Female population ever given birth,Penama,65 - 69,,283
+2020,Female population ever given birth,Penama,70+,,491
+2020,Female population ever given birth,Malampa,,,8895
+2020,Female population ever given birth,Malampa,15 - 19,,116
+2020,Female population ever given birth,Malampa,20 - 24,,829
+2020,Female population ever given birth,Malampa,25 - 29,,1179
+2020,Female population ever given birth,Malampa,30 - 34,,1232
+2020,Female population ever given birth,Malampa,35 - 39,,1062
+2020,Female population ever given birth,Malampa,40 - 44,,942
+2020,Female population ever given birth,Malampa,45 - 49,,825
+2020,Female population ever given birth,Malampa,50 - 54,,661
+2020,Female population ever given birth,Malampa,55 - 59,,604
+2020,Female population ever given birth,Malampa,60 - 64,,481
+2020,Female population ever given birth,Malampa,65 - 69,,369
+2020,Female population ever given birth,Malampa,70+,,596
+2020,Female population ever given birth,Shefa,,,12670
+2020,Female population ever given birth,Shefa,15 - 19,,177
+2020,Female population ever given birth,Shefa,20 - 24,,1293
+2020,Female population ever given birth,Shefa,25 - 29,,1937
+2020,Female population ever given birth,Shefa,30 - 34,,1872
+2020,Female population ever given birth,Shefa,35 - 39,,1457
+2020,Female population ever given birth,Shefa,40 - 44,,1326
+2020,Female population ever given birth,Shefa,45 - 49,,1160
+2020,Female population ever given birth,Shefa,50 - 54,,1017
+2020,Female population ever given birth,Shefa,55 - 59,,811
+2020,Female population ever given birth,Shefa,60 - 64,,564
+2020,Female population ever given birth,Shefa,65 - 69,,419
+2020,Female population ever given birth,Shefa,70+,,637
+2020,Female population ever given birth,Tafea,,,8875
+2020,Female population ever given birth,Tafea,15 - 19,,154
+2020,Female population ever given birth,Tafea,20 - 24,,1158
+2020,Female population ever given birth,Tafea,25 - 29,,1317
+2020,Female population ever given birth,Tafea,30 - 34,,1292
+2020,Female population ever given birth,Tafea,35 - 39,,997
+2020,Female population ever given birth,Tafea,40 - 44,,915
+2020,Female population ever given birth,Tafea,45 - 49,,757
+2020,Female population ever given birth,Tafea,50 - 54,,571
+2020,Female population ever given birth,Tafea,55 - 59,,512
+2020,Female population ever given birth,Tafea,60 - 64,,427
+2020,Female population ever given birth,Tafea,65 - 69,,300
+2020,Female population ever given birth,Tafea,70+,,475
+2009,"Female population, total number of deceased children",,,,6448
+2009,"Female population, total number of deceased children",,15 - 19,,32
+2009,"Female population, total number of deceased children",,20 - 24,,213
+2009,"Female population, total number of deceased children",,25 - 29,,344
+2009,"Female population, total number of deceased children",,30 - 34,,466
+2009,"Female population, total number of deceased children",,35 - 39,,587
+2009,"Female population, total number of deceased children",,40 - 44,,599
+2009,"Female population, total number of deceased children",,45 - 49,,635
+2009,"Female population, total number of deceased children",,50 - 54,,592
+2009,"Female population, total number of deceased children",,55 - 59,,658
+2009,"Female population, total number of deceased children",,60 - 64,,591
+2009,"Female population, total number of deceased children",,65 - 69,,630
+2009,"Female population, total number of deceased children",,70+,,1101
+2009,"Female population, total number of deceased children",Port Vila,,,620
+2009,"Female population, total number of deceased children",Port Vila,15 - 19,,2
+2009,"Female population, total number of deceased children",Port Vila,20 - 24,,36
+2009,"Female population, total number of deceased children",Port Vila,25 - 29,,34
+2009,"Female population, total number of deceased children",Port Vila,30 - 34,,71
+2009,"Female population, total number of deceased children",Port Vila,35 - 39,,78
+2009,"Female population, total number of deceased children",Port Vila,40 - 44,,68
+2009,"Female population, total number of deceased children",Port Vila,45 - 49,,76
+2009,"Female population, total number of deceased children",Port Vila,50 - 54,,52
+2009,"Female population, total number of deceased children",Port Vila,55 - 59,,72
+2009,"Female population, total number of deceased children",Port Vila,60 - 64,,36
+2009,"Female population, total number of deceased children",Port Vila,65 - 69,,44
+2009,"Female population, total number of deceased children",Port Vila,70+,,51
+2009,"Female population, total number of deceased children",Luganville,,,188
+2009,"Female population, total number of deceased children",Luganville,15 - 19,,0
+2009,"Female population, total number of deceased children",Luganville,20 - 24,,6
+2009,"Female population, total number of deceased children",Luganville,25 - 29,,18
+2009,"Female population, total number of deceased children",Luganville,30 - 34,,13
+2009,"Female population, total number of deceased children",Luganville,35 - 39,,20
+2009,"Female population, total number of deceased children",Luganville,40 - 44,,19
+2009,"Female population, total number of deceased children",Luganville,45 - 49,,20
+2009,"Female population, total number of deceased children",Luganville,50 - 54,,22
+2009,"Female population, total number of deceased children",Luganville,55 - 59,,16
+2009,"Female population, total number of deceased children",Luganville,60 - 64,,13
+2009,"Female population, total number of deceased children",Luganville,65 - 69,,20
+2009,"Female population, total number of deceased children",Luganville,70+,,21
+2009,"Female population, total number of deceased children",Torba,,,347
+2009,"Female population, total number of deceased children",Torba,15 - 19,,0
+2009,"Female population, total number of deceased children",Torba,20 - 24,,9
+2009,"Female population, total number of deceased children",Torba,25 - 29,,10
+2009,"Female population, total number of deceased children",Torba,30 - 34,,25
+2009,"Female population, total number of deceased children",Torba,35 - 39,,32
+2009,"Female population, total number of deceased children",Torba,40 - 44,,42
+2009,"Female population, total number of deceased children",Torba,45 - 49,,47
+2009,"Female population, total number of deceased children",Torba,50 - 54,,30
+2009,"Female population, total number of deceased children",Torba,55 - 59,,26
+2009,"Female population, total number of deceased children",Torba,60 - 64,,28
+2009,"Female population, total number of deceased children",Torba,65 - 69,,27
+2009,"Female population, total number of deceased children",Torba,70+,,71
+2009,"Female population, total number of deceased children",Sanma,,,1151
+2009,"Female population, total number of deceased children",Sanma,15 - 19,,11
+2009,"Female population, total number of deceased children",Sanma,20 - 24,,43
+2009,"Female population, total number of deceased children",Sanma,25 - 29,,90
+2009,"Female population, total number of deceased children",Sanma,30 - 34,,88
+2009,"Female population, total number of deceased children",Sanma,35 - 39,,102
+2009,"Female population, total number of deceased children",Sanma,40 - 44,,109
+2009,"Female population, total number of deceased children",Sanma,45 - 49,,132
+2009,"Female population, total number of deceased children",Sanma,50 - 54,,126
+2009,"Female population, total number of deceased children",Sanma,55 - 59,,82
+2009,"Female population, total number of deceased children",Sanma,60 - 64,,132
+2009,"Female population, total number of deceased children",Sanma,65 - 69,,125
+2009,"Female population, total number of deceased children",Sanma,70+,,111
+2009,"Female population, total number of deceased children",Penama,,,1018
+2009,"Female population, total number of deceased children",Penama,15 - 19,,5
+2009,"Female population, total number of deceased children",Penama,20 - 24,,31
+2009,"Female population, total number of deceased children",Penama,25 - 29,,32
+2009,"Female population, total number of deceased children",Penama,30 - 34,,68
+2009,"Female population, total number of deceased children",Penama,35 - 39,,72
+2009,"Female population, total number of deceased children",Penama,40 - 44,,78
+2009,"Female population, total number of deceased children",Penama,45 - 49,,74
+2009,"Female population, total number of deceased children",Penama,50 - 54,,81
+2009,"Female population, total number of deceased children",Penama,55 - 59,,102
+2009,"Female population, total number of deceased children",Penama,60 - 64,,109
+2009,"Female population, total number of deceased children",Penama,65 - 69,,130
+2009,"Female population, total number of deceased children",Penama,70+,,236
+2009,"Female population, total number of deceased children",Malampa,,,1229
+2009,"Female population, total number of deceased children",Malampa,15 - 19,,5
+2009,"Female population, total number of deceased children",Malampa,20 - 24,,28
+2009,"Female population, total number of deceased children",Malampa,25 - 29,,56
+2009,"Female population, total number of deceased children",Malampa,30 - 34,,67
+2009,"Female population, total number of deceased children",Malampa,35 - 39,,100
+2009,"Female population, total number of deceased children",Malampa,40 - 44,,89
+2009,"Female population, total number of deceased children",Malampa,45 - 49,,111
+2009,"Female population, total number of deceased children",Malampa,50 - 54,,83
+2009,"Female population, total number of deceased children",Malampa,55 - 59,,144
+2009,"Female population, total number of deceased children",Malampa,60 - 64,,126
+2009,"Female population, total number of deceased children",Malampa,65 - 69,,116
+2009,"Female population, total number of deceased children",Malampa,70+,,304
+2009,"Female population, total number of deceased children",Shefa,,,795
+2009,"Female population, total number of deceased children",Shefa,15 - 19,,4
+2009,"Female population, total number of deceased children",Shefa,20 - 24,,18
+2009,"Female population, total number of deceased children",Shefa,25 - 29,,37
+2009,"Female population, total number of deceased children",Shefa,30 - 34,,51
+2009,"Female population, total number of deceased children",Shefa,35 - 39,,63
+2009,"Female population, total number of deceased children",Shefa,40 - 44,,77
+2009,"Female population, total number of deceased children",Shefa,45 - 49,,64
+2009,"Female population, total number of deceased children",Shefa,50 - 54,,82
+2009,"Female population, total number of deceased children",Shefa,55 - 59,,89
+2009,"Female population, total number of deceased children",Shefa,60 - 64,,61
+2009,"Female population, total number of deceased children",Shefa,65 - 69,,68
+2009,"Female population, total number of deceased children",Shefa,70+,,181
+2009,"Female population, total number of deceased children",Tafea,,,1100
+2009,"Female population, total number of deceased children",Tafea,15 - 19,,5
+2009,"Female population, total number of deceased children",Tafea,20 - 24,,42
+2009,"Female population, total number of deceased children",Tafea,25 - 29,,67
+2009,"Female population, total number of deceased children",Tafea,30 - 34,,83
+2009,"Female population, total number of deceased children",Tafea,35 - 39,,120
+2009,"Female population, total number of deceased children",Tafea,40 - 44,,117
+2009,"Female population, total number of deceased children",Tafea,45 - 49,,111
+2009,"Female population, total number of deceased children",Tafea,50 - 54,,116
+2009,"Female population, total number of deceased children",Tafea,55 - 59,,127
+2009,"Female population, total number of deceased children",Tafea,60 - 64,,86
+2009,"Female population, total number of deceased children",Tafea,65 - 69,,100
+2009,"Female population, total number of deceased children",Tafea,70+,,126
+2020,"Female population, total number of deceased children",,,,8217
+2020,"Female population, total number of deceased children",,15 - 19,,24
+2020,"Female population, total number of deceased children",,20 - 24,,173
+2020,"Female population, total number of deceased children",,25 - 29,,382
+2020,"Female population, total number of deceased children",,30 - 34,,522
+2020,"Female population, total number of deceased children",,35 - 39,,597
+2020,"Female population, total number of deceased children",,40 - 44,,857
+2020,"Female population, total number of deceased children",,45 - 49,,871
+2020,"Female population, total number of deceased children",,50 - 54,,1049
+2020,"Female population, total number of deceased children",,55 - 59,,891
+2020,"Female population, total number of deceased children",,60 - 64,,794
+2020,"Female population, total number of deceased children",,65 - 69,,671
+2020,"Female population, total number of deceased children",,70+,,1386
+2020,"Female population, total number of deceased children",Port Vila,,,868
+2020,"Female population, total number of deceased children",Port Vila,15 - 19,,3
+2020,"Female population, total number of deceased children",Port Vila,20 - 24,,24
+2020,"Female population, total number of deceased children",Port Vila,25 - 29,,52
+2020,"Female population, total number of deceased children",Port Vila,30 - 34,,63
+2020,"Female population, total number of deceased children",Port Vila,35 - 39,,77
+2020,"Female population, total number of deceased children",Port Vila,40 - 44,,80
+2020,"Female population, total number of deceased children",Port Vila,45 - 49,,91
+2020,"Female population, total number of deceased children",Port Vila,50 - 54,,127
+2020,"Female population, total number of deceased children",Port Vila,55 - 59,,108
+2020,"Female population, total number of deceased children",Port Vila,60 - 64,,92
+2020,"Female population, total number of deceased children",Port Vila,65 - 69,,48
+2020,"Female population, total number of deceased children",Port Vila,70+,,103
+2020,"Female population, total number of deceased children",Luganville,,,334
+2020,"Female population, total number of deceased children",Luganville,15 - 19,,4
+2020,"Female population, total number of deceased children",Luganville,20 - 24,,7
+2020,"Female population, total number of deceased children",Luganville,25 - 29,,11
+2020,"Female population, total number of deceased children",Luganville,30 - 34,,22
+2020,"Female population, total number of deceased children",Luganville,35 - 39,,23
+2020,"Female population, total number of deceased children",Luganville,40 - 44,,45
+2020,"Female population, total number of deceased children",Luganville,45 - 49,,21
+2020,"Female population, total number of deceased children",Luganville,50 - 54,,72
+2020,"Female population, total number of deceased children",Luganville,55 - 59,,35
+2020,"Female population, total number of deceased children",Luganville,60 - 64,,40
+2020,"Female population, total number of deceased children",Luganville,65 - 69,,18
+2020,"Female population, total number of deceased children",Luganville,70+,,36
+2020,"Female population, total number of deceased children",Torba,,,497
+2020,"Female population, total number of deceased children",Torba,15 - 19,,3
+2020,"Female population, total number of deceased children",Torba,20 - 24,,7
+2020,"Female population, total number of deceased children",Torba,25 - 29,,19
+2020,"Female population, total number of deceased children",Torba,30 - 34,,22
+2020,"Female population, total number of deceased children",Torba,35 - 39,,21
+2020,"Female population, total number of deceased children",Torba,40 - 44,,74
+2020,"Female population, total number of deceased children",Torba,45 - 49,,74
+2020,"Female population, total number of deceased children",Torba,50 - 54,,61
+2020,"Female population, total number of deceased children",Torba,55 - 59,,54
+2020,"Female population, total number of deceased children",Torba,60 - 64,,23
+2020,"Female population, total number of deceased children",Torba,65 - 69,,52
+2020,"Female population, total number of deceased children",Torba,70+,,87
+2020,"Female population, total number of deceased children",Sanma,,,1035
+2020,"Female population, total number of deceased children",Sanma,15 - 19,,2
+2020,"Female population, total number of deceased children",Sanma,20 - 24,,21
+2020,"Female population, total number of deceased children",Sanma,25 - 29,,49
+2020,"Female population, total number of deceased children",Sanma,30 - 34,,65
+2020,"Female population, total number of deceased children",Sanma,35 - 39,,90
+2020,"Female population, total number of deceased children",Sanma,40 - 44,,100
+2020,"Female population, total number of deceased children",Sanma,45 - 49,,129
+2020,"Female population, total number of deceased children",Sanma,50 - 54,,106
+2020,"Female population, total number of deceased children",Sanma,55 - 59,,81
+2020,"Female population, total number of deceased children",Sanma,60 - 64,,128
+2020,"Female population, total number of deceased children",Sanma,65 - 69,,95
+2020,"Female population, total number of deceased children",Sanma,70+,,169
+2020,"Female population, total number of deceased children",Penama,,,1111
+2020,"Female population, total number of deceased children",Penama,15 - 19,,0
+2020,"Female population, total number of deceased children",Penama,20 - 24,,21
+2020,"Female population, total number of deceased children",Penama,25 - 29,,58
+2020,"Female population, total number of deceased children",Penama,30 - 34,,61
+2020,"Female population, total number of deceased children",Penama,35 - 39,,81
+2020,"Female population, total number of deceased children",Penama,40 - 44,,109
+2020,"Female population, total number of deceased children",Penama,45 - 49,,93
+2020,"Female population, total number of deceased children",Penama,50 - 54,,142
+2020,"Female population, total number of deceased children",Penama,55 - 59,,98
+2020,"Female population, total number of deceased children",Penama,60 - 64,,93
+2020,"Female population, total number of deceased children",Penama,65 - 69,,91
+2020,"Female population, total number of deceased children",Penama,70+,,264
+2020,"Female population, total number of deceased children",Malampa,,,1780
+2020,"Female population, total number of deceased children",Malampa,15 - 19,,2
+2020,"Female population, total number of deceased children",Malampa,20 - 24,,38
+2020,"Female population, total number of deceased children",Malampa,25 - 29,,70
+2020,"Female population, total number of deceased children",Malampa,30 - 34,,106
+2020,"Female population, total number of deceased children",Malampa,35 - 39,,123
+2020,"Female population, total number of deceased children",Malampa,40 - 44,,174
+2020,"Female population, total number of deceased children",Malampa,45 - 49,,189
+2020,"Female population, total number of deceased children",Malampa,50 - 54,,175
+2020,"Female population, total number of deceased children",Malampa,55 - 59,,193
+2020,"Female population, total number of deceased children",Malampa,60 - 64,,195
+2020,"Female population, total number of deceased children",Malampa,65 - 69,,184
+2020,"Female population, total number of deceased children",Malampa,70+,,331
+2020,"Female population, total number of deceased children",Shefa,,,1077
+2020,"Female population, total number of deceased children",Shefa,15 - 19,,2
+2020,"Female population, total number of deceased children",Shefa,20 - 24,,22
+2020,"Female population, total number of deceased children",Shefa,25 - 29,,45
+2020,"Female population, total number of deceased children",Shefa,30 - 34,,77
+2020,"Female population, total number of deceased children",Shefa,35 - 39,,67
+2020,"Female population, total number of deceased children",Shefa,40 - 44,,84
+2020,"Female population, total number of deceased children",Shefa,45 - 49,,101
+2020,"Female population, total number of deceased children",Shefa,50 - 54,,169
+2020,"Female population, total number of deceased children",Shefa,55 - 59,,128
+2020,"Female population, total number of deceased children",Shefa,60 - 64,,97
+2020,"Female population, total number of deceased children",Shefa,65 - 69,,66
+2020,"Female population, total number of deceased children",Shefa,70+,,219
+2020,"Female population, total number of deceased children",Tafea,,,1517
+2020,"Female population, total number of deceased children",Tafea,15 - 19,,7
+2020,"Female population, total number of deceased children",Tafea,20 - 24,,32
+2020,"Female population, total number of deceased children",Tafea,25 - 29,,79
+2020,"Female population, total number of deceased children",Tafea,30 - 34,,107
+2020,"Female population, total number of deceased children",Tafea,35 - 39,,115
+2020,"Female population, total number of deceased children",Tafea,40 - 44,,191
+2020,"Female population, total number of deceased children",Tafea,45 - 49,,174
+2020,"Female population, total number of deceased children",Tafea,50 - 54,,197
+2020,"Female population, total number of deceased children",Tafea,55 - 59,,196
+2020,"Female population, total number of deceased children",Tafea,60 - 64,,125
+2020,"Female population, total number of deceased children",Tafea,65 - 69,,117
+2020,"Female population, total number of deceased children",Tafea,70+,,177
+2009,Population 15+ smoking,,,,34294
+2009,Population 15+ smoking,Port Vila,,,7688
+2009,Population 15+ smoking,Luganville,,,1931
+2009,Population 15+ smoking,Torba,,,1415
+2009,Population 15+ smoking,Sanma,,,5124
+2009,Population 15+ smoking,Penama,,,4323
+2009,Population 15+ smoking,Malampa,,,4717
+2009,Population 15+ smoking,Shefa,,,5134
+2009,Population 15+ smoking,Tafea,,,3962
+2009,Population 15+ smoking,Port Vila,,Male,6415
+2009,Population 15+ smoking,Luganville,,Male,1637
+2009,Population 15+ smoking,Torba,,Male,1338
+2009,Population 15+ smoking,Sanma,,Male,4777
+2009,Population 15+ smoking,Penama,,Male,4080
+2009,Population 15+ smoking,Malampa,,Male,4543
+2009,Population 15+ smoking,Shefa,,Male,4597
+2009,Population 15+ smoking,Tafea,,Male,3838
+2009,Population 15+ smoking,Port Vila,,Female,1273
+2009,Population 15+ smoking,Luganville,,Female,258
+2009,Population 15+ smoking,Torba,,Female,77
+2009,Population 15+ smoking,Sanma,,Female,383
+2009,Population 15+ smoking,Penama,,Female,243
+2009,Population 15+ smoking,Malampa,,Female,174
+2009,Population 15+ smoking,Shefa,,Female,537
+2009,Population 15+ smoking,Tafea,,Female,124
+2020,Population 15+ smoking,,,,48316
+2020,Population 15+ smoking,Port Vila,,,8879
+2020,Population 15+ smoking,Luganville,,,2955
+2020,Population 15+ smoking,Torba,,,1935
+2020,Population 15+ smoking,Sanma,,,7190
+2020,Population 15+ smoking,Penama,,,5526
+2020,Population 15+ smoking,Malampa,,,6509
+2020,Population 15+ smoking,Shefa,,,9319
+2020,Population 15+ smoking,Tafea,,,6002
+2020,Population 15+ smoking,Port Vila,,Male,7127
+2020,Population 15+ smoking,Luganville,,Male,2566
+2020,Population 15+ smoking,Torba,,Male,1846
+2020,Population 15+ smoking,Sanma,,Male,6792
+2020,Population 15+ smoking,Penama,,Male,5355
+2020,Population 15+ smoking,Malampa,,Male,6241
+2020,Population 15+ smoking,Shefa,,Male,7840
+2020,Population 15+ smoking,Tafea,,Male,5746
+2020,Population 15+ smoking,Port Vila,,Female,1752
+2020,Population 15+ smoking,Luganville,,Female,389
+2020,Population 15+ smoking,Torba,,Female,89
+2020,Population 15+ smoking,Sanma,,Female,398
+2020,Population 15+ smoking,Penama,,Female,171
+2020,Population 15+ smoking,Malampa,,Female,268
+2020,Population 15+ smoking,Shefa,,Female,1479
+2020,Population 15+ smoking,Tafea,,Female,256
+2009,Population 15+ drinking kava,,,,43087
+2009,Population 15+ drinking kava,Port Vila,,,9493
+2009,Population 15+ drinking kava,Luganville,,,2388
+2009,Population 15+ drinking kava,Torba,,,2163
+2009,Population 15+ drinking kava,Sanma,,,5529
+2009,Population 15+ drinking kava,Penama,,,5938
+2009,Population 15+ drinking kava,Malampa,,,6149
+2009,Population 15+ drinking kava,Shefa,,,6664
+2009,Population 15+ drinking kava,Tafea,,,4763
+2009,Population 15+ drinking kava,Port Vila,,Male,7593
+2009,Population 15+ drinking kava,Luganville,,Male,1936
+2009,Population 15+ drinking kava,Torba,,Male,1657
+2009,Population 15+ drinking kava,Sanma,,Male,5131
+2009,Population 15+ drinking kava,Penama,,Male,5423
+2009,Population 15+ drinking kava,Malampa,,Male,5533
+2009,Population 15+ drinking kava,Shefa,,Male,5386
+2009,Population 15+ drinking kava,Tafea,,Male,4573
+2009,Population 15+ drinking kava,Port Vila,,Female,1900
+2009,Population 15+ drinking kava,Luganville,,Female,452
+2009,Population 15+ drinking kava,Torba,,Female,506
+2009,Population 15+ drinking kava,Sanma,,Female,398
+2009,Population 15+ drinking kava,Penama,,Female,515
+2009,Population 15+ drinking kava,Malampa,,Female,616
+2009,Population 15+ drinking kava,Shefa,,Female,1278
+2009,Population 15+ drinking kava,Tafea,,Female,190
+2020,Population 15+ drinking kava,,,,59347
+2020,Population 15+ drinking kava,Port Vila,,,11132
+2020,Population 15+ drinking kava,Luganville,,,3579
+2020,Population 15+ drinking kava,Torba,,,3196
+2020,Population 15+ drinking kava,Sanma,,,7847
+2020,Population 15+ drinking kava,Penama,,,7306
+2020,Population 15+ drinking kava,Malampa,,,8033
+2020,Population 15+ drinking kava,Shefa,,,11319
+2020,Population 15+ drinking kava,Tafea,,,6936
+2020,Population 15+ drinking kava,Port Vila,,Male,8238
+2020,Population 15+ drinking kava,Luganville,,Male,2812
+2020,Population 15+ drinking kava,Torba,,Male,2249
+2020,Population 15+ drinking kava,Sanma,,Male,7071
+2020,Population 15+ drinking kava,Penama,,Male,6528
+2020,Population 15+ drinking kava,Malampa,,Male,7116
+2020,Population 15+ drinking kava,Shefa,,Male,8686
+2020,Population 15+ drinking kava,Tafea,,Male,6549
+2020,Population 15+ drinking kava,Port Vila,,Female,2893
+2020,Population 15+ drinking kava,Luganville,,Female,766
+2020,Population 15+ drinking kava,Torba,,Female,947
+2020,Population 15+ drinking kava,Sanma,,Female,776
+2020,Population 15+ drinking kava,Penama,,Female,778
+2020,Population 15+ drinking kava,Malampa,,Female,917
+2020,Population 15+ drinking kava,Shefa,,Female,2633
+2020,Population 15+ drinking kava,Tafea,,Female,387
+2009,Population 15+ drinking alcohol,,,,13780
+2009,Population 15+ drinking alcohol,Port Vila,,,6174
+2009,Population 15+ drinking alcohol,Luganville,,,644
+2009,Population 15+ drinking alcohol,Torba,,,107
+2009,Population 15+ drinking alcohol,Sanma,,,1051
+2009,Population 15+ drinking alcohol,Penama,,,387
+2009,Population 15+ drinking alcohol,Malampa,,,1401
+2009,Population 15+ drinking alcohol,Shefa,,,2732
+2009,Population 15+ drinking alcohol,Tafea,,,1282
+2009,Population 15+ drinking alcohol,Port Vila,,Male,4925
+2009,Population 15+ drinking alcohol,Luganville,,Male,544
+2009,Population 15+ drinking alcohol,Torba,,Male,103
+2009,Population 15+ drinking alcohol,Sanma,,Male,998
+2009,Population 15+ drinking alcohol,Penama,,Male,353
+2009,Population 15+ drinking alcohol,Malampa,,Male,1239
+2009,Population 15+ drinking alcohol,Shefa,,Male,2348
+2009,Population 15+ drinking alcohol,Tafea,,Male,1211
+2009,Population 15+ drinking alcohol,Port Vila,,Female,1249
+2009,Population 15+ drinking alcohol,Luganville,,Female,100
+2009,Population 15+ drinking alcohol,Torba,,Female,4
+2009,Population 15+ drinking alcohol,Sanma,,Female,53
+2009,Population 15+ drinking alcohol,Penama,,Female,34
+2009,Population 15+ drinking alcohol,Malampa,,Female,162
+2009,Population 15+ drinking alcohol,Shefa,,Female,384
+2009,Population 15+ drinking alcohol,Tafea,,Female,73
+2020,Population 15+ drinking alcohol,,,,27282
+2020,Population 15+ drinking alcohol,Port Vila,,,7218
+2020,Population 15+ drinking alcohol,Luganville,,,1963
+2020,Population 15+ drinking alcohol,Torba,,,653
+2020,Population 15+ drinking alcohol,Sanma,,,3069
+2020,Population 15+ drinking alcohol,Penama,,,1628
+2020,Population 15+ drinking alcohol,Malampa,,,3514
+2020,Population 15+ drinking alcohol,Shefa,,,6774
+2020,Population 15+ drinking alcohol,Tafea,,,2464
+2020,Population 15+ drinking alcohol,Port Vila,,Male,5436
+2020,Population 15+ drinking alcohol,Luganville,,Male,1615
+2020,Population 15+ drinking alcohol,Torba,,Male,569
+2020,Population 15+ drinking alcohol,Sanma,,Male,2842
+2020,Population 15+ drinking alcohol,Penama,,Male,1538
+2020,Population 15+ drinking alcohol,Malampa,,Male,3164
+2020,Population 15+ drinking alcohol,Shefa,,Male,5344
+2020,Population 15+ drinking alcohol,Tafea,,Male,2201
+2020,Population 15+ drinking alcohol,Port Vila,,Female,1781
+2020,Population 15+ drinking alcohol,Luganville,,Female,348
+2020,Population 15+ drinking alcohol,Torba,,Female,84
+2020,Population 15+ drinking alcohol,Sanma,,Female,227
+2020,Population 15+ drinking alcohol,Penama,,Female,90
+2020,Population 15+ drinking alcohol,Malampa,,Female,351
+2020,Population 15+ drinking alcohol,Shefa,,Female,1430
+2020,Population 15+ drinking alcohol,Tafea,,Female,263

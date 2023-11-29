@@ -1,0 +1,71 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Population3+currentlyattendinganeducationalinstitution",
+                "Population15+highestlevelofeducationcompleted",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PortVila",
+                "Luganville",
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                "Luganvile",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "TypeofSchool",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Pre-school",
+                "Primary",
+                "Juniorsecondary",
+                "Seniorsecondary",
+                "Tertiary",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "enrolments",
+  "title": "Vanuatu School Enrollments Rate"
+}

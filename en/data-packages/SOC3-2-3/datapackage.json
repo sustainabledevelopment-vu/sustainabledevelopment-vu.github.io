@@ -16,26 +16,15 @@
             "title": "Year"
           },
           {
-            "name": "Units",
+            "name": "Unit of measurement",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total",
+                "Malria incidence per 1000 population",
                 ""
               ]
             },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Malaria Annual Parasitic Incidence Rate",
-                ""
-              ]
-            },
-            "title": "Series"
+            "title": "Unit of measurement"
           },
           {
             "name": "Value",
@@ -48,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-2-3",
-  "title": "SOC3-2-3"
+  "title": "Malaria annual parasite incidence rate"
 }

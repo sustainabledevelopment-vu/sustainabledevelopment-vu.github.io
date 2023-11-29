@@ -1,15 +1,20 @@
-Year,Value,Units,Series
-2015,25,Percent,Literacy Standards Yr 4 Anglo
-2017,65,Percent,Literacy Standards Yr 4 Anglo
-2015,30,Percent,Literacy Standards Yr 6 Anglo
-2017,73,Percent,Literacy Standards Yr 6 Anglo
-2015,37,Percent,Numeracy Standards Yr 4 Anglo
-2017,85,Percent,Numeracy Standards Yr 4 Anglo
-2015,43,Percent,Numeracy Standards Yr 6 Anglo
-2017,75,Percent,Numeracy Standards Yr 6 Anglo
-2015,5,Percent,Literacy Standards Yr 4 Franco
-2017,64,Percent,Literacy Standards Yr 4 Franco
-2015,19,Percent,Literacy Standards Yr 6 Franco
-2017,41,Percent,Literacy Standards Yr 6 Franco
-2015,37,Percent,Numeracy Standards Yr 4 Franco
-2015,44,Percent,Numeracy Standards Yr 6 Franco
+Year,Value,Series
+2017,4117,AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4
+2019,5348,AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4
+2021,6432,AlphabâˆšÂ©tisation FranâˆšÃŸais - AnnâˆšÂ©e 4
+2017,8204,English Literacy - Year 4
+2019,10431,English Literacy - Year 4
+2021,12107,English Literacy - Year 4
+2017,7055,English Literacy - Year 6
+2019,8338,English Literacy - Year 6
+2021,9725,English Literacy - Year 6
+2019,5449,English Literacy - Year 8
+2021,6740,English Literacy - Year 8
+2017,9259,Numeracy - Year 4
+2019,11739,Numeracy - Year 4
+2021,18927,Numeracy - Year 4
+2017,8466,Numeracy - Year 6
+2019,9718,Numeracy - Year 6
+2021,14894,Numeracy - Year 6
+2019,6063,Numeracy - Year 8
+2021,10362,Numeracy - Year 8

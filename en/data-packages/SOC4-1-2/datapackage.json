@@ -16,30 +16,121 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Women in Decision Making",
+                "Age",
+                "Employment (preceding 12 months)",
+                "Number of living children",
+                "Residence",
+                "Education",
                 ""
               ]
             },
             "title": "Series"
           },
           {
+            "name": "Age group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "15-19",
+                "20-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                ""
+              ]
+            },
+            "title": "Age group"
+          },
+          {
+            "name": "Employment status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "not employed",
+                "employed for cash",
+                ""
+              ]
+            },
+            "title": "Employment status"
+          },
+          {
+            "name": "Number of children",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0",
+                "1 to 2",
+                "3 to 4",
+                "5+",
+                ""
+              ]
+            },
+            "title": "Number of children"
+          },
+          {
+            "name": "Residence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "urban",
+                "rural",
+                ""
+              ]
+            },
+            "title": "Residence"
+          },
+          {
+            "name": "Education",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "no education",
+                "primary",
+                "secondary",
+                "more than secondary",
+                ""
+              ]
+            },
+            "title": "Education"
+          },
+          {
+            "name": "Indicator",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Own health care",
+                "Making major household purchases",
+                "Making purchases for daily household needs",
+                "Visits to her family or relatives",
+                "Participate in all four decisions",
+                "participate in none of the four decisions",
+                "number of women",
+                ""
+              ]
+            },
+            "title": "Indicator"
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
+                "total count",
+                ""
+              ]
+            },
+            "title": "Unit of measurement"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -48,5 +139,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-1-2",
-  "title": "SOC4-1-2"
+  "title": "Number of decisions in which women participate"
 }

@@ -15,21 +15,22 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Urban/Rural",
             "type": "string",
             "constraints": {
               "enum": [
-                "VUV",
+                "Rural",
+                "Urban",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Unit",
             "type": "string",
             "constraints": {
               "enum": [
-                "33211",
+                "Average annual household income tourism (vatu)",
                 ""
               ]
             }
@@ -44,5 +45,5 @@
   ],
   "profile": "data-package",
   "name": "ECO3-2-1",
-  "title": "ECO3-2-1"
+  "title": "indicators.ECO3-2-1-Average annual household income tourism"
 }

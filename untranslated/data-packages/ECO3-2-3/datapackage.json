@@ -15,21 +15,39 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percent",
+                "Total number of visitors",
+                "Proportion of visitors",
                 ""
               ]
             }
           },
           {
-            "name": "Series",
+            "name": "Island",
             "type": "string",
             "constraints": {
               "enum": [
-                "33230",
+                "Tanna",
+                "Santo",
+                "Efate Offshore Islands",
+                "Pentecost",
+                "Malekula",
+                "Ambrym",
+                "Other Islands",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total count",
+                "Percentage (%)",
                 ""
               ]
             }
@@ -44,5 +62,5 @@
   ],
   "profile": "data-package",
   "name": "ECO3-2-3",
-  "title": "ECO3-2-3"
+  "title": "indicators.ECO3-2-3-title"
 }

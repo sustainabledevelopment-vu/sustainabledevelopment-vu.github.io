@@ -12,11 +12,84 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Number of decisions women participate",
+                "Number of  reasons for which wife beating is justified",
+                "Number of reasonsgiven for refusing to have sexual intercourse with husband",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Number of decisions",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0",
+                "1 to 2",
+                "3 to 4",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Number of reasons",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0",
+                "1 to 2",
+                "3 to 4",
+                "5",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Number of reasons.1",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "0",
+                "1 to 2",
+                "3",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Response coverage",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "participate in all decision makng",
+                "number of women",
+                "disagree with all the reasons justifying wife beating",
+                "agree with all the the reasons for refusing sexual intercourse with husband",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit of measurement",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "%",
+                "total count",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "number"
           }
         ]
       }
@@ -24,5 +97,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-1-3",
-  "title": "SOC4-1-3"
+  "title": "indicators.SOC4-1-3-title"
 }

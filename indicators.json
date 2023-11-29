@@ -35,7 +35,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO1-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO1-3-2",
@@ -187,7 +187,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO2-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO2-3-1",
@@ -291,7 +291,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO3-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO3-2-2",
@@ -299,7 +299,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO3-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO3-2-3",
@@ -307,7 +307,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO3-2-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO3-3-1",
@@ -403,7 +403,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO4-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO4-3-2",
@@ -435,7 +435,7 @@
           "description": "",
           "keywords": "",
           "href": "/ECO4-6-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ECO4-6-2",
@@ -499,7 +499,7 @@
           "description": "",
           "keywords": "",
           "href": "/ENV1-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ENV1-1-2",
@@ -515,7 +515,7 @@
           "description": "",
           "keywords": "",
           "href": "/ENV1-1-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ENV1-2-1",
@@ -531,7 +531,7 @@
           "description": "",
           "keywords": "",
           "href": "/ENV1-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ENV1-3-2",
@@ -643,7 +643,7 @@
           "description": "",
           "keywords": "",
           "href": "/ENV2-3-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ENV2-3-3",
@@ -747,7 +747,7 @@
           "description": "",
           "keywords": "",
           "href": "/ENV3-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "ENV3-2-3",
@@ -1155,7 +1155,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC2-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC2-4-1",
@@ -1187,7 +1187,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-1-3",
@@ -1203,7 +1203,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-2-2",
@@ -1211,7 +1211,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-2-3",
@@ -1219,7 +1219,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-2-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-3-1",
@@ -1227,7 +1227,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-3-2",
@@ -1235,7 +1235,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-3-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-3-3",
@@ -1243,7 +1243,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC3-3-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC3-4-1",
@@ -1291,7 +1291,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC4-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC4-1-3",
@@ -1299,7 +1299,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC4-1-3/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC4-2-1",
@@ -1331,7 +1331,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC4-3-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC4-3-2",
@@ -1627,7 +1627,7 @@
           "description": "",
           "keywords": "",
           "href": "/SOC6-7-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "SOC6-7-2",
@@ -1681,6 +1681,70 @@
   },
   {
     "goal": {
+      "id": "agriculture",
+      "title": "Vanuatu Labour Statistics",
+      "indicators": [
+        
+        {
+          "id": "agriculture",
+          "title": "Vanuatu Labour Statistics",
+          "description": "",
+          "keywords": "",
+          "href": "/agriculture/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "book3",
+      "title": "global_indicators.book3-title",
+      "indicators": [
+        
+        {
+          "id": "book3",
+          "title": "global_indicators.book3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/book3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "book9",
+      "title": "global_indicators.book9-title",
+      "indicators": [
+        
+        {
+          "id": "book9",
+          "title": "global_indicators.book9-title",
+          "description": "",
+          "keywords": "",
+          "href": "/book9/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "business",
+      "title": "business",
+      "indicators": [
+        
+        {
+          "id": "business",
+          "title": "business",
+          "description": "",
+          "keywords": "",
+          "href": "/business/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "census",
       "title": "Population from census",
       "indicators": [
@@ -1729,6 +1793,54 @@
   },
   {
     "goal": {
+      "id": "donor",
+      "title": "The Republic of Vanuatu Government Finances by Donor",
+      "indicators": [
+        
+        {
+          "id": "donor",
+          "title": "The Republic of Vanuatu Government Finances by Donor",
+          "description": "",
+          "keywords": "",
+          "href": "/donor/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "enrolments",
+      "title": "Vanuatu School Enrollments Rate",
+      "indicators": [
+        
+        {
+          "id": "enrolments",
+          "title": "Vanuatu School Enrollments Rate",
+          "description": "",
+          "keywords": "",
+          "href": "/enrolments/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "exports",
+      "title": "exports",
+      "indicators": [
+        
+        {
+          "id": "exports",
+          "title": "exports",
+          "description": "",
+          "keywords": "",
+          "href": "/exports/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "",
       "title": "",
       "indicators": [
@@ -1753,16 +1865,120 @@
   },
   {
     "goal": {
-      "id": "",
-      "title": "",
+      "id": "government",
+      "title": "The Republic of Vanuatu Government Finances",
       "indicators": [
         
+        {
+          "id": "government",
+          "title": "The Republic of Vanuatu Government Finances",
+          "description": "",
+          "keywords": "",
+          "href": "/government/",
+          "status": "complete"
+        },
         {
           "id": "government-financial-statistics",
           "title": "",
           "description": "",
           "keywords": "",
           "href": "/government-financial-statistics/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "grades",
+      "title": "Vanuatu School Grades",
+      "indicators": [
+        
+        {
+          "id": "grades",
+          "title": "Vanuatu School Grades",
+          "description": "",
+          "keywords": "",
+          "href": "/grades/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "health",
+      "title": "Vanuatu Health Statistics",
+      "indicators": [
+        
+        {
+          "id": "health",
+          "title": "Vanuatu Health Statistics",
+          "description": "",
+          "keywords": "",
+          "href": "/health/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "imports",
+      "title": "Imports Trades in Vanuatu",
+      "indicators": [
+        
+        {
+          "id": "imports",
+          "title": "Imports Trades in Vanuatu",
+          "description": "",
+          "keywords": "",
+          "href": "/imports/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "income",
+      "title": "Vanuatu household Incomes",
+      "indicators": [
+        
+        {
+          "id": "income",
+          "title": "Vanuatu household Incomes",
+          "description": "",
+          "keywords": "",
+          "href": "/income/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "infrastructure",
+      "title": "Vanuatu Infrastructure Statistics",
+      "indicators": [
+        
+        {
+          "id": "infrastructure",
+          "title": "Vanuatu Infrastructure Statistics",
+          "description": "",
+          "keywords": "",
+          "href": "/infrastructure/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "labor",
+      "title": "Vanuatu Labour Statistics",
+      "indicators": [
+        
+        {
+          "id": "labor",
+          "title": "Vanuatu Labour Statistics",
+          "description": "",
+          "keywords": "",
+          "href": "/labor/",
           "status": "complete"
         }]
     }
@@ -1793,6 +2009,22 @@
   },
   {
     "goal": {
+      "id": "population",
+      "title": "Vanuatu Demographics",
+      "indicators": [
+        
+        {
+          "id": "population",
+          "title": "Vanuatu Demographics",
+          "description": "",
+          "keywords": "",
+          "href": "/population/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "",
       "title": "",
       "indicators": [
@@ -1804,6 +2036,86 @@
           "keywords": "",
           "href": "/school-attendance/",
           "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "shelter",
+      "title": "Vanuatu Shelter characteristics",
+      "indicators": [
+        
+        {
+          "id": "shelter",
+          "title": "Vanuatu Shelter characteristics",
+          "description": "",
+          "keywords": "",
+          "href": "/shelter/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "usp",
+      "title": "University of the South Pacific",
+      "indicators": [
+        
+        {
+          "id": "usp",
+          "title": "University of the South Pacific",
+          "description": "",
+          "keywords": "",
+          "href": "/usp/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "vat",
+      "title": "Value added tax on goods and services in Vanuatu",
+      "indicators": [
+        
+        {
+          "id": "vat",
+          "title": "Value added tax on goods and services in Vanuatu",
+          "description": "",
+          "keywords": "",
+          "href": "/vat/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "vocational",
+      "title": "Vanuatu Vocational Education",
+      "indicators": [
+        
+        {
+          "id": "vocational",
+          "title": "Vanuatu Vocational Education",
+          "description": "",
+          "keywords": "",
+          "href": "/vocational/",
+          "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "watersanitation&hygiene",
+      "title": "Vanuatu household water sanitation and hygiene characteristics",
+      "indicators": [
+        
+        {
+          "id": "watersanitation&hygiene",
+          "title": "Vanuatu household water sanitation and hygiene characteristics",
+          "description": "",
+          "keywords": "",
+          "href": "/watersanitation&hygiene/",
+          "status": "notstarted"
         }]
     }
   }]
