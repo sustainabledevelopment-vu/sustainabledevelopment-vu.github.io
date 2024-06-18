@@ -6,6 +6,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,,Total count,31107
 2019,Total number of visitors,,Total count,30259
 2020,Total number of visitors,,Total count,6234
+2022,Total number of visitors,,Total count,6172
+2023,Total number of visitors,,Total count,11913
 2014,Total number of visitors,Tanna,Total count,6343
 2015,Total number of visitors,Tanna,Total count,7295
 2016,Total number of visitors,Tanna,Total count,7774
@@ -13,6 +15,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Tanna,Total count,11258
 2019,Total number of visitors,Tanna,Total count,10848
 2020,Total number of visitors,Tanna,Total count,2283
+2022,Total number of visitors,Tanna,Total count,1656
+2023,Total number of visitors,Tanna,Total count,3762
 2014,Total number of visitors,Santo,Total count,4739
 2015,Total number of visitors,Santo,Total count,5342
 2016,Total number of visitors,Santo,Total count,6861
@@ -20,6 +24,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Santo,Total count,10349
 2019,Total number of visitors,Santo,Total count,10255
 2020,Total number of visitors,Santo,Total count,2283
+2022,Total number of visitors,Santo,Total count,2439
+2023,Total number of visitors,Santo,Total count,4821
 2014,Total number of visitors,Efate Offshore Islands,Total count,2144
 2015,Total number of visitors,Efate Offshore Islands,Total count,3201
 2016,Total number of visitors,Efate Offshore Islands,Total count,4328
@@ -27,6 +33,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Efate Offshore Islands,Total count,4419
 2019,Total number of visitors,Efate Offshore Islands,Total count,4751
 2020,Total number of visitors,Efate Offshore Islands,Total count,634
+2022,Total number of visitors,Efate Offshore Islands,Total count,1423
+2023,Total number of visitors,Efate Offshore Islands,Total count,1820
 2014,Total number of visitors,Pentecost,Total count,379
 2015,Total number of visitors,Pentecost,Total count,1093
 2016,Total number of visitors,Pentecost,Total count,820
@@ -34,6 +42,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Pentecost,Total count,527
 2019,Total number of visitors,Pentecost,Total count,660
 2020,Total number of visitors,Pentecost,Total count,64
+2022,Total number of visitors,Pentecost,Total count,42
+2023,Total number of visitors,Pentecost,Total count,131
 2014,Total number of visitors,Malekula,Total count,636
 2015,Total number of visitors,Malekula,Total count,945
 2016,Total number of visitors,Malekula,Total count,935
@@ -41,6 +51,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Malekula,Total count,1220
 2019,Total number of visitors,Malekula,Total count,899
 2020,Total number of visitors,Malekula,Total count,205
+2022,Total number of visitors,Malekula,Total count,150
+2023,Total number of visitors,Malekula,Total count,325
 2014,Total number of visitors,Ambrym,Total count,521
 2015,Total number of visitors,Ambrym,Total count,775
 2016,Total number of visitors,Ambrym,Total count,863
@@ -48,6 +60,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Ambrym,Total count,874
 2019,Total number of visitors,Ambrym,Total count,404
 2020,Total number of visitors,Ambrym,Total count,47
+2022,Total number of visitors,Ambrym,Total count,28
+2023,Total number of visitors,Ambrym,Total count,109
 2014,Total number of visitors,Other Islands,Total count,1349
 2015,Total number of visitors,Other Islands,Total count,1572
 2016,Total number of visitors,Other Islands,Total count,1973
@@ -55,6 +69,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Total number of visitors,Other Islands,Total count,2460
 2019,Total number of visitors,Other Islands,Total count,2442
 2020,Total number of visitors,Other Islands,Total count,512
+2022,Total number of visitors,Other Islands,Total count,434
+2023,Total number of visitors,Other Islands,Total count,945
 2014,Proportion of visitors,,Percentage (%),15
 2015,Proportion of visitors,,Percentage (%),22
 2016,Proportion of visitors,,Percentage (%),25
@@ -62,6 +78,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,,Percentage (%),27
 2019,Proportion of visitors,,Percentage (%),25
 2020,Proportion of visitors,,Percentage (%),34
+2022,Proportion of visitors,,Percentage (%),9
+2023,Proportion of visitors,,Percentage (%),3
 2014,Proportion of visitors,Tanna,Percentage (%),6
 2015,Proportion of visitors,Tanna,Percentage (%),8
 2016,Proportion of visitors,Tanna,Percentage (%),8
@@ -69,6 +87,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Tanna,Percentage (%),10
 2019,Proportion of visitors,Tanna,Percentage (%),9
 2020,Proportion of visitors,Tanna,Percentage (%),12
+2022,Proportion of visitors,Tanna,Percentage (%),3
+2023,Proportion of visitors,Tanna,Percentage (%),1
 2014,Proportion of visitors,Santo,Percentage (%),4
 2015,Proportion of visitors,Santo,Percentage (%),6
 2016,Proportion of visitors,Santo,Percentage (%),7
@@ -76,6 +96,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Santo,Percentage (%),9
 2019,Proportion of visitors,Santo,Percentage (%),9
 2020,Proportion of visitors,Santo,Percentage (%),12
+2022,Proportion of visitors,Santo,Percentage (%),4
+2023,Proportion of visitors,Santo,Percentage (%),1
 2014,Proportion of visitors,Efate Offshore Islands,Percentage (%),2
 2015,Proportion of visitors,Efate Offshore Islands,Percentage (%),4
 2016,Proportion of visitors,Efate Offshore Islands,Percentage (%),5
@@ -83,6 +105,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Efate Offshore Islands,Percentage (%),4
 2019,Proportion of visitors,Efate Offshore Islands,Percentage (%),4
 2020,Proportion of visitors,Efate Offshore Islands,Percentage (%),3
+2022,Proportion of visitors,Efate Offshore Islands,Percentage (%),2
+2023,Proportion of visitors,Efate Offshore Islands,Percentage (%),1
 2014,Proportion of visitors,Pentecost,Percentage (%),0
 2015,Proportion of visitors,Pentecost,Percentage (%),1
 2016,Proportion of visitors,Pentecost,Percentage (%),1
@@ -90,6 +114,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Pentecost,Percentage (%),0
 2019,Proportion of visitors,Pentecost,Percentage (%),1
 2020,Proportion of visitors,Pentecost,Percentage (%),0
+2022,Proportion of visitors,Pentecost,Percentage (%),0
+2023,Proportion of visitors,Pentecost,Percentage (%),0
 2014,Proportion of visitors,Malekula,Percentage (%),1
 2015,Proportion of visitors,Malekula,Percentage (%),1
 2016,Proportion of visitors,Malekula,Percentage (%),1
@@ -97,6 +123,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Malekula,Percentage (%),1
 2019,Proportion of visitors,Malekula,Percentage (%),1
 2020,Proportion of visitors,Malekula,Percentage (%),1
+2022,Proportion of visitors,Malekula,Percentage (%),0
+2023,Proportion of visitors,Malekula,Percentage (%),0
 2014,Proportion of visitors,Ambrym,Percentage (%),0
 2015,Proportion of visitors,Ambrym,Percentage (%),1
 2016,Proportion of visitors,Ambrym,Percentage (%),1
@@ -104,6 +132,8 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Ambrym,Percentage (%),1
 2019,Proportion of visitors,Ambrym,Percentage (%),0
 2020,Proportion of visitors,Ambrym,Percentage (%),0
+2022,Proportion of visitors,Ambrym,Percentage (%),0
+2023,Proportion of visitors,Ambrym,Percentage (%),0
 2014,Proportion of visitors,Other Islands,Percentage (%),1
 2015,Proportion of visitors,Other Islands,Percentage (%),2
 2016,Proportion of visitors,Other Islands,Percentage (%),2
@@ -111,3 +141,5 @@ Year,Series,Island,Unit of measurement,Value
 2018,Proportion of visitors,Other Islands,Percentage (%),2
 2019,Proportion of visitors,Other Islands,Percentage (%),2
 2020,Proportion of visitors,Other Islands,Percentage (%),3
+2022,Proportion of visitors,Other Islands,Percentage (%),1
+2023,Proportion of visitors,Other Islands,Percentage (%),0

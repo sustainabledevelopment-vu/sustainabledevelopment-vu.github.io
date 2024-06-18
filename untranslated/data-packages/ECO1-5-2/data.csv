@@ -5,21 +5,45 @@ Year,Country,TradeType,Value
 2021,,Exports,806
 2021,,Imports,2791
 2021,,Balance,-1985
+2022,,Exports,946
+2022,,Imports,1944
+2022,,Balance,-999
+2023,,Exports,345
+2023,,Imports,3445
+2023,,Balance,-3115
 2020,Fiji,Exports,816
 2020,Fiji,Imports,2729
 2020,Fiji,Balance,-1913
 2021,Fiji,Exports,669
 2021,Fiji,Imports,2494
 2021,Fiji,Balance,-1825
+2022,Fiji,Exports,425
+2022,Fiji,Imports,1669
+2022,Fiji,Balance,-1244
+2023,Fiji,Exports,243
+2023,Fiji,Imports,2796
+2023,Fiji,Balance,-2553
 2020,Papua New Guinea,Exports,0
 2020,Papua New Guinea,Imports,93
 2020,Papua New Guinea,Balance,-93
 2021,Papua New Guinea,Exports,81
 2021,Papua New Guinea,Imports,160
 2021,Papua New Guinea,Balance,-79
+2022,Papua New Guinea,Exports,104
+2022,Papua New Guinea,Imports,177
+2022,Papua New Guinea,Balance,-73
+2023,Papua New Guinea,Exports,60
+2023,Papua New Guinea,Imports,204
+2023,Papua New Guinea,Balance,-159
 2020,Solomon Islands,Exports,18
 2020,Solomon Islands,Imports,179
 2020,Solomon Islands,Balance,-161
 2021,Solomon Islands,Exports,55
 2021,Solomon Islands,Imports,138
 2021,Solomon Islands,Balance,-83
+2022,Solomon Islands,Exports,416
+2022,Solomon Islands,Imports,98
+2022,Solomon Islands,Balance,318
+2023,Solomon Islands,Exports,43
+2023,Solomon Islands,Imports,445
+2023,Solomon Islands,Balance,-373
