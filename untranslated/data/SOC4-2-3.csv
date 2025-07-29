@@ -1,1 +1,9 @@
-Year,Value
+Year,Series,Type of Violence,Value
+2011,Lifetime,,1239
+2011,Last 12 Months,,899
+2011,Lifetime,Emotional,1404
+2011,Lifetime,Physical,1045
+2011,Lifetime,Sexual,910
+2011,Last 12 Months,Emotional,1111
+2011,Last 12 Months,Physical,691
+2011,Last 12 Months,Sexual,678

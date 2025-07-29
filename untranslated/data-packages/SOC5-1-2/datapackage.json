@@ -12,11 +12,24 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Court",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Court of Appeal",
+                "Supreme Court",
+                "Magistrates Court",
+                "Island Court",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC5-1-2",
-  "title": "SOC5-1-2"
+  "title": "indicators.SOC5-1-2-title"
 }

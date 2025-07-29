@@ -12,12 +12,37 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Ratio (value)",
+                "Value (million vatu)",
+                "Quantity (tonnes)",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Export Type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Processed",
+                "Raw",
+                ""
+              ]
+            },
+            "title": "Export Type"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +51,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-3-2",
-  "title": "ECO4-3-2"
+  "title": "ECO4.3.2 Ratio of processed export commodities (including coconut, kava, cocoa, coffee) to raw exports"
 }

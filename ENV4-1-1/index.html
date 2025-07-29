@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV4
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV4
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV4
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -580,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Set of actions aimed at improving the physical, social and economic welfare of a place and its dwellers. It is the organization of land uses so that people enjoy the highest achievable degree of efficiency in resource utilization, functionality of places.</p>
+            <p>The “Proportion of Declared Physical Planning Areas That Have a Physical Plan” indicator measures the percentage of officially designated physical planning areas that have a comprehensive and approved physical plan in place. A physical plan typically outlines land use, infrastructure development, environmental conservation, and other spatial planning considerations within a specified area.</p>
 
           
         </td>
@@ -596,7 +578,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>Key component of urban development initiatives and sets the boundaries that may detailed project must adhere to – such as the legal and technical guidelines that should be followed.</p>
+            <p>This indicator tracks the progress of urban and regional planning by assessing whether designated physical planning areas have been equipped with formal plans that guide their development. Physical planning is essential for ensuring sustainable land use, coordinating infrastructure development, managing natural resources, and mitigating environmental impacts. The indicator provides insights into the extent to which planning areas are being managed in accordance with established planning principles and regulations.</p>
 
           
         </td>
@@ -607,8 +589,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -617,17 +610,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <ul>
-  <li>
-    <p>Helpful in fight against urban and rural poverty</p>
-  </li>
-  <li>
-    <p>Helps to address environmental problems</p>
-  </li>
-  <li>
-    <p>Helps to maximize the use of land and other resources</p>
-  </li>
-</ul>
+            <p>Monitoring the proportion of declared physical planning areas with physical plans is crucial for evaluating the effectiveness of spatial planning efforts. Having a physical plan in place helps ensure that development within these areas is orderly, sustainable, and aligned with broader environmental and socio-economic goals.</p>
 
           
         </td>
@@ -638,8 +621,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Proportion of Declared Physical Planning Areas That Have a Physical Plan,” first identify and list all officially designated physical planning areas. Then, verify whether each area has an approved physical plan in place. Next, divide the number of planning areas with approved physical plans by the total number of declared planning areas. Finally, multiply the result by 100 to express the proportion as a percentage.</p>
+
+<p>Formula:
+Proportion of Areas with Physical Plans (%) = (Number of Declared Areas with a Physical Plan/Total Number of Declared Physical Planning Areas) * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -648,7 +645,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>11.a.1 (Tier 3)</p>
+            <p>11.a.1, 11.b.1 &amp; 11.b.2</p>
 
           
         </td>
@@ -659,8 +656,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -785,12 +793,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

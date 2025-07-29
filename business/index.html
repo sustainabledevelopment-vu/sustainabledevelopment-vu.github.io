@@ -119,7 +119,7 @@ var translations = {
         
     <title>
         
-        business - Indicators of The National Sustainable Development Plan
+        Number of Business Licenses Issued by Industry - Indicators of The National Sustainable Development Plan
     </title>
 
 
@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -200,8 +200,6 @@ layout-indicator
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,6 +221,8 @@ layout-indicator
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -230,31 +230,13 @@ layout-indicator
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -374,7 +356,7 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        <span class="lead-copy">business</span>
+                        <span class="lead-copy">Number of Business Licenses Issued by Industry</span>
                     </h1>
                 </div>
             </div>
@@ -434,6 +416,13 @@ data-event-label="high"
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>The number of business licenses issued increased gradually from 7,400 in 2015 to over 9,200 by 2019, then dropped sharply to 5,000 in 2021—likely due to pandemic-related disruptions. In 2022 and 2023, licensing surged to over 27,000 and 26,000 respectively, suggesting a significant rebound in formal business activity or possible changes in reporting or enforcement. Dominant sectors include accommodation, retail trade, and services, reflecting areas of economic concentration.</p>
+
+  </div>
+</div>
+
 
 
 
@@ -448,7 +437,7 @@ data-event-label="high"
   data-country="Vanuatu"
   data-charttitle=""
   data-charttitles="[{&quot;series&quot;:&quot;business by major industries&quot;,&quot;unit&quot;:&quot;total count&quot;,&quot;title&quot;:&quot;businesses by major industries&quot;},{&quot;series&quot;:&quot;proportion of businesses by major industries&quot;,&quot;unit&quot;:&quot;percentages&quot;,&quot;title&quot;:&quot;proportion of businesses by major industries&quot;},{&quot;series&quot;:&quot;businesses by minor industries&quot;,&quot;unit&quot;:&quot;total count&quot;,&quot;title&quot;:&quot;businesses by minor industries&quot;}]"
-  data-measurementunit=""
+  data-measurementunit="Nummber"
   data-xaxislabel="Years"
   data-showdata="true"
   data-graphtype="line"
@@ -462,7 +451,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Totalnumber(majorindustry)&quot;,&quot;Proportion(majorindustry)&quot;,&quot;Totalnumber(minorindustry)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;MajorIndustry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Accommodationandfoodserviceactivities&quot;,&quot;Administrativeandsupportserviceactivities&quot;,&quot;Agriculture,forestryandfishing&quot;,&quot;Arts,entertainmentandrecreation&quot;,&quot;Construction&quot;,&quot;Education&quot;,&quot;Electricity,gas,steamandairconditioningsupply&quot;,&quot;Financialandinsuranceactivities&quot;,&quot;Humanhealthandsocialworkactivities&quot;,&quot;Informationandcommunication&quot;,&quot;Manufacturing&quot;,&quot;Miningandquarrying&quot;,&quot;Otherserviceactivities&quot;,&quot;Professional,scientificandtechnicalactivities&quot;,&quot;Publicadministrationanddefence;compulsorysocialsecurity&quot;,&quot;Realestateactivities&quot;,&quot;Transportationandstorage&quot;,&quot;Watersupply;sewerage,wastemanagementandremediationactivities&quot;,&quot;Wholesaleandretailtrade;repairofmotorvehiclesandmotorcycles&quot;,&quot;&quot;]},&quot;title&quot;:&quot;MajorIndustry&quot;},{&quot;name&quot;:&quot;MinorIndustry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Accounting,bookkeepingandauditingactivities;taxconsultancy&quot;,&quot;Activitiesauxiliarytofinancialserviceactivities,exceptinsuranceandpensionfunding&quot;,&quot;Activitiesauxiliarytoinsuranceandpensionfunding&quot;,&quot;Activitiesofbusiness,employersandprofessionalmembershiporganizations&quot;,&quot;Activitiesofcallcentres&quot;,&quot;Activitiesofemploymentplacementagencies&quot;,&quot;Activitiesofheadoffices&quot;,&quot;Advertising&quot;,&quot;Animalproduction&quot;,&quot;Architecturalandengineeringactivitiesandrelatedtechnicalconsultancy&quot;,&quot;Beverageservingactivities&quot;,&quot;Buildingcompletionandfinishing&quot;,&quot;Buildingofshipsandboats&quot;,&quot;Businesssupportserviceactivitiesn.e.c.&quot;,&quot;Castingofmetals&quot;,&quot;Cleaningactivities&quot;,&quot;Computerprogramming,consultancyandrelatedactivities&quot;,&quot;Constructionofbuildings&quot;,&quot;Constructionofothercivilengineeringprojects&quot;,&quot;Constructionofroadsandrailways&quot;,&quot;Constructionofutilityprojects&quot;,&quot;Courieractivities&quot;,&quot;Creative,artsandentertainmentactivities&quot;,&quot;Dataprocessing,hostingandrelatedactivities;webportals&quot;,&quot;Demolitionandsitepreparation&quot;,&quot;Electricpowergeneration,transmissionanddistribution&quot;,&quot;Electrical,plumbingandotherconstructioninstallationactivities&quot;,&quot;Eventcateringandotherfoodserviceactivities&quot;,&quot;Fishing&quot;,&quot;Gamblingandbettingactivities&quot;,&quot;Growingofnon-perennialcrops&quot;,&quot;Growingofperennialcrops&quot;,&quot;Highereducation&quot;,&quot;Hospitalactivities&quot;,&quot;Inlandwatertransport&quot;,&quot;Landscapecareandmaintenanceserviceactivities&quot;,&quot;Legalactivities&quot;,&quot;Libraries,archives,museumsandotherculturalactivities&quot;,&quot;Logging&quot;,&quot;Maintenanceandrepairofmotorvehicles&quot;,&quot;Managementconsultancyactivities&quot;,&quot;Manufactureofbasicchemicals,fertilizersandnitrogencompounds,plasticsandsyntheticrubberinprimaryforms&quot;,&quot;Manufactureofbasicironandsteel&quot;,&quot;Manufactureofbeverages&quot;,&quot;Manufactureofdairyproducts&quot;,&quot;Manufactureoffurniture&quot;,&quot;Manufactureofgeneral-purposemachinery&quot;,&quot;Manufactureofknittedandcrochetedapparel&quot;,&quot;Manufactureofnon-metallicmineralproductsn.e.c.&quot;,&quot;Manufactureofotherchemicalproducts&quot;,&quot;Manufactureofotherfabricatedmetalproducts;metalworkingserviceactivities&quot;,&quot;Manufactureofotherfoodproducts&quot;,&quot;Manufactureofpaperandpaperproducts&quot;,&quot;Manufactureofpharmaceuticals,medicinalchemicalandbotanicalproducts&quot;,&quot;Manufactureofplasticsproducts&quot;,&quot;Manufactureofpreparedanimalfeeds&quot;,&quot;Manufactureofproductsofwood,cork,strawandplaitingmaterials&quot;,&quot;Manufactureofrefinedpetroleumproducts&quot;,&quot;Manufactureofrubberproducts&quot;,&quot;Manufactureofsportsgoods&quot;,&quot;Manufactureofstructuralmetalproducts,tanks,reservoirsandsteamgenerators&quot;,&quot;Manufactureofvegetableandanimaloilsandfats&quot;,&quot;Manufactureofwearingapparel,exceptfurapparel&quot;,&quot;Medicalanddentalpracticeactivities&quot;,&quot;Miningandquarryingn.e.c.&quot;,&quot;Mixedfarming&quot;,&quot;Monetaryintermediation&quot;,&quot;Motionpicture,videoandtelevisionprogrammeactivities&quot;,&quot;Non-specializedwholesaletrade&quot;,&quot;Officeadministrativeandsupportactivities&quot;,&quot;Organizationofconventionsandtradeshows&quot;,&quot;Otheramusementandrecreationactivities&quot;,&quot;Othereducation&quot;,&quot;Otherfinancialserviceactivities,exceptinsuranceandpensionfundingactivities&quot;,&quot;Otherhumanhealthactivities&quot;,&quot;Otherlandtransport&quot;,&quot;Othermanufacturingn.e.c.&quot;,&quot;Otherpersonalserviceactivities&quot;,&quot;Otherprofessional,scientificandtechnicalactivitiesn.e.c.&quot;,&quot;Otherreservationserviceandrelatedactivities&quot;,&quot;Otherspecializedconstructionactivities&quot;,&quot;Otherspecializedwholesale&quot;,&quot;Othertelecommunicationsactivities&quot;,&quot;Passengerairtransport&quot;,&quot;Photographicactivities&quot;,&quot;Plantpropagation&quot;,&quot;Postalactivities&quot;,&quot;Pre-primaryandprimaryeducation&quot;,&quot;Printingandserviceactivitiesrelatedtoprinting&quot;,&quot;Privatesecurityactivities&quot;,&quot;Processingandpreservingoffish,crustaceansandmolluscs&quot;,&quot;Processingandpreservingoffruitandvegetables&quot;,&quot;Processingandpreservingofmeat&quot;,&quot;Provisionofservicestothecommunityasawhole&quot;,&quot;Publishingofbooks,periodicalsandotherpublishingactivities&quot;,&quot;Quarryingofstone,sandandclay&quot;,&quot;Radiobroadcasting&quot;,&quot;Realestateactivitiesonafeeorcontractbasis&quot;,&quot;Realestateactivitieswithownorleasedproperty&quot;,&quot;Remediationactivitiesandotherwastemanagementservices&quot;,&quot;Rentingandleasingofmotorvehicles&quot;,&quot;Rentingandleasingofothermachinery,equipmentandtangiblegoods&quot;,&quot;Rentingandleasingofpersonalandhouseholdgoods&quot;,&quot;Repairofcomputersandcommunicationequipment&quot;,&quot;Repairoffabricatedmetalproducts,machineryandequipment&quot;,&quot;Repairofpersonalandhouseholdgoods&quot;,&quot;Reproductionofrecordedmedia&quot;,&quot;Restaurantsandmobilefoodserviceactivities&quot;,&quot;Retailsaleinnon-specializedstores&quot;,&quot;Retailsaleofautomotivefuelinspecializedstores&quot;,&quot;Retailsaleofculturalandrecreationgoodsinspecializedstores&quot;,&quot;Retailsaleoffood,beveragesandtobaccoinspecializedstores&quot;,&quot;Retailsaleofinformationandcommunicationsequipmentinspecializedstores&quot;,&quot;Retailsaleofothergoodsinspecializedstores&quot;,&quot;Retailsaleofotherhouseholdequipmentinspecializedstores&quot;,&quot;Retailsaleviastallsandmarkets&quot;,&quot;Retailtradenotinstores,stallsormarkets&quot;,&quot;Saleofmotorvehiclepartsandaccessories&quot;,&quot;Saleofmotorvehicles&quot;,&quot;Sale,maintenanceandrepairofmotorcyclesandrelatedpartsandaccessories&quot;,&quot;Satellitetelecommunicationsactivities&quot;,&quot;Sawmillingandplaningofwood&quot;,&quot;Seaandcoastalwatertransport&quot;,&quot;Secondaryeducation&quot;,&quot;Securitysystemsserviceactivities&quot;,&quot;Sewerage&quot;,&quot;Shorttermaccommodationactivities&quot;,&quot;Silvicultureandotherforestryactivities&quot;,&quot;Soundrecordingandmusicpublishingactivities&quot;,&quot;Specializeddesignactivities&quot;,&quot;Spinning,weavingandfinishingoftextiles&quot;,&quot;Sportsactivities&quot;,&quot;Supportactivitiesfortransportation&quot;,&quot;Supportactivitiestoagricultureandpost-harvestcropactivities&quot;,&quot;Tanninganddressingofleather;manufactureofluggage,handbags,saddleryandharness;dressinganddyeingoffur&quot;,&quot;Televisionprogrammingandbroadcastingactivities&quot;,&quot;Travelagencyandtouroperatoractivities&quot;,&quot;Trusts,fundsandsimilarfinancialentities&quot;,&quot;Veterinaryactivities&quot;,&quot;Warehousingandstorage&quot;,&quot;Wastecollection&quot;,&quot;Wastetreatmentanddisposal&quot;,&quot;Watercollection,treatmentandsupply&quot;,&quot;Wholesaleofagriculturalrawmaterialsandliveanimals&quot;,&quot;Wholesaleoffood,beveragesandtobacco&quot;,&quot;Wholesaleofhouseholdgoods&quot;,&quot;Wholesaleofmachinery,equipmentandsupplies&quot;,&quot;Wiredtelecommunicationsactivities&quot;,&quot;Wirelesstelecommunicationsactivities&quot;,&quot;&quot;]},&quot;title&quot;:&quot;MinorIndustry&quot;},{&quot;name&quot;:&quot;Unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Totalnumberofbusinesses&quot;,&quot;Percentageofindustry(%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Major Industry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Accommodation and food service activities&quot;,&quot;Administrative and support service activities&quot;,&quot;Agriculture, forestry and fishing&quot;,&quot;Arts, entertainment and recreation&quot;,&quot;Construction&quot;,&quot;Education&quot;,&quot;Electricity, gas, steam and air conditioning supply&quot;,&quot;Financial and insurance activities&quot;,&quot;Human health and social work activities&quot;,&quot;Information and communication&quot;,&quot;Manufacturing&quot;,&quot;Mining and quarrying&quot;,&quot;Other service activities&quot;,&quot;Professional, scientific and technical activities&quot;,&quot;Public administration and defence; compulsory social security&quot;,&quot;Real estate activities&quot;,&quot;Transportation and storage&quot;,&quot;Water supply; sewerage, waste management and remediation activities&quot;,&quot;Wholesale and retail trade; repair of motor vehicles and motorcycles&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Major Industry&quot;},{&quot;name&quot;:&quot;Minor Industry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Accounting, bookkeeping and auditing activities; tax consultancy&quot;,&quot;Activities auxiliary to financial service activities, except insurance and pension funding&quot;,&quot;Activities auxiliary to insurance and pension funding&quot;,&quot;Activities of business, employers and professional membership organizations&quot;,&quot;Activities of call centres&quot;,&quot;Activities of employment placement agencies&quot;,&quot;Activities of head offices&quot;,&quot;Advertising&quot;,&quot;Animal production&quot;,&quot;Architectural and engineering activities and related technical consultancy&quot;,&quot;Beverage serving activities&quot;,&quot;Building completion and finishing&quot;,&quot;Building of ships and boats&quot;,&quot;Business support service activities n.e.c.&quot;,&quot;Casting of metals&quot;,&quot;Cleaning activities&quot;,&quot;Computer programming, consultancy and related activities&quot;,&quot;Construction of buildings&quot;,&quot;Construction of other civil engineering projects&quot;,&quot;Construction of roads and railways&quot;,&quot;Construction of utility projects&quot;,&quot;Courier activities&quot;,&quot;Creative, arts and entertainment activities&quot;,&quot;Data processing, hosting and related activities; web portals&quot;,&quot;Demolition and site preparation&quot;,&quot;Electric power generation, transmission and distribution&quot;,&quot;Electrical, plumbing and other construction installation activities&quot;,&quot;Event catering and other food service activities&quot;,&quot;Fishing&quot;,&quot;Gambling and betting activities&quot;,&quot;Growing of non-perennial crops&quot;,&quot;Growing of perennial crops&quot;,&quot;Higher education&quot;,&quot;Hospital activities&quot;,&quot;Inland water transport&quot;,&quot;Landscape care and maintenance service activities&quot;,&quot;Legal activities&quot;,&quot;Libraries, archives, museums and other cultural activities&quot;,&quot;Logging&quot;,&quot;Maintenance and repair of motor vehicles&quot;,&quot;Management consultancy activities&quot;,&quot;Manufacture of basic chemicals, fertilizers and nitrogen compounds, plastics and synthetic rubber in primary forms&quot;,&quot;Manufacture of basic iron and steel&quot;,&quot;Manufacture of beverages&quot;,&quot;Manufacture of dairy products&quot;,&quot;Manufacture of furniture&quot;,&quot;Manufacture of general-purpose machinery&quot;,&quot;Manufacture of knitted and crocheted apparel&quot;,&quot;Manufacture of non-metallic mineral products n.e.c.&quot;,&quot;Manufacture of other chemical products&quot;,&quot;Manufacture of other fabricated metal products; metalworking service activities&quot;,&quot;Manufacture of other food products&quot;,&quot;Manufacture of paper and paper products&quot;,&quot;Manufacture of pharmaceuticals, medicinal chemical and botanical products&quot;,&quot;Manufacture of plastics products&quot;,&quot;Manufacture of prepared animal feeds&quot;,&quot;Manufacture of products of wood, cork, straw and plaiting materials&quot;,&quot;Manufacture of refined petroleum products&quot;,&quot;Manufacture of rubber products&quot;,&quot;Manufacture of sports goods&quot;,&quot;Manufacture of structural metal products, tanks, reservoirs and steam generators&quot;,&quot;Manufacture of vegetable and animal oils and fats&quot;,&quot;Manufacture of wearing apparel, except fur apparel&quot;,&quot;Medical and dental practice activities&quot;,&quot;Mining and quarrying n.e.c.&quot;,&quot;Mixed farming&quot;,&quot;Monetary intermediation&quot;,&quot;Motion picture, video and television programme activities&quot;,&quot;Non-specialized wholesale trade&quot;,&quot;Office administrative and support activities&quot;,&quot;Organization of conventions and trade shows&quot;,&quot;Other amusement and recreation activities&quot;,&quot;Other education&quot;,&quot;Other financial service activities, except insurance and pension funding activities&quot;,&quot;Other human health activities&quot;,&quot;Other land transport&quot;,&quot;Other manufacturing n.e.c.&quot;,&quot;Other personal service activities&quot;,&quot;Other professional, scientific and technical activities n.e.c.&quot;,&quot;Other reservation service and related activities&quot;,&quot;Other specialized construction activities&quot;,&quot;Other specialized wholesale&quot;,&quot;Other telecommunications activities&quot;,&quot;Passenger air transport&quot;,&quot;Photographic activities&quot;,&quot;Plant propagation&quot;,&quot;Postal activities&quot;,&quot;Pre-primary and primary education&quot;,&quot;Printing and service activities related to printing&quot;,&quot;Private security activities&quot;,&quot;Processing and preserving of fish, crustaceans and molluscs&quot;,&quot;Processing and preserving of fruit and vegetables&quot;,&quot;Processing and preserving of meat&quot;,&quot;Provision of services to the community as a whole&quot;,&quot;Publishing of books, periodicals and other publishing activities&quot;,&quot;Quarrying of stone, sand and clay&quot;,&quot;Radio broadcasting&quot;,&quot;Real estate activities on a fee or contract basis&quot;,&quot;Real estate activities with own or leased property&quot;,&quot;Remediation activities and other waste management services&quot;,&quot;Renting and leasing of motor vehicles&quot;,&quot;Renting and leasing of other machinery, equipment and tangible goods&quot;,&quot;Renting and leasing of personal and household goods&quot;,&quot;Repair of computers and communication equipment&quot;,&quot;Repair of fabricated metal products, machinery and equipment&quot;,&quot;Repair of personal and household goods&quot;,&quot;Reproduction of recorded media&quot;,&quot;Restaurants and mobile food service activities&quot;,&quot;Retail sale in non-specialized stores&quot;,&quot;Retail sale of automotive fuel in specialized stores&quot;,&quot;Retail sale of cultural and recreation goods in specialized stores&quot;,&quot;Retail sale of food, beverages and tobacco in specialized stores&quot;,&quot;Retail sale of information and communications equipment in specialized stores&quot;,&quot;Retail sale of other goods in specialized stores&quot;,&quot;Retail sale of other household equipment in specialized stores&quot;,&quot;Retail sale via stalls and markets&quot;,&quot;Retail trade not in stores, stalls or markets&quot;,&quot;Sale of motor vehicle parts and accessories&quot;,&quot;Sale of motor vehicles&quot;,&quot;Sale, maintenance and repair of motorcycles and related parts and accessories&quot;,&quot;Satellite telecommunications activities&quot;,&quot;Sawmilling and planing of wood&quot;,&quot;Sea and coastal water transport&quot;,&quot;Secondary education&quot;,&quot;Security systems service activities&quot;,&quot;Sewerage&quot;,&quot;Short term accommodation activities&quot;,&quot;Silviculture and other forestry activities&quot;,&quot;Sound recording and music publishing activities&quot;,&quot;Specialized design activities&quot;,&quot;Spinning, weaving and finishing of textiles&quot;,&quot;Sports activities&quot;,&quot;Support activities for transportation&quot;,&quot;Support activities to agriculture and post-harvest crop activities&quot;,&quot;Tanning and dressing of leather; manufacture of luggage, handbags, saddlery and harness; dressing and dyeing of fur&quot;,&quot;Television programming and broadcasting activities&quot;,&quot;Travel agency and tour operator activities&quot;,&quot;Trusts, funds and similar financial entities&quot;,&quot;Veterinary activities&quot;,&quot;Warehousing and storage&quot;,&quot;Waste collection&quot;,&quot;Waste treatment and disposal&quot;,&quot;Water collection, treatment and supply&quot;,&quot;Wholesale of agricultural raw materials and live animals&quot;,&quot;Wholesale of food, beverages and tobacco&quot;,&quot;Wholesale of household goods&quot;,&quot;Wholesale of machinery, equipment and supplies&quot;,&quot;Wired telecommunications activities&quot;,&quot;Wireless telecommunications activities&quot;,&quot;Activities of other membership organizations&quot;,&quot;Camping grounds, recreational vehicle parks and trailer parks&quot;,&quot;Educational support activities&quot;,&quot;Insurance&quot;,&quot;Manufacture of communication equipment&quot;,&quot;Manufacture of grain mill products, starches and starch products&quot;,&quot;Manufacture of other electrical equipment&quot;,&quot;Market research and public opinion polling&quot;,&quot;Materials recovery&quot;,&quot;Other human resources provision&quot;,&quot;Other social work activities without accommodation&quot;,&quot;Software publishing&quot;,&quot;Support services to forestry&quot;,&quot;Technical testing and analysis&quot;,&quot;Temporary employment agency activities&quot;,&quot;Activities of holding companies&quot;,&quot;Combined facilities support activities&quot;,&quot;Leasing of intellectual property and similar products, except copyrighted works&quot;,&quot;Manufacture of basic precious and other non-ferrous metals&quot;,&quot;Manufacture of coke oven products&quot;,&quot;Manufacture of jewellery, bijouterie and related articles&quot;,&quot;Manufacture of medical and dental instruments and supplies&quot;,&quot;Manufacture of other textiles&quot;,&quot;Manufacture of wiring and wiring devices&quot;,&quot;Other information service activities&quot;,&quot;Research and experimental development on natural sciences and engineering&quot;,&quot;Steam and air conditioning supply&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Minor Industry&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -498,15 +487,313 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a href="/en/headline/business.csv" class="btn btn-primary btn-download" download="indicator_business.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a href="/en/data/business.csv" class="btn btn-primary btn-download" download='indicator_business.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption></caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">3716.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">4083.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">4357.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">4421.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">4615.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">4613.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">2500.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">13561.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">197.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">12955.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">112.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td class="table-value">3716.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td class="table-value">4083.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td class="table-value">4357.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td class="table-value">4421.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td class="table-value">4615.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">4613.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td class="table-value">2500.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">13561.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td class="table-value">197.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">12955.0</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td class="table-value">122.0</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Department of Customs and Inland Revenue </p>
+    
+    
+    <p>Geographical Area: Vanuatu</p>
+    
+    
+    <p>Unit of Measurement: Nummber</p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -810,43 +1097,112 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
+          
+            <p>The indicator “Number of Business Licenses Issued by Industry” measures the total number of business licenses issued by the Department of Customs and Inland Revenue, disaggregated by major industry and year. It reflects formal business registration activity across the economy.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
+          
+            <p>The indicator draws on the concept of formalisation of economic activity, which is a critical element of inclusive growth and regulatory governance. A business license is a formal recognition that an entity is permitted to operate within a specific sector under national regulations. Tracking business licenses by industry allows policymakers to monitor trends in entrepreneurship, sector growth, and regulatory compliance.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring business license data provides insights into the scale and composition of registered economic activity. Increases in license issuance may indicate economic dynamism or improved enforcement, while declines may reflect barriers to formalization. Disaggregating the data by sector supports targeted policy interventions, such as reducing registration burdens or promoting priority industries.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>Sum the number of licenses issued per year for each major or minor industry category, based on official licensing records from the Department of Customs and Inland Revenue. Exclude renewals if only new registrations are of interest.</p>
+
+<p>Formula: 
+Business Licenses Issued by Industry (I, year Y) = ∑ Number of Licenses Issued for Industry I in year Y</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Number</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
           
-      
-      
-      
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
   
   
   
@@ -957,12 +1313,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

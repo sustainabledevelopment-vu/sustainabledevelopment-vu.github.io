@@ -15,22 +15,12 @@
             "type": "integer"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "14223",
-                "14224",
+                "Violence Cases Filed by Women",
+                "Total Violence Cases Filed",
                 ""
               ]
             }
@@ -45,5 +35,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-2-2",
-  "title": "SOC4-2-2"
+  "title": "indicators.SOC4-2-2-title"
 }

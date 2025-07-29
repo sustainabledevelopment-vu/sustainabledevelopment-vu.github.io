@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-SOC4
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-SOC4
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-SOC4
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -559,48 +541,150 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
-      
-      
-      
-        
+            <p>No</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
           
-      
-      
-      
+            <p>The “Proportion of Youth Actively Participating in at Least One Organized Sport in the Last 12 Months by Gender” indicator measures the percentage of young people within a specified age range (typically 14-30) who have actively participated in at least one organized sport over the past 12 months. The data is disaggregated by gender to assess differences in participation rates between male and female youth.</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
           
-      
-      
-      
+            <p>This indicator tracks the engagement of youth in organized sports, which are typically structured activities conducted by sports clubs, schools, or community organizations. Participation in organized sports is associated with numerous benefits, including physical health, social interaction, teamwork, discipline, and overall well-being. Disaggregating the data by gender allows for the identification of disparities in sports participation, which can inform efforts to promote gender equality in sports.</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
-      
-      
-      
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
           
-      
-      
-      
+            <p>Monitoring the proportion of youth participating in organized sports is essential for understanding their level of physical activity, social engagement, and access to recreational opportunities. High participation rates indicate that youth have access to and are taking advantage of opportunities to engage in physical activity and team sports, which contribute to their overall development. Disaggregating the data by gender helps identify potential barriers that might prevent certain groups from participating, such as cultural norms, lack of facilities, or other gender-specific challenges.</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
-      
-      
-      
+            <p>To compute the “Proportion of Youth Actively Participating in at Least One Organised Sport in the Last 12 Months by Gender,” first design and administer a survey to a representative sample of youth within the specified age range, asking about their participation in organized sports. Then, identify the number of respondents who report participating in at least one organized sport in the past 12 months and separate this data by gender. Divide the number of participants within each gender by the total number of respondents in that gender group and multiply the result by 100 to express the proportion as a percentage for both male and female youth.</p>
+
+<p>Formula:
+Proportion of Youth Participating in Organized Sports by Gender (%) = (Number of Youth Participating in Organized Sports (by Gender)/Total Number of Youth Surveyed (by Gender)) * 100</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sustainable Development Goal Indicator Alignment </th>
+        <td>
           
-      
-      
-      
+            <p>16.2.1</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
+          
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -709,12 +793,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -119,7 +119,7 @@ var translations = {
         
     <title>
         
-        exports - Indicators of The National Sustainable Development Plan
+        Vanuatu Trades Exports - Indicators of The National Sustainable Development Plan
     </title>
 
 
@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -200,8 +200,6 @@ layout-indicator
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,6 +221,8 @@ layout-indicator
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -230,31 +230,13 @@ layout-indicator
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -374,7 +356,7 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        <span class="lead-copy">exports</span>
+                        <span class="lead-copy">Vanuatu Trades Exports</span>
                     </h1>
                 </div>
             </div>
@@ -434,6 +416,13 @@ data-event-label="high"
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Vanuatu’s total export value fluctuated between 3.3 and 6 billion Vatu from 2017 to 2024, with a notable dip in 2020 likely linked to pandemic-related disruptions. Export performance has gradually recovered, reaching 6 billion Vatu in 2024. Key commodities include copra, coconut oil, kava, and cocoa, which consistently form the backbone of export earnings. These trends reflect moderate export diversification and emphasize the continued importance of agricultural products and natural resources in Vanuatu’s trade portfolio.</p>
+
+  </div>
+</div>
+
 
 
 
@@ -447,8 +436,8 @@ data-event-label="high"
   data-id="exports"
   data-country="Vanuatu"
   data-charttitle=""
-  data-charttitles="[{&quot;series&quot;:&quot;values of principle exports to main countries of destination in vatu&quot;,&quot;unit&quot;:&quot;VUV&quot;,&quot;title&quot;:&quot;values of principle exports to main countries of destination&quot;},{&quot;series&quot;:&quot;Quantity &quot;,&quot;unit&quot;:&quot;tonnes kilogram&quot;,&quot;title&quot;:&quot;Quantity of principle exports to main countries destination&quot;},{&quot;series&quot;:&quot;Price per unit&quot;,&quot;unit&quot;:&quot;vatu per kilogram/litre&quot;,&quot;title&quot;:&quot;Graph showing price per unit of principle exports to main countries destinations&quot;}]"
-  data-measurementunit=""
+  data-charttitles="[{&quot;series&quot;:&quot;Value in million (Vatu)&quot;,&quot;unit&quot;:&quot;VUV&quot;,&quot;title&quot;:&quot;Export values of principle exports in million (Vatu&quot;},{&quot;series&quot;:&quot;Quantity (in tonnes kilogram)&quot;,&quot;unit&quot;:&quot;tonnes kilogram&quot;,&quot;title&quot;:&quot;Quantity of principle exports in tonnes (kilogram)&quot;},{&quot;series&quot;:&quot;Price per unit (vatu per kilogram/litre)&quot;,&quot;unit&quot;:&quot;vatu per kilogram/litre&quot;,&quot;title&quot;:&quot;price per unit in vatu per kilogram/litre&quot;}]"
+  data-measurementunit="Millions (vatu)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -462,7 +451,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total Value&quot;,&quot;Export by Country&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Principal Export&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beef&quot;,&quot;Cocoa&quot;,&quot;Coconut oil&quot;,&quot;Copra&quot;,&quot;Kava&quot;,&quot;Wood&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Principal Export&quot;},{&quot;name&quot;:&quot;Main Country of Destination&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Japan&quot;,&quot;Papua New Guinea&quot;,&quot;Sri Lanka&quot;,&quot;Netherlands&quot;,&quot;Australia&quot;,&quot;Belgium&quot;,&quot;United Kingdom&quot;,&quot;New Zealand&quot;,&quot;Malaysia&quot;,&quot;Taiwan&quot;,&quot;New Caledonia&quot;,&quot;Philippines&quot;,&quot;Bangladesh&quot;,&quot;Kiribati&quot;,&quot;France&quot;,&quot;United States of America&quot;,&quot;China&quot;,&quot;Hong Kong&quot;,&quot;Fiji&quot;,&quot;Solomon Islands&quot;,&quot;Indonesia&quot;,&quot;Italy&quot;,&quot;French Polynesia&quot;,&quot;Vietnam&quot;,&quot;India&quot;,&quot;Singapore&quot;,&quot;Czech Republic&quot;,&quot;United Arab Emirates&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Main Country of Destination&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Millions in Vatu (VUV)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Value&quot;,&quot;Quantity&quot;,&quot;Price per Unit&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Commodity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beef&quot;,&quot;Cocoa&quot;,&quot;Coconut oil&quot;,&quot;Copra&quot;,&quot;Kava&quot;,&quot;Wood &quot;,&quot;Wood&quot;,&quot;Coconut Oil&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Commodity&quot;},{&quot;name&quot;:&quot;Country&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Japan&quot;,&quot;Papua New Guinea&quot;,&quot;Solomon Islands&quot;,&quot;Malaysia&quot;,&quot;Australia&quot;,&quot;Belgium&quot;,&quot;United Kingdom&quot;,&quot;New Zealand&quot;,&quot;Taiwan&quot;,&quot;New Caledonia&quot;,&quot;Philippines&quot;,&quot;Bangladesh&quot;,&quot;Kiribati&quot;,&quot;Fiji&quot;,&quot;United States of America&quot;,&quot;China&quot;,&quot;Hong Kong&quot;,&quot;Indonesia&quot;,&quot;Italy&quot;,&quot;Vietnam&quot;,&quot;India&quot;,&quot;Singapore&quot;,&quot;Sri Lanka&quot;,&quot;Netherlands&quot;,&quot;French Polynesia&quot;,&quot;United Arab Emirates&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Country&quot;},{&quot;name&quot;:&quot;Unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Millions in Vatu (VUV)&quot;,&quot;Tonnes in Kilogram (Kg)&quot;,&quot;Vatu per Kilogram/Litre&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -498,155 +487,15 @@ data-event-label="high"
   <div id="datatables">
 
     
-    <a href="/en/headline/exports.csv" class="btn btn-primary btn-download" download="indicator_exports.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
     <a href="/en/data/exports.csv" class="btn btn-primary btn-download" download='indicator_exports.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption></caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col">Units</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>4645</td>
-          
-          
-          
-          <td>Millions in Vatu (VUV)</td>
-          
-          
-          
-          <td class="table-value">Total Value</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>3774</td>
-          
-          
-          
-          <td>Millions in Vatu (VUV)</td>
-          
-          
-          
-          <td class="table-value">Total Value</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>3986</td>
-          
-          
-          
-          <td>Millions in Vatu (VUV)</td>
-          
-          
-          
-          <td class="table-value">Total Value</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>4653</td>
-          
-          
-          
-          <td>Millions in Vatu (VUV)</td>
-          
-          
-          
-          <td class="table-value">Total Value</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>4653</td>
-          
-          
-          
-          <td>Millions in Vatu (VUV)</td>
-          
-          
-          
-          <td class="table-value">Total Value</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographical Area: Vanuatu</p>
-    
-    
-    <p>Unit of Measurement: </p>
-    
-    
-    <p>Footnote: </p>
-    
-  </div>
   
 
 </div>
@@ -730,7 +579,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            values of principle exports to main countries of destination
+            Export values of principle exports in million (Vatu
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -950,43 +799,118 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
+          
+            <p>The indicator “Exports by Commodity and Country” measures the total value, quantity, and unit price of goods exported from the country, disaggregated by commodity type and destination country. It reflects the composition and destination of national export flows.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
+          
+            <p>The indicator is based on the concept of export-led growth and trade performance monitoring. Exports are a critical driver of economic development, foreign exchange earnings, and sectoral competitiveness. Disaggregating exports by commodity allows for sector-specific insights (e.g. agriculture, manufacturing), while analysis by country reveals trading relationships, market access, and export concentration risk. The inclusion of unit prices enables assessment of product competitiveness and value-addition trends.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring exports is essential to understand how the national economy engages in international markets. Increases in export value may reflect improved global demand, increased production, or enhanced trade terms. Tracking exports by product supports sectoral planning (e.g. boosting cocoa or kava exports), while tracking by country highlights dependency on specific markets or emerging trade opportunities. Unit prices provide further context, helping identify price competitiveness and market positioning of key commodities.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>Export Value: Sum the reported value of each exported commodity by year and destination country, based on customs declarations.
+Export Quantity: Sum the total physical quantity (in kg/tonnes/litres) of each commodity exported.
+Unit Price: Divide export value by quantity to calculate the price per unit.</p>
+
+<p>Formula: 
+Total Export Value (VUV) = ∑ Export value by commodity and country
+Total Export Quantity (kg/tonnes/litres) = ∑ Export quantity by commodity
+Unit Price = Export Value ÷ Export Quantity</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Export Value: Million Vatu (VUV)
+Quantity: Kilograms or tonnes (as applicable)
+Unit Price: Vatu per kilogram/litre</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
           
-      
-      
-      
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
   
   
   
@@ -1097,12 +1021,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

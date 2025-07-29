@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO4
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO4
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO4
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -580,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>This measures the number of individuals participating in Australian seasonal work programme (SWP).</p>
+            <p>The “Change in Total Number of Individuals Participating in Seasonal Work Programmes” indicator measures the year-over-year percentage change in the total number of individuals who participate in seasonal work programs. These programs typically involve temporary employment opportunities in sectors such as agriculture, tourism, or construction, where labour demand fluctuates according to the season.</p>
 
           
         </td>
@@ -596,7 +578,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>Australian Government’s seasonal worker Programme assists employers from selected Pacific island countries including Vanuatu in the form of agriculture in terms of different farming and accommodation sector to fill employment gaps unable to be met by local Australian workforce. It also contributes to the economic development of the employee.</p>
+            <p>This indicator tracks the growth or decline in participation in seasonal work programs, which are designed to meet short-term labour needs in specific industries while providing employment opportunities for workers. Seasonal work programs often involve both domestic and international placements and can be critical for addressing labour shortages in certain periods. The indicator provides insight into the demand for seasonal labour, the effectiveness of these programs in providing employment, and the economic conditions affecting labour mobility.</p>
 
           
         </td>
@@ -607,8 +589,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -617,17 +610,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <ul>
-  <li>
-    <p>To determine which province, islands &amp; villages are gaining access to this program.</p>
-  </li>
-  <li>
-    <p>Information collected will determine future research on the impacts of labour mobility in Vanuatu.</p>
-  </li>
-  <li>
-    <p>To assist future decisions on labour mobility policy and development outcome assessments.</p>
-  </li>
-</ul>
+            <p>Monitoring the change in the total number of individuals participating in seasonal work programs is essential for understanding trends in labour market flexibility and the role of these programs in supporting employment. An increase in participation may indicate rising demand for seasonal labour, successful program implementation, or economic conditions that encourage workers to seek temporary employment. Conversely, a decrease may suggest challenges in program accessibility, changes in labour demand, or economic improvements that reduce the need for temporary work.</p>
 
           
         </td>
@@ -638,8 +621,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Change in Total Number of Individuals Participating in Seasonal Work Program’s,” first collect data on the total number of participants in the current and previous years. Calculate the change by subtracting the previous year’s total from the current year’s total. Then, divide the difference by the previous year’s total and multiply by 100 to express it as a percentage.</p>
+
+<p>Formula:
+Change in Participation (%) = ((Total Participants in Current Year – Total Participants in Previous Year)/Total Participants in Previous Year) * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -648,7 +645,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>8.8.2</p>
+            <p>8.8.1
+8.8.2</p>
 
           
         </td>
@@ -659,8 +657,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Number</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -669,10 +678,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <ul>
-  <li>Census &amp; NSDP Baseline survey (10 years)</li>
-  <li>Reserve Bank of Vanuatu quarterly report.</li>
-</ul>
+            <p>Annually</p>
 
           
         </td>
@@ -708,53 +714,6 @@ data-event-label="Change to indicator.sources tab"
 
 
 
-
-  <div class="row">
-  
-    
-    
-    <div class="col-md-6">
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>2016 Mini Census (p145-147), VNSO</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
-  </div>
 
 
             </article>
@@ -835,12 +794,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1,1 +1,161 @@
-Year,Value
+Year,Series,Island,Course,Value
+2016,,,,22
+2017,,,,39
+2018,,,,206
+2019,,,,865
+2020,,,,1329
+2021,,,,2029
+2022,,,,1624
+2016,Certificate,Santo,Agriculture,3
+2016,Certificate,Santo,Aquaculture,4
+2016,Certificate,Santo,Forestry,2
+2016,Certificate,Santo,Livestock,13
+2017,Certificate,Santo,Agriculture,2
+2017,Certificate,Santo,Agriculture,10
+2017,Certificate,Santo,Aquaculture,7
+2017,Certificate,Santo,Forestry,5
+2017,Certificate,Santo,Livestock,15
+2018,Certificate,Efate,Building Construction,21
+2018,Certificate,Efate,Business,42
+2018,Certificate,Efate,Computing,19
+2018,Certificate,Efate,Electro-technology,14
+2018,Certificate,Efate,Mechanical Engineering,12
+2018,Certificate,Efate,Tourism,12
+2018,Certificate,Efate,Tourism,43
+2018,Certificate,Efate,Tourism,15
+2018,Certificate,Efate,Mechanical Engineering,4
+2018,Certificate,Santo,Automotive Engineering,24
+2019,Bachelor,Efate,Nursing,6
+2019,Certificate,Efate,Automotive Engineering,35
+2019,Certificate,Efate,Building Construction,48
+2019,Certificate,Efate,Business,170
+2019,Certificate,Efate,Climate Change,23
+2019,Certificate,Efate,Computing,38
+2019,Certificate,Efate,Electro-technology,14
+2019,Certificate,Efate,Hospitality,76
+2019,Certificate,Efate,Mechanical Engineering,21
+2019,Certificate,Efate,Tourism,29
+2019,Certificate,Efate,Tourism,82
+2019,Certificate,Efate,Computing,27
+2019,Certificate,Efate,Fine Arts and Crafts,3
+2019,Certificate,Efate,Hospitality,8
+2019,Certificate,Efate,Tourism,15
+2019,Certificate,Efate,Finance,16
+2019,Certificate,Efate,Mechanical Engineering,28
+2019,Certificate,Santo,Agriculture,1
+2019,Certificate,Santo,Automotive Engineering,30
+2019,Certificate,Santo,Computing,24
+2019,Certificate,Santo,Tourism,127
+2019,Certificate,Santo,Computing,21
+2019,Certificate,Santo,Computing,2
+2019,Certificate,Santo,Computing,21
+2020,Certificate,Efate,Automotive Engineering,26
+2020,Certificate,Efate,Automotive Engineering,12
+2020,Certificate,Efate,Business,98
+2020,Certificate,Efate,Climate Change,8
+2020,Certificate,Efate,Computing,33
+2020,Certificate,Efate,Electro-technology,29
+2020,Certificate,Efate,Hospitality,38
+2020,Certificate,Efate,"Joinery, Furniture and Cabinet Making",5
+2020,Certificate,Efate,Mechanical Engineering,29
+2020,Certificate,Efate,Tourism,138
+2020,Certificate,Efate,Tourism,33
+2020,Certificate,Efate,Computing,23
+2020,Certificate,Efate,Hospitality,10
+2020,Certificate,Efate,Hospitality,35
+2020,Certificate,Efate,Tourism,26
+2020,Certificate,Efate,Climate Change,20
+2020,Certificate,Efate,Education,16
+2020,Certificate,Efate,Electrical Engineering,72
+2020,Certificate,Efate,Information and Communication Technology,36
+2020,Certificate,Efate,Mechanical Engineering,89
+2020,Diploma,Efate,Midwifery,17
+2020,Certificate,Santo,Agriculture,6
+2020,Certificate,Santo,Automotive Engineering,56
+2020,Certificate,Santo,Computing,57
+2020,Certificate,Santo,Forestry,19
+2020,Certificate,Santo,Hospitality,20
+2020,Certificate,Santo,"Joinery, Furniture and Cabinet Making",5
+2020,Certificate,Santo,Livestock,31
+2020,Certificate,Santo,Agriculture,29
+2020,Certificate,Santo,Aquaculture,7
+2020,Certificate,Santo,Computing,32
+2020,Certificate,Santo,Forestry,14
+2020,Certificate,Santo,Livestock,21
+2020,Certificate,Santo,Computing,38
+2020,Certificate,Santo,Tourism,56
+2020,Certificate,Pentecost,Automotive Engineering,4
+2020,Certificate,Pentecost,Building Construction,12
+2020,Certificate,Pentecost,Hospitality,5
+2020,Certificate,Ambae,Automotive Engineering,18
+2020,Certificate,Ambae,Building Construction,34
+2020,Certificate,Ambae,Hospitality,18
+2020,Certificate,Tanna,Tourism,37
+2020,Certificate,Tanna,Building Construction,17
+2021,Bachelor,Efate,Education,243
+2021,Certificate,Efate,Automotive Engineering,44
+2021,Certificate,Efate,Building Construction,37
+2021,Certificate,Efate,Climate Change,35
+2021,Certificate,Efate,Electro-technology,36
+2021,Certificate,Efate,Hospitality,8
+2021,Certificate,Efate,"Joinery, Furniture and Cabinet Making",12
+2021,Certificate,Efate,Tourism,51
+2021,Certificate,Efate,Building Construction,75
+2021,Certificate,Efate,Business,168
+2021,Certificate,Efate,Computing,78
+2021,Certificate,Efate,Fine Arts and Crafts,3
+2021,Certificate,Efate,Hospitality,18
+2021,Certificate,Efate,Mechanical Engineering,6
+2021,Certificate,Efate,Plumbing,10
+2021,Certificate,Efate,Tourism,8
+2021,Certificate,Efate,Finance,276
+2021,Certificate,Efate,Climate Change,24
+2021,Certificate,Efate,Electrical Engineering,50
+2021,Certificate,Efate,Information and Communication Technology,75
+2021,Certificate,Efate,Mechanical Engineering,56
+2021,Diploma,Efate,Midwifery,17
+2021,Certificate,Santo,Agriculture,36
+2021,Certificate,Santo,Automotive Engineering,69
+2021,Certificate,Santo,Computing,67
+2021,Certificate,Santo,Forestry,11
+2021,Certificate,Santo,Hospitality,65
+2021,Certificate,Santo,"Joinery, Furniture and Cabinet Making",5
+2021,Certificate,Santo,Livestock,74
+2021,Certificate,Santo,Agriculture,45
+2021,Certificate,Santo,Computing,34
+2021,Certificate,Santo,Forestry,27
+2021,Certificate,Santo,Livestock,67
+2021,Certificate,Santo,Computing,26
+2021,Certificate,Ambae,Automotive Engineering,36
+2021,Certificate,Ambae,Building Construction,25
+2021,Certificate,Ambae,Hospitality,7
+2021,Certificate,Ambae,Building Construction,20
+2021,Certificate,Ambae,Plumbing,19
+2021,Certificate,Malekula,Building Construction,39
+2021,Certificate,Tanna,Tourism,11
+2021,Certificate,Tanna,Building Construction,16
+2022,Bachelor,Education,Efate,109
+2022,Certificate,Automotive Engineering,Efate,20
+2022,Certificate,Building Construction,Efate,48
+2022,Certificate,Business,Efate,201
+2022,Certificate,Climate Change,Efate,16
+2022,Certificate,Electro-technology,Efate,21
+2022,Certificate,Hospitality,Efate,84
+2022,Certificate,Mechanical Engineering,Efate,13
+2022,Certificate,Tourism,Efate,100
+2022,Certificate,Building Construction,Efate,40
+2022,Certificate,Computing,Efate,22
+2022,Certificate,Hospitality,Efate,172
+2022,Certificate,Tourism,Efate,114
+2022,Certificate,Finance,Efate,202
+2022,Certificate,Climate Change,Efate,22
+2022,Certificate,Education,Efate,39
+2022,Certificate,Electrical Engineering,Efate,53
+2022,Certificate,Information and Communication Technology,Efate,78
+2022,Certificate,Mechanical Engineering,Efate,30
+2022,Diploma,Santo,Information and Communication Technology,24
+2022,Certificate,Santo,Computing,87
+2022,Certificate,Automotive Engineering,Ambae,26
+2022,Certificate,Building Construction,Ambae,57
+2022,Certificate,Hospitality,Ambae,23
+2022,Certificate,Tanna,Building Construction,23

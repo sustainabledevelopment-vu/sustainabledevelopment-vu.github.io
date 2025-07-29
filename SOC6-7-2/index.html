@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-SOC6
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-SOC6
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-SOC6
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -559,8 +541,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -569,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>All information collected by government agencies are to be made available to the general public.</p>
+            <p>The “Proportion of Data Collected from Requests Acted Upon by Right to Information (RTI) Officers in Each Government Agency” indicator measures the percentage of requests for information received by RTI officers in government agencies that have been successfully processed and acted upon. This includes providing the requested information or taking appropriate action as stipulated by the Right to Information legislation.</p>
 
           
         </td>
@@ -585,7 +578,58 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The rights to Information Act, gives legal basis to the right to information and requires all government agencies to release information upon request by the public. The rights to Information Act also establishes a complaint mechanism if agencies do not release information to the general public upon request under the RTI Act.</p>
+            <p>This indicator tracks the effectiveness and responsiveness of government agencies in handling requests for information submitted under Right to Information (RTI) laws. The RTI laws are designed to promote transparency and accountability in governance by granting citizens the right to access information held by public authorities. The role of RTI officers is to process these requests and ensure that citizens receive the information they are entitled to in a timely manner.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
+          
+            <p>Government Agency</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring the proportion of data requests acted upon by RTI officers is crucial for assessing the implementation of RTI laws and the level of transparency in government agencies. A high proportion of requests acted upon indicates that government agencies are effectively upholding citizens’ right to information, contributing to greater transparency and accountability. Conversely, a low proportion may suggest challenges in the processing of RTI requests, such as delays, resource constraints, or non-compliance with RTI legislation.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>To compute the “Proportion of Data Collected from Requests Acted Upon by Right to Information (RTI) Officers in Each Government Agency,” first collect data on the total number of RTI requests received by each government agency within a specified period. Then, collect data on the number of these requests that were successfully processed and acted upon by the RTI officers. Divide the number of requests acted upon by the total number of requests received, and multiply the result by 100 to express the proportion as a percentage.</p>
+
+<p>Formula:
+Proportion of Acted Upon RTI Requests (%) = (Number of RTI Requests Acted Upon/Total Number of RTI Requests Received) * 100</p>
 
           
         </td>
@@ -603,14 +647,10 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Rationale </th>
+        <th scope="row">Unit of Measurement </th>
         <td>
           
-            <ul>
-  <li>Depicts how much information is provided to the general public.</li>
-  <li>Making information available to the public and clear understanding of what the government agencies are doing (roles, duties &amp; responsibilities).
-*Indicates how much the information is important and is used by the general public and other data/information users</li>
-</ul>
+            <p>Percentage</p>
 
           
         </td>
@@ -618,21 +658,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
       
       
       
@@ -757,12 +782,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

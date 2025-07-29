@@ -16,23 +16,12 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percent",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Prevalence of Physical and/or Sexual Violence Against Women, last 12 months (PROXY)",
-                "Average Percentage of Children 2-14 Experienced Any Form of Violent Discipline (PROXY)",
+                "Violence Cases Filed by Women",
+                "Total Violence Cases Filed",
                 ""
               ]
             },
@@ -49,5 +38,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-2-2",
-  "title": "SOC4-2-2"
+  "title": "Number of reported cases of violence against women, children, and vulnerable people"
 }

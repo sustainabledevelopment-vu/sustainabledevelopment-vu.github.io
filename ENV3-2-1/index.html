@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV3
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV3
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV3
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -436,12 +418,38 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2></h2>
+  </div>
+</div>
+
 
   
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
+
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>The VAN-KIRAP Project has played a key role in supporting the establishment of multi-hazard early warning systems across Vanuatu. Through this initiative, essential infrastructure and protocols have been developed to monitor and disseminate warnings related to a range of hazards, including cyclones, floods, droughts, and volcanic activity. The project has also supported the development of standard operating procedures, community outreach, and institutional capacity-building to ensure warnings reach local populations in a timely and accessible manner. In addition, maintenance plans and sustainability measures are being integrated to ensure the long-term functionality and reliability of these systems beyond the life of the project.</p>
+
+  </div>
+</div>
 
 
   
@@ -461,26 +469,26 @@ data-event-label="high"
   data-id="ENV3-2-1"
   data-country="Vanuatu"
   data-charttitle="Establishment of multi-hazard warning systems with maintenance plans in place"
-  data-charttitles="null"
+  data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="null"
+  data-precision="[]"
   data-proxy=""
-  data-proxyseries="null"
+  data-proxyseries="[]"
   
   data-mappoints="null"
   
@@ -559,8 +567,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -569,7 +588,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Multi-hazard warning system is a major element of disaster risk reduction. It can prevent loss of life and reduce the economic and material impacts of hazardous events including disasters</p>
+            <p>The “Establishment of Multi-Hazard Warning Systems with Maintenance Plans in Place” indicator measures the progress in developing, implementing, and maintaining multi-hazard warning systems that provide timely and effective alerts for various types of hazards, such as natural disasters (e.g., floods, earthquakes, tsunamis, cyclones) and other emergencies. This indicator also tracks whether these systems have comprehensive maintenance plans to ensure their continuous functionality and reliability.</p>
 
           
         </td>
@@ -585,7 +604,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>To be effective, early warning systems need to actively involve the people and communities at risk from a range of hazards, facilitate public education and awareness of risks, disseminate messages and warnings efficiently and ensure that there is a constant state of preparedness and that early action is enabled with maintenance plans in place.</p>
+            <p>This indicator focuses on the establishment of integrated warning systems that can detect, monitor, and provide alerts for multiple hazards. A multi-hazard warning system is designed to serve as an early warning mechanism, helping to mitigate the impacts of disasters by providing critical information to communities, governments, and response agencies. The inclusion of maintenance plans ensures that these systems remain operational, are regularly tested, and are capable of providing accurate warnings when needed.</p>
 
           
         </td>
@@ -596,8 +615,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Sector</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -606,7 +636,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Strengthened monitoring and assessment of natural hazards and improved forecasting and warning services have contributed to this progress. Just as important, people increasingly understand the risks posed by natural hazards and the measures they should take to protect themselves and their families.</p>
+            <p>Monitoring the establishment of multi-hazard warning systems with maintenance plans is crucial for enhancing disaster preparedness and resilience. Effective warning systems save lives, reduce economic losses, and minimize the damage caused by disasters. Having a maintenance plan in place is equally important, as it ensures that the systems are regularly checked, updated, and functioning optimally when disasters strike.</p>
 
           
         </td>
@@ -617,8 +647,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Establishment of Multi-Hazard Warning Systems with Maintenance Plans in Place,” first identify all the multi-hazard warning systems that have been established within the region or country. Verify that these systems are fully operational and capable of issuing timely alerts for various hazards. Then, assess whether formal maintenance plans are in place for each system. Calculate the proportion by dividing the number of warning systems with maintenance plans by the total number of established systems, and multiply by 100 to express the result as a percentage.</p>
+
+<p>Formula:
+Proportion of Established Systems with Maintenance Plans (%) = (Number of Multi-Hazard Warning Systems with Maintenance Plans/Total Number of Established Multi-Hazard Warning Systems) * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -627,8 +671,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>13.1.1  (Tier 2) , 13.1.2 
-(R)(Tier 2)</p>
+            <p>13.1.1 , 13.1.2</p>
 
           
         </td>
@@ -639,13 +682,35 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Percentage</p>
+
           
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
+          
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -737,6 +802,8 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -754,12 +821,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

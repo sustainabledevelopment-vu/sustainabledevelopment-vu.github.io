@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -464,7 +446,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>The government revenue increased by 62.5% from 2016 to 2022, which exceeds the target increase of 30% by 2030. This indicates that the government has been successful in increasing revenue over the specified period and is progressing well towards meeting the target. However, it’s important to note that sustaining this growth rate until 2030 will be crucial to meeting the target. Continued efforts to increase revenue through various means such as economic growth, tax reforms, and efficient fiscal management will be necessary to ensure continued progress towards the target.</p>
+    <p>Government revenue in Vanuatu rose from 15.8 billion Vatu in 2011 to over 42 billion in 2020, marking an overall increase of more than 160% over the decade. While year-on-year growth fluctuated—spiking at 40% in 2015 and falling by 16% in 2016—strong gains in 2017 and 2018 contributed to sustained upward momentum. The 4.6% increase in 2020 indicates continued revenue resilience despite external challenges. These trends reflect a combination of improved collection, policy reforms, and economic growth, supporting progress toward the 2030 target of a 30% increase.</p>
 
   </div>
 </div>
@@ -693,30 +675,6 @@ data-event-label="high"
           
         </tr>
         
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">40514.8</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">35196.8</td>
-          
-          
-        </tr>
-        
       </tbody>
     </table>
     
@@ -725,7 +683,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: 2019 and 2020 Total Revenue from QSI fourth quarter, VBOS</p>
+    <p>Source: Department of Finance and Treasury</p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -1035,8 +993,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1045,7 +1014,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Change in government revenue refers to the difference or variation in the amount of money collected by the government through various sources such as taxes, fees, fines, and other forms of revenue generation, typically measured over a specific period of time. It represents the increase or decrease in the total funds received by the government, which can have implications for budgetary planning, fiscal policy decisions, and the overall financial health of the government.</p>
+            <p>The “Change in Government Revenue (GFS Tables)” indicator measures the year-over-year or period-over-period change in the total revenue collected by the government, as reported in the Government Finance Statistics (GFS) tables. Government revenue includes all income generated by the government from taxes, fees, fines, grants, and other sources of public funds.</p>
 
           
         </td>
@@ -1061,7 +1030,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The concept behind the indicator “change in government revenue” is to assess the variation in the total amount of funds collected by the government from various sources. It helps track the growth or decline in government income, which is essential for understanding the financial health of the government, evaluating the effectiveness of revenue policies, and making informed decisions regarding budget allocation, public spending, and fiscal planning. Monitoring changes in government revenue provides insights into the overall revenue generation capacity of the government and its ability to meet its financial obligations and support public services and programs.</p>
+            <p>This indicator tracks the fluctuation in government revenue over time, providing insights into the government’s fiscal capacity and its ability to fund public services, infrastructure, and development programs. The GFS tables are standardized financial reports used by governments worldwide to present detailed information on government revenue, expenditure, and financing in a consistent and comparable format</p>
 
           
         </td>
@@ -1077,7 +1046,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>By revenue sources: taxes, value added, excise, taxes on inter-trade &amp; transactions, and other</p>
+            <p>Type of Government Revenue</p>
 
           
         </td>
@@ -1093,7 +1062,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>The rationale behind monitoring the indicator “change in government revenue” is to understand the trends and fluctuations in the total funds collected by the government over time. It provides crucial information on the government’s ability to generate income, sustain public services, meet financial obligations, and make informed decisions on budgetary allocations, tax policies, and expenditure planning. Monitoring changes in government revenue helps assess the financial health of the government and its capacity to support economic growth and address societal needs.</p>
+            <p>Monitoring the change in government revenue is crucial for understanding the fiscal health and sustainability of a government. An increase in revenue may indicate economic growth, improved tax collection, or successful policy measures, while a decrease may signal economic challenges, reduced tax base, or inefficiencies in revenue collection.</p>
 
           
         </td>
@@ -1109,9 +1078,11 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>Percentage Change in Government Revenue = ((Revenue in the current period - Revenue in the previous period) / Revenue in the previous period) * 100</p>
+            <p>To compute the “Change in Government Revenue (GFS Tables),” first collect data on total government revenue for the current year and the previous year from the Government Finance Statistics (GFS) tables. Then, calculate the change in revenue by subtracting the previous year’s total revenue from the current year’s total revenue. If expressing the change as a percentage, divide the difference by the previous year’s total revenue and multiply by 100.</p>
 
-<p>This formula determines the percentage difference between the revenue collected in the current period and the revenue collected in the previous period, relative to the revenue in the previous period. The result indicates the percentage increase or decrease in government revenue over the specified time frame.</p>
+<p>Formula:
+Percentage Change in Government Revenue= (Total Revenue (Current Year) – Total Revenue (Previous Year)/ Total Revenue (Previous Year))*100</p>
+
 
           
         </td>
@@ -1127,9 +1098,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>17.1
-17.1.1(Tier 1)
-17.1.2 (Tier 1)</p>
+            <p>17.1.1
+17.1.2</p>
 
           
         </td>
@@ -1145,7 +1115,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>Vatu in Millions</p>
+            <p>Percentage</p>
 
           
         </td>
@@ -1161,7 +1131,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>Annual</p>
+            <p>Annually</p>
 
           
         </td>
@@ -1279,12 +1249,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

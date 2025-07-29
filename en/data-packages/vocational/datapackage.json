@@ -12,12 +12,88 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Certificate",
+                "Bachelor",
+                "Diploma",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Island",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Santo",
+                "Efate",
+                "Pentecost",
+                "Ambae",
+                "Tanna",
+                "Malekula",
+                "Education",
+                "Automotive Engineering",
+                "Building Construction",
+                "Business",
+                "Climate Change",
+                "Electro-technology",
+                "Hospitality",
+                "Mechanical Engineering",
+                "Tourism",
+                "Computing",
+                "Finance",
+                "Electrical Engineering",
+                "Information and Communication Technology",
+                ""
+              ]
+            },
+            "title": "Island"
+          },
+          {
+            "name": "Course",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Agriculture",
+                "Aquaculture",
+                "Forestry",
+                "Livestock",
+                "Building Construction",
+                "Business",
+                "Computing",
+                "Electro-technology",
+                "Mechanical Engineering",
+                "Tourism",
+                "Automotive Engineering",
+                "Nursing",
+                "Climate Change",
+                "Hospitality",
+                "Fine Arts and Crafts",
+                "Finance",
+                "Joinery, Furniture and Cabinet Making",
+                "Education",
+                "Electrical Engineering",
+                "Information and Communication Technology",
+                "Midwifery",
+                "Plumbing",
+                "Efate",
+                "Ambae",
+                ""
+              ]
+            },
+            "title": "Course"
+          },
+          {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]

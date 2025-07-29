@@ -15,28 +15,6 @@
             "type": "integer"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "13110",
-                "13111",
-                "13112",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Value",
             "type": "number"
           }
@@ -46,5 +24,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-1-1",
-  "title": "SOC3-1-1"
+  "title": "indicators.SOC3-1-1-title"
 }

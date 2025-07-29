@@ -1,2 +1,3 @@
 From,To
-Principal Export,Main Country of Destination
+Commodity,Country
+Unit,Commodity

@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-SOC1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-SOC1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-SOC1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -614,7 +596,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: 2010 Pacific Living Conditions Survey (Hybrid) - VNSO and SPC</p>
+    <p>Source: Vanuatu Bureau of Statistics </p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -1007,8 +989,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1017,16 +1010,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>The “Proportion of population with ability to 1: produce herbal medicines, and 2: massage” is an indicator that measures the percentage or fraction of a population possessing the skills and knowledge to engage in two specific activities: producing herbal medicines and providing massages.</p>
-
-<ol>
-  <li>
-    <p>Producing herbal medicines: This refers to the ability to prepare medicinal remedies using traditional herbal knowledge and techniques. It involves identifying, collecting, processing, and combining various plant materials to create herbal remedies for medicinal purposes. This skill often includes understanding the properties and uses of different plants, as well as the preparation methods for extracting or infusing medicinal compounds.</p>
-  </li>
-  <li>
-    <p>Providing massages: This indicates the capacity to perform massages, which involves applying pressure, manipulation, and kneading techniques on the body to relieve tension, promote relaxation, and address specific health concerns. Massage techniques can vary depending on cultural practices and therapeutic approaches, encompassing modalities such as Swedish massage, Thai massage, aromatherapy massage, and many others. The ability to provide massages requires knowledge of anatomy, physiology, and specific massage techniques.</p>
-  </li>
-</ol>
+            <p>The “Proportion of Population with Ability to 1: Produce Herbal Medicines, and 2: Massage” indicator measures the percentage of the population that possesses the knowledge and skills to produce traditional herbal medicines and perform traditional massage techniques. These skills are often passed down through generations and play a crucial role in maintaining traditional health practices and cultural heritage.</p>
 
           
         </td>
@@ -1042,22 +1026,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The proportion of the population with these abilities provides insight into several factors:</p>
-
-<ol>
-  <li>
-    <p>Traditional healing practices: Herbal medicine production and massage often have roots in traditional healing systems and cultural practices. This indicator reflects the prevalence and continuity of traditional healing knowledge within a population.</p>
-  </li>
-  <li>
-    <p>Healthcare access and self-care: The indicator reflects the extent to which the population has access to traditional healthcare alternatives and the ability to engage in self-care practices. It recognizes the potential for individuals to address their health needs using traditional methods.</p>
-  </li>
-  <li>
-    <p>Cultural heritage and preservation: The indicator highlights the preservation and continuation of traditional healing practices and therapeutic techniques that are often deeply rooted in cultural heritage. It acknowledges the importance of passing down these skills from one generation to another.</p>
-  </li>
-  <li>
-    <p>Economic implications: Traditional healing practices, including herbal medicine production and massage, can have economic significance. The indicator can provide insights into the potential for traditional healers and practitioners to contribute to local economies and tourism.</p>
-  </li>
-</ol>
+            <p>This indicator tracks the retention and transmission of traditional health-related skills within a population. The ability to produce herbal medicines involves knowledge of local plants, their medicinal properties, and the methods of preparing them for therapeutic use. The ability to perform massage encompasses techniques that have been traditionally used for healing, relaxation, and maintaining physical well-being. Together, these skills are an integral part of traditional healthcare systems and reflect the cultural practices related to health and wellness.</p>
 
           
         </td>
@@ -1073,7 +1042,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>National, province, region, sex</p>
+            <p>Region</p>
 
           
         </td>
@@ -1089,7 +1058,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Monitoring changes in the proportion of the population with these abilities can help policymakers and researchers assess the state of traditional healthcare practices, identify areas where preservation efforts may be needed, and inform policies that support the integration of traditional medicine into healthcare systems.</p>
+            <p>Monitoring the proportion of the population that can produce herbal medicines and perform massage is essential for assessing the vitality of traditional health practices. As modern medicine becomes more widespread, these traditional skills may be at risk of being lost.</p>
 
           
         </td>
@@ -1105,7 +1074,10 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>number of people with ability to 1: produce herbal medicines, and 2: massage divide by the total sample population surveyed then multiplied by 100 to find the percentage value</p>
+            <p>To compute the “Proportion of Population with Ability to 1: Produce Herbal Medicines, and 2: Massage,” first collect data through surveys or census to assess individuals’ proficiency in these traditional health skills. Identify the number of respondents who possess the knowledge and skills to produce herbal medicines and/or perform traditional massage. Calculate the proportion by dividing the number of skilled individuals by the total population surveyed, and multiply by 100 to express the result as a percentage.</p>
+
+<p>Formula:
+Proportion of Population with Traditional Health Skills (%) = (Number of Individuals with Herbal Medicine and Massage Skills/Total Population Surveyed) * 100</p>
 
           
         </td>
@@ -1121,8 +1093,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>11.4
-11.4.1 (Tier 3)</p>
+            <p>11.4.1</p>
 
           
         </td>
@@ -1138,7 +1109,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>percentage (%)</p>
+            <p>percentage</p>
 
           
         </td>
@@ -1154,7 +1125,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>NSDP Survey - 5 Years</p>
+            <p>Every 5-10 Years</p>
 
           
         </td>
@@ -1281,12 +1252,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

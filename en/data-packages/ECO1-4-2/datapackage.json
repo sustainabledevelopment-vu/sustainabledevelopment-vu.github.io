@@ -12,12 +12,24 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Change (%)",
+                "Value (million vatu)",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +38,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-4-2",
-  "title": "ECO1-4-2"
+  "title": "Current Accounts balance change"
 }

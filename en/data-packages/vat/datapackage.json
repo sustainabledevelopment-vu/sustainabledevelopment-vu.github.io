@@ -12,12 +12,50 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
           },
           {
+            "name": "Industry",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Crop Production",
+                "Animal Production",
+                "Forestry",
+                "Fishing",
+                "Mining and Quarrying",
+                "Manufacturing",
+                "Electricity & Water Supply",
+                "Construction",
+                "Wholesale and Retail Trade",
+                "Transport",
+                "Accommodation and Food Services",
+                "Information and Communication",
+                "Finance and Insurance",
+                "Real Estate",
+                "Professional Services ",
+                "Public Administration ",
+                "Education, Health and Other Services",
+                ""
+              ]
+            },
+            "title": "Industry"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Millions in Vatu (VUV)",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
             "name": "Value",
-            "type": "number",
+            "type": "string",
             "title": "Value"
           }
         ]

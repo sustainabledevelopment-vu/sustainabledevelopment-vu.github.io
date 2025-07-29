@@ -119,7 +119,7 @@ var translations = {
         
     <title>
         
-        Vanuatu Demographics - Indicators of The National Sustainable Development Plan
+        Vanuatu projections - Indicators of The National Sustainable Development Plan
     </title>
 
 
@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -200,8 +200,6 @@ layout-indicator
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,6 +221,8 @@ layout-indicator
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -230,31 +230,13 @@ layout-indicator
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" active">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" active">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -374,7 +356,7 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        <span class="lead-copy">Vanuatu Demographics</span>
+                        <span class="lead-copy">Vanuatu projections</span>
                     </h1>
                 </div>
             </div>
@@ -436,7 +418,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>This standalone indicator basically provide information and data for population growth over the past decades. The historical data of the Republic of Vanuatu demographics can be used to give relevant information that have impacts on economic, social and environmental goals development and whether or not these goals are are closer to achieving their targets.</p>
+    <p>Vanuatu’s total population is projected to grow from approximately 287,000 in 2020 to over 604,000 by 2050, more than doubling in three decades. This steady growth reflects underlying assumptions of moderate fertility and sustained improvements in health and migration management. Disaggregated projections show a rising share of youth and working-age population in the near term, followed by gradual ageing over time. These demographic trends have major implications for infrastructure planning, education systems, labour market development, and health services.</p>
 
   </div>
 </div>
@@ -455,10 +437,10 @@ data-event-label="high"
   data-country="Vanuatu"
   data-charttitle="Vanuatu Population Growth "
   data-charttitles="[]"
-  data-measurementunit=""
+  data-measurementunit="Number"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
@@ -469,7 +451,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total population&quot;,&quot;Population estimates&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Torba&quot;,&quot;Sanma&quot;,&quot;Penama&quot;,&quot;Malampa&quot;,&quot;Shefa&quot;,&quot;Tafea&quot;,&quot;PortVila&quot;,&quot;Luganville&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;0--4&quot;,&quot;5--9&quot;,&quot;10--14&quot;,&quot;15--19&quot;,&quot;20--24&quot;,&quot;25--29&quot;,&quot;30--34&quot;,&quot;35--39&quot;,&quot;40--44&quot;,&quot;45--49&quot;,&quot;50--54&quot;,&quot;55--59&quot;,&quot;60--64&quot;,&quot;65--69&quot;,&quot;70+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;0&quot;,&quot;1-4&quot;,&quot;5-9&quot;,&quot;10-14&quot;,&quot;15-19&quot;,&quot;20-24&quot;,&quot;25-29&quot;,&quot;30-34&quot;,&quot;35-39&quot;,&quot;40-44&quot;,&quot;45-49&quot;,&quot;50-54&quot;,&quot;55-59&quot;,&quot;60-64&quot;,&quot;65-69&quot;,&quot;70-74&quot;,&quot;75-79&quot;,&quot;80-84&quot;,&quot;85+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Male&quot;,&quot;Female&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Urban&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Port Vila&quot;,&quot;Luganville&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Urban&quot;},{&quot;name&quot;:&quot;Province&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Torba&quot;,&quot;Sanma Rural&quot;,&quot;Penama&quot;,&quot;Malampa&quot;,&quot;Shefa Rural&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Province&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -522,11 +504,7 @@ data-event-label="high"
         
         
         
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
+        <th scope="col" class="table-value">Value</th>
         
         
       </thead>
@@ -535,111 +513,11 @@ data-event-label="high"
         <tr>
           
           
-          <td>1967</td>
-          
-          
-          
-          <td>77710</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1979</td>
-          
-          
-          
-          <td>111251</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1989</td>
-          
-          
-          
-          <td>142419</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>1999</td>
-          
-          
-          
-          <td>186678</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2009</td>
-          
-          
-          
-          <td>234023</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>272459</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
           <td>2020</td>
           
           
           
-          <td>300019</td>
-          
-          
-          
-          <td class="table-value">Total population</td>
+          <td class="table-value">287,310</td>
           
           
         </tr>
@@ -651,11 +529,7 @@ data-event-label="high"
           
           
           
-          <td>307000</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">298,512</td>
           
           
         </tr>
@@ -667,11 +541,7 @@ data-event-label="high"
           
           
           
-          <td>314142</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">309,714</td>
           
           
         </tr>
@@ -683,11 +553,7 @@ data-event-label="high"
           
           
           
-          <td>321451</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">320,916</td>
           
           
         </tr>
@@ -699,11 +565,7 @@ data-event-label="high"
           
           
           
-          <td>328931</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">332,118</td>
           
           
         </tr>
@@ -715,11 +577,7 @@ data-event-label="high"
           
           
           
-          <td>336584</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">343,320</td>
           
           
         </tr>
@@ -731,11 +589,7 @@ data-event-label="high"
           
           
           
-          <td>344415</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">354,463</td>
           
           
         </tr>
@@ -747,11 +601,7 @@ data-event-label="high"
           
           
           
-          <td>352428</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">365,607</td>
           
           
         </tr>
@@ -763,11 +613,7 @@ data-event-label="high"
           
           
           
-          <td>360628</td>
-          
-          
-          
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">376,751</td>
           
           
         </tr>
@@ -779,11 +625,343 @@ data-event-label="high"
           
           
           
-          <td>369018</td>
+          <td class="table-value">387,895</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2030</td>
           
           
           
-          <td class="table-value">Population estimates</td>
+          <td class="table-value">399,038</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2031</td>
+          
+          
+          
+          <td class="table-value">409,920</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2032</td>
+          
+          
+          
+          <td class="table-value">420,802</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2033</td>
+          
+          
+          
+          <td class="table-value">431,683</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2034</td>
+          
+          
+          
+          <td class="table-value">442,565</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2035</td>
+          
+          
+          
+          <td class="table-value">453,447</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2036</td>
+          
+          
+          
+          <td class="table-value">464,080</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2037</td>
+          
+          
+          
+          <td class="table-value">474,714</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2038</td>
+          
+          
+          
+          <td class="table-value">485,347</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2039</td>
+          
+          
+          
+          <td class="table-value">495,981</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2040</td>
+          
+          
+          
+          <td class="table-value">506,614</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2041</td>
+          
+          
+          
+          <td class="table-value">516,759</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2042</td>
+          
+          
+          
+          <td class="table-value">526,904</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2043</td>
+          
+          
+          
+          <td class="table-value">537,050</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2044</td>
+          
+          
+          
+          <td class="table-value">547,195</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2045</td>
+          
+          
+          
+          <td class="table-value">557,340</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2046</td>
+          
+          
+          
+          <td class="table-value">566,710</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2047</td>
+          
+          
+          
+          <td class="table-value">576,079</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2048</td>
+          
+          
+          
+          <td class="table-value">585,449</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2049</td>
+          
+          
+          
+          <td class="table-value">594,819</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2050</td>
+          
+          
+          
+          <td class="table-value">604,188</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td class="table-value">43353</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">52769</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2030</td>
+          
+          
+          
+          <td class="table-value">61776</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2035</td>
+          
+          
+          
+          <td class="table-value">69925</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2040</td>
+          
+          
+          
+          <td class="table-value">76988</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2045</td>
+          
+          
+          
+          <td class="table-value">82619</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2050</td>
+          
+          
+          
+          <td class="table-value">86550</td>
           
           
         </tr>
@@ -796,11 +974,13 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
+    <p>Source: Vanuatu Bureau of Statistics </p>
+    
     
     <p>Geographical Area: Vanuatu</p>
     
     
-    <p>Unit of Measurement: </p>
+    <p>Unit of Measurement: Number</p>
     
     
     <p>Footnote: </p>
@@ -1109,6 +1289,90 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
+          
+            <p>The indicator “Projected Population by Sex, Age Group, and Province” is the estimated number of individuals projected to reside in each province of Vanuatu, disaggregated by sex and 5-year age groups, for each year from 2020 to 2050.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
+          
+            <p>This indicator is based on the demographic concept of population projections, which are forward-looking estimates derived from the most recent census base population, adjusted using assumptions about future trends in fertility, mortality, and migration. It supports long-term planning, including infrastructure, education, healthcare, and social services, by estimating future population dynamics by region, age, and sex.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
+          
+            <p>None</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Population projections provide critical insights for national and provincial policy and planning. Disaggregating the data by age and sex allows for assessment of demographic shifts, ageing trends, youth bulges, and population growth or decline in specific areas. These insights inform targeted investments, especially in health, education, and economic development.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>Method of Computation: 
+Projections are calculated using the cohort-component method, which applies age-specific fertility, mortality, and migration rates to a base year population. Each subsequent year’s population is derived by aging the population forward and applying assumptions for births, deaths, and net migration.</p>
+
+<p>Formula: 
+Not applicable — total projected population counts by age group, sex, and province are produced through demographic modelling, not a single formula.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -1119,33 +1383,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Every 10 years</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
   
   
   
@@ -1256,12 +1506,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

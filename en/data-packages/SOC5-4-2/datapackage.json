@@ -12,12 +12,26 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Province",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Sanma",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +40,5 @@
   ],
   "profile": "data-package",
   "name": "SOC5-4-2",
-  "title": "SOC5-4-2"
+  "title": "Percentage of licensed vessels which have trained observers on board"
 }

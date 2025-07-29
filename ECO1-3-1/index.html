@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -464,11 +446,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>(Net Operating Balance (surplus))
-The actual change in the annual budget surplus in 2021 is approximately -211.76% of the target increase of 15% by 2030. This indicates that the budget surplus is not progressing positively towards the target, and significant improvements are needed to ensure the target is met by 2030.</p>
-
-<p>(Net Operating Balance Excluding Donors (deficit))
-The actual change in the annual budget position excluding donor contributions in 2021 is approximately 85.1% towards the target increase of 15% by 2030. This suggests that the budget position is progressing positively towards the target, but further improvements are needed to ensure the target is met by 2030.</p>
+    <p>Vanuatu’s national budget position remained in surplus through most of the 2010s, peaking at 12.9 billion Vatu in 2018, before falling to 2.8 billion in 2021. The COVID-19 pandemic significantly impacted fiscal balances, with a sharp drop in 2020 and partial recovery in 2021. Despite volatility, the government has generally maintained a positive operating balance, reflecting prudent fiscal management. However, sustaining surpluses will require careful alignment of expenditure and revenue strategies, especially under external shocks.</p>
 
   </div>
 </div>
@@ -875,17 +853,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <ul>
-  <li>
-    <p>Government Budget for the year. How the budget is used, either spending is within the budget line or exceeds the budget line.</p>
-  </li>
-  <li>
-    <p>Budget Deficit – changes that occur when expenses exceed revenue and indicate the financial health of the country.</p>
-  </li>
-  <li>
-    <p>Budget surplus – government income which come from taxes and duties exceeding its total expenditures</p>
-  </li>
-</ul>
+            <p>The “Change in National Budget Position (Deficit/Surplus) (GFS Tables)” indicator measures the year-over-year or period-over-period change in a country’s national budget position, specifically tracking shifts between a budget deficit or surplus as reported in the Government Finance Statistics (GFS) tables. The budget position is calculated as the difference between total government revenues and total government expenditures. Budget Deficit occurs when government expenditures exceed revenues. Budget Surplus occurs when government revenues exceed expenditures.</p>
 
           
         </td>
@@ -901,7 +869,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>Annual Government budget and allocation within the different government ministries. Allocation spending either exceeds or is less compared to its allocated budget.  Whether the ministries make revenue for the government and is measured through increase in surplus</p>
+            <p>This indicator tracks the fluctuation in a country’s budget position, reflecting the balance between government income and spending. A change in the budget position indicates whether the government is moving towards a higher deficit, reducing its deficit, or moving into or out of a surplus position. The GFS tables provide standardized financial data that allow for consistent monitoring of the government’s fiscal health.</p>
 
           
         </td>
@@ -912,8 +880,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Revenue Source</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -922,14 +901,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <ul>
-  <li>
-    <p>Captures the expenses of the government over the year.</p>
-  </li>
-  <li>
-    <p>Depicts the government revenue.</p>
-  </li>
-</ul>
+            <p>Monitoring the change in the national budget position is crucial for assessing the government’s fiscal discipline and sustainability. A budget deficit can indicate the need for borrowing and potential increases in public debt, while a surplus may allow for debt reduction, savings, or additional investments.</p>
 
           
         </td>
@@ -940,8 +912,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Change in National Budget Position (Deficit/Surplus) (GFS Tables),” first collect data on total government revenues and expenditures for the current and previous years from the Government Finance Statistics (GFS) tables. Calculate the budget position for each year by subtracting total expenditures from total revenues. Then, determine the change in the budget position by subtracting the previous year’s budget position from the current years. Express this change in either absolute terms or as a percentage.</p>
+
+<p>Formula:
+Percentage Change in Budget Position= (Budget Position (Current Year) – Budget Position (Previous Year)/ Budget Position (Previous Year))*100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -950,7 +936,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>17.4.1 (Tier 1)</p>
+            <p>17.4.1</p>
 
           
         </td>
@@ -961,8 +947,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1089,12 +1086,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

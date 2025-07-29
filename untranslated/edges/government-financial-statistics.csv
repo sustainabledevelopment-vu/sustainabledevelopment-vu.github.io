@@ -1,6 +1,3 @@
 From,To
 Ministry,Department
-Department,Program
-Program,Activity
-Activity,Budget
-Budget,Budget Type
+Unit,Ministry

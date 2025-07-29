@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -580,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>A fish aggregating (or aggregation) device (FAD) is a man-made object used to attract ocean going pelagic fish such as marlin, tuna and mahi-mahi (dolphin fish). They usually consist of buoys or floats tethered to the ocean floor with concrete blocks. Fish tend to move around FADs in varying orbits, rather than remaining stationary below the buoys. Both recreational and commercial fisheries use FADs</p>
+            <p>The “Total Fishing Aggregated Devices (FADs) per 1,000 Population by Province” indicator measures the number of Fishing Aggregated Devices (FADs) available within a province, normalized by the population size, expressed as the number of FADs per 1,000 people. FADs are man-made objects used to attract fish, making it easier for fishermen to locate and catch fish.</p>
 
           
         </td>
@@ -596,7 +578,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>This indicator tries to find the total FADs per 1,000 people in each province to improve accessibility of appropriate technology, knowledge, and skills in food production, preservation and storage. Ensuring our food and nutrition security needs are adequately met for all people through increasing sustainable food production systems and improving household production.</p>
+            <p>This indicator provides insight into the distribution and availability of fishing resources, specifically FADs, across different provinces. FADs are critical tools in sustainable fisheries management, as they help concentrate fish in specific areas, making fishing more efficient and potentially reducing overfishing in other regions. By normalizing the number of FADs to the population size, this indicator helps to assess whether the deployment of FADs is equitable across regions relative to the population that depends on them.</p>
 
           
         </td>
@@ -607,8 +589,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -617,7 +610,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>This study is all about collecting the total number of FADs per 1,000 population by province so that another 100 FADs can be distributed throughout Vanuatu by 2030 to improve access to appropriate technology, knowledge and skills in food production, preservation and storage throughout Vanuatu.</p>
+            <p>Monitoring the total number of FADs per 1,000 population by province is essential for ensuring equitable access to fishing resources, supporting local livelihoods, and promoting sustainable fishing practices. FADs play a crucial role in supporting artisanal and commercial fishing, which are vital for food security, income generation, and cultural practices in many coastal communities. A higher number of FADs per capita may indicate better access to fishing resources, which can support local livelihoods, enhance food security, and contribute to the local economy. Conversely, a lower number may suggest limited access to fishing resources, which could impact the sustainability of local fisheries and the well-being of fishing communities.</p>
 
           
         </td>
@@ -628,8 +621,23 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>Method of computation:
+To compute the “Total Fishing Aggregated Devices (FADs) per 1,000 Population by Province,” first collect data on the total number of FADs deployed in each province. Then, obtain the total population of each province. Calculate the number of FADs per 1,000 population by dividing the total number of FADs by the population size and multiplying by 1,000.</p>
+
+<p>Formula:
+FADs per 1,000 Population= (Total Number of FADs in Province/Total Population of Province)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -638,7 +646,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>12.8.1 (Tier3)</p>
+            <p>12.8.1, 12.a.1 &amp; 14.4.1</p>
 
           
         </td>
@@ -649,8 +657,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Number of FADs per 1,000 population</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -775,12 +794,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

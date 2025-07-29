@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO2
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO2
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO2
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -843,7 +825,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Proxy </th>
         <td>
           
-            <p>NO</p>
+            <p>No</p>
 
           
         </td>
@@ -859,9 +841,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>The “Proportion of population with reliable access to improved sanitation facilities” is an indicator that measures the percentage of a population that has consistent and dependable access to improved sanitation facilities. It assesses the extent to which people have access to adequate sanitation services that protect human health and dignity.</p>
-
-<p>This indicator takes into account the availability, accessibility, and usability of sanitation facilities that meet certain standards of hygiene and privacy. Improved sanitation facilities include flush toilets, piped sewer systems, septic tanks, ventilated improved pit latrines, composting toilets, or other sanitation technologies that effectively separate human waste from human contact and prevent its contamination of the environment.</p>
+            <p>The “Proportion of Population with Reliable Access to Improved Sanitation Facilities” indicator measures the percentage of the population that has consistent and reliable access to sanitation facilities that meet basic health and safety standards. Improved sanitation facilities include flush toilets, piped sewer systems, septic tanks, ventilated improved pit latrines, and other safe and hygienic means of disposing of human waste.</p>
 
           
         </td>
@@ -895,7 +875,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>urban, rural, province</p>
+            <p>Region &amp; Time Period</p>
 
           
         </td>
@@ -911,9 +891,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Monitoring the proportion of the population with reliable access to improved sanitation facilities helps policymakers, governments, and organizations identify areas or populations that lack access and prioritize interventions to improve sanitation infrastructure, promote hygiene education, and foster behavior change. It also helps track progress towards national and international targets for ensuring universal access to adequate sanitation for all.</p>
-
-<p>In summary, the “Proportion of population with reliable access to improved sanitation facilities” indicator serves as a measure of the extent to which a population has access to sanitation facilities that meet standards of hygiene and dignity. It emphasizes the importance of providing adequate sanitation services to protect public health, promote hygiene practices, and enhance the overall well-being of individuals and communities.</p>
+            <p>Monitoring the proportion of the population with reliable access to improved sanitation facilities is crucial for public health, environmental sustainability, and social well-being. Access to improved sanitation is a key factor in preventing the spread of waterborne and other communicable diseases, improving overall health outcomes, and enhancing the quality of life.</p>
 
           
         </td>
@@ -929,7 +907,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>To calculate this indicator, data is collected through surveys, censuses, or other data collection methods that specifically inquire about the availability and usage of improved sanitation facilities. The number of people with access to reliable and improved sanitation facilities is divided by the total population surveyed or considered, and the result is expressed as a percentage.</p>
+            <p>To compute the “Proportion of Population with Reliable Access to Improved Sanitation Facilities,” first collect data through surveys or censuses to determine the number of households or individuals with consistent and reliable access to improved sanitation facilities. Then, calculate the proportion by dividing this number by the total population or number of households surveyed, and multiply by 100 to express it as a percentage.</p>
 
           
         </td>
@@ -945,8 +923,8 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>6.2
-6.2.1(R) (Tier 1)</p>
+            <p>6.1.1
+6.2.1</p>
 
           
         </td>
@@ -978,7 +956,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>10 year census</p>
+            <p>Every five to ten years</p>
 
           
         </td>
@@ -1096,12 +1074,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

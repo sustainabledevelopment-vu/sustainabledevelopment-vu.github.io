@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -461,6 +443,13 @@ data-event-label="high"
 
 
   
+
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Total export values for Vanuatu’s major commodities fluctuated between 2012 and 2021, peaking at 4.7 billion Vatu in 2017 before slightly declining to 4.5 billion in 2021. Kava emerged as the leading export commodity from 2016 onward, contributing over 2.4 billion Vatu in both 2020 and 2021. Copra and coconut oil showed significant variation, with copra exports falling from a high of 1.8 billion Vatu in 2017 to 845 million in 2021. The shifting composition of exports indicates rising reliance on high-value crops like kava, with declining trends for traditional bulk commodities like copra and coconut oil.</p>
+
+  </div>
+</div>
 
 
   
@@ -674,30 +663,6 @@ data-event-label="high"
           
         </tr>
         
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">4435</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2023</td>
-          
-          
-          
-          <td class="table-value">4846</td>
-          
-          
-        </tr>
-        
       </tbody>
     </table>
     
@@ -706,7 +671,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: VBOS, Trade Statistics</p>
+    <p>Source: Customs & Inland Revenue </p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -1021,7 +986,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Proxy </th>
         <td>
           
-            <p>No</p>
+            <p>Yes (Production Measured by International Exports Only)</p>
 
           
         </td>
@@ -1037,7 +1002,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Level of production refers to the amount that is produced. It is a way of classifying production. The amount that is produced or the level of operation of production of a country is affected by the resources available and the extent to which a country is able to exploit the resources available</p>
+            <p>The “Level of Production of Major Commodities Including Beef, Coconut Oil, Cocoa, Copra, Kava, Wood, and Coffee” indicator measures the total quantity of these key agricultural and forestry commodities produced within a country over a specific period. This indicator reflects the output of these major commodities, which are critical to the country’s economy and export markets.</p>
 
           
         </td>
@@ -1053,7 +1018,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>There are three level of production, Primary which is more concern with the extraction of raw materials from the earth’s surface for instance farming and fishing. Secondary, this is made up of manufacturing or processing and construction. Lastly tertiary, made up of services used to aid the other two levels of production.</p>
+            <p>This indicator tracks the production levels of essential commodities such as beef, coconut oil, cocoa, copra, kava, wood, and coffee. These commodities are significant contributors to the agricultural and forestry sectors, which play a vital role in the country’s economy. The production level is an important measure of the agricultural sector’s performance, indicating the ability to meet domestic demand and contribute to exports. It also provides insights into the health of the sector, including productivity, resource availability, and market conditions.</p>
 
           
         </td>
@@ -1069,7 +1034,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>beef, cocoa, coconut oil, coffee, copra, kava and wood</p>
+            <p>Commodity, Country</p>
 
           
         </td>
@@ -1085,30 +1050,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>The indicator “level of production of major commodities in Vanuatu” provides valuable insights into the country’s agricultural and economic sectors. Here are some rationales for considering this indicator:</p>
-
-<ol>
-  <li>
-    <p>Economic Contribution: Vanuatu’s economy heavily relies on agriculture, with the sector playing a significant role in employment, income generation, and GDP contribution. Assessing the level of production of major commodities helps understand the economic impact of agriculture and its contribution to overall economic development in Vanuatu.</p>
-  </li>
-  <li>
-    <p>Export Potential: Vanuatu’s major commodities often have export potential, contributing to foreign exchange earnings and trade balance. Tracking the production levels of these commodities provides an indication of the country’s export capacity and its ability to tap into international markets. It helps identify opportunities for expanding exports, diversifying markets, and reducing dependence on specific commodities.</p>
-  </li>
-  <li>
-    <p>Food Security: Agriculture is crucial for domestic food security and nutrition. Monitoring the production of major commodities allows policymakers to assess the country’s self-sufficiency in staple foods and identify any potential gaps in meeting the nutritional needs of the population. It helps guide strategies to promote domestic food production, reduce import dependence, and ensure a stable food supply for the people of Vanuatu.</p>
-  </li>
-  <li>
-    <p>Employment and Livelihoods: Agriculture is a significant source of employment and livelihoods for many people in Vanuatu, particularly in rural areas. The level of production of major commodities reflects the labor demand and the income-generating opportunities available in the agricultural sector. Understanding the dynamics of commodity production helps policymakers address employment challenges, support rural development, and improve livelihoods for farmers and their communities.</p>
-  </li>
-  <li>
-    <p>Sectoral Planning and Policy Formulation: Data on the production of major commodities assists in sectoral planning and policy formulation for agriculture. It helps identify areas of strength and weakness, determine priorities for investment, and guide interventions to enhance productivity, sustainability, and competitiveness in specific commodity sectors. This information enables evidence-based decision-making and targeted policies to support agricultural development.</p>
-  </li>
-  <li>
-    <p>Climate Resilience and Adaptation: Vanuatu is vulnerable to climate change impacts that can significantly affect agricultural production. Monitoring the production of major commodities provides insights into the resilience of the agricultural sector and its capacity to adapt to climate-related challenges. It helps identify climate-sensitive commodities, assess the effectiveness of adaptation measures, and guide strategies for building climate resilience in agriculture.</p>
-  </li>
-</ol>
-
-<p>By analyzing the level of production of major commodities in Vanuatu, policymakers, economists, and stakeholders can gain a comprehensive understanding of the country’s agricultural sector’s performance, its contribution to the economy, and its role in food security, employment, and rural development. This knowledge informs policy decisions, resource allocation, and interventions aimed at strengthening the agricultural sector and promoting sustainable and inclusive economic growth in Vanuatu.</p>
+            <p>Monitoring the level of production of these major commodities is crucial for understanding the agricultural and forestry sectors’ contributions to the national economy. These commodities are often key exports and sources of income for rural communities. A higher level of production typically indicates a robust and productive sector, which can enhance food security, generate employment, and increase export revenues. Conversely, a decline in production could signal challenges such as adverse weather conditions, resource constraints, or market disruptions.</p>
 
           
         </td>
@@ -1124,7 +1066,11 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>Trade statistics provide insights into the production levels of major commodities, especially for commodities that are exported or imported. By examining the quantities of commodities traded domestically or internationally, production levels can be estimated indirectly</p>
+            <p>To compute the “Level of Production of Major Commodities Including Beef, Coconut Oil, Cocoa, Copra, Kava, Wood, and Coffee,” first collect data on the total quantity and total value of each commodity produced during the reporting period. Sum the production quantities and values for each commodity to determine the total production level for each item.</p>
+
+<p>Formula:
+Total Production Quantity= Total Production Quantity of (Beef + Coconut Oil + Cocoa + Copra + Kava)
+Total Production Value= Total Production Value of (Beef + Coconut Oil + Cocoa + Copra + Kava)</p>
 
           
         </td>
@@ -1140,7 +1086,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>8.2.1 (tier1)</p>
+            <p>8.2.1</p>
 
           
         </td>
@@ -1156,7 +1102,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>Vatu in millions</p>
+            <p>Vatu in Millions &amp; Kilogram in Tons</p>
 
           
         </td>
@@ -1172,7 +1118,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>Month &amp; Anually</p>
+            <p>Monthly</p>
 
           
         </td>
@@ -1290,12 +1236,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

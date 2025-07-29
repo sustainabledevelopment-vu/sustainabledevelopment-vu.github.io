@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-SOC5
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-SOC5
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-SOC5
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -580,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Security forces - National security or national defence is the security and defence of a nation state, including its citizens, economy, and institutions, which is regarded as a duty of government.</p>
+            <p>The “Total Number of National Security Forces per 1,000 Population” indicator measures the number of personnel serving in national security forces, including the military, police, and other relevant security agencies, relative to every 1,000 people in the population. This indicator reflects the density of security personnel available to maintain law and order, defend the nation, and respond to emergencies.</p>
 
           
         </td>
@@ -596,7 +578,58 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>Originally conceived as protection against military attack, national security is now widely understood to include also non-military dimensions, including the security from terrorism, minimization of crime, economic security, energy security, environmental security, food security, cyber-security etc. Similarly, national security risks include, in addition to the actions of other nation states, action by violent non-state actors, by narcotic cartels, and by multinational corporations, and also the effects of natural disasters.</p>
+            <p>This indicator tracks the availability and distribution of national security personnel in relation to the population size. The national security forces typically include armed forces, police, and other law enforcement agencies responsible for maintaining internal security, enforcing the law, and protecting the country from external threats. The indicator helps in understanding how well a country is staffed in terms of security personnel relative to its population, which can influence the overall effectiveness of security operations and public safety.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
+          
+            <p>Type of security force (police, military, other)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring the number of national security forces per 1,000 population is crucial for assessing a country’s capacity to ensure security and public order. A higher ratio of security personnel may indicate a robust security presence, which can deter crime and enhance the ability to respond to security threats. Conversely, a lower ratio might signal potential vulnerabilities in maintaining law and order, especially in areas with large or growing populations.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>To compute the “Total Number of National Security Forces per 1,000 Population,” first collect data on the total number of personnel in the national security forces. Then, obtain the total population size for the same period. Next, divide the number of security personnel by the total population and multiply the result by 1,000 to express the number of security personnel per 1,000 population.</p>
+
+<p>Formula:
+Security Forces per 1,000 Population = (Total Number of National Security Forces/Total Population) * 1,000</p>
 
           
         </td>
@@ -614,10 +647,10 @@ data-event-label="Change to indicator.sources tab"
       
       
       <tr>
-        <th scope="row">Rationale </th>
+        <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>This study will depict the total number of national security forces per 1,000 people inside Vanuatu and the difference between the total number of security forces and the target which is 900 by 2020.</p>
+            <p>Number per 1,000 population</p>
 
           
         </td>
@@ -625,21 +658,6 @@ data-event-label="Change to indicator.sources tab"
         
       
   
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
       
       
       
@@ -764,12 +782,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

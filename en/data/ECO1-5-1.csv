@@ -1,1 +1,46 @@
-Year,Value
+Year,Trade Type,Country,Value
+2020,,,-2166
+2021,,,-1925
+2022,,,-987
+2023,,,-3354
+2024,,,-2539
+2020,Exports,,834
+2021,Exports,,879
+2022,Exports,,957
+2023,Exports,,497
+2024,Exports,,805
+2020,Imports,,3000
+2021,Imports,,2804
+2022,Imports,,1943
+2023,Imports,,3851
+2024,Imports,,3344
+2020,Exports,Fiji,816
+2021,Exports,Fiji,742
+2022,Exports,Fiji,435
+2023,Exports,Fiji,386
+2024,Exports,Fiji,685
+2020,Imports,Fiji,2729
+2021,Imports,Fiji,2507
+2022,Imports,Fiji,1669
+2023,Imports,Fiji,3128
+2024,Imports,Fiji,2935
+2020,Exports,Papua New Giunea,0
+2021,Exports,Papua New Giunea,81
+2022,Exports,Papua New Giunea,104
+2023,Exports,Papua New Giunea,60
+2024,Exports,Papua New Giunea,31
+2020,Imports,Papua New Giunea,93
+2021,Imports,Papua New Giunea,160
+2022,Imports,Papua New Giunea,177
+2023,Imports,Papua New Giunea,225
+2024,Imports,Papua New Giunea,213
+2020,Exports,Solomon Islands,18
+2021,Exports,Solomon Islands,56
+2022,Exports,Solomon Islands,418
+2023,Exports,Solomon Islands,51
+2024,Exports,Solomon Islands,89
+2020,Imports,Solomon Islands,179
+2021,Imports,Solomon Islands,138
+2022,Imports,Solomon Islands,98
+2023,Imports,Solomon Islands,498
+2024,Imports,Solomon Islands,196

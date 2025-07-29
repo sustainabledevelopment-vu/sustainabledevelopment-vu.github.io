@@ -1,0 +1,84 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "number"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Vistors arrivals",
+                "Purpose",
+                "Usual country of residence",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Arrivals",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Plane (residents)",
+                "Plane (visitors)",
+                "Cruise",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Purpose of Visit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Holidays",
+                "Visiting friends and relatives",
+                "Business, meetings & conferences",
+                "Stop over",
+                "Others, education, sports",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Australia",
+                "New Zealand",
+                "New Caledonia",
+                "Other Pacific Countries",
+                "Europe",
+                "North America",
+                "Japan",
+                "China",
+                "Other Countries",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "tourism",
+  "title": "Visitor Arrivals by Mode of Transport, Purpose of Visit, and Country of Residence"
+}

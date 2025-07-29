@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -580,7 +562,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Agrometeorology is the study of weather and use of weather and climate information to enhance or expand agricultural crops and/or to increase crop production. Producers who undergone Agro-met training will benefit the producers a lot in terms of maximising profits at the same time addressing disaster risk reduction, and climate change adaptation response to global warming.</p>
+            <p>The “Proportion of Producers Across the Productive Sector That Have Undergone Agro-Met Training” indicator measures the percentage of producers (farmers, fishers, foresters, etc.) within the productive sector who have received training in agricultural meteorology (Agro-Met). Agro-Met training equips producers with the knowledge and skills to use weather and climate information to enhance their decision-making, optimize production, and reduce risks related to climate variability.</p>
 
           
         </td>
@@ -596,7 +578,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The application of meteorology to agriculture is essential, since every facet of agricultural activity depends on the weather. This indicator will be studied to determine the proportion of producers that have undergone Agro-Met training. which is related to enhancing traditional agricultural practices that aims to address disaster risk reduction and climate change adaptation.</p>
+            <p>This indicator tracks the reach and impact of training programs focused on agricultural meteorology within the productive sector. Agro-Met training is essential for helping producers understand and respond to weather patterns, climate forecasts, and other meteorological data that can influence agricultural productivity.</p>
 
           
         </td>
@@ -607,8 +589,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -617,7 +610,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>The rationale is to highlight the proportion of people who have undergone Agro-Met training all across the productive sector in order to promote traditional agricultural practices to address the disaster risk reduction and climate change adaptation.</p>
+            <p>Monitoring the proportion of producers who have undergone Agro-Met training is essential for understanding the extent to which the agricultural sector is equipped to handle climate variability and change. Agro-Met training is a key component of climate-smart agriculture, as it empowers producers to make data-driven decisions that can improve crop yields, reduce losses, and enhance food security. A higher proportion of trained producers indicates greater preparedness and resilience in the face of changing weather patterns, which is crucial for sustainable agricultural development.</p>
 
           
         </td>
@@ -628,8 +621,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Proportion of Producers Across the Productive Sector That Have Undergone Agro-Met Training,” first collect data on the number of producers who have completed Agro-Met training. Then, obtain the total number of producers across the productive sector. Calculate the proportion by dividing the number of trained producers by the total number of producers, and multiply by 100 to express the result as a percentage.</p>
+
+<p>Formula
+Proportion of Trained Producers (%) = (Number of Producers Who Have Undergone Agro-Met Training/Total Number of Producers Across the Productive Sector) * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -638,8 +645,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>2.3.1 
-(Tier 3) , 2.3.2 (Tier 3)</p>
+            <p>2.3.1, 2.3.2 &amp; 12.8.1</p>
 
           
         </td>
@@ -650,8 +656,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -660,7 +677,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>10 years</p>
+            <p>Annually</p>
 
           
         </td>
@@ -776,12 +793,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

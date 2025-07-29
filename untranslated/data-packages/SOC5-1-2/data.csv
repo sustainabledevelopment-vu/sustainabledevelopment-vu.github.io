@@ -1,1 +1,31 @@
-Year,Value
+Year,Court,Value
+2018,,2608
+2020,,2697
+2021,,2785
+2022,,2876
+2023,,2984
+2024,,3113
+2018,Court of Appeal,28
+2020,Court of Appeal,27
+2021,Court of Appeal,25
+2022,Court of Appeal,26
+2023,Court of Appeal,25
+2024,Court of Appeal,24
+2018,Supreme Court,860
+2020,Supreme Court,880
+2021,Supreme Court,900
+2022,Supreme Court,920
+2023,Supreme Court,950
+2024,Supreme Court,1000
+2018,Magistrates Court,1150
+2020,Magistrates Court,1200
+2021,Magistrates Court,1250
+2022,Magistrates Court,1300
+2023,Magistrates Court,1357
+2024,Magistrates Court,1394
+2018,Island Court,570
+2020,Island Court,590
+2021,Island Court,610
+2022,Island Court,630
+2023,Island Court,652
+2024,Island Court,695

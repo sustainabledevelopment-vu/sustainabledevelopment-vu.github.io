@@ -12,11 +12,22 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Change (%)",
+                "Value (million vatu)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +35,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-4-2",
-  "title": "ECO1-4-2"
+  "title": "indicators.ECO1-4-2-title"
 }

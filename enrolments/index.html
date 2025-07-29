@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -200,8 +200,6 @@ layout-indicator
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,6 +221,8 @@ layout-indicator
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -230,31 +230,13 @@ layout-indicator
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" active">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -436,7 +418,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>With a population of around 300,000, Vanuatu is a country with a young population and education is crucial for its development. However, despite efforts to improve access to education, the enrollment rates remain a challenge in Vanuatu. The overall enrolment rate in primary is around 82%, with a slightly lower rate in secondary school at 68%. There are also significant disparities in enrolments rates between urban and rural areas, with urban area having higher enrolments rates. Additional, gender-based disparities persist, with boys having a slightly higher enrolments than girls. The reasons for low enrolment rates are complex and include financial barriers, poor infrastructure, and cultural attitudes that prioritize other activities over education. Addressing these challenges will require a multi-pronged approach that involves investing in education infrastructure, providing financial support to families, and working with communities to change attitudes towards education. Ultimately, improving enrolment rates in Vanuatu is essential for its economic, social and environment development.</p>
+    <p>School attendance steadily increased from 87,500 in 2018 to nearly 99,000 in 2021, with stable figures maintained into 2022. This suggests a sustained effort in ensuring access to education, even during periods of broader social and economic disruption. Attendance data disaggregated by class and geography helps identify dropout risks and regional disparities, particularly in remote islands. These trends support planning for teacher allocation, infrastructure needs, and targeted interventions in underserved areas.</p>
 
   </div>
 </div>
@@ -469,7 +451,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Population3+currentlyattendinganeducationalinstitution&quot;,&quot;Population15+highestlevelofeducationcompleted&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;PortVila&quot;,&quot;Luganville&quot;,&quot;Torba&quot;,&quot;Sanma&quot;,&quot;Penama&quot;,&quot;Malampa&quot;,&quot;Shefa&quot;,&quot;Tafea&quot;,&quot;Luganvile&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;TypeofSchool&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Pre-school&quot;,&quot;Primary&quot;,&quot;Juniorsecondary&quot;,&quot;Seniorsecondary&quot;,&quot;Tertiary&quot;,&quot;&quot;]},&quot;title&quot;:&quot;TypeofSchool&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Province&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Malampa&quot;,&quot;Penama&quot;,&quot;Sanma&quot;,&quot;Shefa&quot;,&quot;Tafea&quot;,&quot;Torba&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Province&quot;},{&quot;name&quot;:&quot;Island&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ambrym&quot;,&quot;Atchin&quot;,&quot;Avock&quot;,&quot;Malekula&quot;,&quot;Maskelyns&quot;,&quot;Paama&quot;,&quot;Uripiv&quot;,&quot;Vao&quot;,&quot;Ambae&quot;,&quot;Maewo&quot;,&quot;Pentecost&quot;,&quot;Aore&quot;,&quot;Araki&quot;,&quot;Malo&quot;,&quot;Mavea&quot;,&quot;Santo&quot;,&quot;Tutuba&quot;,&quot;Buninga&quot;,&quot;Efate&quot;,&quot;Emae&quot;,&quot;Emao&quot;,&quot;Epi&quot;,&quot;Ifira&quot;,&quot;Lamen&quot;,&quot;Lelepa&quot;,&quot;Makira&quot;,&quot;Matoso&quot;,&quot;Moso&quot;,&quot;Nguna&quot;,&quot;Pele&quot;,&quot;Tongariki&quot;,&quot;Tongoa&quot;,&quot;Aneityum&quot;,&quot;Aniwa&quot;,&quot;Erromango&quot;,&quot;Futuna&quot;,&quot;Tanna&quot;,&quot;Gaua&quot;,&quot;Hiu&quot;,&quot;Loh&quot;,&quot;Mere Lava&quot;,&quot;Mota&quot;,&quot;Mota Lava&quot;,&quot;Rah&quot;,&quot;Tegua&quot;,&quot;Toga&quot;,&quot;Ureparapara&quot;,&quot;Vanua Lava&quot;,&quot;Tomman&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Island&quot;},{&quot;name&quot;:&quot;Class&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;PreSchool&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;,&quot;11&quot;,&quot;12&quot;,&quot;13&quot;,&quot;14&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Class&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -522,11 +504,7 @@ data-event-label="high"
         
         
         
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
+        <th scope="col" class="table-value">Value</th>
         
         
       </thead>
@@ -535,15 +513,11 @@ data-event-label="high"
         <tr>
           
           
-          <td>2009</td>
+          <td>2018</td>
           
           
           
-          <td>56603</td>
-          
-          
-          
-          <td class="table-value">Population3+currentlyattendinganeducationalinstitution</td>
+          <td class="table-value">87531.0</td>
           
           
         </tr>
@@ -551,15 +525,11 @@ data-event-label="high"
         <tr>
           
           
-          <td>2016</td>
+          <td>2019</td>
           
           
           
-          <td>77510</td>
-          
-          
-          
-          <td class="table-value">Population3+currentlyattendinganeducationalinstitution</td>
+          <td class="table-value">91256.0</td>
           
           
         </tr>
@@ -571,11 +541,7 @@ data-event-label="high"
           
           
           
-          <td>83531</td>
-          
-          
-          
-          <td class="table-value">Population3+currentlyattendinganeducationalinstitution</td>
+          <td class="table-value">95953.0</td>
           
           
         </tr>
@@ -583,15 +549,11 @@ data-event-label="high"
         <tr>
           
           
-          <td>2009</td>
+          <td>2021</td>
           
           
           
-          <td>68270</td>
-          
-          
-          
-          <td class="table-value">Population15+highestlevelofeducationcompleted</td>
+          <td class="table-value">98976.0</td>
           
           
         </tr>
@@ -599,15 +561,11 @@ data-event-label="high"
         <tr>
           
           
-          <td>2020</td>
+          <td>2022</td>
           
           
           
-          <td>133654</td>
-          
-          
-          
-          <td class="table-value">Population15+highestlevelofeducationcompleted</td>
+          <td class="table-value">98955.0</td>
           
           
         </tr>
@@ -619,6 +577,8 @@ data-event-label="high"
 
   
   <div id="datatableFooter">
+    
+    <p>Source: Ministry of Education & Training  </p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -933,43 +893,112 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
+          
+            <p>The indicator “Number of Children Attending School by Province, Island, and Class” measures the total number of children who are physically attending school during a given academic year, disaggregated by province, island, and class level.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
+          
+            <p>School attendance refers to the presence of children in formal learning environments on a regular basis, as distinct from enrolment figures which may include those registered but not attending. “Class” indicates the grade or level of schooling (e.g. Class 1, Class 2), while “island” and “province” identify the geographic location of the school. Together, these dimensions enable detailed spatial and educational analysis of participation in the school system.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring actual school attendance is critical for understanding access to education and identifying barriers to sustained participation. Disaggregation by class, island, and province allows for targeted policy responses to address regional disparities, dropout risks, and education resource gaps. It also supports planning efforts for teacher deployment, infrastructure investment, and inclusive education strategies.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>This indicator is calculated using administrative records collected from schools or education offices. Data is aggregated to count the number of attending students per class level, island, and province within a given school year.</p>
+
+<p>Formula: 
+None required, the indicator is a direct count of children attending school.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Number</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
           
-      
-      
-      
+            <p>Annual</p>
+
+          
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
   
   
   
@@ -1080,12 +1109,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -15,60 +15,72 @@
             "type": "integer"
           },
           {
-            "name": "Series",
+            "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "Total population",
-                "Population estimates",
+                "0",
+                "1-4",
+                "5-9",
+                "10-14",
+                "15-19",
+                "20-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60-64",
+                "65-69",
+                "70-74",
+                "75-79",
+                "80-84",
+                "85+",
                 ""
               ]
             }
           },
           {
-            "name": "Region",
+            "name": "Sex",
             "type": "string",
             "constraints": {
               "enum": [
-                "Torba",
-                "Sanma",
-                "Penama",
-                "Malampa",
-                "Shefa",
-                "Tafea",
-                "PortVila",
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Urban",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
                 "Luganville",
                 ""
               ]
             }
           },
           {
-            "name": "Age",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "0--4",
-                "5--9",
-                "10--14",
-                "15--19",
-                "20--24",
-                "25--29",
-                "30--34",
-                "35--39",
-                "40--44",
-                "45--49",
-                "50--54",
-                "55--59",
-                "60--64",
-                "65--69",
-                "70+",
+                "Torba",
+                "Sanma Rural",
+                "Penama",
+                "Malampa",
+                "Shefa Rural",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "string"
           }
         ]
       }
@@ -76,5 +88,5 @@
   ],
   "profile": "data-package",
   "name": "population",
-  "title": "Vanuatu Demographics"
+  "title": "Vanuatu projections"
 }

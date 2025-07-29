@@ -12,12 +12,26 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Court",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Court of Appeal",
+                "Supreme Court",
+                "Magistrates Court",
+                "Island Court",
+                ""
+              ]
+            },
+            "title": "Court"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +40,5 @@
   ],
   "profile": "data-package",
   "name": "SOC5-1-2",
-  "title": "SOC5-1-2"
+  "title": "Annual change in number of Magistrate and Supreme Court pending cases"
 }

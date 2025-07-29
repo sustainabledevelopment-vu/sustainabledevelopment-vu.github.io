@@ -1,14 +1,100 @@
-Year,Units,Series,Value
-2006,Total,21321,113.5
-2007,Total,21321,117.5
-2008,Total,21321,130.1
-2009,Total,21321,135.2
-2010,Total,21321,142.2
-2011,Total,21321,143.2
-2012,Total,21321,145.5
-2013,Total,21321,148.4
-2014,Total,21321,150.5
-2015,Total,21321,151.6
-2016,Total,21321,162.7
-2017,Total,21321,173.1
-2018,Total,21321,178.5
+Year,Food Basket,Value
+2016,,186
+2017,,214
+2018,,227
+2019,,236
+2020,,222
+2021,,245
+2022,,230
+2023,,388
+2024,,291
+2016,Local Chicken,335
+2016,Fresh fish,150
+2016,Beef Local,443
+2016,Island Taro,186
+2016,Manioc,55
+2016,Kumala,73
+2016,Yam,224
+2016,Banana Green,118
+2016,Dried Coconut,56
+2016,Island Cabbage,218
+2017,Local Chicken,548
+2017,Fresh fish,175
+2017,Beef Local,735
+2017,Island Taro,115
+2017,Manioc,33
+2017,Kumala,56
+2017,Yam,162
+2017,Banana Green,74
+2017,Dried Coconut,45
+2017,Island Cabbage,195
+2018,Local Chicken,423
+2018,Fresh fish,150
+2018,Beef Local,832
+2018,Island Taro,155
+2018,Manioc,50
+2018,Kumala,73
+2018,Yam,245
+2018,Banana Green,91
+2018,Dried Coconut,47
+2018,Island Cabbage,199
+2019,Local Chicken,603
+2019,Fresh fish,0
+2019,Beef Local,931
+2019,Island Taro,174
+2019,Manioc,57
+2019,Kumala,83
+2019,Yam,196
+2019,Banana Green,82
+2019,Dried Coconut,50
+2019,Island Cabbage,180
+2020,Local Chicken,436
+2020,Fresh fish,0
+2020,Beef Local,1028
+2020,Island Taro,143
+2020,Manioc,76
+2020,Kumala,70
+2020,Yam,156
+2020,Banana Green,80
+2020,Dried Coconut,80
+2020,Island Cabbage,153
+2021,Local Chicken,611
+2021,Fresh fish,75
+2021,Beef Local,953
+2021,Island Taro,162
+2021,Manioc,50
+2021,Kumala,83
+2021,Yam,166
+2021,Banana Green,69
+2021,Dried Coconut,147
+2021,Island Cabbage,130
+2022,Local Chicken,500
+2022,Fresh fish,0
+2022,Beef Local,725
+2022,Island Taro,206
+2022,Manioc,72
+2022,Kumala,115
+2022,Yam,305
+2022,Banana Green,110
+2022,Dried Coconut,102
+2022,Island Cabbage,166
+2023,Local Chicken,1163
+2023,Fresh fish,535
+2023,Beef Local,874
+2023,Island Taro,223
+2023,Manioc,91
+2023,Kumala,138
+2023,Yam,349
+2023,Banana Green,86
+2023,Dried Coconut,69
+2023,Island Cabbage,356
+2024,Local Chicken,1013
+2024,Fresh fish,680
+2024,Beef Local,0
+2024,Island Taro,217
+2024,Manioc,109
+2024,Kumala,116
+2024,Yam,291
+2024,Banana Green,137
+2024,Dried Coconut,87
+2024,Island Cabbage,260

@@ -12,11 +12,34 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Ratio (value)",
+                "Value (million vatu)",
+                "Quantity (tonnes)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Export Type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Processed",
+                "Raw",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +47,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-3-2",
-  "title": "ECO4-3-2"
+  "title": "indicators.ECO4-3-2-title"
 }

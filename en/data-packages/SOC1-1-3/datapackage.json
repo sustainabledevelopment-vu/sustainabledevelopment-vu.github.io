@@ -12,12 +12,40 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Endangered Languages",
+                "Total Languages ",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +54,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-1-3",
-  "title": "SOC1-1-3"
+  "title": "Proportion of endangered languages documented"
 }

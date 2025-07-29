@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO2
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO2
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO2
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -579,7 +561,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: 2016 Mini Census (p169), VNSO</p>
+    <p>Source: Vanuatu Bureau of Statistics  </p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -908,9 +890,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>The proportion of households sourcing energy for lighting from renewable sources refers to the percentage of households that utilize renewable energy sources for their lighting needs. It measures the extent to which households rely on renewable energy, such as solar, wind, hydroelectric, biomass, or geothermal energy, to meet their lighting requirements.</p>
-
-<p>This indicator reflects the sustainability and environmental impact of a household’s energy consumption for lighting purposes. It provides insights into the adoption and utilization of renewable energy technologies at the household level, which can contribute to reducing greenhouse gas emissions, mitigating climate change, and promoting a transition to cleaner and more sustainable energy sources.</p>
+            <p>The “Proportion of Households Sourcing Energy for Lighting from Renewable Sources” indicator measures the percentage of households that use renewable energy sources, such as solar, wind, hydro, or biomass, as their primary source of energy for lighting. This indicator reflects the extent to which renewable energy is being adopted at the household level for lighting purposes.</p>
 
           
         </td>
@@ -926,11 +906,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The concept behind this indicator is to assess the sustainability and environmental impact of household energy consumption for lighting. By analyzing the proportion of households using renewable energy sources, policymakers and researchers can gain insights into the adoption and utilization of clean energy technologies at the household level.</p>
-
-<p>Households that source energy for lighting from renewable sources contribute to mitigating climate change by reducing greenhouse gas emissions compared to households reliant on fossil fuel-based energy sources. Renewable energy sources are generally more sustainable, have lower carbon footprints, and offer long-term energy cost savings.</p>
-
-<p>The indicator’s significance lies in its ability to inform policymakers, energy planners, and researchers about the progress and potential for renewable energy adoption at the household level. It can help identify regions or communities where renewable energy penetration is high or where there is a need for interventions to promote cleaner energy sources. Additionally, it assists in tracking the impact of policies, incentives, and awareness campaigns aimed at promoting renewable energy adoption.</p>
+            <p>This indicator tracks the adoption of renewable energy technologies in households specifically for lighting. Renewable energy sources are sustainable and environmentally friendly alternatives to traditional fossil fuels, reducing greenhouse gas emissions and reliance on non-renewable energy. The indicator provides insights into the penetration of renewable energy in the residential sector, which is a key component of broader efforts to transition to a sustainable energy future.</p>
 
           
         </td>
@@ -946,7 +922,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>National, Provincial level.</p>
+            <p>Region</p>
 
           
         </td>
@@ -962,7 +938,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Monitoring the proportion of households sourcing energy for lighting from renewable sources is crucial for assessing energy transition goals, promoting sustainable development, and working towards a more resilient and environmentally friendly energy system. It encourages the shift away from fossil fuel dependency and towards a more sustainable and inclusive energy future.</p>
+            <p>Monitoring the proportion of households sourcing energy for lighting from renewable sources is crucial for assessing progress towards energy sustainability and environmental goals. A higher proportion indicates a successful uptake of renewable energy technologies, contributing to reduced carbon emissions, lower energy costs, and enhanced energy security. It also reflects the effectiveness of policies and programs aimed at promoting renewable energy adoption at the household level. Conversely, a lower proportion may suggest barriers to access, such as high costs, lack of infrastructure, or limited awareness.</p>
 
           
         </td>
@@ -978,7 +954,11 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>Proportion of households sourcing energy for lighting from renewable sources = <img src="../assets/img/ECO2-1-1-computation.png" alt="(Total number of households sourcing energy for lighting from renewable sources.)/(Total number of households  ) x 100" /></p>
+            <p>To compute the “Proportion of Households Sourcing Energy for Lighting from Renewable Sources,” first collect data on the energy sources used by households for lighting through surveys or census data. Identify the number of households that use renewable energy sources as their primary source of lighting. Then, calculate the proportion by dividing the number of these households by the total number of households surveyed, and multiply by 100 to express it as a percentage.</p>
+
+<p>Formula:
+Percentage of Households Using Renewable Energy for Lighting= (Number of Households Using Renewable Sources/Total Number of Households Surveyed)*100</p>
+
 
           
         </td>
@@ -1142,12 +1122,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -119,7 +119,7 @@ var translations = {
         
     <title>
         
-         - Indicators of The National Sustainable Development Plan
+        Government Budget Allocation by Ministry - Indicators of The National Sustainable Development Plan
     </title>
 
 
@@ -144,7 +144,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -200,8 +200,6 @@ layout-indicator
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -223,6 +221,8 @@ layout-indicator
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -230,31 +230,13 @@ layout-indicator
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -374,7 +356,7 @@ data-event-label="high"
                 <div>
                     <h1>
                         
-                        <span class="lead-copy"></span>
+                        <span class="lead-copy">Government Budget Allocation by Ministry</span>
                     </h1>
                 </div>
             </div>
@@ -436,8 +418,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <h2 id="overview-of-governments-resource-allocation-towards-the-nsdp">Overview of governments resource allocation towards the NSDP</h2>
-<p>The government financial statistics produced by the Ministry of Finance and Economic Management are a continuation of the efforts of the Government of Vanuatu to establish a financing mechanism that enables the country to fund and execute the NSDP as expected. Tracking the budgets and expenses of the nation in line with its implementation of the targets, which are aligned with national development priorities, will give the opportunity for all stakeholders to assess how much the various goals and metrics have been accomplished over the years, laying the groundwork for determining how much more will be needed to realise the NSDP. The transparent reporting on government’s spending to achieve the NSDP provides both Private Sector and Multilateral Development Partners the opportunity to determine which goals require more attention, or the Ministries, Departments and Agencies (MDAs) that require financial or technical assistance in working towards the achievement of the Goals. It also provides the Government the opportunity to adjust its allocations to ensure the equitable distribution of resources across MDAs. This reporting seeks to provide data that will enable the Government and its partners to monitor the progress being made on the various Goals against the investments made over the years to ascertain the efficient use of all financial resources.</p>
+    <p>Vanuatu’s total original government budget grew from 8.5 billion Vatu in 2004 to a record 57.1 billion Vatu in 2024, showing a more than sixfold increase over two decades. Actual expenditure also rose steadily, reaching 47.6 billion Vatu in 2024, though it fell short of the record-high allocation that year. Between 2018 and 2021, actual spending often exceeded budgeted amounts</p>
 
   </div>
 </div>
@@ -469,12 +450,12 @@ data-event-label="high"
   data-graphannotations="[]"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
-  data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Ministry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Constitutional Agencies&quot;,&quot;Prime Ministers Ministry&quot;,&quot;Ministry of Education &amp; Training&quot;,&quot;Ministry of Internal Affairs&quot;,&quot;Ministry of Finance and Economic Management&quot;,&quot;Ministry of Tourism, Trade, Commerce and Ni- Vanuatu Business&quot;,&quot;Ministry of Health&quot;,&quot;Ministry of Agriculture, Livestock, Forestry, Fisheries and Biosecurity&quot;,&quot;Ministry of Lands, Mines &amp; Water Resources&quot;,&quot;Ministry of Infrastructure and Public Utilities&quot;,&quot;Ministry of Foreign Affairs, International Cooperation and External Trade&quot;,&quot;Ministry of Cooperatives and Ni-Vanuatu Business Development Services&quot;,&quot;Ministry of Youth Development and Sports&quot;,&quot;Ministry of Justice and Social Welfare&quot;,&quot;Ministry of Climate Change Adaptation, Geohazards, Meteorology and Energy&quot;,&quot;Ministry of Civil Aviation, Meteorology and Postal Services&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ministry&quot;},{&quot;name&quot;:&quot;Department&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;President of the Republic&quot;,&quot;Parliament&quot;,&quot;Office of the Ombudsman&quot;,&quot;Malvatumauri Council of Chiefs&quot;,&quot;National Audit Office&quot;,&quot;State Law Office&quot;,&quot;Public Prosecutor&quot;,&quot;Public Solicitor&quot;,&quot;Judiciary&quot;,&quot;Public Service Commission&quot;,&quot;Citizenship Office&quot;,&quot;Department of Strategic Policy Cordination &amp; Corporate Services&quot;,&quot;Prime Ministers Cabinet&quot;,&quot;Language Services Department&quot;,&quot;MoE Cabinet&quot;,&quot;Director General Directorate&quot;,&quot;Internal Affairs Cabinet&quot;,&quot;Department of Provincial Affairs&quot;,&quot;Vanuatu Police Force&quot;,&quot;Department of Immigration&quot;,&quot;Department of Labour&quot;,&quot;Electoral Office&quot;,&quot;Civil Registry Office&quot;,&quot;MFEM Cabinet&quot;,&quot;Economic Research &amp; Expenditure Analysis Unit&quot;,&quot;National Statistics Office&quot;,&quot;Department of Finance &amp; Treasury&quot;,&quot;Department of Customs and Inland Revenue&quot;,&quot;Vanuatu Investment Promotion Authority&quot;,&quot;Ministry of Commerce, Industry and Tourism Cabinet&quot;,&quot;Department of Tourism&quot;,&quot;Department of Cooperatives and Ni-Vanuatu Business Development&quot;,&quot;Health Cabinet&quot;,&quot;Department of Health&quot;,&quot;Agriculture, Quarantine, Forestry and Fisheries Cabinet&quot;,&quot;Department of Agriculture&quot;,&quot;Department of Biosecurity&quot;,&quot;Department of Fisheries&quot;,&quot;Department of Forestry&quot;,&quot;Corporate Services&quot;,&quot;Department of Land Survey&quot;,&quot;Department of Lands&quot;,&quot;Department of Land Records&quot;,&quot;Department of Geology and Mines&quot;,&quot;MIPU Cabinet&quot;,&quot;Civil Aviation Authority&quot;,&quot;Department of Ports and Harbours&quot;,&quot;Department of Public Works&quot;,&quot;Ministry of Foreign Affairs Cabinet&quot;,&quot;Department of Foreign Affairs&quot;,&quot;Department of External Trade, Industry and Investment&quot;,&quot;Ministry of Ni-Vanuatu Business Development &amp; Coops Cabinet&quot;,&quot;Ministry of Youth Development and Training&quot;,&quot;Ministry of Justice and Community Service&quot;,&quot;Department of Womens Affairs&quot;,&quot;Energy Department&quot;,&quot;Environment Department&quot;,&quot;Vanuatu Meteorological Services&quot;,&quot;Correctional Services&quot;,&quot;Department of Youth and Sport&quot;,&quot;Judicial Services Commission&quot;,&quot;Trade and Ni Vanuatu Business Corporate Service Unit&quot;,&quot;Cabinet Operations&quot;,&quot;Valuer General&quot;,&quot;Ministry of Justice &amp; Social Welfare Corporate Service Unit&quot;,&quot;Education Commissions and Councils&quot;,&quot;Police Service Commission&quot;,&quot;MFEM Corporate Services&quot;,&quot;National Disaster Management Office&quot;,&quot;Department of Industry&quot;,&quot;Customary land management Office&quot;,&quot;Vanuatu Law Commission&quot;,&quot;Civil Avation Cabinet&quot;,&quot;Vanuatu Project Management Unit (VPMU)&quot;,&quot;PMO Corporate Service Unit&quot;,&quot;Government Remuneration Tribunal (GRT)&quot;,&quot;Office of the Government Chief Information Officer (OCGIO)&quot;,&quot;Livestock&quot;,&quot;Climate Change Adaptation, Geohazards, Meteorology and Energy Cabinet&quot;,&quot;Parliamentary Secretariat&quot;,&quot;Vanuatu Mobile Force&quot;,&quot;Education Service Directorate&quot;,&quot;Finance &amp; Administration Directorate&quot;,&quot;Policy &amp; Planning Directorate&quot;,&quot;Tertiary Education Directorate&quot;,&quot;MoCC Coporate Service Unit&quot;,&quot;Parliament Secretariat - Ministry of Agriculture&quot;,&quot;Department of Climate Change&quot;,&quot;Trade Development Division&quot;,&quot;Commerce Development&quot;,&quot;National Standards Development&quot;,&quot;Intellectual Property Development and Protection&quot;,&quot;Cooperatives Development&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Department&quot;},{&quot;name&quot;:&quot;Program&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Presidential Support&quot;,&quot;Procedure and Legislative Office&quot;,&quot;Standing Committees Office&quot;,&quot;Hansard Office&quot;,&quot;Corporate Services Office&quot;,&quot;Planning, Management and Investigations&quot;,&quot;Preservation of Vanuatu Customs, Culture and Language&quot;,&quot;Public Sector Auditing&quot;,&quot;Legal Advice and Executive Management&quot;,&quot;Operations&quot;,&quot;Public Legal Services&quot;,&quot;Administration of Justice&quot;,&quot;Public Service Commission&quot;,&quot;Office of the Prime Minister&quot;,&quot;Strategic Management&quot;,&quot;Language Services&quot;,&quot;Cabinet Support&quot;,&quot;Executive Management and Corporate Services&quot;,&quot;Education Services&quot;,&quot;Higher Education Services&quot;,&quot;Boards, Commissions &amp; Councils&quot;,&quot;Decentralisation Services&quot;,&quot;Internal Security and Border Control&quot;,&quot;National Services&quot;,&quot;Financial And Economic Management&quot;,&quot;National Statistics&quot;,&quot;Payments on Behalf of Government&quot;,&quot;Revenue Collection&quot;,&quot;Border Control and Enforcement&quot;,&quot;International Assistance&quot;,&quot;Industry Development&quot;,&quot;Investment Promotion Authority&quot;,&quot;Trade Development and Facilitation&quot;,&quot;Ni-Vanuatu Business Development&quot;,&quot;Health Services&quot;,&quot;Agricultural and Rural Development&quot;,&quot;Biosecurity Vanuatu&quot;,&quot;Fisheries&quot;,&quot;Forestry&quot;,&quot;Energy&quot;,&quot;Environment&quot;,&quot;Lands Management&quot;,&quot;Geology and Mines&quot;,&quot;Water Resources&quot;,&quot;MinisterialCabinet Support&quot;,&quot;Civil Aviation Authority&quot;,&quot;Shipping Services&quot;,&quot;Public Works&quot;,&quot;Dept of Foreign Affairs&quot;,&quot;Trade and Marketing&quot;,&quot;Portfolio Coordination&quot;,&quot;Ministry Cabinet&quot;,&quot;Cabinet&quot;,&quot;Director General's Office&quot;,&quot;Vanuatu Meterological Services&quot;,&quot;Executive Management and Cooperate Services&quot;,&quot;TVET &amp; Employment Opportunities&quot;,&quot;Special Commissions&quot;,&quot;Assistance to People with Disabilities and Children&quot;,&quot;Womens Affairs&quot;,&quot;Correctional Services&quot;,&quot;Citizenship Commission&quot;,&quot;Grants to Institutions&quot;,&quot;Valuer General's Office&quot;,&quot;Judicial Service Commission&quot;,&quot;Tourism Development&quot;,&quot;Teaching Service Commission&quot;,&quot;Police Service Commission&quot;,&quot;Lands Tribunal&quot;,&quot;Law Commission&quot;,&quot;Civil Aviation Portfolio Coordination&quot;,&quot;Information, Communication and Technology Policy and Administration&quot;,&quot;Livestock&quot;,&quot;Parliamentary Secretariat&quot;,&quot;Internal Security &amp; Border Control&quot;,&quot;External Trade Negotiation and Development&quot;,&quot;Youth Development &amp; Sports&quot;,&quot;Executive Management &amp; Corporate Services&quot;,&quot;Vanuatu Meteorological Services&quot;,&quot;National Disaster Management&quot;,&quot;Youth &amp; Employment&quot;,&quot;Government Contributions to International Organisation&quot;,&quot;Excutive Management and Internal &amp; Quality Control&quot;,&quot;Corporate Services&quot;,&quot;Education &amp; Training Services&quot;,&quot;Climate Change&quot;,&quot;Emergency&quot;,&quot;Fiscal Stimulus&quot;,&quot;Aid for-Trade Coordination&quot;,&quot;Commerce Development&quot;,&quot;National Standards Development&quot;,&quot;Community Capacity Building&quot;,&quot;Advancing Research and Development&quot;,&quot;Grants to Youth &amp; Sports Statutory Bodies&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Program&quot;},{&quot;name&quot;:&quot;Activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Management of the State House and President&quot;,&quot;Procedure and Legislative Affairs&quot;,&quot;Security and Protocol&quot;,&quot;Inter-Parliamentary Relations&quot;,&quot;Office of the Leader of the Opposition&quot;,&quot;Committee of the Standing Orders&quot;,&quot;Committee on Parliamentary Privileges and Immunities&quot;,&quot;Committee on the Public Accounts&quot;,&quot;Committee on Institutions&quot;,&quot;Parliamentary Reporting&quot;,&quot;Library and Archives&quot;,&quot;Financial Management&quot;,&quot;Personnel Administration and Maintenance&quot;,&quot;Members Allocation&quot;,&quot;Planning, Management and Investigations&quot;,&quot;Administration of the National Council of Chiefs&quot;,&quot;Funds for 14 Islands Council of Chiefs&quot;,&quot;Planning, Policy &amp; Standards&quot;,&quot;Audit Operations&quot;,&quot;Corporate Services&quot;,&quot;Provision of Legal Advice and Services&quot;,&quot;Planning and Management&quot;,&quot;Institute Criminal Proceedings&quot;,&quot;Representation&quot;,&quot;Court of Appeal&quot;,&quot;Supreme Court&quot;,&quot;Magistrate Courts&quot;,&quot;Island Courts&quot;,&quot;Land Courts&quot;,&quot;Enforcement&quot;,&quot;Judicial Development &amp; Training&quot;,&quot;Corporate Services Unit&quot;,&quot;Human Resource Management&quot;,&quot;Performance Improvement&quot;,&quot;Human Resource Development&quot;,&quot;Citizenship Commission&quot;,&quot;Strategic Management&quot;,&quot;Administration &amp; Coordination of Government Programmes&quot;,&quot;Language Services&quot;,&quot;Cabinet Support Division&quot;,&quot;Office of the Director General&quot;,&quot;Administration &amp; Finance Directorate&quot;,&quot;Policy &amp; Planning Directorate&quot;,&quot;Education Services Directorate&quot;,&quot;Secondary Schools&quot;,&quot;Primary Schools&quot;,&quot;Tertiary Education &amp; Post Schooling&quot;,&quot;Teaching Services Commission&quot;,&quot;OtherAuthority, Boards &amp; Councils&quot;,&quot;Portfolio Management&quot;,&quot;Grants to Provinces&quot;,&quot;Grants to Municipalities&quot;,&quot;Administration of Regional Services&quot;,&quot;Disaster Management&quot;,&quot;Joint Command and Control&quot;,&quot;Police District Northern&quot;,&quot;Police District Central&quot;,&quot;Police District Southern&quot;,&quot;Vanuatu Mobile Force&quot;,&quot;Labour Regulation&quot;,&quot;Electoral Services&quot;,&quot;Conduct of Elections&quot;,&quot;Civil Registry&quot;,&quot;Ministry Executive &amp; Internal Audit&quot;,&quot;Information Services&quot;,&quot;Economic Policy Development&quot;,&quot;Sector Policy Coordination&quot;,&quot;Government Financial Services&quot;,&quot;National Statistical Collection, Analysis &amp; Reporting&quot;,&quot;Grant to VARTC&quot;,&quot;Grant to Maritime College&quot;,&quot;Public Debt Provisions&quot;,&quot;Central Payments&quot;,&quot;Grant to Vanuatu Maritime Administration&quot;,&quot;Customs and Excise Collections&quot;,&quot;VAT Collections&quot;,&quot;Rates and Taxes Collection&quot;,&quot;Trade and Industry Support&quot;,&quot;Border Control&quot;,&quot;Investigation and Legal&quot;,&quot;Peacekeeping Support&quot;,&quot;Commission of the Magistrature&quot;,&quot;Primary Industries Development&quot;,&quot;Provincial Industrial Extension Services&quot;,&quot;Investment Promotion&quot;,&quot;Portfolio Coordination&quot;,&quot;Executive Management&quot;,&quot;Tourism Development&quot;,&quot;Cooperatives Development&quot;,&quot;Ministry Executive&quot;,&quot;Hospital Services&quot;,&quot;Community Health Services&quot;,&quot;Public Health Services&quot;,&quot;Medical Supplies Stock&quot;,&quot;Payroll &amp; Administration&quot;,&quot;Increase production of commodity crops&quot;,&quot;Improve food security&quot;,&quot;Improve food security MALAMPA&quot;,&quot;Improve food security PENAMA&quot;,&quot;Improve food security SANMA&quot;,&quot;Improve quality and safety of agriculture products&quot;,&quot;Improve quality and safety of agriculture products MALAMPA&quot;,&quot;Improve quality and safety of agriculture products PENAMA&quot;,&quot;Improve quality and safety of agriculture products SHEFA&quot;,&quot;Improve quality and safety of agriculture products TAFEA&quot;,&quot;Sustainable management of natural resources&quot;,&quot;Sustainable management of natural resources MALAMPA&quot;,&quot;Sustainable management of natural resources PENAMA&quot;,&quot;Sustainable management of natural resources SANMA&quot;,&quot;Sustainable management of natural resources SHEFA&quot;,&quot;Sustainable management of natural resources TAFEA&quot;,&quot;Resilience towards Climate Change and Natural Resources&quot;,&quot;Energy Management and assessment&quot;,&quot;Environmental management, research and extension Services&quot;,&quot;Land Survey&quot;,&quot;Land Use Planning&quot;,&quot;Lease Management&quot;,&quot;Land Valuation&quot;,&quot;Mines and Minerals&quot;,&quot;Geological Research&quot;,&quot;Water Resources&quot;,&quot;Water Resource Management&quot;,&quot;Director General and Corporate Services&quot;,&quot;Civil Aviation Management and Administration Support&quot;,&quot;Ports Administration&quot;,&quot;Development and Maintenance of Government Infrastructure&quot;,&quot;Airport Maintenance&quot;,&quot;Operations of the Department of Foreign Affairs&quot;,&quot;Trade and Marketing&quot;,&quot;Industry and Commerce&quot;,&quot;Ni-Vanuatu Business Development&quot;,&quot;Cabinet Support Services&quot;,&quot;Grant to VanWoods&quot;,&quot;Weather Forecasting, Monitoring and Research&quot;,&quot;Committee on Economic Policy&quot;,&quot;Committee on Social Policy&quot;,&quot;Policy and Planning&quot;,&quot;Tertiary Education&quot;,&quot;School Support Services Division&quot;,&quot;Executive Management &amp; Support Services&quot;,&quot;Contribution to Sport &amp; Youth Development&quot;,&quot;TVET &amp; Employment Opportunities&quot;,&quot;Police Service Commission&quot;,&quot;Police Maritime Wing&quot;,&quot;Grant to USP and SPBCA&quot;,&quot;Provincial Kava Authority&quot;,&quot;Vanuatu National Sports Council&quot;,&quot;Sustainable management of natural resources TORBA&quot;,&quot;Government Contributions to Projects&quot;,&quot;External Trade Policy and Administration&quot;,&quot;Government Remuneration Tribunal&quot;,&quot;Assistance to People with Disabilities and Children&quot;,&quot;Grants to Institutions&quot;,&quot;Payroll &amp; Administration MALAMPA&quot;,&quot;Improve quality and safety of agriculture products SANMA&quot;,&quot;Valuer General's Office&quot;,&quot;Correctional Services&quot;,&quot;Malvatumauri Members Allowance&quot;,&quot;Public Service Legal Unit&quot;,&quot;Improve food security SHEFA&quot;,&quot;Improve food security TAFEA&quot;,&quot;Improve food security TORBA&quot;,&quot;Women�s Affairs&quot;,&quot;Melanesian Spearhead Group (MSG)&quot;,&quot;Vanuatu Tourism Office (VTO)&quot;,&quot;Vanuatu Agricultural Research and Training Centre (VARTC)&quot;,&quot;Vanuatu Broadcasting and Television Corporation (VBTC)&quot;,&quot;Vanuatu Cultural Centre (VCC)&quot;,&quot;Chamber of Commerce and Industry (CCI)&quot;,&quot;Grant SPBEA&quot;,&quot;Vanuatu Maritime Administration (VMA)&quot;,&quot;Vanuatu Maritime College&quot;,&quot;Utility Regulatory Authority&quot;,&quot;Vanuatu Agriculture College&quot;,&quot;Land Valuation Services&quot;,&quot;Decision Making&quot;,&quot;Administrative Support Services&quot;,&quot;Provincial Statistics Offices&quot;,&quot;Former Leaders Payment&quot;,&quot;Provision for By Election&quot;,&quot;Provision for Lini Memorial&quot;,&quot;Tongoa Earthquake Response&quot;,&quot;Gaua Volcano Response&quot;,&quot;Vanuatu Agriculture Development Bank&quot;,&quot;Mines &amp; Minerals&quot;,&quot;Teaching Service Commission&quot;,&quot;Independence Celebration&quot;,&quot;Issue of Passports&quot;,&quot;Advance to Air Vanuatu&quot;,&quot;Tourism Standards&quot;,&quot;Provincial Tourism Development&quot;,&quot;Improve quality and safety of agriculture products TORBA&quot;,&quot;National Disaster Management&quot;,&quot;Crime Prevention&quot;,&quot;Grant to VIPA&quot;,&quot;Grant to Airports Vanuatu Limited (AVL)&quot;,&quot;Food Technology&quot;,&quot;Policy, Planning, Administration &amp; Financial Comprising&quot;,&quot;Marketing &amp; Promotion Section&quot;,&quot;Lands Tribunal Office&quot;,&quot;Law Commission&quot;,&quot;Civil Aviation Cabinet&quot;,&quot;Geo-hazard&quot;,&quot;Information, Communication and Technology Policy and Administration&quot;,&quot;Training &amp; Scholarship Coordination&quot;,&quot;Vanuatu Intellectual Property Development&quot;,&quot;Fisheries Research and Aquaculture&quot;,&quot;Fisheries Compliance and Licensing&quot;,&quot;Fisheries Development and Capture&quot;,&quot;Fisheries Policy and Management&quot;,&quot;Seafood Verification&quot;,&quot;Supporting institutional capacity, policy, communication and administration&quot;,&quot;Committee on Foreign Affairs &amp; External Trade&quot;,&quot;Committee on Members of Parliament Ethics &amp; Integrity&quot;,&quot;Case Management&quot;,&quot;Parliamentary Secretariat&quot;,&quot;Grant to Vanuatu National Archives&quot;,&quot;Health Sector Human Resource Development&quot;,&quot;Increase production of commodity crops MALAMPA&quot;,&quot;External Trade Negotiation&quot;,&quot;External Trade Policy &amp; Administration&quot;,&quot;Provincial Grants Youth Development&quot;,&quot;Technical, Vocational &amp; Continuing Education&quot;,&quot;Higher Education&quot;,&quot;Teacher Education&quot;,&quot;Trade Development&quot;,&quot;External Trade &amp;Development&quot;,&quot;Youth &amp; Employment Opportunities&quot;,&quot;Government Contributions to International Organisation&quot;,&quot;Manufacturing Industry&quot;,&quot;Land Registry&quot;,&quot;Enforcement &amp; Compliance&quot;,&quot;Excutive Management&quot;,&quot;Internal &amp; Quality Controls&quot;,&quot;Corporate &amp; Planning Services&quot;,&quot;Information &amp; Communication Services&quot;,&quot;Maintenance &amp; Utilities&quot;,&quot;Provincial Education Offices &amp; Education Authorities&quot;,&quot;School Advisory &amp;Improvement&quot;,&quot;Curriculum &amp; Assessment&quot;,&quot;Grants&quot;,&quot;Teachers&quot;,&quot;Urban Roads Developments and Maintenance&quot;,&quot;Climate Change&quot;,&quot;Government employee Entitlements&quot;,&quot;Land Transport Authority&quot;,&quot;Response&quot;,&quot;Employment Stabilization&quot;,&quot;Small Medium Business Support&quot;,&quot;Subsidy&quot;,&quot;Policy &amp; Administration&quot;,&quot;Building&quot;,&quot;Fleet Management&quot;,&quot;External Trade Agreement Implementation&quot;,&quot;Vanuatu Government Scholarship Fund&quot;,&quot;Administration Support&quot;,&quot;CSU Policy and Planning&quot;,&quot;CSU Human Resources Management&quot;,&quot;CSU Finance, Procurement and Assets Management&quot;,&quot;DOI Private Sector Institutional Reforms&quot;,&quot;DOT Admin Support Services&quot;,&quot;DOT Policy and Planning&quot;,&quot;Trade Development Division Support Services&quot;,&quot;Trade Development Division Governance&quot;,&quot;Trade Development Division Policy&quot;,&quot;Trade Development Division Trade Analytical&quot;,&quot;Access to Capital Financing (Commerce)&quot;,&quot;Consumer Protection, Competition and Price Programme&quot;,&quot;Private Sector Institutional Reform&quot;,&quot;VBS Admin Support Services&quot;,&quot;Standards and Certification&quot;,&quot;Laboratory Testing&quot;,&quot;Metrology&quot;,&quot;Product Development&quot;,&quot;ORCBDS Provincial Extension Services&quot;,&quot;Increse production of commodity crops PENAMA&quot;,&quot;Increse production of commodity crops SANMA&quot;,&quot;Increse production of commodity crops SHEFA&quot;,&quot;Increse production of commodity crops TAFEA&quot;,&quot;Increse production of commodity crops TORBA&quot;,&quot;Resilience towards Climate Change and Natural Resources MALAMPA&quot;,&quot;Resilience towards Climate Change and Natural Resources PENAMA&quot;,&quot;Resilience towards Climate Change and Natural Resources SANMA&quot;,&quot;Resilience towards Climate Change and Natural Resources SHEFA&quot;,&quot;Resilience towards Climate Change and Natural Resources TAFEA&quot;,&quot;Resilience towards Climate Change and Natural Resources TORBA&quot;,&quot;Community Capacity Building with focus on gender and youth MALAMPA&quot;,&quot;Community Capacity Building with focus on gender and youth PENAMA&quot;,&quot;Community Capacity Building with focus on gender and youth SANMA&quot;,&quot;Community Capacity Building with focus on gender and youth SHEFA&quot;,&quot;Community Capacity Building with focus on gender and youth TAFEA&quot;,&quot;Community Capacity Building with focus on gender and youth TORBA&quot;,&quot;Support institution capacity, policy, communication,admin MALAMPA&quot;,&quot;Support institution capacity, policy, communication,admin PENAMA&quot;,&quot;Support institution capacity, policy, communication,admin SANMA&quot;,&quot;Support institution capacity, policy, communication,admin SHEFA&quot;,&quot;Support institution capacity, policy, communication,admin TAFEA&quot;,&quot;Support institution capacity, policy, communication,admin TORBA&quot;,&quot;Advancing Research and Development&quot;,&quot;Advancing Research and Development MALAMPA&quot;,&quot;Advancing Research and Development SHEFA&quot;,&quot;Advancing Research and Development TORBA&quot;,&quot;Youth and Sports Development&quot;,&quot;Vanuatu National Sports Commission&quot;,&quot;Vanuatu National Youth Council&quot;,&quot;Climate Change Adaptation&quot;,&quot;Climate Change Mitigation&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activity&quot;},{&quot;name&quot;:&quot;Budget&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Operations&quot;,&quot;Payroll&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Budget&quot;},{&quot;name&quot;:&quot;Budget Type&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Actual&quot;,&quot;Budget&quot;,&quot;Original Budget&quot;,&quot;Budget Supplementary&quot;,&quot;Commitment&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Budget Type&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-indicatordownloads="{&quot;Full dataset&quot;:{&quot;href&quot;:&quot;downloads/full-datasets/full_government-financial-statistics.csv&quot;}}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Original Budget&quot;,&quot;Actual Spent&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Ministry&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Constitutional Agencies&quot;,&quot;Ministry of Agriculture, Livestock, Forestry, Fisheries and Biosecurity&quot;,&quot;Ministry of Climate Change Adaptation, Geohazards, Meteorology and Energy&quot;,&quot;Ministry of Cooperatives and Ni-Vanuatu Business Development Services&quot;,&quot;Ministry of Education &amp; Training&quot;,&quot;Ministry of Finance and Economic Management&quot;,&quot;Ministry of Foreign Affairs, International Cooperation and External Trade&quot;,&quot;Ministry of Health&quot;,&quot;Ministry of Infrastructure and Public Utilities&quot;,&quot;Ministry of Internal Affairs&quot;,&quot;Ministry of Justice and Social Welfare&quot;,&quot;Ministry of Lands, Mines &amp; Water Resources&quot;,&quot;Ministry of Tourism, Trade, Commerce and Ni- Vanuatu Business&quot;,&quot;Ministry of Youth Development and Sports&quot;,&quot;Prime Ministers Ministry&quot;,&quot;Ministry of Agriculture, Livestock, Forestry and Biosecurity&quot;,&quot;Ministry of Fisheries, Oceans and Maritime Affairs&quot;,&quot;Ministry of Youth, Justice and Community Services&quot;,&quot;Ministry of Justice and Community Service&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Ministry&quot;},{&quot;name&quot;:&quot;Department&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Citizenship Office&quot;,&quot;Judiciary&quot;,&quot;Malvatumauri Council of Chiefs&quot;,&quot;National Audit Office&quot;,&quot;Office of the Ombudsman&quot;,&quot;Parliament&quot;,&quot;President of the Republic&quot;,&quot;Public Prosecutor&quot;,&quot;Public Service Commission&quot;,&quot;Public Solicitor&quot;,&quot;State Law Office&quot;,&quot;Agriculture, Quarantine, Forestry and Fisheries Cabinet&quot;,&quot;Department of Agriculture&quot;,&quot;Department of Biosecurity&quot;,&quot;Department of Fisheries&quot;,&quot;Department of Forestry&quot;,&quot;Energy Department&quot;,&quot;Environment Department&quot;,&quot;Vanuatu Meteorological Services&quot;,&quot;Ministry of Cooperatives and Ni-Vanuatu Business Development Services&quot;,&quot;Ministry of Ni-Vanuatu Business Development &amp; Coops Cabinet&quot;,&quot;Director General Directorate&quot;,&quot;MoE Cabinet&quot;,&quot;Department of Customs and Inland Revenue&quot;,&quot;Department of Finance &amp; Treasury&quot;,&quot;Economic Research &amp; Expenditure Analysis Unit&quot;,&quot;MFEM Cabinet&quot;,&quot;National Statistics Office&quot;,&quot;Department of External Trade, Industry and Investment&quot;,&quot;Department of Foreign Affairs&quot;,&quot;Ministry of Foreign Affairs Cabinet&quot;,&quot;Department of Health&quot;,&quot;Health Cabinet&quot;,&quot;Civil Aviation Authority&quot;,&quot;Department of Ports and Harbours&quot;,&quot;Department of Public Works&quot;,&quot;MIPU Cabinet&quot;,&quot;Civil Registry Office&quot;,&quot;Department of Immigration&quot;,&quot;Department of Labour&quot;,&quot;Department of Provincial Affairs&quot;,&quot;Electoral Office&quot;,&quot;Internal Affairs Cabinet&quot;,&quot;Vanuatu Police Force&quot;,&quot;Department of Womens Affairs&quot;,&quot;Ministry of Justice and Community Service&quot;,&quot;Corporate Services&quot;,&quot;Department of Geology and Mines&quot;,&quot;Department of Land Records&quot;,&quot;Department of Land Survey&quot;,&quot;Department of Lands&quot;,&quot;Department of Cooperatives and Ni-Vanuatu Business Development&quot;,&quot;Department of Tourism&quot;,&quot;Ministry of Commerce, Industry and Tourism Cabinet&quot;,&quot;Vanuatu Investment Promotion Authority&quot;,&quot;Ministry of Youth Development and Training&quot;,&quot;Department of Strategic Policy Cordination &amp; Corporate Services&quot;,&quot;Language Services Department&quot;,&quot;Prime Ministers Cabinet&quot;,&quot;Correctional Services&quot;,&quot;Department of Youth and Sport&quot;,&quot;Judicial Services Commission&quot;,&quot;Ministry of Justice &amp; Social Welfare Corporate Service Unit&quot;,&quot;Cabinet Operations&quot;,&quot;Valuer General&quot;,&quot;Trade and Ni Vanuatu Business Corporate Service Unit&quot;,&quot;National Disaster Management Office&quot;,&quot;Education Commissions and Councils&quot;,&quot;MFEM Corporate Services&quot;,&quot;Police Service Commission&quot;,&quot;Customary land management Office&quot;,&quot;Vanuatu Law Commission&quot;,&quot;Department of Industry&quot;,&quot;Livestock&quot;,&quot;Government Remuneration Tribunal&quot;,&quot;Office of the Government Chief Information Officer&quot;,&quot;PMO Corporate Service Unit&quot;,&quot;Vanuatu Project Management Unit&quot;,&quot;Climate Change Adaptation, Geohazards, Meteorology and Energy Cabinet&quot;,&quot;Parliamentary Secretariat&quot;,&quot;Vanuatu Mobile Force&quot;,&quot;MoCC Coporate Service Unit&quot;,&quot;Education Service Directorate&quot;,&quot;Finance &amp; Administration Directorate&quot;,&quot;Policy &amp; Planning Directorate&quot;,&quot;Tertiary Education Directorate&quot;,&quot;Parliament Secretariat - Ministry of Agriculture&quot;,&quot;Department of Climate Change&quot;,&quot;Office of the Attorney General&quot;,&quot;Ministry of Fisheries, Oceans and Maritime Affairs&quot;,&quot;Department of Ports and Harbour&quot;,&quot;Commerce Development&quot;,&quot;Cooperatives Development&quot;,&quot;Intellectual Property Development and Protection&quot;,&quot;National Standards Development&quot;,&quot;Trade Development Division&quot;,&quot;Ministry of Youth, Justice and Community Services&quot;,&quot;Department of Communications and Digital Transformation&quot;,&quot;MALFFB Coporate Services&quot;,&quot;Department of Urban Affairs and Planning&quot;,&quot;Vanuatu Maritime Safety Authority&quot;,&quot;Public Land Transport Authority&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Department&quot;},{&quot;name&quot;:&quot;Unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Millions in Vatu (VUV)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
-  data-proxyseries="null"
+  data-proxyseries="[]"
   
   data-mappoints="null"
   
@@ -818,43 +799,112 @@ data-event-label="Change to indicator.sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definition </th>
+        <td>
+          
+            <p>The indicator “Government Budget Allocation by Ministry” tracks the amount of public funds allocated to each Ministry in the original government budget for a given year. It reflects the government’s planned spending priorities across sectors.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Concept </th>
+        <td>
+          
+            <p>This indicator reflects the concept of public resource allocation as a tool for implementing national priorities and ensuring fiscal transparency. It captures how governments plan to distribute funds across sectors, aligning with principles of efficiency, accountability, and equity. Budget allocations signal political intent and are essential for understanding how policies are resourced and operationalized.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
+      
+      <tr>
+        <th scope="row">Rationale </th>
+        <td>
+          
+            <p>Monitoring government budget allocation by ministry is essential for assessing how public resources are distributed across policy areas. It provides insight into government priorities and commitments, such as education, health, and infrastructure. It can be used for tracking policy alignment with development goals and for fiscal accountability and transparency. Interpreting shifts over time can reveal changes in focus or responses to macroeconomic conditions and sectoral needs.</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
+          
+            <p>Aggregate the budget values from the dataset for each ministry under the “Original Budget” series for the specified year. If needed, this can be disaggregated further by department or used to compute relative shares of the total budget.</p>
+
+<p>Formula: 
+Budget Allocation for Ministry (M, year Y) = ∑ Budget Value (Original Budget) for Ministry M in year Y</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
-      
-      
-      
-        
+            <p>Millions of Vatu</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
           
-      
-      
-      
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
         
-          
       
-      
-      
-        
-          
-      
-      
-      
-        
-          
+  
   
   
   
@@ -965,12 +1015,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

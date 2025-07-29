@@ -12,11 +12,23 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Debt Ratio to GDP (%)",
+                "Debt (million vatu)",
+                "GDP Constant (million vatu)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +36,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-3-2",
-  "title": "ECO1-3-2"
+  "title": "indicators.ECO1-3-2-title"
 }

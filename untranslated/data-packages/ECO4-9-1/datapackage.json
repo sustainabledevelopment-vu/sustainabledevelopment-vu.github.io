@@ -12,11 +12,41 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Legal Status of Business",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Branch of a Foreign Entity",
+                "Co-operative",
+                "Non-profit Organisation Serving Household",
+                "Partnership",
+                "Private Limited Company",
+                "Sole Trader/un Incorporated",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +54,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-9-1",
-  "title": "ECO4-9-1"
+  "title": "indicators.ECO4-9-1-title"
 }

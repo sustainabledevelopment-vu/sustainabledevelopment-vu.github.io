@@ -12,11 +12,37 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Endangered Languages",
+                "Total Languages ",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +50,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-1-3",
-  "title": "SOC1-1-3"
+  "title": "indicators.SOC1-1-3-title"
 }

@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO4
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO4
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO4
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -859,22 +841,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>refers to the overall quantity or count of processed goods that are manufactured or made within Vanuatu during a one-year period. These products undergo some form of processing or transformation, such as refining, manufacturing, packaging, or other value-added activities.</p>
-
-<p>The purpose of producing these local products is twofold:</p>
-
-<ol>
-  <li>
-    <p>Domestic consumption: They are intended for use within the country or region where they are produced. These products cater to the local market and fulfill the demands and needs of the population residing within that area.</p>
-  </li>
-  <li>
-    <p>Export: The products are also manufactured with the intention of being sold and distributed in international markets. They are meant for consumption by customers located outside the country or region of origin. Exporting local products allows a country to generate revenue, boost economic growth, and enhance its trade relations with other nations.</p>
-  </li>
-</ol>
-
-<p>The “Total number” in this context represents the aggregate count of these processed local products. It could be measured in terms of individual units, such as kilograms, liters, pieces, or any other appropriate unit of measurement based on the nature of the product.</p>
-
-<p>The timeframe considered for this measurement is “per annum,” which means it represents the production and processing of local products over a one-year period.</p>
+            <p>The “Total Number of Processed Local Products Produced Per Annum for Domestic Consumption and Export” indicator measures the total quantity of locally sourced and processed products that are produced annually for both domestic consumption and export markets. These products include goods that have undergone value-added processing within the country, such as food items, beverages, textiles, and other manufactured goods derived from local raw materials.</p>
 
           
         </td>
@@ -890,7 +857,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>To find the total number of processed local products produce annually for domestic consumption and export so that Vanuatu can look for ways to increase by 10% production and processing niche commodities by 2020.</p>
+            <p>This indicator tracks the production volume of processed goods that originate from local raw materials and are either consumed domestically or exported. Processing local products adds value to raw materials, enhances the economic potential of local industries, and can contribute significantly to a country’s GDP. The indicator provides insights into the capacity and growth of the local processing industry, the extent of value addition, and the potential of local products to compete in both domestic and international markets.</p>
 
           
         </td>
@@ -901,8 +868,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -911,7 +889,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>To depict total number of processed local products produced per anum for domestic consumption and export. So that production of processed local products must increase by 10% by the year 2020. And therefore, enabling a competitive business environment and creating more opportunities and employments for entrepreneurs throughout Vanuatu.</p>
+            <p>Monitoring the total number of processed local products produced per annum is crucial for understanding the development of the local processing industry and its contribution to the economy. A high production volume indicates a strong processing sector that adds value to raw materials, creates jobs, and generates income through domestic sales and exports.</p>
 
           
         </td>
@@ -927,7 +905,10 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>For products intended for export, trade data can be utilized. Customs department and statistics trade organizations maintain records of exports, including the quantity or volume of goods shipped to different destinations. By analyzing this trade data, you can determine the total number of processed local products exported during a given period.</p>
+            <p>To compute the “Total Number of Processed Local Products Produced Per Annum for Domestic Consumption and Export,” first collect data on the total production volumes of locally processed products for the year. Categorize the data based on whether the products are intended for domestic consumption or export. Sum the total number of processed products produced for both domestic and export markets to obtain the overall production figure for the year.</p>
+
+<p>Formula:
+Total Number of Processed Local Products= Total Processed Products for Domestic Consumption + Total Processed Products for Export</p>
 
           
         </td>
@@ -960,7 +941,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>vatu in millions</p>
+            <p>Number</p>
 
           
         </td>
@@ -976,7 +957,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>Annually</p>
+            <p>Every 5 years</p>
 
           
         </td>
@@ -1094,12 +1075,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

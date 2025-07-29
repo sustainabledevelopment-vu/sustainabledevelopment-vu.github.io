@@ -15,51 +15,105 @@
             "type": "integer"
           },
           {
-            "name": "Series",
+            "name": "Province",
             "type": "string",
             "constraints": {
               "enum": [
-                "Population3+currentlyattendinganeducationalinstitution",
-                "Population15+highestlevelofeducationcompleted",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "PortVila",
-                "Luganville",
-                "Torba",
-                "Sanma",
-                "Penama",
                 "Malampa",
+                "Penama",
+                "Sanma",
                 "Shefa",
                 "Tafea",
-                "Luganvile",
+                "Torba",
                 ""
               ]
             }
           },
           {
-            "name": "TypeofSchool",
+            "name": "Island",
             "type": "string",
             "constraints": {
               "enum": [
-                "Pre-school",
-                "Primary",
-                "Juniorsecondary",
-                "Seniorsecondary",
-                "Tertiary",
+                "Ambrym",
+                "Atchin",
+                "Avock",
+                "Malekula",
+                "Maskelyns",
+                "Paama",
+                "Uripiv",
+                "Vao",
+                "Ambae",
+                "Maewo",
+                "Pentecost",
+                "Aore",
+                "Araki",
+                "Malo",
+                "Mavea",
+                "Santo",
+                "Tutuba",
+                "Buninga",
+                "Efate",
+                "Emae",
+                "Emao",
+                "Epi",
+                "Ifira",
+                "Lamen",
+                "Lelepa",
+                "Makira",
+                "Matoso",
+                "Moso",
+                "Nguna",
+                "Pele",
+                "Tongariki",
+                "Tongoa",
+                "Aneityum",
+                "Aniwa",
+                "Erromango",
+                "Futuna",
+                "Tanna",
+                "Gaua",
+                "Hiu",
+                "Loh",
+                "Mere Lava",
+                "Mota",
+                "Mota Lava",
+                "Rah",
+                "Tegua",
+                "Toga",
+                "Ureparapara",
+                "Vanua Lava",
+                "Tomman",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Class",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PreSchool",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }

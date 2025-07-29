@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -462,6 +444,13 @@ data-event-label="high"
 
   
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>From 2016 to 2020, Vanuatu recorded sustained trade deficits, with annual balances ranging from -44.4 billion to -29.3 billion Vatu. The narrowing deficit over time suggests a modest improvement in the balance between imports and exports, though the country remained a net importer throughout the period. While disaggregated data by partner country is unavailable, these aggregate trends indicate the need to strengthen export competitiveness.</p>
+
+  </div>
+</div>
+
 
   
     <p>
@@ -658,7 +647,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: VBOS, trade statistics</p>
+    <p>Source: Customs & Inland Revenue Department</p>
     
     
     <p>Geographical Area: Vanuatu</p>
@@ -989,7 +978,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Balance of trade is the difference between the value of a country’s exports and the value of a country’s imports for a given period.</p>
+            <p>The “Balance of Trade by Major Partner Countries” indicator measures the difference between the value of a country’s exports and imports with its major trading partner countries over a specific period, usually annually or quarterly. This balance indicates whether the country has a trade surplus (exports exceed imports) or a trade deficit (imports exceed exports) with each of its key trading partners.</p>
 
           
         </td>
@@ -1005,7 +994,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>A country that imports more goods and services that it exports in terms of value has a trade deficit or a negative trade balance. Conversely, a country that exports more goods and services than it imports has a trade surplus or a psoitive trade balance.</p>
+            <p>This indicator tracks the trade relationships between a country and its major trading partners by calculating the balance of trade for each partner. The balance of trade is a critical component of a country’s current account and reflects the competitiveness of its goods and services in international markets. By focusing on major trading partners, this indicator provides insights into the bilateral trade dynamics that are most significant to the country’s economy.</p>
 
           
         </td>
@@ -1021,7 +1010,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>country</p>
+            <p>Country</p>
 
           
         </td>
@@ -1037,27 +1026,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Economists use the Balance of Trade to measure the relative strength of a country’s economy. The rationale behind analyzing the balance of trade includes the following points:</p>
-
-<ol>
-  <li>
-    <p>Trade Surplus or Deficit: The balance of trade reveals whether a country has a trade surplus or a trade deficit. A trade surplus occurs when a country’s exports exceed its imports, indicating that it is earning more foreign currency than it is spending. A trade deficit, on the other hand, occurs when imports exceed exports, suggesting that the country is spending more foreign currency than it is earning. The balance of trade helps assess the competitiveness of a nation’s industries and its ability to generate wealth through exports.</p>
-  </li>
-  <li>
-    <p>Economic Competitiveness: Analyzing the balance of trade allows policymakers and economists to gauge a country’s economic competitiveness in global markets. A consistently positive balance of trade indicates that a country’s goods and services are in demand internationally, potentially reflecting its competitive advantage in certain industries. Conversely, a persistent trade deficit may raise concerns about a country’s competitiveness and its ability to sustain economic growth.</p>
-  </li>
-  <li>
-    <p>Domestic Production and Consumption: The balance of trade provides insights into the domestic production and consumption patterns of a country. A trade surplus suggests that the country’s domestic industries are productive and can meet domestic demand while exporting the surplus. In contrast, a trade deficit might indicate that the country relies heavily on imports to meet domestic consumption, which could have implications for domestic industries and employment.</p>
-  </li>
-  <li>
-    <p>Foreign Exchange Reserves: The balance of trade affects a country’s foreign exchange reserves, which are crucial for maintaining currency stability and covering external obligations. A trade surplus leads to an inflow of foreign currency, bolstering a country’s foreign exchange reserves and providing greater flexibility in managing its currency. Conversely, a trade deficit implies an outflow of foreign currency, potentially depleting foreign exchange reserves and exposing the country to currency risks.</p>
-  </li>
-  <li>
-    <p>Policy Implications: The balance of trade influences policy decisions. A trade surplus might suggest the need to focus on export promotion, support domestic industries, and potentially implement policies to address currency appreciation. In contrast, a trade deficit may lead to considerations such as import substitution policies, efforts to boost domestic production, or initiatives to enhance export competitiveness.</p>
-  </li>
-</ol>
-
-<p>Understanding the balance of trade helps policymakers, economists, and analysts assess a country’s economic performance, identify trade patterns, determine areas of strength or weakness, and formulate appropriate policies to address trade imbalances and promote sustainable economic growth.</p>
+            <p>Monitoring the balance of trade by major partner countries is crucial for understanding the structure of a country’s external trade and its economic relationships with key international markets. A trade surplus with a major partner may indicate a strong competitive position in that market, while a trade deficit could suggest reliance on imports or challenges in export performance.</p>
 
           
         </td>
@@ -1073,7 +1042,10 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>The formula for calculating the Balance of Trade can be simplified as the total value of exports minus the total value of its imports.</p>
+            <p>To compute the “Balance of Trade by Major Partner Countries,” first identify the country’s major trading partners based on trade volume and value. Then, collect data on the total value of exports to and imports from each of these partners for the specified period. Calculate the trade balance for each partner by subtracting the value of imports from the value of exports. A positive balance indicates a trade surplus, while a negative balance indicates a trade deficit.</p>
+
+<p>Formula:
+Trade Balance with Country X= Value of Exports to Country X – Value of Imports from Country X</p>
 
           
         </td>
@@ -1089,9 +1061,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>17.11
-17.11.1
-(Tier 1)</p>
+            <p>17.11.1</p>
 
           
         </td>
@@ -1107,7 +1077,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Unit of Measurement </th>
         <td>
           
-            <p>Millions of Vatu (VT)</p>
+            <p>Vatu in Millions</p>
 
           
         </td>
@@ -1123,7 +1093,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>Annual</p>
+            <p>Monthly</p>
 
           
         </td>
@@ -1241,12 +1211,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -1,1 +1,21 @@
-Year,Value
+Year,Series,Export Type,Value
+2021,Ratio (value),,3
+2022,Ratio (value),,5
+2023,Ratio (value),,2
+2024,Ratio (value),,1
+2021,Value (million vatu),Processed,2856
+2022,Value (million vatu),Processed,3009
+2023,Value (million vatu),Processed,3613
+2024,Value (million vatu),Processed,3796
+2021,Value (million vatu),Raw,1125
+2022,Value (million vatu),Raw,649
+2023,Value (million vatu),Raw,1468
+2024,Value (million vatu),Raw,2770
+2021,Quantity (tonnes),Processed,8043
+2022,Quantity (tonnes),Processed,6467
+2023,Quantity (tonnes),Processed,11698
+2024,Quantity (tonnes),Processed,6882
+2021,Quantity (tonnes),Raw,47178
+2022,Quantity (tonnes),Raw,1058
+2023,Quantity (tonnes),Raw,1284
+2024,Quantity (tonnes),Raw,1636

@@ -12,12 +12,37 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Lifetime",
+                "Last 12 Months",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Type of Violence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Emotional",
+                "Physical",
+                "Sexual",
+                ""
+              ]
+            },
+            "title": "Type of Violence"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +51,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-2-3",
-  "title": "SOC4-2-3"
+  "title": "Percentage of reported cases of violence against women, children, and vulnerable people addressed"
 }

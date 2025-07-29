@@ -12,11 +12,34 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Lifetime",
+                "Last 12 Months",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Type of Violence",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Emotional",
+                "Physical",
+                "Sexual",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +47,5 @@
   ],
   "profile": "data-package",
   "name": "SOC4-2-3",
-  "title": "SOC4-2-3"
+  "title": "indicators.SOC4-2-3-title"
 }

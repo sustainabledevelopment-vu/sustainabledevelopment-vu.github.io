@@ -12,12 +12,25 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Proportion (%)",
+                "Remittances (million vatu)",
+                "GDP Constant (million vatu)",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Value",
+            "type": "number",
             "title": "Value"
           }
         ]
@@ -26,5 +39,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-7-3",
-  "title": "ECO4-7-3"
+  "title": "Total annual remittances as a proportion of GDP"
 }

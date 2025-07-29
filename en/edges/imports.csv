@@ -1,3 +1,3 @@
 From,To
-Principal Import,Main Country of Origin
-Unit,Principal Import
+Commodity,Country
+Unit,Commodity

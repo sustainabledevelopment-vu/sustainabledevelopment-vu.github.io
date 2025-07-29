@@ -12,11 +12,24 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +37,5 @@
   ],
   "profile": "data-package",
   "name": "SOC2-4-1",
-  "title": "SOC2-4-1"
+  "title": "indicators.SOC2-4-1-title"
 }

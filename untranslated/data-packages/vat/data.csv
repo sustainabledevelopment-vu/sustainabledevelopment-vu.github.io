@@ -1,1 +1,109 @@
-Year,Value
+Year,Industry,Unit,Value
+2018,,Millions in Vatu (VUV),136704
+2019,,Millions in Vatu (VUV),133037
+2020,,Millions in Vatu (VUV),123845
+2021,,Millions in Vatu (VUV),177595
+2022,,Millions in Vatu (VUV),223131
+2023,,Millions in Vatu (VUV),201901
+2018,Crop Production,Millions in Vatu (VUV),234
+2018,Animal Production,Millions in Vatu (VUV),"1,178"
+2018,Forestry,Millions in Vatu (VUV),68
+2018,Fishing,Millions in Vatu (VUV),30
+2018,Mining and Quarrying,Millions in Vatu (VUV),0
+2018,Manufacturing,Millions in Vatu (VUV),"5,558"
+2018,Electricity & Water Supply,Millions in Vatu (VUV),"3,608"
+2018,Construction,Millions in Vatu (VUV),"4,394"
+2018,Wholesale and Retail Trade,Millions in Vatu (VUV),"52,603"
+2018,Transport,Millions in Vatu (VUV),"9,724"
+2018,Accommodation and Food Services,Millions in Vatu (VUV),"8,901"
+2018,Information and Communication,Millions in Vatu (VUV),"7,065"
+2018,Finance and Insurance,Millions in Vatu (VUV),"3,037"
+2018,Real Estate,Millions in Vatu (VUV),"3,368"
+2018,Professional Services ,Millions in Vatu (VUV),"9,869"
+2018,Public Administration ,Millions in Vatu (VUV),"24,651"
+2018,"Education, Health and Other Services",Millions in Vatu (VUV),"2,416"
+2019,Crop Production,Millions in Vatu (VUV),268
+2019,Animal Production,Millions in Vatu (VUV),"1,545"
+2019,Forestry,Millions in Vatu (VUV),102
+2019,Fishing,Millions in Vatu (VUV),120
+2019,Mining and Quarrying,Millions in Vatu (VUV),0
+2019,Manufacturing,Millions in Vatu (VUV),"6,915"
+2019,Electricity & Water Supply,Millions in Vatu (VUV),"3,596"
+2019,Construction,Millions in Vatu (VUV),"4,697"
+2019,Wholesale and Retail Trade,Millions in Vatu (VUV),"54,507"
+2019,Transport,Millions in Vatu (VUV),"9,609"
+2019,Accommodation and Food Services,Millions in Vatu (VUV),"9,259"
+2019,Information and Communication,Millions in Vatu (VUV),"7,371"
+2019,Finance and Insurance,Millions in Vatu (VUV),"3,118"
+2019,Real Estate,Millions in Vatu (VUV),"3,553"
+2019,Professional Services ,Millions in Vatu (VUV),"11,034"
+2019,Public Administration ,Millions in Vatu (VUV),"15,019"
+2019,"Education, Health and Other Services",Millions in Vatu (VUV),"2,323"
+2020,Crop Production,Millions in Vatu (VUV),305
+2020,Animal Production,Millions in Vatu (VUV),"1,171"
+2020,Forestry,Millions in Vatu (VUV),105
+2020,Fishing,Millions in Vatu (VUV),158
+2020,Mining and Quarrying,Millions in Vatu (VUV),0
+2020,Manufacturing,Millions in Vatu (VUV),"6,870"
+2020,Electricity & Water Supply,Millions in Vatu (VUV),"3,343"
+2020,Construction,Millions in Vatu (VUV),"6,037"
+2020,Wholesale and Retail Trade,Millions in Vatu (VUV),"49,894"
+2020,Transport,Millions in Vatu (VUV),"6,292"
+2020,Accommodation and Food Services,Millions in Vatu (VUV),"4,000"
+2020,Information and Communication,Millions in Vatu (VUV),"7,282"
+2020,Finance and Insurance,Millions in Vatu (VUV),"2,942"
+2020,Real Estate,Millions in Vatu (VUV),"2,365"
+2020,Professional Services ,Millions in Vatu (VUV),"9,746"
+2020,Public Administration ,Millions in Vatu (VUV),"21,486"
+2020,"Education, Health and Other Services",Millions in Vatu (VUV),"1,849"
+2021,Crop Production,Millions in Vatu (VUV),376
+2021,Animal Production,Millions in Vatu (VUV),"1,116"
+2021,Forestry,Millions in Vatu (VUV),121
+2021,Fishing,Millions in Vatu (VUV),189
+2021,Mining and Quarrying,Millions in Vatu (VUV),0
+2021,Manufacturing,Millions in Vatu (VUV),"8,663"
+2021,Electricity & Water Supply,Millions in Vatu (VUV),"4,531"
+2021,Construction,Millions in Vatu (VUV),"7,807"
+2021,Wholesale and Retail Trade,Millions in Vatu (VUV),"76,774"
+2021,Transport,Millions in Vatu (VUV),"10,589"
+2021,Accommodation and Food Services,Millions in Vatu (VUV),"4,150"
+2021,Information and Communication,Millions in Vatu (VUV),"12,880"
+2021,Finance and Insurance,Millions in Vatu (VUV),"3,579"
+2021,Real Estate,Millions in Vatu (VUV),"2,523"
+2021,Professional Services ,Millions in Vatu (VUV),"13,147"
+2021,Public Administration ,Millions in Vatu (VUV),"28,564"
+2021,"Education, Health and Other Services",Millions in Vatu (VUV),"2,586"
+2022,Crop Production,Millions in Vatu (VUV),240
+2022,Animal Production,Millions in Vatu (VUV),"1,653"
+2022,Forestry,Millions in Vatu (VUV),123
+2022,Fishing,Millions in Vatu (VUV),197
+2022,Mining and Quarrying,Millions in Vatu (VUV),0
+2022,Manufacturing,Millions in Vatu (VUV),"12,258"
+2022,Electricity & Water Supply,Millions in Vatu (VUV),"6,248"
+2022,Construction,Millions in Vatu (VUV),"8,296"
+2022,Wholesale and Retail Trade,Millions in Vatu (VUV),"95,844"
+2022,Transport,Millions in Vatu (VUV),"12,517"
+2022,Accommodation and Food Services,Millions in Vatu (VUV),"8,221"
+2022,Information and Communication,Millions in Vatu (VUV),"12,169"
+2022,Finance and Insurance,Millions in Vatu (VUV),"5,045"
+2022,Real Estate,Millions in Vatu (VUV),"3,954"
+2022,Professional Services ,Millions in Vatu (VUV),"16,104"
+2022,Public Administration ,Millions in Vatu (VUV),"36,571"
+2022,"Education, Health and Other Services",Millions in Vatu (VUV),"3,691"
+2023,Crop Production,Millions in Vatu (VUV),7
+2023,Animal Production,Millions in Vatu (VUV),48
+2023,Forestry,Millions in Vatu (VUV),46
+2023,Fishing,Millions in Vatu (VUV),588
+2023,Mining and Quarrying,Millions in Vatu (VUV),268
+2023,Manufacturing,Millions in Vatu (VUV),"28,948"
+2023,Electricity & Water Supply,Millions in Vatu (VUV),21
+2023,Construction,Millions in Vatu (VUV),"13,618"
+2023,Wholesale and Retail Trade,Millions in Vatu (VUV),"86,484"
+2023,Transport,Millions in Vatu (VUV),"14,088"
+2023,Accommodation and Food Services,Millions in Vatu (VUV),"6,722"
+2023,Information and Communication,Millions in Vatu (VUV),"3,783"
+2023,Finance and Insurance,Millions in Vatu (VUV),772
+2023,Real Estate,Millions in Vatu (VUV),"2,397"
+2023,Professional Services ,Millions in Vatu (VUV),"30,428"
+2023,Public Administration ,Millions in Vatu (VUV),0
+2023,"Education, Health and Other Services",Millions in Vatu (VUV),"13,682"

@@ -16,30 +16,6 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Skilled Health Professionals Ratio, Doctors",
-                "Skilled Health Professionals Ratio, Nurses",
-                "Skilled Health Professionals Ratio, Midwives",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
             "type": "number",
             "title": "Value"
@@ -50,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "SOC3-1-1",
-  "title": "SOC3-1-1"
+  "title": "Number of skilled health professionals to 10,000 population"
 }

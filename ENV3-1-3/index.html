@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV3
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV3
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV3
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -436,12 +418,38 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2></h2>
+  </div>
+</div>
+
 
   
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
+
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>The Climate Change and Disaster Risk Reduction (CCDRR) Policy Implementation Plan provides a clear framework for aligning sectoral programs with national climate change (CC) and disaster risk management (DRM) priorities. It outlines the roles and responsibilities of all key stakeholders—across government ministries, provincial authorities, civil society, development partners, and the private sector—who are actively implementing components of the CCDRR policy. This coordinated approach ensures that sectoral plans, projects, and legislation are aligned with national climate resilience and disaster risk reduction goals, promoting coherence, avoiding duplication, and strengthening the overall impact of Vanuatu’s climate and disaster policies.</p>
+
+  </div>
+</div>
 
 
   
@@ -461,26 +469,26 @@ data-event-label="high"
   data-id="ENV3-1-3"
   data-country="Vanuatu"
   data-charttitle="Alignment of sector stakeholders’ programs and CC & DRM policies and legislation"
-  data-charttitles="null"
+  data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="null"
+  data-precision="[]"
   data-proxy=""
-  data-proxyseries="null"
+  data-proxyseries="[]"
   
   data-mappoints="null"
   
@@ -559,8 +567,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -569,7 +588,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>A Policy to be implemented anytime there is Change in Climate over time whether due to natural variability or as a result of human activity. Disaster risk governance is the system of institutions, mechanisms, policy and legal frameworks and other arrangements to guide, coordinate and oversee disaster risk reduction and related areas of policy.</p>
+            <p>The “Alignment of Sector Stakeholders’ Programs with Climate Change (CC) &amp; Disaster Risk Management (DRM) Policies and Legislation” indicator measures the extent to which the programs and activities of various sector stakeholders (including government agencies, NGOs, private sector entities, and community organizations) are aligned with national policies and legislation on climate change and disaster risk management. This alignment reflects how well sectoral actions support and are integrated into broader climate and disaster resilience objectives.</p>
 
           
         </td>
@@ -585,7 +604,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>It is a systematic approach for identifying, assessing and reducing the risks of disaster. It aims to reduce socio-economic vulnerabilities to disaster as well as dealing with the environmental and other hazards that trigger them.</p>
+            <p>This indicator tracks the degree of coherence and coordination between the programs of sector stakeholders and the overarching policies and legislation on climate change and disaster risk management. Alignment ensures that sector-specific initiatives contribute to national goals, avoid conflicts or redundancies, and effectively address the challenges posed by climate change and disasters. The indicator helps to assess whether sector stakeholders are working in a coordinated manner to achieve common objectives in climate resilience and disaster preparedness.</p>
 
           
         </td>
@@ -596,8 +615,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Sector</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -606,7 +636,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>It should be a policy document that will incorporates recommendations from the risk assessment which analysed Vanuatu’s climate change and disaster risk governance capacity and needs at both national and local levels, and from local, provincial and national consultations. It aims to be accessible to and implemented by all government agencies and non-governmental stakeholders. The policy should take a practical approach, taking into consideration Vanuatu’s resources, exposure to risks, and demographic situation.</p>
+            <p>Monitoring the alignment of sector stakeholders’ programs with CC &amp; DRM policies and legislation is critical for ensuring a unified and effective approach to managing climate and disaster risks. When programs are aligned with national policies, it enhances the effectiveness of interventions, maximizes resource use, and ensures that all sectors contribute to building resilience.</p>
 
           
         </td>
@@ -617,23 +647,70 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
-      
-      
-      
-        
+            <p>To assess the “Alignment of Sector Stakeholders’ Programs with Climate Change (CC) &amp; Disaster Risk Management (DRM) Policies and Legislation,” first identify the relevant programs of key sector stakeholders. Then, review the national CC &amp; DRM policies and legislation to determine the key objectives and requirements. Next, assess the degree of alignment between each stakeholder’s programs and these national policies. Optionally, create a scoring system to quantify the level of alignment, or calculate the proportion of programs that are fully aligned by dividing the number of aligned programs by the total number of programs reviewed and expressing the result as a percentage.</p>
+
+<p>Formula:
+Proportion of Aligned Programs (%) = (Number of Fully or Partially Aligned Programs/Total Number of Assessed Programs) * 100</p>
+
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Sustainable Development Goal Indicator Alignment </th>
+        <td>
           
-      
-      
-      
+            <p>13.2.1</p>
+
+          
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Frequency of Collection </th>
+        <td>
+          
+            <p>Annually</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -725,6 +802,8 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -742,12 +821,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

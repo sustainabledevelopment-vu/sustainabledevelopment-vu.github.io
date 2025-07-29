@@ -12,12 +12,25 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Loan to Deposit Ratio (%)",
+                "Deposit to Liability Ratio (%)",
+                "Deposit to Asset Ratio (%)",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +39,5 @@
   ],
   "profile": "data-package",
   "name": "ECO1-8-3",
-  "title": "ECO1-8-3"
+  "title": "Deposit ratios"
 }

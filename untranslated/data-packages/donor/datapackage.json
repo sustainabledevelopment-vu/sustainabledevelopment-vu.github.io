@@ -12,11 +12,156 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Original Budget",
+                "Actual Spent",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Ministry",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Constitutional Agencies",
+                "Ministry of Agriculture, Livestock, Forestry, Fisheries and Biosecurity",
+                "Ministry of Climate Change Adaptation, Geohazards, Meteorology and Energy",
+                "Ministry of Education & Training",
+                "Ministry of Finance and Economic Management",
+                "Ministry of Foreign Affairs, International Cooperation and External Trade",
+                "Ministry of Health",
+                "Ministry of Infrastructure and Public Utilities",
+                "Ministry of Internal Affairs",
+                "Ministry of Justice and Social Welfare",
+                "Ministry of Lands, Mines & Water Resources",
+                "Ministry of Tourism, Trade, Commerce and Ni- Vanuatu Business",
+                "Prime Ministers Ministry",
+                "Ministry of Youth Development and Sports",
+                "Ministry of Agriculture, Livestock, Forestry and Biosecurity",
+                "Ministry of Fisheries, Oceans and Maritime Affairs",
+                "Ministry of Youth, Justice and Community Services",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Department",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "State Law Office",
+                "Agriculture, Quarantine, Forestry and Fisheries Cabinet",
+                "Department of Biosecurity",
+                "Department of Fisheries",
+                "Department of Forestry",
+                "Energy Department",
+                "Environment Department",
+                "Vanuatu Meteorological Services",
+                "Director General Directorate",
+                "Department of Finance & Treasury",
+                "Economic Research & Expenditure Analysis Unit",
+                "National Statistics Office",
+                "Department of External Trade, Industry and Investment",
+                "Department of Foreign Affairs",
+                "Ministry of Foreign Affairs Cabinet",
+                "Department of Health",
+                "Department of Public Works",
+                "MIPU Cabinet",
+                "Department of Provincial Affairs",
+                "Internal Affairs Cabinet",
+                "Department of Womens Affairs",
+                "Department of Geology and Mines",
+                "Department of Tourism",
+                "Vanuatu Investment Promotion Authority",
+                "Department of Strategic Policy Cordination & Corporate Services",
+                "Prime Ministers Cabinet",
+                "Judiciary",
+                "Public Service Commission",
+                "MFEM Cabinet",
+                "Civil Aviation Authority",
+                "Vanuatu Police Force",
+                "Department of Cooperatives and Ni-Vanuatu Business Development",
+                "Ministry of Youth Development and Training",
+                "Parliament",
+                "Correctional Services",
+                "Office of the Ombudsman",
+                "Department of Agriculture",
+                "MCA Vanuatu Program Management",
+                "Civil Registry Office",
+                "Department of Labour",
+                "Ministry of Justice and Community Service",
+                "Department of Lands",
+                "Ministry of Commerce, Industry and Tourism Cabinet",
+                "Department of Youth and Sport",
+                "Public Prosecutor",
+                "Vanuatu Telecommunications Regulator",
+                "Corporate Services",
+                "Department of Immigration",
+                "Malvatumauri Council of Chiefs",
+                "Public Solicitor",
+                "Department of Customs and Inland Revenue",
+                "MFEM Corporate Services",
+                "Department of Ports and Harbours",
+                "Citizenship Office",
+                "National Audit Office",
+                "National Disaster Management Office",
+                "Electoral Office",
+                "Police Service Commission",
+                "Vanuatu Law Commission",
+                "Department of Industry",
+                "Trade and Ni Vanuatu Business Corporate Service Unit",
+                "Livestock",
+                "Department of Land Records",
+                "Department of Land Survey",
+                "Language Services Department",
+                "Office of the Government Chief Information Officer",
+                "Vanuatu Project Management Unit",
+                "Customary land management Office",
+                "President of the Republic",
+                "Climate Change Adaptation, Geohazards, Meteorology and Energy Cabinet",
+                "MoCC Coporate Service Unit",
+                "Education Commissions and Councils",
+                "Education Service Directorate",
+                "Policy & Planning Directorate",
+                "Tertiary Education Directorate",
+                "Ministry of Justice & Social Welfare Corporate Service Unit",
+                "Department of Climate Change",
+                "Finance & Administration Directorate",
+                "Vanuatu Mobile Force",
+                "Trade Development Division",
+                "Prime Ministers Ministry",
+                "Department of Communications and Digital Transformation",
+                "PMO Corporate Service Unit",
+                "MALFFB Coporate Services",
+                "Department of Urban Affairs and Planning",
+                "Vanuatu Maritime Safety Authority",
+                "Health Cabinet",
+                "Department of Communications and Digital Transformation  (DCDT)",
+                "Vanuatu Project Management Unit (VPMU)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Millions in Vatu (VUV)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "number"
+            "type": "integer"
           }
         ]
       }

@@ -12,11 +12,23 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Proportion (%)",
+                "Remittances (million vatu)",
+                "GDP Constant (million vatu)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "number"
           }
         ]
       }
@@ -24,5 +36,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-7-3",
-  "title": "ECO4-7-3"
+  "title": "indicators.ECO4-7-3-title"
 }

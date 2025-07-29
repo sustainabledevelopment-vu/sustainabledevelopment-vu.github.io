@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ENV1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ENV1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ENV1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -436,12 +418,38 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2></h2>
+  </div>
+</div>
+
 
   
 
   
+<div class="row indicator-progress">
+    <div class="col-sm-2 progress-status-heading">
+        
+    </div>
+    <div class="col-sm-10">
+        
+    
+    
+
+
+    </div>
+</div>
+
 
   
+
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>The 2022 National Agriculture Census report was officially launched in 2024, providing the most comprehensive and up-to-date data on primary production across agriculture, livestock, forestry, fisheries, and biosecurity. As the first agriculture census in over a decade, it collected detailed information from farming households nationwide, covering land use, crop production, livestock holdings, farming practices, and access to services. This data is critical for informed decision-making, policy development, and national reporting on food security, rural livelihoods, and sustainable resource management.</p>
+
+  </div>
+</div>
 
 
   
@@ -461,26 +469,26 @@ data-event-label="high"
   data-id="ENV1-1-2"
   data-country="Vanuatu"
   data-charttitle="Up to date data on primary production (agriculture, livestock, forestry, fisheries, biosecurity) available for analysis and informed decision-making and reporting"
-  data-charttitles="null"
+  data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
-  data-showmap=""
-  data-startvalues="null"
-  data-graphlimits="null"
+  data-showmap="false"
+  data-startvalues="[]"
+  data-graphlimits="[]"
   data-stackeddisaggregation=""
-  data-graphannotations="null"
-  data-graphtargetlines="null"
-  data-graphseriesbreaks="null"
+  data-graphannotations="[]"
+  data-graphtargetlines="[]"
+  data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
   data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
-  data-precision="null"
+  data-precision="[]"
   data-proxy=""
-  data-proxyseries="null"
+  data-proxyseries="[]"
   
   data-mappoints="null"
   
@@ -580,7 +588,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>Primary Production -The primary sector of the economy which includes any industry involved in primary production that is the extraction and collection of natural resources; such as farming, forestry, hunting, fishing and mining.</p>
+            <p>The “Up-to-Date Data on Primary Production (Agriculture, Livestock, Forestry, Fisheries, Biosecurity) Available for Analysis and Informed Decision-Making and Reporting” indicator measures the availability and timeliness of accurate, comprehensive, and current data related to primary production sectors such as agriculture, livestock, forestry, fisheries, and biosecurity. This data is crucial for effective analysis, decision-making, and reporting at both the national and regional levels.</p>
 
           
         </td>
@@ -596,7 +604,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The concept will be to collect update data on primary production in agriculture, livestock, forestry, fisheries and biosecurity to analysis the data to see if there is an increase in agricultural and fisheries food production using sustainable practices to ensure sufficient access to affordable and nutritious food. If the target is achieved then we know that the NSDP goal is achieved which is A nation that ensures our food and nutrition security needs are adequately met for all people through increasing sustainable food production systems and improving household production</p>
+            <p>This indicator tracks the accessibility and relevance of data related to primary production sectors. Primary production data includes statistics and information on crop yields, livestock populations, forest resources, fish catches, and biosecurity measures, among others. Having up-to-date and reliable data is essential for monitoring sector performance, assessing trends, making informed policy decisions, and ensuring sustainable management of natural resources. The indicator reflects the capacity of a country or region to collect, maintain, and disseminate this data regularly.</p>
 
           
         </td>
@@ -607,8 +615,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Disaggregation </th>
+        <td>
           
+            <p>Sector &amp; Region</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -617,7 +636,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>The purpose of this indicator study is to identify patterns and trends on the primary production in Vanuatu particularly in agriculture, livestock, forestry, fisheries, and biosecurity to measure increasing or decreasing primary production using sustainable practices which to ensure sufficient access to affordable and nutritious food for the Vanuatu population.</p>
+            <p>Monitoring the availability of up-to-date data on primary production is critical for effective governance, policy formulation, and sustainable development. Reliable data enables governments and stakeholders to make informed decisions that can improve agricultural productivity, enhance food security, manage natural resources sustainably, and respond to environmental challenges. Without accurate and current data, decisions may be based on outdated or incomplete information, leading to inefficiencies, mismanagement, and missed opportunities.</p>
 
           
         </td>
@@ -628,8 +647,22 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Method of Computation </th>
+        <td>
           
+            <p>To compute the “Up-to-Date Data on Primary Production (Agriculture, Livestock, Forestry, Fisheries, Biosecurity) Available for Analysis and Informed Decision-Making and Reporting,” first collect and assess the availability and timeliness of data across the primary production sectors. Then, evaluate the proportion of data sets that are up-to-date and readily available for analysis and decision-making. Calculate this proportion by dividing the number of up-to-date and available data sets by the total number of required data sets, and multiply by 100 to express it as a percentage.</p>
+
+<p>Formula:
+Proportion of Up to Date Data Available (%) = (Number of Primary Production Data Sets That Are Up to Date and Available/Number of Required Primary Production Data Sets) * 100</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -638,8 +671,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Sustainable Development Goal Indicator Alignment </th>
         <td>
           
-            <p>2.4.1
-(Tier 3)</p>
+            <p>2.3.1, 2.3.2, 2.4.1, 14.7.1</p>
 
           
         </td>
@@ -650,8 +682,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Unit of Measurement </th>
+        <td>
           
+            <p>Percentage</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -660,7 +703,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Frequency of Collection </th>
         <td>
           
-            <p>Annually &amp; half yearly</p>
+            <p>Annually</p>
 
           
         </td>
@@ -759,6 +802,8 @@ data-event-label="Change to indicator.sources tab"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js" integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/patternomaly@1.3.2/dist/patternomaly.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.2.2/dist/chartjs-plugin-annotation.min.js" integrity="sha256-XuHhf6q+GD7fscc96mTm/228GXf1Nn9wOYOE0EgeFzY=" crossorigin="anonymous"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
@@ -776,12 +821,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

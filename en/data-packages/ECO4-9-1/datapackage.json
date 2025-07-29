@@ -12,12 +12,44 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Legal Status of Business",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Branch of a Foreign Entity",
+                "Co-operative",
+                "Non-profit Organisation Serving Household",
+                "Partnership",
+                "Private Limited Company",
+                "Sole Trader/un Incorporated",
+                ""
+              ]
+            },
+            "title": "Legal Status of Business"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +58,5 @@
   ],
   "profile": "data-package",
   "name": "ECO4-9-1",
-  "title": "ECO4-9-1"
+  "title": "Total number of public/private joint ventures in operation"
 }

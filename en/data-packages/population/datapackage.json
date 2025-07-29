@@ -16,63 +16,76 @@
             "title": "Year"
           },
           {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total population",
-                "Population estimates",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Torba",
-                "Sanma",
-                "Penama",
-                "Malampa",
-                "Shefa",
-                "Tafea",
-                "PortVila",
-                "Luganville",
-                ""
-              ]
-            },
-            "title": "Region"
-          },
-          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "0--4",
-                "5--9",
-                "10--14",
-                "15--19",
-                "20--24",
-                "25--29",
-                "30--34",
-                "35--39",
-                "40--44",
-                "45--49",
-                "50--54",
-                "55--59",
-                "60--64",
-                "65--69",
-                "70+",
+                "0",
+                "1-4",
+                "5-9",
+                "10-14",
+                "15-19",
+                "20-24",
+                "25-29",
+                "30-34",
+                "35-39",
+                "40-44",
+                "45-49",
+                "50-54",
+                "55-59",
+                "60-64",
+                "65-69",
+                "70-74",
+                "75-79",
+                "80-84",
+                "85+",
                 ""
               ]
             },
             "title": "Age"
           },
           {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Urban",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Port Vila",
+                "Luganville",
+                ""
+              ]
+            },
+            "title": "Urban"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma Rural",
+                "Penama",
+                "Malampa",
+                "Shefa Rural",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
             "name": "Value",
-            "type": "integer",
+            "type": "string",
             "title": "Value"
           }
         ]
@@ -81,5 +94,5 @@
   ],
   "profile": "data-package",
   "name": "population",
-  "title": "Vanuatu Demographics"
+  "title": "Vanuatu projections"
 }

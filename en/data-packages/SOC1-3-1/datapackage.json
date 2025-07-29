@@ -12,12 +12,28 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Province",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            },
+            "title": "Province"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +42,5 @@
   ],
   "profile": "data-package",
   "name": "SOC1-3-1",
-  "title": "SOC1-3-1"
+  "title": "Total number of sites with cultural and/or historical significance newly identified, registered and preserved"
 }

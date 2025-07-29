@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20240618033611">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20250729082850">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -204,8 +204,6 @@ goal-number-ECO1
 </li><li class=" ">
     <a class="dropdown-item" href="/reporting-status/">DATA AVAILABILITY</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/indicator-overview/">INDICATOR OVERVIEW</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/methodology/">METHODOLOGY</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-finance" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -227,6 +225,8 @@ goal-number-ECO1
     <a class="dropdown-item" href="/exports/">EXPORTS</a>
 </li><li class=" ">
     <a class="dropdown-item" href="/imports/">IMPORTS</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/tourism/">TOURISM</a>
 </li></ul>
             </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-education" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     EDUCATION
@@ -234,31 +234,13 @@ goal-number-ECO1
                 <ul class="dropdown-menu" aria-labelledby="dropdown-education"><li class=" ">
     <a class="dropdown-item" href="/enrolments/">ENROLMENTS</a>
 </li><li class=" ">
-    <a class="dropdown-item" href="/grades/">GRADES</a>
-</li><li class=" ">
     <a class="dropdown-item" href="/vocational/">VOCATIONAL</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/usp/">USP</a>
 </li></ul>
-            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-disaster" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    DISASTER
+            </li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-population" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    POPULATION
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown-disaster"><li class=" ">
-    <a class="dropdown-item" href="/population/">POPULATION</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/health/">HEALTH</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/labor/">LABOR</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/agriculture/">AGRICULTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/infrastructure/">INFRASTRUCTURE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/shelter/">SHELTER</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/watersanitation&hygiene/">WATER SANITATION & HYGIENE</a>
-</li><li class=" ">
-    <a class="dropdown-item" href="/income/">INCOME</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-population"><li class=" ">
+    <a class="dropdown-item" href="/population/">PROJECTION</a>
 </li></ul>
             </li></ul>
     
@@ -464,7 +446,7 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>The Consumer Price Index (CPI) analysis shows a fluctuating trend in the underlying inflation rate from 2020 to 2023, starting at 135.8, dropping to 134.4 in 2021, then increasing to 137.1 in 2022, and significantly rising to 149.6 in 2023.The current CPI rate value is not progressing towards the target of keeping the inflation rate below 4% by 2030, as it has increased significantly from the previous year.</p>
+    <p>Vanuatu’s underlying inflation rate remained below 2% from 2016 to 2022, indicating a period of relative price stability. However, in 2023 the rate spiked sharply to 9.1%, followed by a further increase of 4.2% in 2024—both above the &lt;4% national target. This recent surge may reflect deeper inflationary pressures beyond temporary shocks, possibly driven by sustained supply disruptions or structural cost increases. Continued monitoring is essential to ensure that inflationary trends are addressed through responsive fiscal and monetary policy.</p>
 
   </div>
 </div>
@@ -502,7 +484,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -564,7 +546,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2008</td>
+          <td>2008.0</td>
           
           
           
@@ -576,7 +558,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2009</td>
+          <td>2009.0</td>
           
           
           
@@ -588,7 +570,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2010</td>
+          <td>2010.0</td>
           
           
           
@@ -600,7 +582,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2011</td>
+          <td>2011.0</td>
           
           
           
@@ -612,7 +594,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2012</td>
+          <td>2012.0</td>
           
           
           
@@ -624,7 +606,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2013</td>
+          <td>2013.0</td>
           
           
           
@@ -636,7 +618,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2014</td>
+          <td>2014.0</td>
           
           
           
@@ -648,7 +630,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2015</td>
+          <td>2015.0</td>
           
           
           
@@ -660,7 +642,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2016</td>
+          <td>2016.0</td>
           
           
           
@@ -672,7 +654,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2017</td>
+          <td>2017.0</td>
           
           
           
@@ -684,7 +666,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2018</td>
+          <td>2018.0</td>
           
           
           
@@ -696,7 +678,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2019</td>
+          <td>2019.0</td>
           
           
           
@@ -708,7 +690,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2020</td>
+          <td>2020.0</td>
           
           
           
@@ -720,7 +702,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2021</td>
+          <td>2021.0</td>
           
           
           
@@ -732,7 +714,7 @@ data-event-label="high"
         <tr>
           
           
-          <td>2022</td>
+          <td>2022.0</td>
           
           
           
@@ -744,11 +726,35 @@ data-event-label="high"
         <tr>
           
           
-          <td>2023</td>
+          <td>2023.0</td>
           
           
           
           <td class="table-value">149.6</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2024.0</td>
+          
+          
+          
+          <td class="table-value">155.9</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td></td>
+          
+          
+          
+          <td class="table-value"></td>
           
           
         </tr>
@@ -1071,8 +1077,19 @@ data-event-label="Change to indicator.sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Proxy </th>
+        <td>
           
+            <p>No</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
       
       
@@ -1081,11 +1098,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Definition </th>
         <td>
           
-            <p>The change in underlying inflation rate refers to the difference in the rate of inflation when certain volatile or temporary factors are excluded from the calculation. The purpose of analyzing underlying inflation is to get a clearer picture of the long-term trend in prices by removing the effects of short-term fluctuations that may not reflect the true underlying inflationary pressures in the economy.</p>
-
-<p>Underlying inflation is often calculated by excluding certain volatile components from the inflation index, such as food and energy prices, which can be subject to significant fluctuations due to factors like weather conditions, geopolitical events, or supply disruptions. By excluding these components, economists and policymakers aim to identify the core inflation rate, which provides a more stable measure of price changes.</p>
-
-<p>The change in underlying inflation rate, therefore, refers to the difference in the core inflation rate over a specific period. It could indicate whether inflationary pressures are increasing or decreasing when the effects of volatile factors are removed. This information is valuable for policymakers when formulating monetary policy and for businesses and consumers in their decision-making processes, as it provides insights into the broader trend of price changes in an economy.</p>
+            <p>The “Change in Underlying Inflation Rate (CPI Analysis)” indicator measures the year-over-year or period-over-period change in the underlying inflation rate, which is derived from the Consumer Price Index (CPI). Underlying inflation, also known as core inflation, typically excludes volatile items such as food and energy prices, providing a more stable measure of inflationary trends.</p>
 
           
         </td>
@@ -1101,7 +1114,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Concept </th>
         <td>
           
-            <p>The “change in underlying inflation rate” refers to the difference in the rate of inflation after removing volatile or temporary factors from the calculation. It helps identify the long-term trend in prices by excluding fluctuations caused by items like food and energy prices. This indicator focuses on core inflation, which provides a more stable measure of price changes. By analyzing the change in underlying inflation rate, economists, policymakers, businesses, and consumers can understand whether inflationary pressures are increasing or decreasing without the influence of volatile components. This information is valuable for decision-making processes, such as formulating monetary policy or making informed financial and economic choices.</p>
+            <p>This indicator tracks the change in underlying inflation, focusing on the sustained movements in prices of goods and services that are less susceptible to short-term volatility. The underlying inflation rate is an essential metric for policymakers and economists as it helps to gauge the true inflationary pressure in the economy, excluding temporary fluctuations that could distort the broader inflation picture</p>
 
           
         </td>
@@ -1117,7 +1130,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Disaggregation </th>
         <td>
           
-            <p>National</p>
+            <p>None</p>
 
           
         </td>
@@ -1133,7 +1146,7 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Rationale </th>
         <td>
           
-            <p>Monitoring change in inflation rate is crucial because it provides insights into the purchasing power of money, helps anticipate future price movements, and informs economic policy decisions.</p>
+            <p>Monitoring the change in the underlying inflation rate is crucial for assessing the stability of prices in an economy. Unlike headline inflation, which can be influenced by short-term price changes in volatile sectors, the underlying inflation rate offers a clearer view of long-term inflation trends. Understanding changes in the underlying inflation rate can help in making informed decisions to maintain price stability, guide interest rates, and manage economic growth.</p>
 
           
         </td>
@@ -1149,7 +1162,10 @@ data-event-label="Change to indicator.sources tab"
         <th scope="row">Method of Computation </th>
         <td>
           
-            <p>The basic methodology for calculating the change in inflation rate involves comparing the price levels of a basket of goods and services over two different time periods and determining the percentage difference between them.</p>
+            <p>To compute the “Change in Underlying Inflation Rate (CPI Analysis),” first collect data on the Consumer Price Index (CPI) components, focusing on the core basket of goods and services that exclude volatile items like food and energy. Then, calculate the underlying inflation rate based on these core components. Finally, determine the change in the underlying inflation rate by comparing the rate for the current period with that of the previous period, and express the change in percentage terms.</p>
+
+<p>Formula: 
+Change in Underlying Inflation Rate= (Underlying Inflation Rate (current period) – Underlying Inflation Rate (previous period)/Underlying Inflation Rate (previous period))*100</p>
 
           
         </td>
@@ -1317,12 +1333,12 @@ data-event-label="Change to indicator.sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20240618033611'></script>
+<script src='/assets/js/sdg.js?v=20250729082850'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20240618033611"></script><script>
+    <script src="/assets/js/custom.js?v=20250729082850"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
