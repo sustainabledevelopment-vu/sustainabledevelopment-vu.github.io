@@ -12,21 +12,11 @@
         "fields": [
           {
             "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Area (hectares)",
-                ""
-              ]
-            }
+            "type": "string"
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "string"
           }
         ]
       }

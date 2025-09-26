@@ -15,27 +15,28 @@
             "type": "integer"
           },
           {
-            "name": "Food Basket",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "Local Chicken",
-                "Fresh fish",
-                "Beef Local",
-                "Island Taro",
-                "Manioc",
-                "Kumala",
-                "Yam",
-                "Banana Green",
-                "Dried Coconut",
-                "Island Cabbage",
+                "Total",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "21321",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }

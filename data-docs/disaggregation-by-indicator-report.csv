@@ -3,17 +3,16 @@ Indicator,Disaggregations,Number of disaggregations
 #ECO1-2-1,Revenue Source,1
 #ECO1-3-1,Unit,1
 #ECO1-4-1,Trade,1
-#ECO1-5-1,"Country, Trade Type",2
-#ECO1-5-2,"Country, Trade Type",2
+#ECO1-5-2,"Country, TradeType",2
 #ECO1-5-3,Country,1
 #ECO1-6-2,Trade,1
 #ECO1-7-1,Major Commodity,1
 #ECO1-7-2,Province,1
 #ECO2-1-1,Province,1
 #ECO2-2-1,Region,1
-#ECO2-2-2,"Region, Urban/Rural, Unit",3
+#ECO2-2-2,"Unit, Region, Urban/Rural",3
 #ECO3-1-1,Sub-Industry,1
-#ECO3-2-1,"Urban/Rural, Unit",2
+#ECO3-2-1,"Unit, Urban/Rural",2
 #ECO3-2-2,"Unit, Transport Type",2
 #ECO3-2-3,"Unit of measurement, Island",2
 #ECO3-4-1,Province,1
@@ -22,18 +21,17 @@ Indicator,Disaggregations,Number of disaggregations
 #ECO4-3-2,Export Type,1
 #ECO4-6-1,"Region, Sectors, Sub-Sectors",3
 #ECO4-9-1,"Province, Legal Status of Business",2
-#ENV1-1-1,"Region, Urban/Rural, Unit of measurement",3
+#ENV1-1-1,"Unit of measurement, Region, Urban/Rural",3
 #ENV1-1-3,Urban/Rural,1
 #ENV1-3-1,Fruit or Vegetable,1
-#ENV1-3-2,Food Basket,1
 #ENV1-3-3,Geographic Location,1
-#ENV2-3-2,"Region, Urban/Rural, Unit of measurement",3
-#ENV3-2-2,"Region, Urban/Rural, Unit of measurement, Technology",4
+#ENV2-3-2,"Unit of measurement, Region, Urban/Rural",3
+#ENV3-2-2,"Unit of measurement, Region, Urban/Rural, Technology",4
 #SOC1-1-1,"Province, Region, Sex",3
 #SOC1-1-2,"Province, Region, Sex",3
 #SOC1-1-3,Province,1
 #SOC1-2-1,"Province, Region, Sex",3
-#SOC1-2-2,"Province, Region, Sex, Unit",4
+#SOC1-2-2,"Province, Unit, Region, Sex",4
 #SOC1-2-3,"Province, Region, Sex",3
 #SOC1-3-1,Province,1
 #SOC1-7-1,"Province, Region, Sex",3
@@ -48,7 +46,7 @@ Indicator,Disaggregations,Number of disaggregations
 #SOC4-1-3,"Unit of measurement, Number of decisions, Number of reasons, Number of reasons.1, Response coverage",5
 #SOC4-2-1,"Province, Sex, Age",3
 #SOC4-2-3,Type of Violence,1
-#SOC4-3-1,"Sex, Unit of measurement, Area",3
+#SOC4-3-1,"Unit of measurement, Sex, Area",3
 #SOC5-1-2,Court,1
 #SOC5-4-2,Province,1
-#SOC6-7-1,"Region, Unit of measurement, Media Outlets",3
+#SOC6-7-1,"Unit of measurement, Region, Media Outlets",3

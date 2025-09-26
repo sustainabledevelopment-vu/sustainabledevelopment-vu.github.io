@@ -1705,38 +1705,6 @@
   },
   {
     "goal": {
-      "id": "book3",
-      "title": "global_indicators.book3-title",
-      "indicators": [
-        
-        {
-          "id": "book3",
-          "title": "global_indicators.book3-title",
-          "description": "",
-          "keywords": "",
-          "href": "/book3/",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
-      "id": "book9",
-      "title": "global_indicators.book9-title",
-      "indicators": [
-        
-        {
-          "id": "book9",
-          "title": "global_indicators.book9-title",
-          "description": "",
-          "keywords": "",
-          "href": "/book9/",
-          "status": "complete"
-        }]
-    }
-  },
-  {
-    "goal": {
       "id": "business",
       "title": "Number of Business Licenses Issued by Industry",
       "indicators": [
@@ -1763,7 +1731,7 @@
           "description": "",
           "keywords": "",
           "href": "/census/",
-          "status": "complete"
+          "status": "notstarted"
         }]
     }
   },

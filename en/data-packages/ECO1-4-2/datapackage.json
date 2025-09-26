@@ -12,24 +12,12 @@
         "fields": [
           {
             "name": "Year",
-            "type": "integer",
+            "type": "string",
             "title": "Year"
           },
           {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Change (%)",
-                "Value (million vatu)",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
-            "type": "integer",
+            "type": "string",
             "title": "Value"
           }
         ]

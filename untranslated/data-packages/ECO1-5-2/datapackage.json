@@ -15,24 +15,25 @@
             "type": "integer"
           },
           {
-            "name": "Trade Type",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Exports",
-                "Imports",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
                 "Fiji",
-                "Papua New Giunea",
+                "Papua New Guinea",
                 "Solomon Islands",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "TradeType",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Exports",
+                "Imports",
+                "Balance",
                 ""
               ]
             }

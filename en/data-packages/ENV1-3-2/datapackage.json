@@ -16,28 +16,30 @@
             "title": "Year"
           },
           {
-            "name": "Food Basket",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "Local Chicken",
-                "Fresh fish",
-                "Beef Local",
-                "Island Taro",
-                "Manioc",
-                "Kumala",
-                "Yam",
-                "Banana Green",
-                "Dried Coconut",
-                "Island Cabbage",
+                "Total",
                 ""
               ]
             },
-            "title": "Food Basket"
+            "title": "Units"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Food Price Level CPI (PROXY)",
+                ""
+              ]
+            },
+            "title": "Series"
           },
           {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]

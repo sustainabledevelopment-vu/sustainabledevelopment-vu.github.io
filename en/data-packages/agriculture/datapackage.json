@@ -12,74 +12,12 @@
         "fields": [
           {
             "name": "Year",
-            "type": "integer",
+            "type": "number",
             "title": "Year"
           },
           {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total number of livestock owned",
-                "Number of private households growing cash crops",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Port Vila",
-                "Luganville",
-                "Torba",
-                "Sanma",
-                "Penama",
-                "Malampa",
-                "Shefa",
-                "Tafea",
-                ""
-              ]
-            },
-            "title": "Region"
-          },
-          {
-            "name": "Type of Livestock",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Cattle",
-                "Pigs",
-                "Goats",
-                "Horses",
-                "Chickens",
-                ""
-              ]
-            },
-            "title": "Type of Livestock"
-          },
-          {
-            "name": "Type of Crop",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Kava",
-                "Coconut",
-                "Cocoa",
-                "Coffee",
-                "Sandalwood",
-                "Pepper",
-                "Vanilla",
-                ""
-              ]
-            },
-            "title": "Type of Crop"
-          },
-          {
             "name": "Value",
-            "type": "integer",
+            "type": "number",
             "title": "Value"
           }
         ]
