@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20250926043719">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20251124051317">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -978,7 +978,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('indicator_metadata_form', {"enabled":true,"dropdowns":[],"repository_link":"https://github.com/Vanuatu-National-Statistics-Office/vnso-nsdp-platform/tree/develop/meta","translation_link":"","language":"","scopes":["national","global","source_1","source_2","source_3"],"exclude_fields":[],"translated":true});
+        var currentValue = normalizeCurrentValue('indicator_metadata_form', {"enabled":true,"dropdowns":[],"repository_link":"https://github.com/Vanuatu-National-Statistics-Office/vnso-nsdp-platform/tree/develop/meta","translation_link":"","language":"","scopes":["national","global","source_1"],"exclude_fields":[],"translated":true});
         var propertyEditor = editor.getEditor('root.indicator_metadata_form');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1128,7 +1128,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('metadata_tabs', [{"scope":"national","title":"indicator.national_metadata","description":"indicator.national_metadata_blurb"},{"scope":"sources","title":"indicator.sources","description":""}]);
+        var currentValue = normalizeCurrentValue('metadata_tabs', [{"scope":"national","title":"indicator.national_metadata","description":"indicator.national_metadata_blurb"},{"scope":"source_1","title":"indicator.sources","description":""}]);
         var propertyEditor = editor.getEditor('root.metadata_tabs');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1461,12 +1461,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20250926043719'></script>
+<script src='/assets/js/sdg.js?v=20251124051317'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20250926043719"></script><script>
+    <script src="/assets/js/custom.js?v=20251124051317"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
