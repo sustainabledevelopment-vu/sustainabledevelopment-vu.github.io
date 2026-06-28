@@ -12,11 +12,22 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Target",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +35,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-3-3",
-  "title": "ENV2-3-3"
+  "title": "indicators.ENV2-3-3-title"
 }

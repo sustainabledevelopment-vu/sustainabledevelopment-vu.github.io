@@ -16,8 +16,44 @@
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Series",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Donor Support via Government Systems",
+                "Government Support via Government Systems",
+                ""
+              ]
+            },
+            "title": "Series"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Target",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage",
+                "Total Count",
+                ""
+              ]
+            },
+            "title": "Unit"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +62,5 @@
   ],
   "profile": "data-package",
   "name": "ENV3-5-1",
-  "title": "ENV3-5-1"
+  "title": "Proportion of annual spending on climate change adaptation and disaster risk management funded with budget support from donor partners to the government"
 }

@@ -15,8 +15,20 @@
             "type": "string"
           },
           {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Remain_to_target",
+                "Target",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +36,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-1-1",
-  "title": "ENV2-1-1"
+  "title": "indicators.ENV2-1-1-title"
 }

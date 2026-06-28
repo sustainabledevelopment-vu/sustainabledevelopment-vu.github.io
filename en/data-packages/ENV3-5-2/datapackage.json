@@ -12,12 +12,12 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
             "name": "Value",
-            "type": "string",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "ENV3-5-2",
-  "title": "ENV3-5-2"
+  "title": "Number of climate and disaster finance funds to which Vanuatu is formally accredited"
 }

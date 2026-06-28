@@ -12,12 +12,37 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Trade Type",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Exports",
+                "Imports",
+                ""
+              ]
+            },
+            "title": "Trade Type"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Fiji",
+                "Papua New Giunea",
+                "Solomon Islands",
+                ""
+              ]
+            },
+            "title": "Country"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]

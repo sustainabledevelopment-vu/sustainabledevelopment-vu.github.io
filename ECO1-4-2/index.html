@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20251124051317">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260628195004">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -484,7 +484,7 @@ data-event-label="high"
   data-graphtargetlines="[]"
   data-graphseriesbreaks="[]"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Change (%)&quot;,&quot;Value (million vatu)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -520,15 +520,325 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a href="/en/headline/ECO1-4-2.csv" class="btn btn-primary btn-download" download="indicator_ECO1-4-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a href="/en/data/ECO1-4-2.csv" class="btn btn-primary btn-download" download='indicator_ECO1-4-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Current Accounts balance change</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>77</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>37</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>480</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>183</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>129</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>123</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>63</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td>145</td>
+          
+          
+          
+          <td class="table-value">Change (%)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>5570</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>4265</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>1564</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>7503</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>13703</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>17628</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>21616</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>13725</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2023</td>
+          
+          
+          
+          <td>19920</td>
+          
+          
+          
+          <td class="table-value">Value (million vatu)</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Reserve Bank of Vanuatu</p>
+    
+    
+    <p>Geographical Area: Vanuatu</p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -1117,12 +1427,12 @@ Percentage Change in Current account Balance= (Current Account Balance (Current 
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20251124051317'></script>
+<script src='/assets/js/sdg.js?v=20260628195004'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20251124051317"></script><script>
+    <script src="/assets/js/custom.js?v=20260628195004"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -15,8 +15,19 @@
             "type": "string"
           },
           {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Target",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +35,5 @@
   ],
   "profile": "data-package",
   "name": "ENV4-3-1",
-  "title": "ENV4-3-1"
+  "title": "indicators.ENV4-3-1-title"
 }

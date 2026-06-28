@@ -1,1 +1,9 @@
-Year,Value
+Year,Series,Status,Unit,Value
+2022-2025,Donor Support via Government Systems,Achieved,Percentage,14
+2030,Donor Support via Government Systems,Target,Percentage,100
+2022-2025,Government Support via Government Systems,Achieved,Percentage,47
+2031,Government Support via Government Systems,Target,Percentage,100
+2022-2025,Donor Support via Government Systems,Achieved,Total Count,163
+2030,Donor Support via Government Systems,Target,Total Count,1200
+2022-2025,Government Support via Government Systems,Achieved,Total Count,264
+2031,Government Support via Government Systems,Target,Total Count,562

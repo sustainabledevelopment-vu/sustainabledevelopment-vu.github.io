@@ -12,12 +12,12 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
             "name": "Value",
-            "type": "string",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "ENV3-1-1",
-  "title": "ENV3-1-1"
+  "title": "Proportion of government ministries with policies, budgets, and legislation for CC & DRM"
 }

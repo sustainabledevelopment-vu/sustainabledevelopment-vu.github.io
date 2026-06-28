@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20251124051317">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20260628195004">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -508,7 +508,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "");
+        var currentValue = normalizeCurrentValue('computation_units', "Percentage");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -548,18 +548,6 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_footnote'));
 
-    
-      try {
-        var currentValue = normalizeCurrentValue('data_non_statistical', true);
-        var propertyEditor = editor.getEditor('root.data_non_statistical');
-        propertyEditor.setValue(null);
-        propertyEditor.setValue(currentValue);
-        
-      }
-      catch (e) {
-        console.log(e.message);
-        console.log('Unable to set config key: data_non_statistical');
-      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.data_non_statistical'));
 
     
@@ -762,7 +750,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_stacked_disaggregation', "");
+        var currentValue = normalizeCurrentValue('graph_stacked_disaggregation', "Status");
         var propertyEditor = editor.getEditor('root.graph_stacked_disaggregation');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -790,7 +778,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('graph_title', "Establishment of multi-hazard warning systems with maintenance plans in place");
+        var currentValue = normalizeCurrentValue('graph_title', "Establishment of multi-hazard warning systems with maintenance plans in place throughout Vanuatu");
         var propertyEditor = editor.getEditor('root.graph_title');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -902,7 +890,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "The VAN-KIRAP Project has played a key role in supporting the establishment of multi-hazard early warning systems across Vanuatu. Through this initiative, essential infrastructure and protocols have been developed to monitor and disseminate warnings related to a range of hazards, including cyclones, floods, droughts, and volcanic activity. The project has also supported the development of standard operating procedures, community outreach, and institutional capacity-building to ensure warnings reach local populations in a timely and accessible manner. In addition, maintenance plans and sustainability measures are being integrated to ensure the long-term functionality and reliability of these systems beyond the life of the project.");
+        var currentValue = normalizeCurrentValue('page_content', "The VAN-KIRAP Project has played a key role in supporting the establishment of multi-hazard early warning systems across all provinces within Vanuatu. Through this initiative, essential infrastructure and protocols have been developed to monitor and disseminate warnings related to a range of hazards, including cyclones, floods, droughts, and volcanic activity. The project has also supported the development of standard operating procedures, community outreach, and institutional capacity-building to ensure warnings reach local populations in a timely and accessible manner. In addition, maintenance plans and sustainability measures are being integrated to ensure the long-term functionality and reliability of these systems beyond the life of the project.");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1086,7 +1074,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var currentValue = normalizeCurrentValue('x_axis_label', "Years");
         var propertyEditor = editor.getEditor('root.x_axis_label');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1231,12 +1219,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20251124051317'></script>
+<script src='/assets/js/sdg.js?v=20260628195004'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20251124051317"></script><script>
+    <script src="/assets/js/custom.js?v=20260628195004"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

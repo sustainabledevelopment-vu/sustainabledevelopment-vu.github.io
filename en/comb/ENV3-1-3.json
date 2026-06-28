@@ -1,1 +1,1 @@
-{"data":[],"edges":[]}
+{"data":{"Year":["2022-2025","2016-2030"],"Status":["Achieved","Target"],"Unit":["percent","percent"],"Value":[100,100]},"edges":{"From":["Status"],"To":["Unit"]}}

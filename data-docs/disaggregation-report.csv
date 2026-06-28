@@ -2,12 +2,13 @@ Disaggregation,Number of indicators,Number of values
 Age group,1,7
 Age,1,3
 Area,1,10
-Country,2,20
+Country,3,21
 Court,1,4
 Education,1,4
 Employment status,1,2
 Export Type,1,2
 Exports,1,15
+Food Basket,1,10
 Fruit or Vegetable,1,12
 Geographic Location,1,2
 Indicator,1,7
@@ -29,14 +30,16 @@ Revenue Source,1,5
 Sector,1,5
 Sectors,1,4
 Sex,9,4
+Status,20,3
 Sub-Industry,1,9
 Sub-Sectors,1,9
 Technology,1,7
+Trade Type,1,2
 Trade,2,4
 TradeType,1,3
 Transport Type,1,2
 Type of Violence,1,3
 Unit of measurement,12,14
-Unit,6,9
+Unit,11,15
 Urban/Rural,6,2
 Year level,1,9

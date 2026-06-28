@@ -15,26 +15,6 @@
             "type": "integer"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "22421",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Value",
             "type": "integer"
           }
@@ -44,5 +24,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-4-2",
-  "title": "ENV2-4-2"
+  "title": "indicators.ENV2-4-2-title"
 }

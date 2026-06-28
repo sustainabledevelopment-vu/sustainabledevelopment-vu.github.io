@@ -12,12 +12,24 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string",
+            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Status",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Target",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +38,5 @@
   ],
   "profile": "data-package",
   "name": "ENV5-2-2",
-  "title": "ENV5-2-2"
+  "title": "Proportion of community management committees implementing their CCA management plan"
 }

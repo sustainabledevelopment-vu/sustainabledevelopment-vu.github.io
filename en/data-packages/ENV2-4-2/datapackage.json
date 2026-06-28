@@ -16,28 +16,6 @@
             "title": "Year"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total",
-                ""
-              ]
-            },
-            "title": "Units"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Total Private Motor Vehicular Registration, Port Vila and Luganville (PROXY)",
-                ""
-              ]
-            },
-            "title": "Series"
-          },
-          {
             "name": "Value",
             "type": "integer",
             "title": "Value"
@@ -48,5 +26,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-4-2",
-  "title": "ENV2-4-2"
+  "title": "Proportion of vehicles that comply with emission standards"
 }

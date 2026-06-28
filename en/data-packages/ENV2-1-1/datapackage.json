@@ -16,8 +16,21 @@
             "title": "Year"
           },
           {
-            "name": "Value",
+            "name": "Status",
             "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Remain_to_target",
+                "Target",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -26,5 +39,5 @@
   ],
   "profile": "data-package",
   "name": "ENV2-1-1",
-  "title": "ENV2-1-1"
+  "title": "Proportion of \"blue-green growth friendly\" national policies fully implemented"
 }

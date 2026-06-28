@@ -15,8 +15,41 @@
             "type": "string"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Donor Support via Government Systems",
+                "Government Support via Government Systems",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Achieved",
+                "Target",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage",
+                "Total Count",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }
@@ -24,5 +57,5 @@
   ],
   "profile": "data-package",
   "name": "ENV3-5-1",
-  "title": "ENV3-5-1"
+  "title": "indicators.ENV3-5-1-title"
 }
