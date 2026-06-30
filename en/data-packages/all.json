@@ -3,56 +3,6 @@
   "title": "All indicators",
   "resources": [
     {
-      "path": "ECO1-5-2/data.csv",
-      "name": "ECO1-5-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Fiji",
-                "Papua New Guinea",
-                "Solomon Islands",
-                ""
-              ]
-            },
-            "title": "Country"
-          },
-          {
-            "name": "TradeType",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Exports",
-                "Imports",
-                "Balance",
-                ""
-              ]
-            },
-            "title": "TradeType"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          }
-        ]
-      },
-      "title": "Trade by trade agreement (value)"
-    },
-    {
       "path": "ECO2-9-1/data.csv",
       "name": "ECO2-9-1",
       "profile": "tabular-data-resource",
@@ -437,7 +387,7 @@
           },
           {
             "name": "Value",
-            "type": "number",
+            "type": "integer",
             "title": "Value"
           }
         ]
@@ -3642,7 +3592,7 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
           },
           {
@@ -5172,6 +5122,56 @@
         ]
       },
       "title": "Proportion of population utilising media outlets for news including: newspapers, mobile phones, radio, television, and internet"
+    },
+    {
+      "path": "ECO1-5-2/data.csv",
+      "name": "ECO1-5-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Fiji",
+                "Papua New Guinea",
+                "Solomon Islands",
+                ""
+              ]
+            },
+            "title": "Country"
+          },
+          {
+            "name": "TradeType",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Exports",
+                "Imports",
+                "Balance",
+                ""
+              ]
+            },
+            "title": "TradeType"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Trade by trade agreement (value)"
     },
     {
       "path": "ECO2-4-1/data.csv",
