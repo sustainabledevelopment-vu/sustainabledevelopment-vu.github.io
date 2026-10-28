@@ -15,12 +15,23 @@
             "type": "integer"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percent",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Grade 1-6 (%)",
-                "Grade 1-13 (%)",
+                "12110",
+                "12111",
+                "12112",
                 ""
               ]
             }

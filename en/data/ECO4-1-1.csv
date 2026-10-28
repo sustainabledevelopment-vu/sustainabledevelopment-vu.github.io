@@ -1,13 +1,16 @@
-Year,Units,Series,Value
-2006,Percent,Gross Fixed Capital Formation Growth,34.0
-2007,Percent,Gross Fixed Capital Formation Growth,21.7
-2008,Percent,Gross Fixed Capital Formation Growth,35.9
-2009,Percent,Gross Fixed Capital Formation Growth,-0.6
-2010,Percent,Gross Fixed Capital Formation Growth,-4.6
-2011,Percent,Gross Fixed Capital Formation Growth,-15.3
-2012,Percent,Gross Fixed Capital Formation Growth,-17.0
-2013,Percent,Gross Fixed Capital Formation Growth,17.0
-2014,Percent,Gross Fixed Capital Formation Growth,9.8
-2015,Percent,Gross Fixed Capital Formation Growth,41.0
-2016,Percent,Gross Fixed Capital Formation Growth,-23.9
-2017,Percent,Gross Fixed Capital Formation Growth,19.2
+Year,Series,Value
+2016,Growth (%),76
+2017,Growth (%),119
+2018,Growth (%),115
+2019,Growth (%),96
+2020,Growth (%),133
+2021,Growth (%),114
+2022,Growth (%),91
+2015,Value (million vatu),25255
+2016,Value (million vatu),19212
+2017,Value (million vatu),22910
+2018,Value (million vatu),26422
+2019,Value (million vatu),25447
+2020,Value (million vatu),33833
+2021,Value (million vatu),38451
+2022,Value (million vatu),34949

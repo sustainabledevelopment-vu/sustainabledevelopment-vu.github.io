@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20260630064908">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20261028014334">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -508,7 +508,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('computation_units', "");
+        var currentValue = normalizeCurrentValue('computation_units', "Percentage");
         var propertyEditor = editor.getEditor('root.computation_units');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -890,7 +890,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('page_content', "Vanuatu’s debt-to-GDP ratio rose from 41% in 2015 to a peak of 69% in 2021, before easing slightly to 66% in 2022. This upward trend reflects increased borrowing for infrastructure and economic recovery, particularly in response to the pandemic. The ratio remains well above the 2030 target of a 30% reduction, underscoring ongoing fiscal pressure. Continued efforts to improve debt sustainability and manage public sector liabilities will be critical for long-term financial resilience.");
+        var currentValue = normalizeCurrentValue('page_content', "Since 2021, however, the trend has reversed significantly. The debt ratio declined sharply to approximately 40% in 2022, followed by further reductions to 39% in 2023 and 38% in 2024. This represents a reduction of approximately 35 percentage points from the 2021 peak and a 25% reduction from the 2016 baseline level. To achieve the 30% reduction target, the debt ratio would need to decline to approximately 35.7% of GDP by 2030. With the debt ratio already at approximately 38% in 2024, Vanuatu appears to be close to achieving the 2030 target, requiring a further reduction of only about 2.3 percentage points over the remaining six years.");
         var propertyEditor = editor.getEditor('root.page_content');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -946,7 +946,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', "not_available");
+        var currentValue = normalizeCurrentValue('progress_status', "approaching_target");
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1074,7 +1074,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('x_axis_label', "");
+        var currentValue = normalizeCurrentValue('x_axis_label', "Years");
         var propertyEditor = editor.getEditor('root.x_axis_label');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1219,12 +1219,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/assets/js/sdg.js?v=20260630064908'></script>
+<script src='/assets/js/sdg.js?v=20261028014334'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20260630064908"></script><script>
+    <script src="/assets/js/custom.js?v=20261028014334"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -22,7 +22,7 @@
               "enum": [
                 "Debt Ratio to GDP (%)",
                 "Debt (million vatu)",
-                "GDP Constant (million vatu)",
+                "GDP Current (million vatu)",
                 ""
               ]
             },

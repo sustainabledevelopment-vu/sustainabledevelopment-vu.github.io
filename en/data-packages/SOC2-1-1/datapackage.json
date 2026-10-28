@@ -16,12 +16,24 @@
             "title": "Year"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percent",
+                ""
+              ]
+            },
+            "title": "Units"
+          },
+          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Grade 1-6 (%)",
-                "Grade 1-13 (%)",
+                "Kindergarten Attended Rate",
+                "Educational Survival Yrs 1-6",
+                "Educational Survival Yrs 1-13",
                 ""
               ]
             },
