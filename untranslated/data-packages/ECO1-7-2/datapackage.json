@@ -12,11 +12,26 @@
         "fields": [
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer"
+          },
+          {
+            "name": "Province",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Torba",
+                "Sanma",
+                "Penama",
+                "Malampa",
+                "Shefa",
+                "Tafea",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "integer"
           }
         ]
       }

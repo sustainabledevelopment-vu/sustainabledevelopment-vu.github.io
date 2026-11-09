@@ -15,19 +15,28 @@
             "type": "integer"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percent",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Series",
             "type": "string",
             "constraints": {
               "enum": [
-                "Growth (%)",
-                "Value (million vatu)",
+                "34110",
                 ""
               ]
             }
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }

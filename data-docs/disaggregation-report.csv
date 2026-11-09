@@ -22,7 +22,7 @@ Number of children,1,4
 Number of decisions,1,3
 Number of reasons,1,4
 Number of reasons.1,1,3
-Province,16,22
+Province,18,22
 Region,14,20
 Residence,1,2
 Response coverage,1,4
@@ -30,7 +30,7 @@ Revenue Source,1,5
 Sector,1,5
 Sectors,1,4
 Sex,9,4
-Status,20,3
+Status,18,3
 Sub-Industry,1,9
 Sub-Sectors,1,9
 Technology,1,7
@@ -40,6 +40,6 @@ TradeType,1,3
 Transport Type,1,2
 Type of Violence,1,3
 Unit of measurement,12,14
-Unit,11,15
+Unit,9,13
 Urban/Rural,6,2
 Year level,1,9
